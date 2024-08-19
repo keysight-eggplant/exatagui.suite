@@ -1,0 +1,154 @@
+{
+	"entries": [
+		{
+				"message": "Running main.script",
+				"identifier": "START",
+				"timestamp": "2024-06-27 10:51:12.619 -0400"
+			},
+		{
+				"handlerName": "on_cmessage",
+				"timestamp": "2024-06-27 10:51:12.713 -0400",
+				"message": "Started the Execution of the EXataGUI Regression Scripts at 10:51 AM on 06/27/24",
+				"scriptName": "Common/cLog.script",
+				"handlerLine": 2,
+				"identifier": "Log"
+			},
+		{
+				"handlerName": "on_variabledata",
+				"timestamp": "2024-06-27 10:51:12.768 -0400",
+				"message": "ImageUpdate = Off",
+				"scriptName": "HelperUtilities/variableData.script",
+				"handlerLine": 2,
+				"identifier": "setoptions"
+			},
+		{
+				"handlerName": "on_variabledata",
+				"timestamp": "2024-06-27 10:51:12.771 -0400",
+				"message": "MouseMoveMode = 2",
+				"scriptName": "HelperUtilities/variableData.script",
+				"handlerLine": 2,
+				"identifier": "setoptions"
+			},
+		{
+				"handlerName": "on_variabledata",
+				"timestamp": "2024-06-27 10:51:12.774 -0400",
+				"message": "MouseMoveSpeed = 10",
+				"scriptName": "HelperUtilities/variableData.script",
+				"handlerLine": 2,
+				"identifier": "setoptions"
+			},
+		{
+				"handlerName": "on_variabledata",
+				"timestamp": "2024-06-27 10:51:12.776 -0400",
+				"message": "remoteWorkInterval = 1",
+				"scriptName": "HelperUtilities/variableData.script",
+				"handlerLine": 2,
+				"identifier": "setoptions"
+			},
+		{
+				"handlerName": "function_checkscreenresolution",
+				"timestamp": "2024-06-27 10:51:12.953 -0400",
+				"message": "Screen Width: 1920, Screen Height: 1080",
+				"scriptName": "Common/check.script",
+				"handlerLine": 6,
+				"identifier": "Log"
+			},
+		{
+				"handlerName": "on_cmessage",
+				"timestamp": "2024-06-27 10:51:13.238 -0400",
+				"message": "C:\\Program Files\\Scalable\\exata\\8.2.0.0",
+				"scriptName": "Common/cLog.script",
+				"handlerLine": 2,
+				"identifier": "Log"
+			},
+		{
+				"handlerName": "on_cmessage",
+				"timestamp": "2024-06-27 10:51:13.362 -0400",
+				"message": "C:\\Users\\Administrator\\Documents\\UserScenarios",
+				"scriptName": "Common/cLog.script",
+				"handlerLine": 2,
+				"identifier": "Log"
+			},
+		{
+				"handlerName": "on_cmessage",
+				"timestamp": "2024-06-27 10:51:13.476 -0400",
+				"message": "generateReport: true",
+				"scriptName": "Common/cLog.script",
+				"handlerLine": 2,
+				"identifier": "Log"
+			},
+		{
+				"handlerName": "on_cmessage",
+				"timestamp": "2024-06-27 10:51:13.624 -0400",
+				"message": "The mode of the Execution of Test : full",
+				"scriptName": "Common/cLog.script",
+				"handlerLine": 2,
+				"identifier": "Log"
+			},
+		{
+				"handlerName": "on_hidetaskbar",
+				"timestamp": "2024-06-27 10:51:15.733 -0400",
+				"message": "hideTaskBar",
+				"scriptName": "OS/windows.script",
+				"handlerLine": 3,
+				"identifier": "BeginTestCase"
+			},
+		{
+				"handlerName": "on_entertext",
+				"timestamp": "2024-06-27 10:51:15.894 -0400",
+				"message": "[windowsKey]",
+				"scriptName": "Common/keyBoard.script",
+				"handlerLine": 3,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_entertext",
+				"timestamp": "2024-06-27 10:51:17.113 -0400",
+				"message": "taskbar settings",
+				"scriptName": "Common/keyBoard.script",
+				"handlerLine": 3,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_entertext",
+				"timestamp": "2024-06-27 10:51:20.639 -0400",
+				"message": "[returnKey]",
+				"scriptName": "Common/keyBoard.script",
+				"handlerLine": 3,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_setsearchsection",
+				"timestamp": "2024-06-27 10:51:21.842 -0400",
+				"message": "SEARCHRECTANGLE = [[251.52,49.68],[741.12,317.52]]",
+				"scriptName": "Common/search.script",
+				"handlerLine": 3,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "function_isimagetextfound",
+				"timestamp": "2024-06-27 10:52:22.042 -0400",
+				"scriptName": "Common/check.script",
+				"message": "Unable to Find Image (TEXT:\"hide the taskbar in desktop mode\"). Text not found.",
+				"image": "(TEXT:\"hide the taskbar in desktop mode\")",
+				"handlerLine": 9,
+				"identifier": "imagefound"
+			},
+		{
+				"message": "(Duration:\"68.182\", Errors:\"1\", Exceptions:\"0\", StartTime:\"2024-06-27 10:51:15 -0400\", Successes:\"0\", TestCase:\"hideTaskBar\", Warnings:\"0\")",
+				"identifier": "EndTestCase",
+				"timestamp": "2024-06-27 10:52:23.916 -0400"
+			},
+		{
+				"message": "(Duration:\"71.297\", Errors:\"1\", Exceptions:\"0\", StartTime:\"2024-06-27 10:51:12 -0400\", Successes:\"0\", TestCase:\"main.script\", Warnings:\"0\")",
+				"identifier": "EndTestCase",
+				"timestamp": "2024-06-27 10:52:23.920 -0400"
+			},
+		{
+				"message": "Execution Time 0:01:11 main.script",
+				"identifier": "ABORTED",
+				"timestamp": "2024-06-27 10:52:23.931 -0400"
+			}
+	],
+	"createdTimestamp": "2024-06-27 10:51:12.622 -0400"
+}

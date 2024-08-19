@@ -1,0 +1,22 @@
+﻿Date Run,Status,Time,# of Errors,# of Warnings,# of Exceptions,Log File,Return Value,Error Message,# of Successes
+2024-06-04 15:35:53.802 -0400,"Success",0:04:23,0,0,0,"20240604_153553.802/LogFile.txt","","",47
+2024-06-04 16:20:32.578 -0400,"Success",0:04:32,0,0,0,"20240604_162032.578/LogFile.txt","","",47
+2024-06-05 19:24:01.518 -0400,"Success",0:04:37,0,0,0,"20240605_192401.518/LogFile.txt","","",47
+2024-06-05 20:31:47.605 -0400,"Success",0:05:04,0,0,0,"20240605_203147.605/LogFile.txt","","",47
+2024-06-05 20:46:35.150 -0400,"Success",0:04:36,0,0,0,"20240605_204635.150/LogFile.txt","","",47
+2024-06-05 21:08:57.350 -0400,"Success",0:04:26,0,0,0,"20240605_210857.350/LogFile.txt","","",47
+2024-06-05 22:47:42.160 -0400,"Failure",0:02:38,5,0,5,"20240605_224742.160/LogFile.txt","","Image Not Found -- waitfor Error - Unable To Find Any Image On Screen ""(TEXT:""MultiChannel"")"" within 60.00 seconds. Text not found.",10
+2024-06-05 23:41:43.207 -0400,"Failure",0:02:28,5,0,5,"20240605_234143.207/LogFile.txt","","Image Not Found -- waitfor Error - Unable To Find Any Image On Screen ""(TEXT:""MultiChannel"")"" within 60.00 seconds. Text not found.",10
+2024-06-06 07:55:55.654 -0400,"Failure",0:02:32,5,0,5,"20240606_075555.654/LogFile.txt","","Image Not Found -- waitfor Error - Unable To Find Any Image On Screen ""(TEXT:""MultiChannel"")"" within 60.00 seconds. Text not found.",10
+2024-06-06 08:36:33.438 -0400,"Failure",0:05:00,5,0,5,"20240606_083633.438/LogFile.txt","","Image Not Found -- waitfor Error - Unable To Find Any Image On Screen ""(TEXT:""MultiChannel"")"" within 60.00 seconds. Text not found.",10
+2024-06-06 09:19:13.274 -0400,"Success",0:05:29,0,0,0,"20240606_091913.274/LogFile.txt","","",47
+2024-06-06 12:00:39.581 -0400,"Success",0:05:40,0,0,0,"20240606_120039.581/LogFile.txt","","",47
+2024-06-06 12:28:48.775 -0400,"Success",0:05:18,0,0,0,"20240606_122848.775/LogFile.txt","","",47
+2024-06-07 09:17:03.109 -0400,"Success",0:04:47,0,0,0,"20240607_091703.109/LogFile.txt","","",47
+2024-06-07 09:56:10.202 -0400,"Success",0:05:13,0,0,0,"20240607_095610.202/LogFile.txt","","",47
+2024-06-07 10:28:51.978 -0400,"Success",0:05:08,0,0,0,"20240607_102851.978/LogFile.txt","","",47
+2024-06-07 10:55:42.921 -0400,"Success",0:04:56,0,0,0,"20240607_105542.921/LogFile.txt","","",47
+2024-06-07 12:40:11.933 -0400,"Success",0:05:14,0,0,0,"20240607_124011.933/LogFile.txt","","",47
+2024-06-07 13:10:19.839 -0400,"Success",0:04:36,0,0,0,"20240607_131019.839/LogFile.txt","","",47
+2024-06-07 13:51:02.335 -0400,"Success",0:05:10,0,0,0,"20240607_135102.335/LogFile.txt","","",47
+2024-06-10 08:58:54.201 -0400,"Success",0:05:10,0,0,0,"20240610_085854.201/LogFile.txt","","",47

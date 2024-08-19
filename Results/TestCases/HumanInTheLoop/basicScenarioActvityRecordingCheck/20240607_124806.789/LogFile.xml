@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+ <testsuite name="TestCases/HumanInTheLoop/basicScenarioActvityRecordingCheck_script" package="exatagui.suite" timestamp="2024-06-07 12:48:06.789 -0400"
+ tests="2"  failures="0" errors="0" time="185.827000">
+  <properties>
+   <property name="RunDate" value="2024-06-07 12:48:06.789 -0400"/>
+   <property name="Status" value="Success"/>
+  </properties>
+  <testcase name="basicScenarioActivityRecordingCheck" assertions="25" status="success"  time="185.74">
+  </testcase>
+  <testcase name="TestCases/HumanInTheLoop/basicScenarioActvityRecordingCheck.script" assertions="25" status="success"  time="185.818">
+  </testcase>
+ </testsuite>
+</testsuites>

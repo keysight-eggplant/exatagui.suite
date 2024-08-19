@@ -1,0 +1,65 @@
+﻿2024-06-04 16:11:03.318 -0400	START		Running main.script
+2024-06-04 16:11:03.479 -0400	Log		Started the Execution of the EXataGUI Regression Scripts at 04:11 PM on 06/04/24	2	on_cmessage	Common/cLog.script
+2024-06-04 16:11:03.531 -0400	setoptions		ImageUpdate = Off	2	on_variabledata	HelperUtilities/variableData.script
+2024-06-04 16:11:03.533 -0400	setoptions		MouseMoveMode = 2	2	on_variabledata	HelperUtilities/variableData.script
+2024-06-04 16:11:03.536 -0400	setoptions		MouseMoveSpeed = 10	2	on_variabledata	HelperUtilities/variableData.script
+2024-06-04 16:11:03.538 -0400	setoptions		remoteWorkInterval = 1	2	on_variabledata	HelperUtilities/variableData.script
+2024-06-04 16:11:03.747 -0400	Log		Screen Width: 1920, Screen Height: 1080	6	function_checkscreenresolution	Common/check.script
+2024-06-04 16:11:04.051 -0400	Log		C:\Program Files\Scalable\exata\8.2.0.0	2	on_cmessage	Common/cLog.script
+2024-06-04 16:11:04.159 -0400	Log		C:\Users\pratdaga\Documents\UserScenarios	2	on_cmessage	Common/cLog.script
+2024-06-04 16:11:04.266 -0400	Log		generateReport: true	2	on_cmessage	Common/cLog.script
+2024-06-04 16:11:04.439 -0400	Log		The mode of the Execution of Test : full	2	on_cmessage	Common/cLog.script
+2024-06-04 16:11:06.957 -0400	typetext		[windowsKey]r	3	on_entertext	Common/keyboard.script
+2024-06-04 16:11:09.490 -0400	waitfor	(TEXT:"Run")	found at (54, 837)	6	on_waitfortext	Common/waitForEvent.script
+2024-06-04 16:11:09.571 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-04 16:11:11.540 -0400	typetext		C:\Program Files\Scalable\exata\8.2.0.0\bin\EXataGUI.exe	3	on_entertext	Common/keyBoard.script
+2024-06-04 16:11:12.581 -0400	typetext		[returnKey]	3	on_entertext	Common/keyBoard.script
+2024-06-04 16:11:12.941 -0400	set		SEARCHRECTANGLE = [[672,421.2],[1228.8,540]]	3	on_setsearchsection	Common/search.script
+2024-06-04 16:11:18.163 -0400	imagefound	(TEXT:"Windows cannot find")	Unable to Find Image (TEXT:"Windows cannot find"). Text not found.	9	function_isimagetextfound	Common/check.script
+2024-06-04 16:11:18.214 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-04 16:11:18.578 -0400	set		SEARCHRECTANGLE = [[0,0],[76.8,32.4]]	3	on_setsearchsection	Common/search.script
+2024-06-04 16:11:49.339 -0400	imagefound	(TEXT:"EXata")	found at (36, 10)	9	function_isimagetextfound	Common/check.script
+2024-06-04 16:11:51.888 -0400	moveto	(TEXT:"EXata")	at (36, 10)	10	function_isimagetextfound	Common/check.script
+2024-06-04 16:11:51.911 -0400	LogSuccess		EXata  is found in EXataGUITitleBar	2	on_success	Common/cLog.script
+2024-06-04 16:11:51.948 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-04 16:11:52.291 -0400	set		SEARCHRECTANGLE = [[0,0],[480,270]]	3	on_setsearchsection	Common/search.script
+2024-06-04 16:11:52.800 -0400	waitfor	(TEXT:"Scenario Properties")	found at (124, 162)	6	on_waitfortext	Common/waitForEvent.script
+2024-06-04 16:11:52.890 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-04 16:11:53.033 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-04 16:11:53.113 -0400	CompareScreen	[Baseline_Screens]/GUI_Canvas_Windows4 6 2024 _ 16 11 3.png	Captured initial baseline image "GUI_Canvas_Windows4 6 2024 _ 16 11 3"	3	on_compare_screen	Common/check.script
+2024-06-04 16:11:53.328 -0400	Log		main	9	on_startreportfile	HelperUtilities/rptHtml.script
+2024-06-04 16:11:53.560 -0400	Log		C:/Users/pratdaga/Desktop/eggplant_automation/exatagui.suite/Results/main/20240604_161103.313/	13	on_startreportfile	HelperUtilities/rptHtml.script
+2024-06-04 16:11:55.710 -0400	runwithnewresults		basicExataFunctionalityCheck.script (C:/Users/pratdaga/Desktop/eggplant_automation/exatagui.suite/Results/TestCases/Regular/basicExataFunctionalityCheck/20240604_161155.708/LogFile.txt)	22	on_startregulartests	TestCases/Regular/testLauncher.script
+2024-06-04 16:16:19.305 -0400	LogSuccess		basicEXataFunctionalityCheck SUCCESS	2	on_success	Common/cLog.script
+2024-06-04 16:16:19.827 -0400	runwithnewresults		verifyOpenNewCanvas.script (C:/Users/pratdaga/Desktop/eggplant_automation/exatagui.suite/Results/TestCases/Regular/verifyOpenNewCanvas/20240604_161619.825/LogFile.txt)	22	on_startregulartests	TestCases/Regular/testLauncher.script
+2024-06-04 16:17:09.543 -0400	LogSuccess		verifyOpenNewCanvas SUCCESS	2	on_success	Common/cLog.script
+2024-06-04 16:17:10.178 -0400	runwithnewresults		closeScenarioUsingCloseOption.script (C:/Users/pratdaga/Desktop/eggplant_automation/exatagui.suite/Results/TestCases/Regular/closeScenarioUsingCloseOption/20240604_161710.176/LogFile.txt)	22	on_startregulartests	TestCases/Regular/testLauncher.script
+2024-06-04 16:18:31.031 -0400	LogSuccess		closeScenarioUsingCloseOption SUCCESS	2	on_success	Common/cLog.script
+2024-06-04 16:18:31.341 -0400	capturescreen	Screen_Capture_0001.png		37	on_addreportline	HelperUtilities/rptHtml.script
+2024-06-04 16:18:31.700 -0400	runwithnewresults		verifyFileMenu.script (C:/Users/pratdaga/Desktop/eggplant_automation/exatagui.suite/Results/TestCases/Regular/verifyFileMenu/20240604_161831.694/LogFile.txt)	22	on_startregulartests	TestCases/Regular/testLauncher.script
+2024-06-04 16:19:14.135 -0400	LogSuccess		verifyFileMenu SUCCESS	2	on_success	Common/cLog.script
+2024-06-04 16:19:14.681 -0400	runwithnewresults		verifyEditMenu.script (C:/Users/pratdaga/Desktop/eggplant_automation/exatagui.suite/Results/TestCases/Regular/verifyEditMenu/20240604_161914.678/LogFile.txt)	22	on_startregulartests	TestCases/Regular/testLauncher.script
+2024-06-04 16:19:46.554 -0400	LogSuccess		verifyEditMenu SUCCESS	2	on_success	Common/cLog.script
+2024-06-04 16:19:47.205 -0400	runwithnewresults		verifyViewMenu.script (C:/Users/pratdaga/Desktop/eggplant_automation/exatagui.suite/Results/TestCases/Regular/verifyViewMenu/20240604_161947.203/LogFile.txt)	22	on_startregulartests	TestCases/Regular/testLauncher.script
+2024-06-04 16:20:31.936 -0400	LogSuccess		verifyViewMenu SUCCESS	2	on_success	Common/cLog.script
+2024-06-04 16:20:32.581 -0400	runwithnewresults		verifyRecentFilesList.script (C:/Users/pratdaga/Desktop/eggplant_automation/exatagui.suite/Results/TestCases/HumanInTheLoop/verifyRecentFilesList/20240604_162032.578/LogFile.txt)	22	on_startregulartests	TestCases/Regular/testLauncher.script
+2024-06-04 16:25:04.842 -0400	LogSuccess		verifyRecentFilesList SUCCESS	2	on_success	Common/cLog.script
+2024-06-04 16:25:06.016 -0400	runwithnewresults		basicScenarioCanvasCheck.script (C:/Users/pratdaga/Desktop/eggplant_automation/exatagui.suite/Results/TestCases/HumanInTheLoop/basicScenarioCanvasCheck/20240604_162506.013/LogFile.txt)	22	on_starthitltests	Testcases/HumanInTheLoop/testLauncher.script
+2024-06-04 16:26:16.269 -0400	LogSuccess		basicScenarioCanvasCheck SUCCESS	2	on_success	Common/cLog.script
+2024-06-04 16:26:17.179 -0400	runwithnewresults		basicScenarioActvityRecordingCheck.script (C:/Users/pratdaga/Desktop/eggplant_automation/exatagui.suite/Results/TestCases/HumanInTheLoop/basicScenarioActvityRecordingCheck/20240604_162617.175/LogFile.txt)	22	on_starthitltests	Testcases/HumanInTheLoop/testLauncher.script
+2024-06-04 16:29:24.444 -0400	LogSuccess		basicScenarioActivityRecordingCheck SUCCESS	2	on_success	Common/cLog.script
+2024-06-04 16:29:24.982 -0400	runwithnewresults		loadScenarioUsingOpenExample.script (C:/Users/pratdaga/Desktop/eggplant_automation/exatagui.suite/Results/TestCases/HumanInTheLoop/loadScenarioUsingOpenExample/20240604_162924.979/LogFile.txt)	22	on_starthitltests	Testcases/HumanInTheLoop/testLauncher.script
+2024-06-04 16:30:25.700 -0400	LogSuccess		loadScenarioUsingOpenExample SUCCESS	2	on_success	Common/cLog.script
+2024-06-04 16:30:26.694 -0400	runwithnewresults		verifyPreviousAndNextButtons.script (C:/Users/pratdaga/Desktop/eggplant_automation/exatagui.suite/Results/TestCases/HumanInTheLoop/verifyPreviousAndNextButtons/20240604_163026.691/LogFile.txt)	22	on_starthitltests	Testcases/HumanInTheLoop/testLauncher.script
+2024-06-04 16:31:05.693 -0400	LogSuccess		verifyPreviousAndNextButtons SUCCESS	2	on_success	Common/cLog.script
+2024-06-04 16:31:07.090 -0400	set		SEARCHRECTANGLE = [[384,216],[460.8,248.4]]	3	on_setsearchsection	Common/search.script
+2024-06-04 16:31:10.277 -0400	imagefound	(TEXT:"Results")	Unable to Find Image (TEXT:"Results"). Text not found.	9	function_isimagetextfound	Common/check.script
+2024-06-04 16:31:10.342 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-04 16:31:10.652 -0400	typetext		[windowsAltKey][F4]	3	on_entertext	Common/keyBoard.script
+2024-06-04 16:31:11.697 -0400	typetext		[returnKey]	3	on_entertext	Common/keyBoard.script
+2024-06-04 16:31:12.104 -0400	set		SEARCHRECTANGLE = [[710.4,453.6],[1209.6,572.4]]	3	on_setsearchsection	Common/search.script
+2024-06-04 16:31:17.289 -0400	imagefound	(TEXT:"Do you want to Save the Changes")	Unable to Find Image (TEXT:"Do you want to Save the Changes"). Text not found.	9	function_isimagetextfound	Common/check.script
+2024-06-04 16:31:17.375 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-04 16:31:17.539 -0400	Log		The execution of EXataGUI Regression Script took 1214.009 seconds to complete.	2	on_cmessage	Common/cLog.script
+2024-06-04 16:31:17.610 -0400	EndTestCase		(Duration:"1214.289", Errors:"0", Exceptions:"0", StartTime:"2024-06-04 16:11:03 -0400", Successes:"225", TestCase:"main.script", Warnings:"0")
+2024-06-04 16:31:17.654 -0400	SUCCESS		Execution Time 0:20:14 main.script

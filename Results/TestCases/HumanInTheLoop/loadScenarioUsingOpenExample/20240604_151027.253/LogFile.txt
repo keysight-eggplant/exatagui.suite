@@ -1,0 +1,110 @@
+﻿2024-06-04 15:10:27.259 -0400	START		Running TestCases/HumanInTheLoop/loadScenarioUsingOpenExample.script	22	on_starthitltests	Testcases/HumanInTheLoop/testLauncher.script
+2024-06-04 15:10:27.293 -0400	BeginTestCase		loadScenarioUsingOpenExample	2	on_loadscenariousingopenexample	TestCases/HumanInTheLoop/loadScenarioUsingOpenExample.script
+2024-06-04 15:10:27.531 -0400	CompareScreen	[Baseline_Screens]/GUI_Canvas_Windows4 6 2024 _ 14 57 1.png	CompareScreen "GUI_Canvas_Windows4 6 2024 _ 14 57 1" -- No significant differences from baseline	3	on_compare_screen	Common/check.script
+2024-06-04 15:10:27.720 -0400	CompareScreen	[Baseline_Screens]/GUI_Canvas_Windows4 6 2024 _ 14 57 1.png	CompareScreen "GUI_Canvas_Windows4 6 2024 _ 14 57 1" -- No significant differences from baseline	3	function_compare_screen	Common/check.script
+2024-06-04 15:10:28.171 -0400	set		SEARCHRECTANGLE = [[0,0],[249.6,151.2]]	3	on_setsearchsection	Common/search.script
+2024-06-04 15:10:31.051 -0400	click	(TEXT:"File")	at (14, 31)	6	on_leftevent	Common/clickEvent.script
+2024-06-04 15:10:32.353 -0400	imagefound	(TEXT:"New")	found at (44, 55)	9	function_isimagetextfound	Common/check.script
+2024-06-04 15:10:32.766 -0400	moveto	(TEXT:"New")	at (44, 55)	10	function_isimagetextfound	Common/check.script
+2024-06-04 15:10:32.816 -0400	LogSuccess		New  is found in 	2	on_success	Common/cLog.script
+2024-06-04 15:10:32.901 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-04 15:10:33.079 -0400	LogSuccess		File menu opened successfully	2	on_success	Common/cLog.script
+2024-06-04 15:10:33.192 -0400	capturescreen	verifyFileMenu.png	(0,2,808,810)	4	on_capturescreenshots	Common/captureScreenShots.script
+2024-06-04 15:10:33.391 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-04 15:10:33.757 -0400	set		SEARCHRECTANGLE = [[0,0],[480,270]]	3	on_setsearchsection	Common/search.script
+2024-06-04 15:10:34.719 -0400	click	(TEXT:"Open Example")	at (68, 99)	6	on_leftevent	Common/clickEvent.script
+2024-06-04 15:10:34.792 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-04 15:10:45.944 -0400	imagefound	(TEXT:"cancel")	found at (890, 528)	9	function_isimagetextfound	Common/check.script
+2024-06-04 15:10:52.451 -0400	moveto	(TEXT:"cancel")	at (890, 528)	10	function_isimagetextfound	Common/check.script
+2024-06-04 15:10:52.493 -0400	LogSuccess		cancel  is found in 	2	on_success	Common/cLog.script
+2024-06-04 15:10:52.558 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-04 15:10:52.647 -0400	LogSuccess		The Open File dialog box is successfully open after selecting the Open Example option	2	on_success	Common/cLog.script
+2024-06-04 15:10:52.719 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-04 15:10:56.012 -0400	imagefound	(TEXT:"cancel")	found at (890, 528)	9	function_isimagetextfound	Common/check.script
+2024-06-04 15:10:59.480 -0400	moveto	(TEXT:"cancel")	at (890, 528)	10	function_isimagetextfound	Common/check.script
+2024-06-04 15:10:59.568 -0400	LogSuccess		cancel  is found in 	2	on_success	Common/cLog.script
+2024-06-04 15:10:59.647 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-04 15:11:01.022 -0400	typetext		demo\WiFiDemo	3	on_entertext	Common/keyBoard.script
+2024-06-04 15:11:02.061 -0400	typetext		[returnKey]	3	on_entertext	Common/keyBoard.script
+2024-06-04 15:11:03.595 -0400	typetext		WiFiDemo.config	3	on_entertext	Common/keyBoard.script
+2024-06-04 15:11:04.635 -0400	typetext		[returnKey]	3	on_entertext	Common/keyBoard.script
+2024-06-04 15:11:04.744 -0400	LogSuccess		Open Example operation completed successfully.	2	on_success	Common/cLog.script
+2024-06-04 15:11:06.926 -0400	waitfor	(TEXT:"WiFiDemo")	found at (320, 161)	6	on_waitfortext	Common/waitForEvent.script
+2024-06-04 15:11:07.149 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-04 15:11:07.410 -0400	set		SEARCHRECTANGLE = [[0,0],[1920,540]]	3	on_setsearchsection	Common/search.script
+2024-06-04 15:11:08.749 -0400	imagefound	(TEXT:"WiFiDemo")	found at (320, 161)	9	function_isimagetextfound	Common/check.script
+2024-06-04 15:11:11.567 -0400	moveto	(TEXT:"WiFiDemo")	at (320, 161)	10	function_isimagetextfound	Common/check.script
+2024-06-04 15:11:11.607 -0400	LogSuccess		WiFiDemo  is found in TopHalf	2	on_success	Common/cLog.script
+2024-06-04 15:11:11.670 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-04 15:11:16.852 -0400	LogSuccess		Scenario Loaded successfully	2	on_success	Common/cLog.script
+2024-06-04 15:11:17.003 -0400	capturescreen	loadScenarioUsingOpenExample.png	(706,219,1483,963)	4	on_capturescreenshots	Common/captureScreenShots.script
+2024-06-04 15:11:17.476 -0400	set		SEARCHRECTANGLE = [[0,43.2],[96,86.4]]	3	on_setsearchsection	Common/search.script
+2024-06-04 15:11:17.690 -0400	imagefound	(TEXT:"Architect")	found at (58, 59)	9	function_isimagetextfound	Common/check.script
+2024-06-04 15:11:18.528 -0400	moveto	(TEXT:"Architect")	at (58, 59)	10	function_isimagetextfound	Common/check.script
+2024-06-04 15:11:18.584 -0400	LogSuccess		Architect  is found in ArchitectButton	2	on_success	Common/cLog.script
+2024-06-04 15:11:18.641 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-04 15:11:19.104 -0400	set		SEARCHRECTANGLE = [[0,43.2],[96,86.4]]	3	on_setsearchsection	Common/search.script
+2024-06-04 15:11:19.423 -0400	imagefound	(TEXT:"Architect")	found at (58, 59)	7	on_onfoundimagelocation	Common/clickEvent.script
+2024-06-04 15:11:19.674 -0400	click		at (58, 59)	8	on_onfoundimagelocation	Common/clickEvent.script
+2024-06-04 15:11:19.727 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-04 15:11:20.095 -0400	set		SEARCHRECTANGLE = [[0,0],[249.6,151.2]]	3	on_setsearchsection	Common/search.script
+2024-06-04 15:11:21.210 -0400	click	(TEXT:"File")	at (14, 31)	6	on_leftevent	Common/clickEvent.script
+2024-06-04 15:11:22.226 -0400	imagefound	(TEXT:"New")	found at (44, 55)	9	function_isimagetextfound	Common/check.script
+2024-06-04 15:11:22.590 -0400	moveto	(TEXT:"New")	at (44, 55)	10	function_isimagetextfound	Common/check.script
+2024-06-04 15:11:22.655 -0400	LogSuccess		New  is found in 	2	on_success	Common/cLog.script
+2024-06-04 15:11:22.714 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-04 15:11:22.857 -0400	LogSuccess		File menu opened successfully	2	on_success	Common/cLog.script
+2024-06-04 15:11:22.987 -0400	capturescreen	verifyFileMenu.png	(0,2,808,810)	4	on_capturescreenshots	Common/captureScreenShots.script
+2024-06-04 15:11:23.183 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-04 15:11:23.559 -0400	set		SEARCHRECTANGLE = [[0,0],[480,270]]	3	on_setsearchsection	Common/search.script
+2024-06-04 15:11:24.707 -0400	click	(TEXT:"Close All")	at (53, 208)	6	on_leftevent	Common/clickEvent.script
+2024-06-04 15:11:24.771 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-04 15:11:25.743 -0400	CompareScreen	[Baseline_Screens]/GUI_Canvas_Windows4 6 2024 _ 14 57 1.png	CompareScreen "GUI_Canvas_Windows4 6 2024 _ 14 57 1" -- No significant differences from baseline	3	on_compare_screen	Common/check.script
+2024-06-04 15:11:25.894 -0400	CompareScreen	[Baseline_Screens]/GUI_Canvas_Windows4 6 2024 _ 14 57 1.png	CompareScreen "GUI_Canvas_Windows4 6 2024 _ 14 57 1" -- No significant differences from baseline	3	function_compare_screen	Common/check.script
+2024-06-04 15:11:28.183 -0400	click		at (960, 540)	3	on_clickscaled	Common/clickEvent.script
+2024-06-04 15:11:29.237 -0400	typetext		[controlKey]e	2	on_keyboardshortcut	Common/keyBoard.script
+2024-06-04 15:11:37.582 -0400	imagefound	(TEXT:"cancel")	found at (890, 528)	9	function_isimagetextfound	Common/check.script
+2024-06-04 15:11:40.759 -0400	moveto	(TEXT:"cancel")	at (890, 528)	10	function_isimagetextfound	Common/check.script
+2024-06-04 15:11:40.805 -0400	LogSuccess		cancel  is found in 	2	on_success	Common/cLog.script
+2024-06-04 15:11:40.893 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-04 15:11:42.276 -0400	typetext		demo\WiFiDemo	3	on_entertext	Common/keyBoard.script
+2024-06-04 15:11:43.313 -0400	typetext		[returnKey]	3	on_entertext	Common/keyBoard.script
+2024-06-04 15:11:44.842 -0400	typetext		WiFiDemo.config	3	on_entertext	Common/keyBoard.script
+2024-06-04 15:11:45.883 -0400	typetext		[returnKey]	3	on_entertext	Common/keyBoard.script
+2024-06-04 15:11:45.976 -0400	LogSuccess		Open Example operation completed successfully.	2	on_success	Common/cLog.script
+2024-06-04 15:11:47.741 -0400	waitfor	(TEXT:"WiFiDemo")	found at (320, 161)	6	on_waitfortext	Common/waitForEvent.script
+2024-06-04 15:11:47.992 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-04 15:11:48.492 -0400	set		SEARCHRECTANGLE = [[0,0],[1920,540]]	3	on_setsearchsection	Common/search.script
+2024-06-04 15:11:49.857 -0400	imagefound	(TEXT:"WiFiDemo")	found at (320, 161)	9	function_isimagetextfound	Common/check.script
+2024-06-04 15:11:52.655 -0400	moveto	(TEXT:"WiFiDemo")	at (320, 161)	10	function_isimagetextfound	Common/check.script
+2024-06-04 15:11:52.704 -0400	LogSuccess		WiFiDemo  is found in TopHalf	2	on_success	Common/cLog.script
+2024-06-04 15:11:52.795 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-04 15:11:57.992 -0400	LogSuccess		Scenario Loaded successfully	2	on_success	Common/cLog.script
+2024-06-04 15:11:58.161 -0400	capturescreen	loadOpenExampleUsingKeyboardShortcut.png	(706,219,1483,963)	4	on_capturescreenshots	Common/captureScreenShots.script
+2024-06-04 15:11:58.571 -0400	set		SEARCHRECTANGLE = [[0,43.2],[96,86.4]]	3	on_setsearchsection	Common/search.script
+2024-06-04 15:11:58.778 -0400	imagefound	(TEXT:"Architect")	found at (58, 59)	9	function_isimagetextfound	Common/check.script
+2024-06-04 15:11:59.634 -0400	moveto	(TEXT:"Architect")	at (58, 59)	10	function_isimagetextfound	Common/check.script
+2024-06-04 15:11:59.693 -0400	LogSuccess		Architect  is found in ArchitectButton	2	on_success	Common/cLog.script
+2024-06-04 15:11:59.745 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-04 15:12:00.279 -0400	set		SEARCHRECTANGLE = [[0,43.2],[96,86.4]]	3	on_setsearchsection	Common/search.script
+2024-06-04 15:12:00.572 -0400	imagefound	(TEXT:"Architect")	found at (58, 59)	7	on_onfoundimagelocation	Common/clickEvent.script
+2024-06-04 15:12:00.801 -0400	click		at (58, 59)	8	on_onfoundimagelocation	Common/clickEvent.script
+2024-06-04 15:12:00.847 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-04 15:12:01.209 -0400	set		SEARCHRECTANGLE = [[0,0],[249.6,151.2]]	3	on_setsearchsection	Common/search.script
+2024-06-04 15:12:02.340 -0400	click	(TEXT:"File")	at (14, 31)	6	on_leftevent	Common/clickEvent.script
+2024-06-04 15:12:03.560 -0400	imagefound	(TEXT:"New")	found at (44, 55)	9	function_isimagetextfound	Common/check.script
+2024-06-04 15:12:03.903 -0400	moveto	(TEXT:"New")	at (44, 55)	10	function_isimagetextfound	Common/check.script
+2024-06-04 15:12:03.950 -0400	LogSuccess		New  is found in 	2	on_success	Common/cLog.script
+2024-06-04 15:12:04.004 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-04 15:12:04.164 -0400	LogSuccess		File menu opened successfully	2	on_success	Common/cLog.script
+2024-06-04 15:12:04.298 -0400	capturescreen	verifyFileMenu.png	(0,2,808,810)	4	on_capturescreenshots	Common/captureScreenShots.script
+2024-06-04 15:12:04.483 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-04 15:12:04.766 -0400	set		SEARCHRECTANGLE = [[0,0],[480,270]]	3	on_setsearchsection	Common/search.script
+2024-06-04 15:12:06.013 -0400	click	(TEXT:"Close All")	at (53, 208)	6	on_leftevent	Common/clickEvent.script
+2024-06-04 15:12:06.074 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-04 15:12:07.044 -0400	CompareScreen	[Baseline_Screens]/GUI_Canvas_Windows4 6 2024 _ 14 57 1.png	CompareScreen "GUI_Canvas_Windows4 6 2024 _ 14 57 1" -- No significant differences from baseline	3	on_compare_screen	Common/check.script
+2024-06-04 15:12:07.201 -0400	CompareScreen	[Baseline_Screens]/GUI_Canvas_Windows4 6 2024 _ 14 57 1.png	CompareScreen "GUI_Canvas_Windows4 6 2024 _ 14 57 1" -- No significant differences from baseline	3	function_compare_screen	Common/check.script
+2024-06-04 15:12:09.563 -0400	click		at (960, 540)	3	on_clickscaled	Common/clickEvent.script
+2024-06-04 15:12:09.621 -0400	EndTestCase		(Duration:"102.328", Errors:"0", Exceptions:"0", StartTime:"2024-06-04 15:10:27 -0400", Successes:"18", TestCase:"loadScenarioUsingOpenExample", Warnings:"0")	19	on_loadscenariousingopenexample	TestCases/HumanInTheLoop/loadScenarioUsingOpenExample.script
+2024-06-04 15:12:09.647 -0400	EndTestCase		(Duration:"102.385", Errors:"0", Exceptions:"0", StartTime:"2024-06-04 15:10:27 -0400", Successes:"18", TestCase:"TestCases/HumanInTheLoop/loadScenarioUsingOpenExample.script", Warnings:"0")	22	on_starthitltests	Testcases/HumanInTheLoop/testLauncher.script
+2024-06-04 15:12:09.701 -0400	SUCCESS		Execution Time 0:01:42 TestCases/HumanInTheLoop/loadScenarioUsingOpenExample.script	22	on_starthitltests	Testcases/HumanInTheLoop/testLauncher.script

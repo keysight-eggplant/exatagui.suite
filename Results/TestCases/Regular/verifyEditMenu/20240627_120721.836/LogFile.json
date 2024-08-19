@@ -1,0 +1,684 @@
+{
+	"entries": [
+		{
+				"handlerName": "on_startregulartests",
+				"timestamp": "2024-06-27 12:07:21.847 -0400",
+				"message": "Running TestCases/Regular/verifyEditMenu.script",
+				"scriptName": "TestCases/Regular/testLauncher.script",
+				"handlerLine": 22,
+				"identifier": "START"
+			},
+		{
+				"handlerName": "on_verifyeditmenu",
+				"timestamp": "2024-06-27 12:07:21.893 -0400",
+				"message": "verifyEditMenu",
+				"scriptName": "TestCases/Regular/verifyEditMenu.script",
+				"handlerLine": 2,
+				"identifier": "BeginTestCase"
+			},
+		{
+				"handlerName": "on_compare_screen",
+				"timestamp": "2024-06-27 12:07:22.256 -0400",
+				"scriptName": "Common/check.script",
+				"message": "CompareScreen \"GUI_Canvas_Windows27 6 2024 _ 11 57 35\" -- No significant differences from baseline",
+				"image": "[Baseline_Screens]/GUI_Canvas_Windows27 6 2024 _ 11 57 35.png",
+				"handlerLine": 3,
+				"identifier": "CompareScreen"
+			},
+		{
+				"handlerName": "function_compare_screen",
+				"timestamp": "2024-06-27 12:07:22.426 -0400",
+				"scriptName": "Common/check.script",
+				"message": "CompareScreen \"GUI_Canvas_Windows27 6 2024 _ 11 57 35\" -- No significant differences from baseline",
+				"image": "[Baseline_Screens]/GUI_Canvas_Windows27 6 2024 _ 11 57 35.png",
+				"handlerLine": 3,
+				"identifier": "CompareScreen"
+			},
+		{
+				"handlerName": "on_setsearchsection",
+				"timestamp": "2024-06-27 12:07:22.815 -0400",
+				"message": "SEARCHRECTANGLE = [[19.2,19.44],[228.48,248.4]]",
+				"scriptName": "Common/search.script",
+				"handlerLine": 3,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "on_leftevent",
+				"timestamp": "2024-06-27 12:07:25.545 -0400",
+				"scriptName": "Common/clickEvent.script",
+				"message": "at (48, 31)",
+				"image": "(TEXT:\"Edit\")",
+				"handlerLine": 6,
+				"identifier": "click"
+			},
+		{
+				"handlerName": "function_isimagetextfound",
+				"timestamp": "2024-06-27 12:07:26.821 -0400",
+				"scriptName": "Common/check.script",
+				"message": "found at (74, 55)",
+				"image": "(TEXT:\"Cut\")",
+				"handlerLine": 9,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "function_isimagetextfound",
+				"timestamp": "2024-06-27 12:07:27.317 -0400",
+				"scriptName": "Common/check.script",
+				"message": "at (74, 55)",
+				"image": "(TEXT:\"Cut\")",
+				"handlerLine": 10,
+				"identifier": "moveto"
+			},
+		{
+				"handlerName": "on_success",
+				"timestamp": "2024-06-27 12:07:27.366 -0400",
+				"message": "Cut  is found in ",
+				"scriptName": "Common/cLog.script",
+				"handlerLine": 2,
+				"identifier": "LogSuccess"
+			},
+		{
+				"handlerName": "on_clearsearchsection",
+				"timestamp": "2024-06-27 12:07:27.447 -0400",
+				"message": "SEARCHRECTANGLE = ",
+				"scriptName": "Common/search.script",
+				"handlerLine": 2,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "on_success",
+				"timestamp": "2024-06-27 12:07:27.629 -0400",
+				"message": "Edit menu opened successfully",
+				"scriptName": "Common/cLog.script",
+				"handlerLine": 2,
+				"identifier": "LogSuccess"
+			},
+		{
+				"handlerName": "on_capturescreenshots",
+				"timestamp": "2024-06-27 12:07:27.801 -0400",
+				"scriptName": "Common/captureScreenShots.script",
+				"message": "(0,2,808,810)",
+				"image": "verifyEditMenu.png",
+				"handlerLine": 4,
+				"identifier": "capturescreen"
+			},
+		{
+				"handlerName": "on_clearsearchsection",
+				"timestamp": "2024-06-27 12:07:27.992 -0400",
+				"message": "SEARCHRECTANGLE = ",
+				"scriptName": "Common/search.script",
+				"handlerLine": 2,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "on_setsearchsection",
+				"timestamp": "2024-06-27 12:07:28.370 -0400",
+				"message": "SEARCHRECTANGLE = [[19.2,19.44],[228.48,248.4]]",
+				"scriptName": "Common/search.script",
+				"handlerLine": 3,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "on_isimagetextfound",
+				"timestamp": "2024-06-27 12:07:28.968 -0400",
+				"scriptName": "Common/check.script",
+				"message": "found at (74, 55)",
+				"image": "(TEXT:\"Cut\")",
+				"handlerLine": 9,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "on_isimagetextfound",
+				"timestamp": "2024-06-27 12:07:29.499 -0400",
+				"scriptName": "Common/check.script",
+				"message": "at (74, 55)",
+				"image": "(TEXT:\"Cut\")",
+				"handlerLine": 10,
+				"identifier": "moveto"
+			},
+		{
+				"handlerName": "on_success",
+				"timestamp": "2024-06-27 12:07:29.588 -0400",
+				"message": "Cut  is found in EditMenu",
+				"scriptName": "Common/cLog.script",
+				"handlerLine": 2,
+				"identifier": "LogSuccess"
+			},
+		{
+				"handlerName": "on_clearsearchsection",
+				"timestamp": "2024-06-27 12:07:29.677 -0400",
+				"message": "SEARCHRECTANGLE = ",
+				"scriptName": "Common/search.script",
+				"handlerLine": 2,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "on_setsearchsection",
+				"timestamp": "2024-06-27 12:07:30.027 -0400",
+				"message": "SEARCHRECTANGLE = [[19.2,19.44],[228.48,248.4]]",
+				"scriptName": "Common/search.script",
+				"handlerLine": 3,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "on_isimagetextfound",
+				"timestamp": "2024-06-27 12:07:30.510 -0400",
+				"scriptName": "Common/check.script",
+				"message": "found at (78, 78)",
+				"image": "(TEXT:\"Copy\")",
+				"handlerLine": 9,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "on_isimagetextfound",
+				"timestamp": "2024-06-27 12:07:31.021 -0400",
+				"scriptName": "Common/check.script",
+				"message": "at (78, 78)",
+				"image": "(TEXT:\"Copy\")",
+				"handlerLine": 10,
+				"identifier": "moveto"
+			},
+		{
+				"handlerName": "on_success",
+				"timestamp": "2024-06-27 12:07:31.077 -0400",
+				"message": "Copy  is found in EditMenu",
+				"scriptName": "Common/cLog.script",
+				"handlerLine": 2,
+				"identifier": "LogSuccess"
+			},
+		{
+				"handlerName": "on_clearsearchsection",
+				"timestamp": "2024-06-27 12:07:31.177 -0400",
+				"message": "SEARCHRECTANGLE = ",
+				"scriptName": "Common/search.script",
+				"handlerLine": 2,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "on_setsearchsection",
+				"timestamp": "2024-06-27 12:07:31.541 -0400",
+				"message": "SEARCHRECTANGLE = [[19.2,19.44],[228.48,248.4]]",
+				"scriptName": "Common/search.script",
+				"handlerLine": 3,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "on_isimagetextfound",
+				"timestamp": "2024-06-27 12:07:31.979 -0400",
+				"scriptName": "Common/check.script",
+				"message": "found at (79, 99)",
+				"image": "(TEXT:\"Paste\")",
+				"handlerLine": 9,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "on_isimagetextfound",
+				"timestamp": "2024-06-27 12:07:32.434 -0400",
+				"scriptName": "Common/check.script",
+				"message": "at (79, 99)",
+				"image": "(TEXT:\"Paste\")",
+				"handlerLine": 10,
+				"identifier": "moveto"
+			},
+		{
+				"handlerName": "on_success",
+				"timestamp": "2024-06-27 12:07:32.480 -0400",
+				"message": "Paste  is found in EditMenu",
+				"scriptName": "Common/cLog.script",
+				"handlerLine": 2,
+				"identifier": "LogSuccess"
+			},
+		{
+				"handlerName": "on_clearsearchsection",
+				"timestamp": "2024-06-27 12:07:32.568 -0400",
+				"message": "SEARCHRECTANGLE = ",
+				"scriptName": "Common/search.script",
+				"handlerLine": 2,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "on_setsearchsection",
+				"timestamp": "2024-06-27 12:07:32.934 -0400",
+				"message": "SEARCHRECTANGLE = [[19.2,19.44],[228.48,248.4]]",
+				"scriptName": "Common/search.script",
+				"handlerLine": 3,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "on_isimagetextfound",
+				"timestamp": "2024-06-27 12:07:33.359 -0400",
+				"scriptName": "Common/check.script",
+				"message": "found at (81, 120)",
+				"image": "(TEXT:\"Delete\")",
+				"handlerLine": 9,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "on_isimagetextfound",
+				"timestamp": "2024-06-27 12:07:33.798 -0400",
+				"scriptName": "Common/check.script",
+				"message": "at (81, 120)",
+				"image": "(TEXT:\"Delete\")",
+				"handlerLine": 10,
+				"identifier": "moveto"
+			},
+		{
+				"handlerName": "on_success",
+				"timestamp": "2024-06-27 12:07:33.860 -0400",
+				"message": "Delete  is found in EditMenu",
+				"scriptName": "Common/cLog.script",
+				"handlerLine": 2,
+				"identifier": "LogSuccess"
+			},
+		{
+				"handlerName": "on_clearsearchsection",
+				"timestamp": "2024-06-27 12:07:33.947 -0400",
+				"message": "SEARCHRECTANGLE = ",
+				"scriptName": "Common/search.script",
+				"handlerLine": 2,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "on_setsearchsection",
+				"timestamp": "2024-06-27 12:07:34.329 -0400",
+				"message": "SEARCHRECTANGLE = [[19.2,19.44],[228.48,248.4]]",
+				"scriptName": "Common/search.script",
+				"handlerLine": 3,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "on_isimagetextfound",
+				"timestamp": "2024-06-27 12:07:34.718 -0400",
+				"scriptName": "Common/check.script",
+				"message": "found at (87, 142)",
+				"image": "(TEXT:\"Select All\")",
+				"handlerLine": 9,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "on_isimagetextfound",
+				"timestamp": "2024-06-27 12:07:35.145 -0400",
+				"scriptName": "Common/check.script",
+				"message": "at (87, 142)",
+				"image": "(TEXT:\"Select All\")",
+				"handlerLine": 10,
+				"identifier": "moveto"
+			},
+		{
+				"handlerName": "on_success",
+				"timestamp": "2024-06-27 12:07:35.188 -0400",
+				"message": "Select All  is found in EditMenu",
+				"scriptName": "Common/cLog.script",
+				"handlerLine": 2,
+				"identifier": "LogSuccess"
+			},
+		{
+				"handlerName": "on_clearsearchsection",
+				"timestamp": "2024-06-27 12:07:35.265 -0400",
+				"message": "SEARCHRECTANGLE = ",
+				"scriptName": "Common/search.script",
+				"handlerLine": 2,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "on_setsearchsection",
+				"timestamp": "2024-06-27 12:07:35.656 -0400",
+				"message": "SEARCHRECTANGLE = [[19.2,19.44],[228.48,248.4]]",
+				"scriptName": "Common/search.script",
+				"handlerLine": 3,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "on_isimagetextfound",
+				"timestamp": "2024-06-27 12:07:36.070 -0400",
+				"scriptName": "Common/check.script",
+				"message": "found at (94, 173)",
+				"image": "(TEXT:\"Preferences\")",
+				"handlerLine": 9,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "on_isimagetextfound",
+				"timestamp": "2024-06-27 12:07:36.559 -0400",
+				"scriptName": "Common/check.script",
+				"message": "at (94, 173)",
+				"image": "(TEXT:\"Preferences\")",
+				"handlerLine": 10,
+				"identifier": "moveto"
+			},
+		{
+				"handlerName": "on_success",
+				"timestamp": "2024-06-27 12:07:36.612 -0400",
+				"message": "Preferences  is found in EditMenu",
+				"scriptName": "Common/cLog.script",
+				"handlerLine": 2,
+				"identifier": "LogSuccess"
+			},
+		{
+				"handlerName": "on_clearsearchsection",
+				"timestamp": "2024-06-27 12:07:36.698 -0400",
+				"message": "SEARCHRECTANGLE = ",
+				"scriptName": "Common/search.script",
+				"handlerLine": 2,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "on_clearsearchsection",
+				"timestamp": "2024-06-27 12:07:36.879 -0400",
+				"message": "SEARCHRECTANGLE = ",
+				"scriptName": "Common/search.script",
+				"handlerLine": 2,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "on_setsearchsection",
+				"timestamp": "2024-06-27 12:07:37.129 -0400",
+				"message": "SEARCHRECTANGLE = [[19.2,19.44],[228.48,248.4]]",
+				"scriptName": "Common/search.script",
+				"handlerLine": 3,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "on_onfoundimagelocation",
+				"timestamp": "2024-06-27 12:07:37.909 -0400",
+				"scriptName": "Common/clickEvent.script",
+				"message": "found at (48, 31)",
+				"image": "(TEXT:\"Edit\")",
+				"handlerLine": 7,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "on_onfoundimagelocation",
+				"timestamp": "2024-06-27 12:07:38.405 -0400",
+				"message": "at (48, 31)",
+				"scriptName": "Common/clickEvent.script",
+				"handlerLine": 8,
+				"identifier": "click"
+			},
+		{
+				"handlerName": "on_clearsearchsection",
+				"timestamp": "2024-06-27 12:07:38.442 -0400",
+				"message": "SEARCHRECTANGLE = ",
+				"scriptName": "Common/search.script",
+				"handlerLine": 2,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "function_isimagetextfound",
+				"timestamp": "2024-06-27 12:07:42.516 -0400",
+				"scriptName": "Common/check.script",
+				"message": "found at (58, 59)",
+				"image": "(TEXT:\"Architect\")",
+				"handlerLine": 9,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "function_isimagetextfound",
+				"timestamp": "2024-06-27 12:07:46.553 -0400",
+				"scriptName": "Common/check.script",
+				"message": "at (58, 59)",
+				"image": "(TEXT:\"Architect\")",
+				"handlerLine": 10,
+				"identifier": "moveto"
+			},
+		{
+				"handlerName": "on_success",
+				"timestamp": "2024-06-27 12:07:46.626 -0400",
+				"message": "Architect  is found in ",
+				"scriptName": "Common/cLog.script",
+				"handlerLine": 2,
+				"identifier": "LogSuccess"
+			},
+		{
+				"handlerName": "on_clearsearchsection",
+				"timestamp": "2024-06-27 12:07:46.705 -0400",
+				"message": "SEARCHRECTANGLE = ",
+				"scriptName": "Common/search.script",
+				"handlerLine": 2,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "on_success",
+				"timestamp": "2024-06-27 12:07:46.792 -0400",
+				"message": "Edit menu closed successfully",
+				"scriptName": "Common/cLog.script",
+				"handlerLine": 2,
+				"identifier": "LogSuccess"
+			},
+		{
+				"handlerName": "on_clearsearchsection",
+				"timestamp": "2024-06-27 12:07:46.855 -0400",
+				"message": "SEARCHRECTANGLE = ",
+				"scriptName": "Common/search.script",
+				"handlerLine": 2,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "on_setsearchsection",
+				"timestamp": "2024-06-27 12:07:47.161 -0400",
+				"message": "SEARCHRECTANGLE = [[0,0],[249.6,151.2]]",
+				"scriptName": "Common/search.script",
+				"handlerLine": 3,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "function_isimagetextfound",
+				"timestamp": "2024-06-27 12:07:47.486 -0400",
+				"scriptName": "Common/check.script",
+				"message": "found at (58, 59)",
+				"image": "(TEXT:\"Architect\")",
+				"handlerLine": 9,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "function_isimagetextfound",
+				"timestamp": "2024-06-27 12:07:47.809 -0400",
+				"scriptName": "Common/check.script",
+				"message": "at (58, 59)",
+				"image": "(TEXT:\"Architect\")",
+				"handlerLine": 10,
+				"identifier": "moveto"
+			},
+		{
+				"handlerName": "on_success",
+				"timestamp": "2024-06-27 12:07:47.887 -0400",
+				"message": "Architect  is found in TopLeft",
+				"scriptName": "Common/cLog.script",
+				"handlerLine": 2,
+				"identifier": "LogSuccess"
+			},
+		{
+				"handlerName": "on_clearsearchsection",
+				"timestamp": "2024-06-27 12:07:47.965 -0400",
+				"message": "SEARCHRECTANGLE = ",
+				"scriptName": "Common/search.script",
+				"handlerLine": 2,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "on_setsearchsection",
+				"timestamp": "2024-06-27 12:07:48.334 -0400",
+				"message": "SEARCHRECTANGLE = [[0,0],[249.6,151.2]]",
+				"scriptName": "Common/search.script",
+				"handlerLine": 3,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "on_onfoundimagelocation",
+				"timestamp": "2024-06-27 12:07:48.646 -0400",
+				"scriptName": "Common/clickEvent.script",
+				"message": "found at (58, 59)",
+				"image": "(TEXT:\"Architect\")",
+				"handlerLine": 7,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "on_onfoundimagelocation",
+				"timestamp": "2024-06-27 12:07:48.945 -0400",
+				"message": "at (58, 59)",
+				"scriptName": "Common/clickEvent.script",
+				"handlerLine": 8,
+				"identifier": "click"
+			},
+		{
+				"handlerName": "on_clearsearchsection",
+				"timestamp": "2024-06-27 12:07:49.073 -0400",
+				"message": "SEARCHRECTANGLE = ",
+				"scriptName": "Common/search.script",
+				"handlerLine": 2,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "on_setsearchsection",
+				"timestamp": "2024-06-27 12:07:49.413 -0400",
+				"message": "SEARCHRECTANGLE = [[0,0],[249.6,151.2]]",
+				"scriptName": "Common/search.script",
+				"handlerLine": 3,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "on_leftevent",
+				"timestamp": "2024-06-27 12:07:50.342 -0400",
+				"scriptName": "Common/clickEvent.script",
+				"message": "at (14, 31)",
+				"image": "(TEXT:\"File\")",
+				"handlerLine": 6,
+				"identifier": "click"
+			},
+		{
+				"handlerName": "function_isimagetextfound",
+				"timestamp": "2024-06-27 12:07:51.658 -0400",
+				"scriptName": "Common/check.script",
+				"message": "found at (44, 55)",
+				"image": "(TEXT:\"New\")",
+				"handlerLine": 9,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "function_isimagetextfound",
+				"timestamp": "2024-06-27 12:07:52.096 -0400",
+				"scriptName": "Common/check.script",
+				"message": "at (44, 55)",
+				"image": "(TEXT:\"New\")",
+				"handlerLine": 10,
+				"identifier": "moveto"
+			},
+		{
+				"handlerName": "on_success",
+				"timestamp": "2024-06-27 12:07:52.158 -0400",
+				"message": "New  is found in ",
+				"scriptName": "Common/cLog.script",
+				"handlerLine": 2,
+				"identifier": "LogSuccess"
+			},
+		{
+				"handlerName": "on_clearsearchsection",
+				"timestamp": "2024-06-27 12:07:52.246 -0400",
+				"message": "SEARCHRECTANGLE = ",
+				"scriptName": "Common/search.script",
+				"handlerLine": 2,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "on_success",
+				"timestamp": "2024-06-27 12:07:52.399 -0400",
+				"message": "File menu opened successfully",
+				"scriptName": "Common/cLog.script",
+				"handlerLine": 2,
+				"identifier": "LogSuccess"
+			},
+		{
+				"handlerName": "on_capturescreenshots",
+				"timestamp": "2024-06-27 12:07:52.551 -0400",
+				"scriptName": "Common/captureScreenShots.script",
+				"message": "(0,2,808,810)",
+				"image": "verifyFileMenu.png",
+				"handlerLine": 4,
+				"identifier": "capturescreen"
+			},
+		{
+				"handlerName": "on_clearsearchsection",
+				"timestamp": "2024-06-27 12:07:52.824 -0400",
+				"message": "SEARCHRECTANGLE = ",
+				"scriptName": "Common/search.script",
+				"handlerLine": 2,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "on_setsearchsection",
+				"timestamp": "2024-06-27 12:07:53.172 -0400",
+				"message": "SEARCHRECTANGLE = [[0,0],[480,270]]",
+				"scriptName": "Common/search.script",
+				"handlerLine": 3,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "on_leftevent",
+				"timestamp": "2024-06-27 12:07:54.637 -0400",
+				"scriptName": "Common/clickEvent.script",
+				"message": "at (53, 208)",
+				"image": "(TEXT:\"Close All\")",
+				"handlerLine": 6,
+				"identifier": "click"
+			},
+		{
+				"handlerName": "on_clearsearchsection",
+				"timestamp": "2024-06-27 12:07:54.687 -0400",
+				"message": "SEARCHRECTANGLE = ",
+				"scriptName": "Common/search.script",
+				"handlerLine": 2,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "on_compare_screen",
+				"timestamp": "2024-06-27 12:07:55.654 -0400",
+				"scriptName": "Common/check.script",
+				"message": "CompareScreen \"GUI_Canvas_Windows27 6 2024 _ 11 57 35\" -- No significant differences from baseline",
+				"image": "[Baseline_Screens]/GUI_Canvas_Windows27 6 2024 _ 11 57 35.png",
+				"handlerLine": 3,
+				"identifier": "CompareScreen"
+			},
+		{
+				"handlerName": "function_compare_screen",
+				"timestamp": "2024-06-27 12:07:55.793 -0400",
+				"scriptName": "Common/check.script",
+				"message": "CompareScreen \"GUI_Canvas_Windows27 6 2024 _ 11 57 35\" -- No significant differences from baseline",
+				"image": "[Baseline_Screens]/GUI_Canvas_Windows27 6 2024 _ 11 57 35.png",
+				"handlerLine": 3,
+				"identifier": "CompareScreen"
+			},
+		{
+				"handlerName": "on_clickscaled",
+				"timestamp": "2024-06-27 12:07:58.029 -0400",
+				"message": "at (960, 540)",
+				"scriptName": "Common/clickEvent.script",
+				"handlerLine": 3,
+				"identifier": "click"
+			},
+		{
+				"handlerName": "on_verifyeditmenu",
+				"timestamp": "2024-06-27 12:07:58.112 -0400",
+				"message": "(Duration:\"36.219\", Errors:\"0\", Exceptions:\"0\", StartTime:\"2024-06-27 12:07:21 -0400\", Successes:\"13\", TestCase:\"verifyEditMenu\", Warnings:\"0\")",
+				"scriptName": "TestCases/Regular/verifyEditMenu.script",
+				"handlerLine": 38,
+				"identifier": "EndTestCase"
+			},
+		{
+				"handlerName": "on_startregulartests",
+				"timestamp": "2024-06-27 12:07:58.135 -0400",
+				"message": "(Duration:\"36.283\", Errors:\"0\", Exceptions:\"0\", StartTime:\"2024-06-27 12:07:21 -0400\", Successes:\"13\", TestCase:\"TestCases/Regular/verifyEditMenu.script\", Warnings:\"0\")",
+				"scriptName": "TestCases/Regular/testLauncher.script",
+				"handlerLine": 22,
+				"identifier": "EndTestCase"
+			},
+		{
+				"handlerName": "on_startregulartests",
+				"timestamp": "2024-06-27 12:07:58.205 -0400",
+				"message": "Execution Time 0:00:36 TestCases/Regular/verifyEditMenu.script",
+				"scriptName": "TestCases/Regular/testLauncher.script",
+				"handlerLine": 22,
+				"identifier": "SUCCESS"
+			}
+	],
+	"createdTimestamp": "2024-06-27 12:07:21.850 -0400"
+}

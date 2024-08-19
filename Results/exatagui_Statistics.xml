@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<statistics>
+ <script name="TestCases/Regular/verifyAnimationMenu">
+  <LastStatus>Success</LastStatus>
+  <NumberOfRuns>5</NumberOfRuns>
+  <NumberOfFails>0</NumberOfFails>
+  <FirstRun>2024-06-24 12:54:52 -0400</FirstRun>
+  <LastRun>2024-06-25 11:54:38 -0400</LastRun>
+  <TotalTimeOnSuccess>132.862000</TotalTimeOnSuccess>
+ </script>
+ <script name="TestCases/HumanInTheLoop/basicScenarioCanvasCheck">
+  <LastStatus>Success</LastStatus>
+  <NumberOfRuns>3</NumberOfRuns>
+  <NumberOfFails>0</NumberOfFails>
+  <FirstRun>2024-06-25 08:38:23 -0400</FirstRun>
+  <LastRun>2024-06-25 12:04:29 -0400</LastRun>
+  <TotalTimeOnSuccess>229.038000</TotalTimeOnSuccess>
+ </script>
+ <script name="TestCases/Regular/verifyEditMenu">
+  <LastStatus>Success</LastStatus>
+  <NumberOfRuns>6</NumberOfRuns>
+  <NumberOfFails>0</NumberOfFails>
+  <FirstRun>2024-06-24 12:52:02 -0400</FirstRun>
+  <LastRun>2024-06-27 12:07:21 -0400</LastRun>
+  <TotalTimeOnSuccess>188.503000</TotalTimeOnSuccess>
+ </script>
+ <script name="TestCases/Regular/closeScenarioUsingCloseOption">
+  <LastStatus>Success</LastStatus>
+  <NumberOfRuns>6</NumberOfRuns>
+  <NumberOfFails>0</NumberOfFails>
+  <FirstRun>2024-06-24 12:49:47 -0400</FirstRun>
+  <LastRun>2024-06-27 12:04:50 -0400</LastRun>
+  <TotalTimeOnSuccess>498.606000</TotalTimeOnSuccess>
+ </script>
+ <script name="TestCases/HumanInTheLoop/verifyPreviousAndNextButtons">
+  <LastStatus>Success</LastStatus>
+  <NumberOfRuns>3</NumberOfRuns>
+  <NumberOfFails>0</NumberOfFails>
+  <FirstRun>2024-06-25 08:45:07 -0400</FirstRun>
+  <LastRun>2024-06-25 12:10:52 -0400</LastRun>
+  <TotalTimeOnSuccess>144.384000</TotalTimeOnSuccess>
+ </script>
+ <script name="Testcases/HumanInTheLoop/verifyAndLoadRecentFiles">
+  <LastStatus>Failure</LastStatus>
+  <NumberOfRuns>1</NumberOfRuns>
+  <NumberOfFails>1</NumberOfFails>
+  <FirstRun>2024-06-28 13:36:55 -0400</FirstRun>
+  <LastRun>2024-06-28 13:36:55 -0400</LastRun>
+  <TotalTimeOnSuccess>0.000000</TotalTimeOnSuccess>
+ </script>
+ <script name="TestCases/Regular/verifyOpenNewCanvas">
+  <LastStatus>Success</LastStatus>
+  <NumberOfRuns>6</NumberOfRuns>
+  <NumberOfFails>0</NumberOfFails>
+  <FirstRun>2024-06-24 12:48:53 -0400</FirstRun>
+  <LastRun>2024-06-27 12:03:55 -0400</LastRun>
+  <TotalTimeOnSuccess>297.885000</TotalTimeOnSuccess>
+ </script>
+ <script name="TestCases/Regular/verifyViewMenu">
+  <LastStatus>Success</LastStatus>
+  <NumberOfRuns>6</NumberOfRuns>
+  <NumberOfFails>0</NumberOfFails>
+  <FirstRun>2024-06-24 12:52:35 -0400</FirstRun>
+  <LastRun>2024-06-27 12:07:59 -0400</LastRun>
+  <TotalTimeOnSuccess>255.669000</TotalTimeOnSuccess>
+ </script>
+ <script name="TestCases/Regular/verifyFileMenu">
+  <LastStatus>Success</LastStatus>
+  <NumberOfRuns>6</NumberOfRuns>
+  <NumberOfFails>0</NumberOfFails>
+  <FirstRun>2024-06-24 12:51:12 -0400</FirstRun>
+  <LastRun>2024-06-27 12:06:26 -0400</LastRun>
+  <TotalTimeOnSuccess>291.040000</TotalTimeOnSuccess>
+ </script>
+ <script name="TestCases/HumanInTheLoop/basicScenarioActvityRecordingCheck">
+  <LastStatus>Success</LastStatus>
+  <NumberOfRuns>3</NumberOfRuns>
+  <NumberOfFails>0</NumberOfFails>
+  <FirstRun>2024-06-25 08:39:29 -0400</FirstRun>
+  <LastRun>2024-06-25 12:05:41 -0400</LastRun>
+  <TotalTimeOnSuccess>629.980000</TotalTimeOnSuccess>
+ </script>
+ <script name="TestCases/Regular/closeUnsavedScenario">
+  <LastStatus>Success</LastStatus>
+  <NumberOfRuns>5</NumberOfRuns>
+  <NumberOfFails>0</NumberOfFails>
+  <FirstRun>2024-06-24 12:55:20 -0400</FirstRun>
+  <LastRun>2024-06-25 11:55:03 -0400</LastRun>
+  <TotalTimeOnSuccess>1111.753000</TotalTimeOnSuccess>
+ </script>
+ <script name="TestCases/Regular/verifyToolsMenu">
+  <LastStatus>Success</LastStatus>
+  <NumberOfRuns>5</NumberOfRuns>
+  <NumberOfFails>0</NumberOfFails>
+  <FirstRun>2024-06-24 12:53:20 -0400</FirstRun>
+  <LastRun>2024-06-25 11:53:18 -0400</LastRun>
+  <TotalTimeOnSuccess>283.663000</TotalTimeOnSuccess>
+ </script>
+ <script name="TestCases/Regular/verifySaveFunctionality">
+  <LastStatus>Success</LastStatus>
+  <NumberOfRuns>8</NumberOfRuns>
+  <NumberOfFails>4</NumberOfFails>
+  <FirstRun>2024-06-24 12:59:16 -0400</FirstRun>
+  <LastRun>2024-06-25 11:58:33 -0400</LastRun>
+  <TotalTimeOnSuccess>1499.517000</TotalTimeOnSuccess>
+ </script>
+ <script name="main">
+  <LastStatus>Failure</LastStatus>
+  <NumberOfRuns>18</NumberOfRuns>
+  <NumberOfFails>14</NumberOfFails>
+  <FirstRun>2024-06-24 12:43:52 -0400</FirstRun>
+  <LastRun>2024-06-28 10:54:40 -0400</LastRun>
+  <TotalTimeOnSuccess>4221.622000</TotalTimeOnSuccess>
+ </script>
+ <script name="TestCases/HumanInTheLoop/loadScenarioUsingOpenExample">
+  <LastStatus>Success</LastStatus>
+  <NumberOfRuns>3</NumberOfRuns>
+  <NumberOfFails>0</NumberOfFails>
+  <FirstRun>2024-06-25 08:43:02 -0400</FirstRun>
+  <LastRun>2024-06-25 12:09:02 -0400</LastRun>
+  <TotalTimeOnSuccess>351.213000</TotalTimeOnSuccess>
+ </script>
+ <script name="TestCases/HumanInTheLoop/loadScenarioUsingOpenFile">
+  <LastStatus>Success</LastStatus>
+  <NumberOfRuns>1</NumberOfRuns>
+  <NumberOfFails>0</NumberOfFails>
+  <FirstRun>2024-06-25 09:49:46 -0400</FirstRun>
+  <LastRun>2024-06-25 09:49:46 -0400</LastRun>
+  <TotalTimeOnSuccess>283.798000</TotalTimeOnSuccess>
+ </script>
+ <script name="TestCases/HumanInTheLoop/verifyAndLoadRecentFiles">
+  <LastStatus>Failure</LastStatus>
+  <NumberOfRuns>6</NumberOfRuns>
+  <NumberOfFails>3</NumberOfFails>
+  <FirstRun>2024-06-25 08:45:58 -0400</FirstRun>
+  <LastRun>2024-06-28 13:46:51 -0400</LastRun>
+  <TotalTimeOnSuccess>1579.498000</TotalTimeOnSuccess>
+ </script>
+ <script name="TestCases/Regular/basicExataFunctionalityCheck">
+  <LastStatus>Failure</LastStatus>
+  <NumberOfRuns>14</NumberOfRuns>
+  <NumberOfFails>8</NumberOfFails>
+  <FirstRun>2024-06-24 12:44:19 -0400</FirstRun>
+  <LastRun>2024-06-28 11:26:21 -0400</LastRun>
+  <TotalTimeOnSuccess>1561.431000</TotalTimeOnSuccess>
+ </script>
+ <script name="TestCases/Regular/verifyHelpMenu">
+  <LastStatus>Success</LastStatus>
+  <NumberOfRuns>5</NumberOfRuns>
+  <NumberOfFails>0</NumberOfFails>
+  <FirstRun>2024-06-24 12:54:21 -0400</FirstRun>
+  <LastRun>2024-06-25 11:54:14 -0400</LastRun>
+  <TotalTimeOnSuccess>134.924000</TotalTimeOnSuccess>
+ </script>
+</statistics>

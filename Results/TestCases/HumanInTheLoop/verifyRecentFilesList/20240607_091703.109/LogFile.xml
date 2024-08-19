@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+ <testsuite name="TestCases/HumanInTheLoop/verifyRecentFilesList_script" package="exatagui.suite" timestamp="2024-06-07 09:17:03.109 -0400"
+ tests="2"  failures="0" errors="0" time="287.666000">
+  <properties>
+   <property name="RunDate" value="2024-06-07 09:17:03.109 -0400"/>
+   <property name="Status" value="Success"/>
+  </properties>
+  <testcase name="verifyRecentFilesList" assertions="47" status="success"  time="287.581">
+  </testcase>
+  <testcase name="TestCases/HumanInTheLoop/verifyRecentFilesList.script" assertions="47" status="success"  time="287.659">
+  </testcase>
+ </testsuite>
+</testsuites>

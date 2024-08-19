@@ -1,0 +1,17 @@
+﻿Try
+	BeginTestCase "verifyPreviousAndNextButtons"
+	
+	# initializing the scenario
+	"EXataGUI/scenario".initScenario
+	
+	# verifies the previous and next buttons
+	"EXataGUI/actions/canvas".verifyPreviousAndNext "verifyPreviousAndNextButtons"
+	
+	"EXataGUI/actions/menuBar".openFile
+	"EXataGUI/actions/menuBar".closeAll
+	
+	EndTestCase "verifyPreviousAndNextButtons"
+Catch theException
+	"Common/cLog".cError "Error in running verifyPreviousAndNextButtons TestCase"
+	throw theException 
+End try

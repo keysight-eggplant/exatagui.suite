@@ -1,0 +1,1921 @@
+{
+	"entries": [
+		{
+				"handlerName": "on_startregulartests",
+				"timestamp": "2024-06-07 13:10:19.846 -0400",
+				"message": "Running TestCases/HumanInTheLoop/verifyRecentFilesList.script",
+				"scriptName": "TestCases/Regular/testLauncher.script",
+				"handlerLine": 22,
+				"identifier": "START"
+			},
+		{
+				"handlerName": "on_verifyrecentfileslist",
+				"timestamp": "2024-06-07 13:10:19.885 -0400",
+				"message": "verifyRecentFilesList",
+				"scriptName": "TestCases/HumanInTheLoop/verifyRecentFilesList.script",
+				"handlerLine": 2,
+				"identifier": "BeginTestCase"
+			},
+		{
+				"handlerName": "on_compare_screen",
+				"timestamp": "2024-06-07 13:10:20.139 -0400",
+				"scriptName": "Common/check.script",
+				"message": "CompareScreen \"GUI_Canvas_Windows7 6 2024 _ 13 0 56\" -- No significant differences from baseline",
+				"image": "[Baseline_Screens]/GUI_Canvas_Windows7 6 2024 _ 13 0 56.png",
+				"handlerLine": 3,
+				"identifier": "CompareScreen"
+			},
+		{
+				"handlerName": "function_compare_screen",
+				"timestamp": "2024-06-07 13:10:20.262 -0400",
+				"scriptName": "Common/check.script",
+				"message": "CompareScreen \"GUI_Canvas_Windows7 6 2024 _ 13 0 56\" -- No significant differences from baseline",
+				"image": "[Baseline_Screens]/GUI_Canvas_Windows7 6 2024 _ 13 0 56.png",
+				"handlerLine": 3,
+				"identifier": "CompareScreen"
+			},
+		{
+				"handlerName": "on_setsearchsection",
+				"timestamp": "2024-06-07 13:10:20.674 -0400",
+				"message": "SEARCHRECTANGLE = [[0,0],[249.6,151.2]]",
+				"scriptName": "Common/search.script",
+				"handlerLine": 3,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "on_leftevent",
+				"timestamp": "2024-06-07 13:10:23.362 -0400",
+				"scriptName": "Common/clickEvent.script",
+				"message": "at (14, 31)",
+				"image": "(TEXT:\"File\")",
+				"handlerLine": 6,
+				"identifier": "click"
+			},
+		{
+				"handlerName": "function_isimagetextfound",
+				"timestamp": "2024-06-07 13:10:24.664 -0400",
+				"scriptName": "Common/check.script",
+				"message": "found at (44, 55)",
+				"image": "(TEXT:\"New\")",
+				"handlerLine": 9,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "function_isimagetextfound",
+				"timestamp": "2024-06-07 13:10:24.955 -0400",
+				"scriptName": "Common/check.script",
+				"message": "at (44, 55)",
+				"image": "(TEXT:\"New\")",
+				"handlerLine": 10,
+				"identifier": "moveto"
+			},
+		{
+				"handlerName": "on_success",
+				"timestamp": "2024-06-07 13:10:24.992 -0400",
+				"message": "New  is found in ",
+				"scriptName": "Common/cLog.script",
+				"handlerLine": 2,
+				"identifier": "LogSuccess"
+			},
+		{
+				"handlerName": "on_clearsearchsection",
+				"timestamp": "2024-06-07 13:10:25.050 -0400",
+				"message": "SEARCHRECTANGLE = ",
+				"scriptName": "Common/search.script",
+				"handlerLine": 2,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "on_success",
+				"timestamp": "2024-06-07 13:10:25.171 -0400",
+				"message": "File menu opened successfully",
+				"scriptName": "Common/cLog.script",
+				"handlerLine": 2,
+				"identifier": "LogSuccess"
+			},
+		{
+				"handlerName": "on_capturescreenshots",
+				"timestamp": "2024-06-07 13:10:25.281 -0400",
+				"scriptName": "Common/captureScreenShots.script",
+				"message": "(0,2,808,810)",
+				"image": "verifyFileMenu.png",
+				"handlerLine": 4,
+				"identifier": "capturescreen"
+			},
+		{
+				"handlerName": "on_clearsearchsection",
+				"timestamp": "2024-06-07 13:10:25.449 -0400",
+				"message": "SEARCHRECTANGLE = ",
+				"scriptName": "Common/search.script",
+				"handlerLine": 2,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "on_setsearchsection",
+				"timestamp": "2024-06-07 13:10:25.738 -0400",
+				"message": "SEARCHRECTANGLE = [[0,0],[480,270]]",
+				"scriptName": "Common/search.script",
+				"handlerLine": 3,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "on_leftevent",
+				"timestamp": "2024-06-07 13:10:26.686 -0400",
+				"scriptName": "Common/clickEvent.script",
+				"message": "at (68, 99)",
+				"image": "(TEXT:\"Open Example\")",
+				"handlerLine": 6,
+				"identifier": "click"
+			},
+		{
+				"handlerName": "on_clearsearchsection",
+				"timestamp": "2024-06-07 13:10:26.750 -0400",
+				"message": "SEARCHRECTANGLE = ",
+				"scriptName": "Common/search.script",
+				"handlerLine": 2,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "function_isimagetextfound",
+				"timestamp": "2024-06-07 13:10:35.496 -0400",
+				"scriptName": "Common/check.script",
+				"message": "found at (890, 528)",
+				"image": "(TEXT:\"cancel\")",
+				"handlerLine": 9,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "function_isimagetextfound",
+				"timestamp": "2024-06-07 13:10:40.987 -0400",
+				"scriptName": "Common/check.script",
+				"message": "at (890, 528)",
+				"image": "(TEXT:\"cancel\")",
+				"handlerLine": 10,
+				"identifier": "moveto"
+			},
+		{
+				"handlerName": "on_success",
+				"timestamp": "2024-06-07 13:10:41.027 -0400",
+				"message": "cancel  is found in ",
+				"scriptName": "Common/cLog.script",
+				"handlerLine": 2,
+				"identifier": "LogSuccess"
+			},
+		{
+				"handlerName": "on_clearsearchsection",
+				"timestamp": "2024-06-07 13:10:41.086 -0400",
+				"message": "SEARCHRECTANGLE = ",
+				"scriptName": "Common/search.script",
+				"handlerLine": 2,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "on_success",
+				"timestamp": "2024-06-07 13:10:41.157 -0400",
+				"message": "The Open File dialog box is successfully open after selecting the Open File option",
+				"scriptName": "Common/cLog.script",
+				"handlerLine": 2,
+				"identifier": "LogSuccess"
+			},
+		{
+				"handlerName": "on_clearsearchsection",
+				"timestamp": "2024-06-07 13:10:41.216 -0400",
+				"message": "SEARCHRECTANGLE = ",
+				"scriptName": "Common/search.script",
+				"handlerLine": 2,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "function_isimagetextfound",
+				"timestamp": "2024-06-07 13:10:44.176 -0400",
+				"scriptName": "Common/check.script",
+				"message": "found at (890, 528)",
+				"image": "(TEXT:\"cancel\")",
+				"handlerLine": 9,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "function_isimagetextfound",
+				"timestamp": "2024-06-07 13:10:47.264 -0400",
+				"scriptName": "Common/check.script",
+				"message": "at (890, 528)",
+				"image": "(TEXT:\"cancel\")",
+				"handlerLine": 10,
+				"identifier": "moveto"
+			},
+		{
+				"handlerName": "on_success",
+				"timestamp": "2024-06-07 13:10:47.322 -0400",
+				"message": "cancel  is found in ",
+				"scriptName": "Common/cLog.script",
+				"handlerLine": 2,
+				"identifier": "LogSuccess"
+			},
+		{
+				"handlerName": "on_clearsearchsection",
+				"timestamp": "2024-06-07 13:10:47.380 -0400",
+				"message": "SEARCHRECTANGLE = ",
+				"scriptName": "Common/search.script",
+				"handlerLine": 2,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "on_entertext",
+				"timestamp": "2024-06-07 13:10:48.521 -0400",
+				"message": "default",
+				"scriptName": "Common/keyBoard.script",
+				"handlerLine": 3,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_entertext",
+				"timestamp": "2024-06-07 13:10:49.567 -0400",
+				"message": "[returnKey]",
+				"scriptName": "Common/keyBoard.script",
+				"handlerLine": 3,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_entertext",
+				"timestamp": "2024-06-07 13:10:51.002 -0400",
+				"message": "default.config",
+				"scriptName": "Common/keyBoard.script",
+				"handlerLine": 3,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_entertext",
+				"timestamp": "2024-06-07 13:10:52.041 -0400",
+				"message": "[returnKey]",
+				"scriptName": "Common/keyBoard.script",
+				"handlerLine": 3,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_waitfortext",
+				"timestamp": "2024-06-07 13:10:54.506 -0400",
+				"scriptName": "Common/waitForEvent.script",
+				"message": "found at (610, 69)",
+				"image": "(TEXT:\"default\")",
+				"handlerLine": 6,
+				"identifier": "waitfor"
+			},
+		{
+				"handlerName": "on_clearsearchsection",
+				"timestamp": "2024-06-07 13:10:54.615 -0400",
+				"message": "SEARCHRECTANGLE = ",
+				"scriptName": "Common/search.script",
+				"handlerLine": 2,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "on_setsearchsection",
+				"timestamp": "2024-06-07 13:10:55.110 -0400",
+				"message": "SEARCHRECTANGLE = [[0,0],[1920,540]]",
+				"scriptName": "Common/search.script",
+				"handlerLine": 3,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "function_isimagetextfound",
+				"timestamp": "2024-06-07 13:10:56.746 -0400",
+				"scriptName": "Common/check.script",
+				"message": "found at (314, 160)",
+				"image": "(TEXT:\"default\")",
+				"handlerLine": 9,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "function_isimagetextfound",
+				"timestamp": "2024-06-07 13:10:59.793 -0400",
+				"scriptName": "Common/check.script",
+				"message": "at (314, 160)",
+				"image": "(TEXT:\"default\")",
+				"handlerLine": 10,
+				"identifier": "moveto"
+			},
+		{
+				"handlerName": "on_success",
+				"timestamp": "2024-06-07 13:10:59.831 -0400",
+				"message": "default  is found in TopHalf",
+				"scriptName": "Common/cLog.script",
+				"handlerLine": 2,
+				"identifier": "LogSuccess"
+			},
+		{
+				"handlerName": "on_clearsearchsection",
+				"timestamp": "2024-06-07 13:10:59.883 -0400",
+				"message": "SEARCHRECTANGLE = ",
+				"scriptName": "Common/search.script",
+				"handlerLine": 2,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "on_success",
+				"timestamp": "2024-06-07 13:11:05.041 -0400",
+				"message": "Scenario Loaded successfully",
+				"scriptName": "Common/cLog.script",
+				"handlerLine": 2,
+				"identifier": "LogSuccess"
+			},
+		{
+				"handlerName": "on_success",
+				"timestamp": "2024-06-07 13:11:05.114 -0400",
+				"message": "Load scenario using Open Example operation completed successfully.",
+				"scriptName": "Common/cLog.script",
+				"handlerLine": 2,
+				"identifier": "LogSuccess"
+			},
+		{
+				"handlerName": "on_capturescreenshots",
+				"timestamp": "2024-06-07 13:11:05.239 -0400",
+				"scriptName": "Common/captureScreenShots.script",
+				"message": "(706,219,1483,963)",
+				"image": "default.png",
+				"handlerLine": 4,
+				"identifier": "capturescreen"
+			},
+		{
+				"handlerName": "on_setsearchsection",
+				"timestamp": "2024-06-07 13:11:05.685 -0400",
+				"message": "SEARCHRECTANGLE = [[0,0],[249.6,151.2]]",
+				"scriptName": "Common/search.script",
+				"handlerLine": 3,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "on_leftevent",
+				"timestamp": "2024-06-07 13:11:06.848 -0400",
+				"scriptName": "Common/clickEvent.script",
+				"message": "at (14, 31)",
+				"image": "(TEXT:\"File\")",
+				"handlerLine": 6,
+				"identifier": "click"
+			},
+		{
+				"handlerName": "function_isimagetextfound",
+				"timestamp": "2024-06-07 13:11:07.882 -0400",
+				"scriptName": "Common/check.script",
+				"message": "found at (44, 55)",
+				"image": "(TEXT:\"New\")",
+				"handlerLine": 9,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "function_isimagetextfound",
+				"timestamp": "2024-06-07 13:11:08.172 -0400",
+				"scriptName": "Common/check.script",
+				"message": "at (44, 55)",
+				"image": "(TEXT:\"New\")",
+				"handlerLine": 10,
+				"identifier": "moveto"
+			},
+		{
+				"handlerName": "on_success",
+				"timestamp": "2024-06-07 13:11:08.209 -0400",
+				"message": "New  is found in ",
+				"scriptName": "Common/cLog.script",
+				"handlerLine": 2,
+				"identifier": "LogSuccess"
+			},
+		{
+				"handlerName": "on_clearsearchsection",
+				"timestamp": "2024-06-07 13:11:08.266 -0400",
+				"message": "SEARCHRECTANGLE = ",
+				"scriptName": "Common/search.script",
+				"handlerLine": 2,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "on_success",
+				"timestamp": "2024-06-07 13:11:08.389 -0400",
+				"message": "File menu opened successfully",
+				"scriptName": "Common/cLog.script",
+				"handlerLine": 2,
+				"identifier": "LogSuccess"
+			},
+		{
+				"handlerName": "on_capturescreenshots",
+				"timestamp": "2024-06-07 13:11:08.510 -0400",
+				"scriptName": "Common/captureScreenShots.script",
+				"message": "(0,2,808,810)",
+				"image": "verifyFileMenu.png",
+				"handlerLine": 4,
+				"identifier": "capturescreen"
+			},
+		{
+				"handlerName": "on_clearsearchsection",
+				"timestamp": "2024-06-07 13:11:08.675 -0400",
+				"message": "SEARCHRECTANGLE = ",
+				"scriptName": "Common/search.script",
+				"handlerLine": 2,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "on_setsearchsection",
+				"timestamp": "2024-06-07 13:11:08.963 -0400",
+				"message": "SEARCHRECTANGLE = [[0,0],[480,270]]",
+				"scriptName": "Common/search.script",
+				"handlerLine": 3,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "on_leftevent",
+				"timestamp": "2024-06-07 13:11:10.181 -0400",
+				"scriptName": "Common/clickEvent.script",
+				"message": "at (68, 99)",
+				"image": "(TEXT:\"Open Example\")",
+				"handlerLine": 6,
+				"identifier": "click"
+			},
+		{
+				"handlerName": "on_clearsearchsection",
+				"timestamp": "2024-06-07 13:11:10.245 -0400",
+				"message": "SEARCHRECTANGLE = ",
+				"scriptName": "Common/search.script",
+				"handlerLine": 2,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "function_isimagetextfound",
+				"timestamp": "2024-06-07 13:11:23.035 -0400",
+				"scriptName": "Common/check.script",
+				"message": "found at (890, 528)",
+				"image": "(TEXT:\"cancel\")",
+				"handlerLine": 9,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "function_isimagetextfound",
+				"timestamp": "2024-06-07 13:11:28.520 -0400",
+				"scriptName": "Common/check.script",
+				"message": "at (890, 528)",
+				"image": "(TEXT:\"cancel\")",
+				"handlerLine": 10,
+				"identifier": "moveto"
+			},
+		{
+				"handlerName": "on_success",
+				"timestamp": "2024-06-07 13:11:28.561 -0400",
+				"message": "cancel  is found in ",
+				"scriptName": "Common/cLog.script",
+				"handlerLine": 2,
+				"identifier": "LogSuccess"
+			},
+		{
+				"handlerName": "on_clearsearchsection",
+				"timestamp": "2024-06-07 13:11:28.622 -0400",
+				"message": "SEARCHRECTANGLE = ",
+				"scriptName": "Common/search.script",
+				"handlerLine": 2,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "on_success",
+				"timestamp": "2024-06-07 13:11:28.692 -0400",
+				"message": "The Open File dialog box is successfully open after selecting the Open File option",
+				"scriptName": "Common/cLog.script",
+				"handlerLine": 2,
+				"identifier": "LogSuccess"
+			},
+		{
+				"handlerName": "on_clearsearchsection",
+				"timestamp": "2024-06-07 13:11:28.748 -0400",
+				"message": "SEARCHRECTANGLE = ",
+				"scriptName": "Common/search.script",
+				"handlerLine": 2,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "function_isimagetextfound",
+				"timestamp": "2024-06-07 13:11:32.511 -0400",
+				"scriptName": "Common/check.script",
+				"message": "found at (890, 528)",
+				"image": "(TEXT:\"cancel\")",
+				"handlerLine": 9,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "function_isimagetextfound",
+				"timestamp": "2024-06-07 13:11:36.297 -0400",
+				"scriptName": "Common/check.script",
+				"message": "at (890, 528)",
+				"image": "(TEXT:\"cancel\")",
+				"handlerLine": 10,
+				"identifier": "moveto"
+			},
+		{
+				"handlerName": "on_success",
+				"timestamp": "2024-06-07 13:11:36.358 -0400",
+				"message": "cancel  is found in ",
+				"scriptName": "Common/cLog.script",
+				"handlerLine": 2,
+				"identifier": "LogSuccess"
+			},
+		{
+				"handlerName": "on_clearsearchsection",
+				"timestamp": "2024-06-07 13:11:36.418 -0400",
+				"message": "SEARCHRECTANGLE = ",
+				"scriptName": "Common/search.script",
+				"handlerLine": 2,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "on_entertext",
+				"timestamp": "2024-06-07 13:11:37.783 -0400",
+				"message": "demo\\WiFiDemo",
+				"scriptName": "Common/keyBoard.script",
+				"handlerLine": 3,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_entertext",
+				"timestamp": "2024-06-07 13:11:38.824 -0400",
+				"message": "[returnKey]",
+				"scriptName": "Common/keyBoard.script",
+				"handlerLine": 3,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_entertext",
+				"timestamp": "2024-06-07 13:11:40.343 -0400",
+				"message": "WiFiDemo.config",
+				"scriptName": "Common/keyBoard.script",
+				"handlerLine": 3,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_entertext",
+				"timestamp": "2024-06-07 13:11:41.385 -0400",
+				"message": "[returnKey]",
+				"scriptName": "Common/keyBoard.script",
+				"handlerLine": 3,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_waitfortext",
+				"timestamp": "2024-06-07 13:11:45.873 -0400",
+				"scriptName": "Common/waitForEvent.script",
+				"message": "found at (236, 183)",
+				"image": "(TEXT:\"WiFiDemo\")",
+				"handlerLine": 6,
+				"identifier": "waitfor"
+			},
+		{
+				"handlerName": "on_clearsearchsection",
+				"timestamp": "2024-06-07 13:11:45.983 -0400",
+				"message": "SEARCHRECTANGLE = ",
+				"scriptName": "Common/search.script",
+				"handlerLine": 2,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "on_setsearchsection",
+				"timestamp": "2024-06-07 13:11:46.370 -0400",
+				"message": "SEARCHRECTANGLE = [[0,0],[1920,540]]",
+				"scriptName": "Common/search.script",
+				"handlerLine": 3,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "function_isimagetextfound",
+				"timestamp": "2024-06-07 13:11:48.355 -0400",
+				"scriptName": "Common/check.script",
+				"message": "found at (396, 162)",
+				"image": "(TEXT:\"WiFiDemo\")",
+				"handlerLine": 9,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "function_isimagetextfound",
+				"timestamp": "2024-06-07 13:11:51.692 -0400",
+				"scriptName": "Common/check.script",
+				"message": "at (396, 162)",
+				"image": "(TEXT:\"WiFiDemo\")",
+				"handlerLine": 10,
+				"identifier": "moveto"
+			},
+		{
+				"handlerName": "on_success",
+				"timestamp": "2024-06-07 13:11:51.736 -0400",
+				"message": "WiFiDemo  is found in TopHalf",
+				"scriptName": "Common/cLog.script",
+				"handlerLine": 2,
+				"identifier": "LogSuccess"
+			},
+		{
+				"handlerName": "on_clearsearchsection",
+				"timestamp": "2024-06-07 13:11:51.785 -0400",
+				"message": "SEARCHRECTANGLE = ",
+				"scriptName": "Common/search.script",
+				"handlerLine": 2,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "on_success",
+				"timestamp": "2024-06-07 13:11:56.945 -0400",
+				"message": "Scenario Loaded successfully",
+				"scriptName": "Common/cLog.script",
+				"handlerLine": 2,
+				"identifier": "LogSuccess"
+			},
+		{
+				"handlerName": "on_success",
+				"timestamp": "2024-06-07 13:11:57.023 -0400",
+				"message": "Load scenario using Open Example operation completed successfully.",
+				"scriptName": "Common/cLog.script",
+				"handlerLine": 2,
+				"identifier": "LogSuccess"
+			},
+		{
+				"handlerName": "on_capturescreenshots",
+				"timestamp": "2024-06-07 13:11:57.144 -0400",
+				"scriptName": "Common/captureScreenShots.script",
+				"message": "(706,219,1483,963)",
+				"image": "WiFiDemo.png",
+				"handlerLine": 4,
+				"identifier": "capturescreen"
+			},
+		{
+				"handlerName": "on_setsearchsection",
+				"timestamp": "2024-06-07 13:11:57.585 -0400",
+				"message": "SEARCHRECTANGLE = [[0,0],[249.6,151.2]]",
+				"scriptName": "Common/search.script",
+				"handlerLine": 3,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "on_leftevent",
+				"timestamp": "2024-06-07 13:11:58.940 -0400",
+				"scriptName": "Common/clickEvent.script",
+				"message": "at (14, 31)",
+				"image": "(TEXT:\"File\")",
+				"handlerLine": 6,
+				"identifier": "click"
+			},
+		{
+				"handlerName": "function_isimagetextfound",
+				"timestamp": "2024-06-07 13:12:00.140 -0400",
+				"scriptName": "Common/check.script",
+				"message": "found at (44, 55)",
+				"image": "(TEXT:\"New\")",
+				"handlerLine": 9,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "function_isimagetextfound",
+				"timestamp": "2024-06-07 13:12:00.445 -0400",
+				"scriptName": "Common/check.script",
+				"message": "at (44, 55)",
+				"image": "(TEXT:\"New\")",
+				"handlerLine": 10,
+				"identifier": "moveto"
+			},
+		{
+				"handlerName": "on_success",
+				"timestamp": "2024-06-07 13:12:00.481 -0400",
+				"message": "New  is found in ",
+				"scriptName": "Common/cLog.script",
+				"handlerLine": 2,
+				"identifier": "LogSuccess"
+			},
+		{
+				"handlerName": "on_clearsearchsection",
+				"timestamp": "2024-06-07 13:12:00.547 -0400",
+				"message": "SEARCHRECTANGLE = ",
+				"scriptName": "Common/search.script",
+				"handlerLine": 2,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "on_success",
+				"timestamp": "2024-06-07 13:12:00.674 -0400",
+				"message": "File menu opened successfully",
+				"scriptName": "Common/cLog.script",
+				"handlerLine": 2,
+				"identifier": "LogSuccess"
+			},
+		{
+				"handlerName": "on_capturescreenshots",
+				"timestamp": "2024-06-07 13:12:00.785 -0400",
+				"scriptName": "Common/captureScreenShots.script",
+				"message": "(0,2,808,810)",
+				"image": "verifyFileMenu.png",
+				"handlerLine": 4,
+				"identifier": "capturescreen"
+			},
+		{
+				"handlerName": "on_clearsearchsection",
+				"timestamp": "2024-06-07 13:12:00.956 -0400",
+				"message": "SEARCHRECTANGLE = ",
+				"scriptName": "Common/search.script",
+				"handlerLine": 2,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "on_setsearchsection",
+				"timestamp": "2024-06-07 13:12:01.253 -0400",
+				"message": "SEARCHRECTANGLE = [[0,0],[480,270]]",
+				"scriptName": "Common/search.script",
+				"handlerLine": 3,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "on_leftevent",
+				"timestamp": "2024-06-07 13:12:02.051 -0400",
+				"scriptName": "Common/clickEvent.script",
+				"message": "at (68, 99)",
+				"image": "(TEXT:\"Open Example\")",
+				"handlerLine": 6,
+				"identifier": "click"
+			},
+		{
+				"handlerName": "on_clearsearchsection",
+				"timestamp": "2024-06-07 13:12:02.113 -0400",
+				"message": "SEARCHRECTANGLE = ",
+				"scriptName": "Common/search.script",
+				"handlerLine": 2,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "function_isimagetextfound",
+				"timestamp": "2024-06-07 13:12:15.127 -0400",
+				"scriptName": "Common/check.script",
+				"message": "found at (890, 528)",
+				"image": "(TEXT:\"cancel\")",
+				"handlerLine": 9,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "function_isimagetextfound",
+				"timestamp": "2024-06-07 13:12:19.178 -0400",
+				"scriptName": "Common/check.script",
+				"message": "at (890, 528)",
+				"image": "(TEXT:\"cancel\")",
+				"handlerLine": 10,
+				"identifier": "moveto"
+			},
+		{
+				"handlerName": "on_success",
+				"timestamp": "2024-06-07 13:12:19.218 -0400",
+				"message": "cancel  is found in ",
+				"scriptName": "Common/cLog.script",
+				"handlerLine": 2,
+				"identifier": "LogSuccess"
+			},
+		{
+				"handlerName": "on_clearsearchsection",
+				"timestamp": "2024-06-07 13:12:19.279 -0400",
+				"message": "SEARCHRECTANGLE = ",
+				"scriptName": "Common/search.script",
+				"handlerLine": 2,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "on_success",
+				"timestamp": "2024-06-07 13:12:19.350 -0400",
+				"message": "The Open File dialog box is successfully open after selecting the Open File option",
+				"scriptName": "Common/cLog.script",
+				"handlerLine": 2,
+				"identifier": "LogSuccess"
+			},
+		{
+				"handlerName": "on_clearsearchsection",
+				"timestamp": "2024-06-07 13:12:19.409 -0400",
+				"message": "SEARCHRECTANGLE = ",
+				"scriptName": "Common/search.script",
+				"handlerLine": 2,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "function_isimagetextfound",
+				"timestamp": "2024-06-07 13:12:22.155 -0400",
+				"scriptName": "Common/check.script",
+				"message": "found at (890, 528)",
+				"image": "(TEXT:\"cancel\")",
+				"handlerLine": 9,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "function_isimagetextfound",
+				"timestamp": "2024-06-07 13:12:24.916 -0400",
+				"scriptName": "Common/check.script",
+				"message": "at (890, 528)",
+				"image": "(TEXT:\"cancel\")",
+				"handlerLine": 10,
+				"identifier": "moveto"
+			},
+		{
+				"handlerName": "on_success",
+				"timestamp": "2024-06-07 13:12:24.969 -0400",
+				"message": "cancel  is found in ",
+				"scriptName": "Common/cLog.script",
+				"handlerLine": 2,
+				"identifier": "LogSuccess"
+			},
+		{
+				"handlerName": "on_clearsearchsection",
+				"timestamp": "2024-06-07 13:12:25.023 -0400",
+				"message": "SEARCHRECTANGLE = ",
+				"scriptName": "Common/search.script",
+				"handlerLine": 2,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "on_entertext",
+				"timestamp": "2024-06-07 13:12:26.503 -0400",
+				"message": "demo\\MultiChannel",
+				"scriptName": "Common/keyBoard.script",
+				"handlerLine": 3,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_entertext",
+				"timestamp": "2024-06-07 13:12:27.545 -0400",
+				"message": "[returnKey]",
+				"scriptName": "Common/keyBoard.script",
+				"handlerLine": 3,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_entertext",
+				"timestamp": "2024-06-07 13:12:29.163 -0400",
+				"message": "MultiChannel.config",
+				"scriptName": "Common/keyBoard.script",
+				"handlerLine": 3,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_entertext",
+				"timestamp": "2024-06-07 13:12:30.205 -0400",
+				"message": "[returnKey]",
+				"scriptName": "Common/keyBoard.script",
+				"handlerLine": 3,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_waitfortext",
+				"timestamp": "2024-06-07 13:12:33.225 -0400",
+				"scriptName": "Common/waitForEvent.script",
+				"message": "found at (581, 73)",
+				"image": "(TEXT:\"MultiChannel\")",
+				"handlerLine": 6,
+				"identifier": "waitfor"
+			},
+		{
+				"handlerName": "on_clearsearchsection",
+				"timestamp": "2024-06-07 13:12:33.317 -0400",
+				"message": "SEARCHRECTANGLE = ",
+				"scriptName": "Common/search.script",
+				"handlerLine": 2,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "on_setsearchsection",
+				"timestamp": "2024-06-07 13:12:33.718 -0400",
+				"message": "SEARCHRECTANGLE = [[0,0],[1920,540]]",
+				"scriptName": "Common/search.script",
+				"handlerLine": 3,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "function_isimagetextfound",
+				"timestamp": "2024-06-07 13:12:35.818 -0400",
+				"scriptName": "Common/check.script",
+				"message": "found at (492, 161)",
+				"image": "(TEXT:\"MultiChannel\")",
+				"handlerLine": 9,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "function_isimagetextfound",
+				"timestamp": "2024-06-07 13:12:39.172 -0400",
+				"scriptName": "Common/check.script",
+				"message": "at (492, 161)",
+				"image": "(TEXT:\"MultiChannel\")",
+				"handlerLine": 10,
+				"identifier": "moveto"
+			},
+		{
+				"handlerName": "on_success",
+				"timestamp": "2024-06-07 13:12:39.214 -0400",
+				"message": "MultiChannel  is found in TopHalf",
+				"scriptName": "Common/cLog.script",
+				"handlerLine": 2,
+				"identifier": "LogSuccess"
+			},
+		{
+				"handlerName": "on_clearsearchsection",
+				"timestamp": "2024-06-07 13:12:39.273 -0400",
+				"message": "SEARCHRECTANGLE = ",
+				"scriptName": "Common/search.script",
+				"handlerLine": 2,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "on_success",
+				"timestamp": "2024-06-07 13:12:44.437 -0400",
+				"message": "Scenario Loaded successfully",
+				"scriptName": "Common/cLog.script",
+				"handlerLine": 2,
+				"identifier": "LogSuccess"
+			},
+		{
+				"handlerName": "on_success",
+				"timestamp": "2024-06-07 13:12:44.513 -0400",
+				"message": "Load scenario using Open Example operation completed successfully.",
+				"scriptName": "Common/cLog.script",
+				"handlerLine": 2,
+				"identifier": "LogSuccess"
+			},
+		{
+				"handlerName": "on_capturescreenshots",
+				"timestamp": "2024-06-07 13:12:44.629 -0400",
+				"scriptName": "Common/captureScreenShots.script",
+				"message": "(706,219,1483,963)",
+				"image": "MultiChannel.png",
+				"handlerLine": 4,
+				"identifier": "capturescreen"
+			},
+		{
+				"handlerName": "on_setsearchsection",
+				"timestamp": "2024-06-07 13:12:45.091 -0400",
+				"message": "SEARCHRECTANGLE = [[0,0],[249.6,151.2]]",
+				"scriptName": "Common/search.script",
+				"handlerLine": 3,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "on_leftevent",
+				"timestamp": "2024-06-07 13:12:46.551 -0400",
+				"scriptName": "Common/clickEvent.script",
+				"message": "at (14, 31)",
+				"image": "(TEXT:\"File\")",
+				"handlerLine": 6,
+				"identifier": "click"
+			},
+		{
+				"handlerName": "function_isimagetextfound",
+				"timestamp": "2024-06-07 13:12:47.606 -0400",
+				"scriptName": "Common/check.script",
+				"message": "found at (44, 55)",
+				"image": "(TEXT:\"New\")",
+				"handlerLine": 9,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "function_isimagetextfound",
+				"timestamp": "2024-06-07 13:12:47.907 -0400",
+				"scriptName": "Common/check.script",
+				"message": "at (44, 55)",
+				"image": "(TEXT:\"New\")",
+				"handlerLine": 10,
+				"identifier": "moveto"
+			},
+		{
+				"handlerName": "on_success",
+				"timestamp": "2024-06-07 13:12:47.945 -0400",
+				"message": "New  is found in ",
+				"scriptName": "Common/cLog.script",
+				"handlerLine": 2,
+				"identifier": "LogSuccess"
+			},
+		{
+				"handlerName": "on_clearsearchsection",
+				"timestamp": "2024-06-07 13:12:48.005 -0400",
+				"message": "SEARCHRECTANGLE = ",
+				"scriptName": "Common/search.script",
+				"handlerLine": 2,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "on_success",
+				"timestamp": "2024-06-07 13:12:48.123 -0400",
+				"message": "File menu opened successfully",
+				"scriptName": "Common/cLog.script",
+				"handlerLine": 2,
+				"identifier": "LogSuccess"
+			},
+		{
+				"handlerName": "on_capturescreenshots",
+				"timestamp": "2024-06-07 13:12:48.237 -0400",
+				"scriptName": "Common/captureScreenShots.script",
+				"message": "(0,2,808,810)",
+				"image": "verifyFileMenu.png",
+				"handlerLine": 4,
+				"identifier": "capturescreen"
+			},
+		{
+				"handlerName": "on_clearsearchsection",
+				"timestamp": "2024-06-07 13:12:48.389 -0400",
+				"message": "SEARCHRECTANGLE = ",
+				"scriptName": "Common/search.script",
+				"handlerLine": 2,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "on_setsearchsection",
+				"timestamp": "2024-06-07 13:12:48.690 -0400",
+				"message": "SEARCHRECTANGLE = [[0,0],[480,270]]",
+				"scriptName": "Common/search.script",
+				"handlerLine": 3,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "on_leftevent",
+				"timestamp": "2024-06-07 13:12:49.602 -0400",
+				"scriptName": "Common/clickEvent.script",
+				"message": "at (68, 99)",
+				"image": "(TEXT:\"Open Example\")",
+				"handlerLine": 6,
+				"identifier": "click"
+			},
+		{
+				"handlerName": "on_clearsearchsection",
+				"timestamp": "2024-06-07 13:12:49.669 -0400",
+				"message": "SEARCHRECTANGLE = ",
+				"scriptName": "Common/search.script",
+				"handlerLine": 2,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "function_isimagetextfound",
+				"timestamp": "2024-06-07 13:12:58.903 -0400",
+				"scriptName": "Common/check.script",
+				"message": "found at (890, 528)",
+				"image": "(TEXT:\"cancel\")",
+				"handlerLine": 9,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "function_isimagetextfound",
+				"timestamp": "2024-06-07 13:13:03.298 -0400",
+				"scriptName": "Common/check.script",
+				"message": "at (890, 528)",
+				"image": "(TEXT:\"cancel\")",
+				"handlerLine": 10,
+				"identifier": "moveto"
+			},
+		{
+				"handlerName": "on_success",
+				"timestamp": "2024-06-07 13:13:03.340 -0400",
+				"message": "cancel  is found in ",
+				"scriptName": "Common/cLog.script",
+				"handlerLine": 2,
+				"identifier": "LogSuccess"
+			},
+		{
+				"handlerName": "on_clearsearchsection",
+				"timestamp": "2024-06-07 13:13:03.405 -0400",
+				"message": "SEARCHRECTANGLE = ",
+				"scriptName": "Common/search.script",
+				"handlerLine": 2,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "on_success",
+				"timestamp": "2024-06-07 13:13:03.481 -0400",
+				"message": "The Open File dialog box is successfully open after selecting the Open File option",
+				"scriptName": "Common/cLog.script",
+				"handlerLine": 2,
+				"identifier": "LogSuccess"
+			},
+		{
+				"handlerName": "on_clearsearchsection",
+				"timestamp": "2024-06-07 13:13:03.539 -0400",
+				"message": "SEARCHRECTANGLE = ",
+				"scriptName": "Common/search.script",
+				"handlerLine": 2,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "function_isimagetextfound",
+				"timestamp": "2024-06-07 13:13:05.711 -0400",
+				"scriptName": "Common/check.script",
+				"message": "found at (890, 528)",
+				"image": "(TEXT:\"cancel\")",
+				"handlerLine": 9,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "function_isimagetextfound",
+				"timestamp": "2024-06-07 13:13:07.942 -0400",
+				"scriptName": "Common/check.script",
+				"message": "at (890, 528)",
+				"image": "(TEXT:\"cancel\")",
+				"handlerLine": 10,
+				"identifier": "moveto"
+			},
+		{
+				"handlerName": "on_success",
+				"timestamp": "2024-06-07 13:13:07.993 -0400",
+				"message": "cancel  is found in ",
+				"scriptName": "Common/cLog.script",
+				"handlerLine": 2,
+				"identifier": "LogSuccess"
+			},
+		{
+				"handlerName": "on_clearsearchsection",
+				"timestamp": "2024-06-07 13:13:08.049 -0400",
+				"message": "SEARCHRECTANGLE = ",
+				"scriptName": "Common/search.script",
+				"handlerLine": 2,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "on_entertext",
+				"timestamp": "2024-06-07 13:13:09.414 -0400",
+				"message": "5g\\sa\\handover",
+				"scriptName": "Common/keyBoard.script",
+				"handlerLine": 3,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_entertext",
+				"timestamp": "2024-06-07 13:13:10.458 -0400",
+				"message": "[returnKey]",
+				"scriptName": "Common/keyBoard.script",
+				"handlerLine": 3,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_entertext",
+				"timestamp": "2024-06-07 13:13:11.942 -0400",
+				"message": "handover.config",
+				"scriptName": "Common/keyBoard.script",
+				"handlerLine": 3,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_entertext",
+				"timestamp": "2024-06-07 13:13:12.988 -0400",
+				"message": "[returnKey]",
+				"scriptName": "Common/keyBoard.script",
+				"handlerLine": 3,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_waitfortext",
+				"timestamp": "2024-06-07 13:13:14.262 -0400",
+				"scriptName": "Common/waitForEvent.script",
+				"message": "found at (588, 69)",
+				"image": "(TEXT:\"handover\")",
+				"handlerLine": 6,
+				"identifier": "waitfor"
+			},
+		{
+				"handlerName": "on_clearsearchsection",
+				"timestamp": "2024-06-07 13:13:14.387 -0400",
+				"message": "SEARCHRECTANGLE = ",
+				"scriptName": "Common/search.script",
+				"handlerLine": 2,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "on_setsearchsection",
+				"timestamp": "2024-06-07 13:13:14.753 -0400",
+				"message": "SEARCHRECTANGLE = [[0,0],[1920,540]]",
+				"scriptName": "Common/search.script",
+				"handlerLine": 3,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "function_isimagetextfound",
+				"timestamp": "2024-06-07 13:13:15.801 -0400",
+				"scriptName": "Common/check.script",
+				"message": "found at (941, 510)",
+				"image": "(TEXT:\"handover\")",
+				"handlerLine": 9,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "function_isimagetextfound",
+				"timestamp": "2024-06-07 13:13:18.424 -0400",
+				"scriptName": "Common/check.script",
+				"message": "at (587, 161)",
+				"image": "(TEXT:\"handover\")",
+				"handlerLine": 10,
+				"identifier": "moveto"
+			},
+		{
+				"handlerName": "on_success",
+				"timestamp": "2024-06-07 13:13:18.464 -0400",
+				"message": "handover  is found in TopHalf",
+				"scriptName": "Common/cLog.script",
+				"handlerLine": 2,
+				"identifier": "LogSuccess"
+			},
+		{
+				"handlerName": "on_clearsearchsection",
+				"timestamp": "2024-06-07 13:13:18.582 -0400",
+				"message": "SEARCHRECTANGLE = ",
+				"scriptName": "Common/search.script",
+				"handlerLine": 2,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "on_success",
+				"timestamp": "2024-06-07 13:13:23.744 -0400",
+				"message": "Scenario Loaded successfully",
+				"scriptName": "Common/cLog.script",
+				"handlerLine": 2,
+				"identifier": "LogSuccess"
+			},
+		{
+				"handlerName": "on_success",
+				"timestamp": "2024-06-07 13:13:23.819 -0400",
+				"message": "Load scenario using Open Example operation completed successfully.",
+				"scriptName": "Common/cLog.script",
+				"handlerLine": 2,
+				"identifier": "LogSuccess"
+			},
+		{
+				"handlerName": "on_capturescreenshots",
+				"timestamp": "2024-06-07 13:13:23.929 -0400",
+				"scriptName": "Common/captureScreenShots.script",
+				"message": "(706,219,1483,963)",
+				"image": "handover.png",
+				"handlerLine": 4,
+				"identifier": "capturescreen"
+			},
+		{
+				"handlerName": "on_setsearchsection",
+				"timestamp": "2024-06-07 13:13:24.348 -0400",
+				"message": "SEARCHRECTANGLE = [[0,0],[249.6,151.2]]",
+				"scriptName": "Common/search.script",
+				"handlerLine": 3,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "on_leftevent",
+				"timestamp": "2024-06-07 13:13:25.960 -0400",
+				"scriptName": "Common/clickEvent.script",
+				"message": "at (14, 31)",
+				"image": "(TEXT:\"File\")",
+				"handlerLine": 6,
+				"identifier": "click"
+			},
+		{
+				"handlerName": "function_isimagetextfound",
+				"timestamp": "2024-06-07 13:13:27.182 -0400",
+				"scriptName": "Common/check.script",
+				"message": "found at (44, 55)",
+				"image": "(TEXT:\"New\")",
+				"handlerLine": 9,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "function_isimagetextfound",
+				"timestamp": "2024-06-07 13:13:27.487 -0400",
+				"scriptName": "Common/check.script",
+				"message": "at (44, 55)",
+				"image": "(TEXT:\"New\")",
+				"handlerLine": 10,
+				"identifier": "moveto"
+			},
+		{
+				"handlerName": "on_success",
+				"timestamp": "2024-06-07 13:13:27.525 -0400",
+				"message": "New  is found in ",
+				"scriptName": "Common/cLog.script",
+				"handlerLine": 2,
+				"identifier": "LogSuccess"
+			},
+		{
+				"handlerName": "on_clearsearchsection",
+				"timestamp": "2024-06-07 13:13:27.584 -0400",
+				"message": "SEARCHRECTANGLE = ",
+				"scriptName": "Common/search.script",
+				"handlerLine": 2,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "on_success",
+				"timestamp": "2024-06-07 13:13:27.710 -0400",
+				"message": "File menu opened successfully",
+				"scriptName": "Common/cLog.script",
+				"handlerLine": 2,
+				"identifier": "LogSuccess"
+			},
+		{
+				"handlerName": "on_capturescreenshots",
+				"timestamp": "2024-06-07 13:13:27.828 -0400",
+				"scriptName": "Common/captureScreenShots.script",
+				"message": "(0,2,808,810)",
+				"image": "verifyFileMenu.png",
+				"handlerLine": 4,
+				"identifier": "capturescreen"
+			},
+		{
+				"handlerName": "on_clearsearchsection",
+				"timestamp": "2024-06-07 13:13:27.982 -0400",
+				"message": "SEARCHRECTANGLE = ",
+				"scriptName": "Common/search.script",
+				"handlerLine": 2,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "on_setsearchsection",
+				"timestamp": "2024-06-07 13:13:28.272 -0400",
+				"message": "SEARCHRECTANGLE = [[0,0],[480,270]]",
+				"scriptName": "Common/search.script",
+				"handlerLine": 3,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "on_leftevent",
+				"timestamp": "2024-06-07 13:13:29.177 -0400",
+				"scriptName": "Common/clickEvent.script",
+				"message": "at (68, 99)",
+				"image": "(TEXT:\"Open Example\")",
+				"handlerLine": 6,
+				"identifier": "click"
+			},
+		{
+				"handlerName": "on_clearsearchsection",
+				"timestamp": "2024-06-07 13:13:29.242 -0400",
+				"message": "SEARCHRECTANGLE = ",
+				"scriptName": "Common/search.script",
+				"handlerLine": 2,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "function_isimagetextfound",
+				"timestamp": "2024-06-07 13:13:40.458 -0400",
+				"scriptName": "Common/check.script",
+				"message": "found at (890, 528)",
+				"image": "(TEXT:\"cancel\")",
+				"handlerLine": 9,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "function_isimagetextfound",
+				"timestamp": "2024-06-07 13:13:44.695 -0400",
+				"scriptName": "Common/check.script",
+				"message": "at (890, 528)",
+				"image": "(TEXT:\"cancel\")",
+				"handlerLine": 10,
+				"identifier": "moveto"
+			},
+		{
+				"handlerName": "on_success",
+				"timestamp": "2024-06-07 13:13:44.741 -0400",
+				"message": "cancel  is found in ",
+				"scriptName": "Common/cLog.script",
+				"handlerLine": 2,
+				"identifier": "LogSuccess"
+			},
+		{
+				"handlerName": "on_clearsearchsection",
+				"timestamp": "2024-06-07 13:13:44.800 -0400",
+				"message": "SEARCHRECTANGLE = ",
+				"scriptName": "Common/search.script",
+				"handlerLine": 2,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "on_success",
+				"timestamp": "2024-06-07 13:13:44.866 -0400",
+				"message": "The Open File dialog box is successfully open after selecting the Open File option",
+				"scriptName": "Common/cLog.script",
+				"handlerLine": 2,
+				"identifier": "LogSuccess"
+			},
+		{
+				"handlerName": "on_clearsearchsection",
+				"timestamp": "2024-06-07 13:13:44.925 -0400",
+				"message": "SEARCHRECTANGLE = ",
+				"scriptName": "Common/search.script",
+				"handlerLine": 2,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "function_isimagetextfound",
+				"timestamp": "2024-06-07 13:13:47.200 -0400",
+				"scriptName": "Common/check.script",
+				"message": "found at (890, 528)",
+				"image": "(TEXT:\"cancel\")",
+				"handlerLine": 9,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "function_isimagetextfound",
+				"timestamp": "2024-06-07 13:13:49.490 -0400",
+				"scriptName": "Common/check.script",
+				"message": "at (890, 528)",
+				"image": "(TEXT:\"cancel\")",
+				"handlerLine": 10,
+				"identifier": "moveto"
+			},
+		{
+				"handlerName": "on_success",
+				"timestamp": "2024-06-07 13:13:49.544 -0400",
+				"message": "cancel  is found in ",
+				"scriptName": "Common/cLog.script",
+				"handlerLine": 2,
+				"identifier": "LogSuccess"
+			},
+		{
+				"handlerName": "on_clearsearchsection",
+				"timestamp": "2024-06-07 13:13:49.603 -0400",
+				"message": "SEARCHRECTANGLE = ",
+				"scriptName": "Common/search.script",
+				"handlerLine": 2,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "on_entertext",
+				"timestamp": "2024-06-07 13:13:51.468 -0400",
+				"message": "wireless\\terrain-dted\\dtedtest",
+				"scriptName": "Common/keyBoard.script",
+				"handlerLine": 3,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_entertext",
+				"timestamp": "2024-06-07 13:13:52.513 -0400",
+				"message": "[returnKey]",
+				"scriptName": "Common/keyBoard.script",
+				"handlerLine": 3,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_entertext",
+				"timestamp": "2024-06-07 13:13:53.991 -0400",
+				"message": "dtedtest.config",
+				"scriptName": "Common/keyBoard.script",
+				"handlerLine": 3,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_entertext",
+				"timestamp": "2024-06-07 13:13:55.031 -0400",
+				"message": "[returnKey]",
+				"scriptName": "Common/keyBoard.script",
+				"handlerLine": 3,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_waitfortext",
+				"timestamp": "2024-06-07 13:14:05.032 -0400",
+				"scriptName": "Common/waitForEvent.script",
+				"message": "found at (673, 161)",
+				"image": "(TEXT:\"dtedtest\")",
+				"handlerLine": 6,
+				"identifier": "waitfor"
+			},
+		{
+				"handlerName": "on_clearsearchsection",
+				"timestamp": "2024-06-07 13:14:05.123 -0400",
+				"message": "SEARCHRECTANGLE = ",
+				"scriptName": "Common/search.script",
+				"handlerLine": 2,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "on_setsearchsection",
+				"timestamp": "2024-06-07 13:14:05.437 -0400",
+				"message": "SEARCHRECTANGLE = [[0,0],[1920,540]]",
+				"scriptName": "Common/search.script",
+				"handlerLine": 3,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "function_isimagetextfound",
+				"timestamp": "2024-06-07 13:14:06.850 -0400",
+				"scriptName": "Common/check.script",
+				"message": "found at (673, 161)",
+				"image": "(TEXT:\"dtedtest\")",
+				"handlerLine": 9,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "function_isimagetextfound",
+				"timestamp": "2024-06-07 13:14:09.133 -0400",
+				"scriptName": "Common/check.script",
+				"message": "at (673, 161)",
+				"image": "(TEXT:\"dtedtest\")",
+				"handlerLine": 10,
+				"identifier": "moveto"
+			},
+		{
+				"handlerName": "on_success",
+				"timestamp": "2024-06-07 13:14:09.178 -0400",
+				"message": "dtedtest  is found in TopHalf",
+				"scriptName": "Common/cLog.script",
+				"handlerLine": 2,
+				"identifier": "LogSuccess"
+			},
+		{
+				"handlerName": "on_clearsearchsection",
+				"timestamp": "2024-06-07 13:14:09.238 -0400",
+				"message": "SEARCHRECTANGLE = ",
+				"scriptName": "Common/search.script",
+				"handlerLine": 2,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "on_success",
+				"timestamp": "2024-06-07 13:14:14.417 -0400",
+				"message": "Scenario Loaded successfully",
+				"scriptName": "Common/cLog.script",
+				"handlerLine": 2,
+				"identifier": "LogSuccess"
+			},
+		{
+				"handlerName": "on_success",
+				"timestamp": "2024-06-07 13:14:14.494 -0400",
+				"message": "Load scenario using Open Example operation completed successfully.",
+				"scriptName": "Common/cLog.script",
+				"handlerLine": 2,
+				"identifier": "LogSuccess"
+			},
+		{
+				"handlerName": "on_capturescreenshots",
+				"timestamp": "2024-06-07 13:14:14.686 -0400",
+				"scriptName": "Common/captureScreenShots.script",
+				"message": "(706,219,1483,963)",
+				"image": "dtedtest.png",
+				"handlerLine": 4,
+				"identifier": "capturescreen"
+			},
+		{
+				"handlerName": "on_setsearchsection",
+				"timestamp": "2024-06-07 13:14:15.080 -0400",
+				"message": "SEARCHRECTANGLE = [[0,0],[249.6,151.2]]",
+				"scriptName": "Common/search.script",
+				"handlerLine": 3,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "on_leftevent",
+				"timestamp": "2024-06-07 13:14:16.796 -0400",
+				"scriptName": "Common/clickEvent.script",
+				"message": "at (14, 31)",
+				"image": "(TEXT:\"File\")",
+				"handlerLine": 6,
+				"identifier": "click"
+			},
+		{
+				"handlerName": "function_isimagetextfound",
+				"timestamp": "2024-06-07 13:14:17.563 -0400",
+				"scriptName": "Common/check.script",
+				"message": "found at (44, 55)",
+				"image": "(TEXT:\"New\")",
+				"handlerLine": 9,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "function_isimagetextfound",
+				"timestamp": "2024-06-07 13:14:18.024 -0400",
+				"scriptName": "Common/check.script",
+				"message": "at (44, 55)",
+				"image": "(TEXT:\"New\")",
+				"handlerLine": 10,
+				"identifier": "moveto"
+			},
+		{
+				"handlerName": "on_success",
+				"timestamp": "2024-06-07 13:14:18.063 -0400",
+				"message": "New  is found in ",
+				"scriptName": "Common/cLog.script",
+				"handlerLine": 2,
+				"identifier": "LogSuccess"
+			},
+		{
+				"handlerName": "on_clearsearchsection",
+				"timestamp": "2024-06-07 13:14:18.123 -0400",
+				"message": "SEARCHRECTANGLE = ",
+				"scriptName": "Common/search.script",
+				"handlerLine": 2,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "on_success",
+				"timestamp": "2024-06-07 13:14:18.240 -0400",
+				"message": "File menu opened successfully",
+				"scriptName": "Common/cLog.script",
+				"handlerLine": 2,
+				"identifier": "LogSuccess"
+			},
+		{
+				"handlerName": "on_capturescreenshots",
+				"timestamp": "2024-06-07 13:14:18.362 -0400",
+				"scriptName": "Common/captureScreenShots.script",
+				"message": "(0,2,808,810)",
+				"image": "verifyFileMenu.png",
+				"handlerLine": 4,
+				"identifier": "capturescreen"
+			},
+		{
+				"handlerName": "on_clearsearchsection",
+				"timestamp": "2024-06-07 13:14:18.528 -0400",
+				"message": "SEARCHRECTANGLE = ",
+				"scriptName": "Common/search.script",
+				"handlerLine": 2,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "on_setsearchsection",
+				"timestamp": "2024-06-07 13:14:18.868 -0400",
+				"message": "SEARCHRECTANGLE = [[0,0],[960,540]]",
+				"scriptName": "Common/search.script",
+				"handlerLine": 3,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "function_isimagetextfound",
+				"timestamp": "2024-06-07 13:14:19.734 -0400",
+				"scriptName": "Common/check.script",
+				"message": "found at (62, 120)",
+				"image": "(TEXT:\"Recent Files\")",
+				"handlerLine": 9,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "function_isimagetextfound",
+				"timestamp": "2024-06-07 13:14:20.693 -0400",
+				"scriptName": "Common/check.script",
+				"message": "at (62, 120)",
+				"image": "(TEXT:\"Recent Files\")",
+				"handlerLine": 10,
+				"identifier": "moveto"
+			},
+		{
+				"handlerName": "on_success",
+				"timestamp": "2024-06-07 13:14:20.733 -0400",
+				"message": "Recent Files  is found in TopLeftQuadrant",
+				"scriptName": "Common/cLog.script",
+				"handlerLine": 2,
+				"identifier": "LogSuccess"
+			},
+		{
+				"handlerName": "on_clearsearchsection",
+				"timestamp": "2024-06-07 13:14:20.788 -0400",
+				"message": "SEARCHRECTANGLE = ",
+				"scriptName": "Common/search.script",
+				"handlerLine": 2,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "on_success",
+				"timestamp": "2024-06-07 13:14:20.920 -0400",
+				"message": "Recent Files List is opened successfully",
+				"scriptName": "Common/cLog.script",
+				"handlerLine": 2,
+				"identifier": "LogSuccess"
+			},
+		{
+				"handlerName": "on_capturescreenshots",
+				"timestamp": "2024-06-07 13:14:41.133 -0400",
+				"scriptName": "Common/captureScreenShots.script",
+				"message": "(3,2,812,589)",
+				"image": "verifyRecentFilesList.png",
+				"handlerLine": 4,
+				"identifier": "capturescreen"
+			},
+		{
+				"handlerName": "on_clearsearchsection",
+				"timestamp": "2024-06-07 13:14:41.297 -0400",
+				"message": "SEARCHRECTANGLE = ",
+				"scriptName": "Common/search.script",
+				"handlerLine": 2,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "on_clickscaled",
+				"timestamp": "2024-06-07 13:14:43.510 -0400",
+				"message": "at (960, 540)",
+				"scriptName": "Common/clickEvent.script",
+				"handlerLine": 3,
+				"identifier": "click"
+			},
+		{
+				"handlerName": "on_setsearchsection",
+				"timestamp": "2024-06-07 13:14:43.821 -0400",
+				"message": "SEARCHRECTANGLE = [[0,43.2],[96,86.4]]",
+				"scriptName": "Common/search.script",
+				"handlerLine": 3,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "function_isimagetextfound",
+				"timestamp": "2024-06-07 13:14:44.017 -0400",
+				"scriptName": "Common/check.script",
+				"message": "found at (58, 59)",
+				"image": "(TEXT:\"Architect\")",
+				"handlerLine": 9,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "function_isimagetextfound",
+				"timestamp": "2024-06-07 13:14:46.831 -0400",
+				"scriptName": "Common/check.script",
+				"message": "at (58, 59)",
+				"image": "(TEXT:\"Architect\")",
+				"handlerLine": 10,
+				"identifier": "moveto"
+			},
+		{
+				"handlerName": "on_success",
+				"timestamp": "2024-06-07 13:14:46.870 -0400",
+				"message": "Architect  is found in ArchitectButton",
+				"scriptName": "Common/cLog.script",
+				"handlerLine": 2,
+				"identifier": "LogSuccess"
+			},
+		{
+				"handlerName": "on_clearsearchsection",
+				"timestamp": "2024-06-07 13:14:46.932 -0400",
+				"message": "SEARCHRECTANGLE = ",
+				"scriptName": "Common/search.script",
+				"handlerLine": 2,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "on_setsearchsection",
+				"timestamp": "2024-06-07 13:14:47.303 -0400",
+				"message": "SEARCHRECTANGLE = [[0,43.2],[96,86.4]]",
+				"scriptName": "Common/search.script",
+				"handlerLine": 3,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "on_onfoundimagelocation",
+				"timestamp": "2024-06-07 13:14:47.494 -0400",
+				"scriptName": "Common/clickEvent.script",
+				"message": "found at (58, 59)",
+				"image": "(TEXT:\"Architect\")",
+				"handlerLine": 7,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "on_onfoundimagelocation",
+				"timestamp": "2024-06-07 13:14:47.963 -0400",
+				"message": "at (58, 59)",
+				"scriptName": "Common/clickEvent.script",
+				"handlerLine": 8,
+				"identifier": "click"
+			},
+		{
+				"handlerName": "on_clearsearchsection",
+				"timestamp": "2024-06-07 13:14:48.003 -0400",
+				"message": "SEARCHRECTANGLE = ",
+				"scriptName": "Common/search.script",
+				"handlerLine": 2,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "on_setsearchsection",
+				"timestamp": "2024-06-07 13:14:48.331 -0400",
+				"message": "SEARCHRECTANGLE = [[0,0],[249.6,151.2]]",
+				"scriptName": "Common/search.script",
+				"handlerLine": 3,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "on_leftevent",
+				"timestamp": "2024-06-07 13:14:49.427 -0400",
+				"scriptName": "Common/clickEvent.script",
+				"message": "at (14, 31)",
+				"image": "(TEXT:\"File\")",
+				"handlerLine": 6,
+				"identifier": "click"
+			},
+		{
+				"handlerName": "function_isimagetextfound",
+				"timestamp": "2024-06-07 13:14:50.597 -0400",
+				"scriptName": "Common/check.script",
+				"message": "found at (44, 55)",
+				"image": "(TEXT:\"New\")",
+				"handlerLine": 9,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "function_isimagetextfound",
+				"timestamp": "2024-06-07 13:14:50.889 -0400",
+				"scriptName": "Common/check.script",
+				"message": "at (44, 55)",
+				"image": "(TEXT:\"New\")",
+				"handlerLine": 10,
+				"identifier": "moveto"
+			},
+		{
+				"handlerName": "on_success",
+				"timestamp": "2024-06-07 13:14:50.927 -0400",
+				"message": "New  is found in ",
+				"scriptName": "Common/cLog.script",
+				"handlerLine": 2,
+				"identifier": "LogSuccess"
+			},
+		{
+				"handlerName": "on_clearsearchsection",
+				"timestamp": "2024-06-07 13:14:50.987 -0400",
+				"message": "SEARCHRECTANGLE = ",
+				"scriptName": "Common/search.script",
+				"handlerLine": 2,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "on_success",
+				"timestamp": "2024-06-07 13:14:51.104 -0400",
+				"message": "File menu opened successfully",
+				"scriptName": "Common/cLog.script",
+				"handlerLine": 2,
+				"identifier": "LogSuccess"
+			},
+		{
+				"handlerName": "on_capturescreenshots",
+				"timestamp": "2024-06-07 13:14:51.228 -0400",
+				"scriptName": "Common/captureScreenShots.script",
+				"message": "(0,2,808,810)",
+				"image": "verifyFileMenu.png",
+				"handlerLine": 4,
+				"identifier": "capturescreen"
+			},
+		{
+				"handlerName": "on_clearsearchsection",
+				"timestamp": "2024-06-07 13:14:51.386 -0400",
+				"message": "SEARCHRECTANGLE = ",
+				"scriptName": "Common/search.script",
+				"handlerLine": 2,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "on_setsearchsection",
+				"timestamp": "2024-06-07 13:14:51.666 -0400",
+				"message": "SEARCHRECTANGLE = [[0,0],[480,270]]",
+				"scriptName": "Common/search.script",
+				"handlerLine": 3,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "on_leftevent",
+				"timestamp": "2024-06-07 13:14:52.762 -0400",
+				"scriptName": "Common/clickEvent.script",
+				"message": "at (53, 208)",
+				"image": "(TEXT:\"Close All\")",
+				"handlerLine": 6,
+				"identifier": "click"
+			},
+		{
+				"handlerName": "on_clearsearchsection",
+				"timestamp": "2024-06-07 13:14:52.818 -0400",
+				"message": "SEARCHRECTANGLE = ",
+				"scriptName": "Common/search.script",
+				"handlerLine": 2,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "on_compare_screen",
+				"timestamp": "2024-06-07 13:14:53.790 -0400",
+				"scriptName": "Common/check.script",
+				"message": "CompareScreen \"GUI_Canvas_Windows7 6 2024 _ 13 0 56\" -- No significant differences from baseline",
+				"image": "[Baseline_Screens]/GUI_Canvas_Windows7 6 2024 _ 13 0 56.png",
+				"handlerLine": 3,
+				"identifier": "CompareScreen"
+			},
+		{
+				"handlerName": "function_compare_screen",
+				"timestamp": "2024-06-07 13:14:53.913 -0400",
+				"scriptName": "Common/check.script",
+				"message": "CompareScreen \"GUI_Canvas_Windows7 6 2024 _ 13 0 56\" -- No significant differences from baseline",
+				"image": "[Baseline_Screens]/GUI_Canvas_Windows7 6 2024 _ 13 0 56.png",
+				"handlerLine": 3,
+				"identifier": "CompareScreen"
+			},
+		{
+				"handlerName": "on_clickscaled",
+				"timestamp": "2024-06-07 13:14:56.120 -0400",
+				"message": "at (960, 540)",
+				"scriptName": "Common/clickEvent.script",
+				"handlerLine": 3,
+				"identifier": "click"
+			},
+		{
+				"handlerName": "on_verifyrecentfileslist",
+				"timestamp": "2024-06-07 13:14:56.174 -0400",
+				"message": "(Duration:\"276.288\", Errors:\"0\", Exceptions:\"0\", StartTime:\"2024-06-07 13:10:19 -0400\", Successes:\"47\", TestCase:\"verifyRecentFilesList\", Warnings:\"0\")",
+				"scriptName": "TestCases/HumanInTheLoop/verifyRecentFilesList.script",
+				"handlerLine": 30,
+				"identifier": "EndTestCase"
+			},
+		{
+				"handlerName": "on_startregulartests",
+				"timestamp": "2024-06-07 13:14:56.196 -0400",
+				"message": "(Duration:\"276.347\", Errors:\"0\", Exceptions:\"0\", StartTime:\"2024-06-07 13:10:19 -0400\", Successes:\"47\", TestCase:\"TestCases/HumanInTheLoop/verifyRecentFilesList.script\", Warnings:\"0\")",
+				"scriptName": "TestCases/Regular/testLauncher.script",
+				"handlerLine": 22,
+				"identifier": "EndTestCase"
+			},
+		{
+				"handlerName": "on_startregulartests",
+				"timestamp": "2024-06-07 13:14:56.248 -0400",
+				"message": "Execution Time 0:04:36 TestCases/HumanInTheLoop/verifyRecentFilesList.script",
+				"scriptName": "TestCases/Regular/testLauncher.script",
+				"handlerLine": 22,
+				"identifier": "SUCCESS"
+			}
+	],
+	"createdTimestamp": "2024-06-07 13:10:19.849 -0400"
+}

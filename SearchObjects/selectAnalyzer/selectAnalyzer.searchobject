@@ -1,0 +1,41 @@
+{
+	"originalcapturelocation": [
+		170,
+		119,
+		21,
+		16
+	],
+	"lastmodifieddate": 1708626634.5089998,
+	"createddate": 1708626634.5089998,
+	"name": "selectAnalyzer/selectAnalyzer",
+	"lastfounddate": 1709092213.635,
+	"ocrcapturestring": "ss",
+	"lastfoundlocation": [
+		170,
+		119,
+		21,
+		16
+	],
+	"testlocationdata": [
+		{
+				"capturedocrtext": "ss",
+				"properties": {
+					"CropRectangle": "[0,0,0,0]",
+					"Rotate": 0,
+					"Scale": "    1",
+					"HotSpot": "[7,11]",
+					"Tolerance": "_45",
+					"Discrepancy": "_0",
+					"SearchType": "Tolerant of Background"
+				},
+				"type": 1,
+				"capturerect": [
+					170,
+					119,
+					21,
+					16
+				],
+				"name": "selectAnalyzer/selectAnalyzer.png"
+			}
+	]
+}

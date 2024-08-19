@@ -1,0 +1,163 @@
+{
+	"entries": [
+		{
+				"handlerName": "on_cerror",
+				"timestamp": "2024-06-26 11:32:06.744 -0400",
+				"message": "TestCases/Regular/basicEXataFunctionalityCheck FAIL",
+				"scriptName": "Common/cLog.script",
+				"handlerLine": 2,
+				"identifier": "LogError"
+			},
+		{
+				"handlerName": "on_startregulartests",
+				"timestamp": "2024-06-26 11:32:06.823 -0400",
+				"message": "basicEXataFunctionalityCheck - ImageTextNotFoundException:  -- 2:not found",
+				"scriptName": "TestCases/Regular/testLauncher.script",
+				"handlerLine": 30,
+				"identifier": "Throw"
+			},
+		{
+				"handlerName": "on_addreportline",
+				"timestamp": "2024-06-26 11:32:07.038 -0400",
+				"scriptName": "HelperUtilities/rptHtml.script",
+				"image": "Screen_Capture_0001.png",
+				"handlerLine": 37,
+				"identifier": "capturescreen"
+			},
+		{
+				"handlerName": "on_addreportline",
+				"timestamp": "2024-06-26 11:32:07.149 -0400",
+				"message": "step step failed",
+				"scriptName": "HelperUtilities/rptHtml.script",
+				"handlerLine": 69,
+				"identifier": "LogWarning"
+			},
+		{
+				"handlerName": "on_startregulartests",
+				"timestamp": "2024-06-26 11:32:07.512 -0400",
+				"message": "basicEXataFunctionalityCheck - ImageTextNotFoundException:  -- 2:not found",
+				"scriptName": "TestCases/Regular/testLauncher.script",
+				"handlerLine": 49,
+				"identifier": "Throw"
+			},
+		{
+				"handlerName": "on_cerror",
+				"timestamp": "2024-06-26 11:32:07.558 -0400",
+				"message": "main script failed:ImageTextNotFoundException:  -- 2:not found",
+				"scriptName": "Common/cLog.script",
+				"handlerLine": 2,
+				"identifier": "LogError"
+			},
+		{
+				"handlerName": "on_setsearchsection",
+				"timestamp": "2024-06-26 11:32:07.783 -0400",
+				"message": "SEARCHRECTANGLE = [[0,0],[960,540]]",
+				"scriptName": "Common/search.script",
+				"handlerLine": 3,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "function_isimagetextfound",
+				"timestamp": "2024-06-26 11:32:15.352 -0400",
+				"scriptName": "Common/check.script",
+				"message": "Unable to Find Image (TEXT:\"Results\"). Text not found.",
+				"image": "(TEXT:\"Results\")",
+				"handlerLine": 9,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "on_clearsearchsection",
+				"timestamp": "2024-06-26 11:32:15.392 -0400",
+				"message": "SEARCHRECTANGLE = ",
+				"scriptName": "Common/search.script",
+				"handlerLine": 2,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "on_entertext",
+				"timestamp": "2024-06-26 11:32:15.660 -0400",
+				"message": "[windowsAltKey][F4]",
+				"scriptName": "Common/keyBoard.script",
+				"handlerLine": 3,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_entertext",
+				"timestamp": "2024-06-26 11:32:16.709 -0400",
+				"message": "[returnKey]",
+				"scriptName": "Common/keyBoard.script",
+				"handlerLine": 3,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_setsearchsection",
+				"timestamp": "2024-06-26 11:32:16.876 -0400",
+				"message": "SEARCHRECTANGLE = [[480,270],[1440,810]]",
+				"scriptName": "Common/search.script",
+				"handlerLine": 3,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "function_isimagetextfound",
+				"timestamp": "2024-06-26 11:32:18.078 -0400",
+				"scriptName": "Common/check.script",
+				"message": "found at (1105, 502)",
+				"image": "(TEXT:\"Do you want to Save the Changes\")",
+				"handlerLine": 9,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "function_isimagetextfound",
+				"timestamp": "2024-06-26 11:32:19.667 -0400",
+				"scriptName": "Common/check.script",
+				"message": "at (1105, 502)",
+				"image": "(TEXT:\"Do you want to Save the Changes\")",
+				"handlerLine": 10,
+				"identifier": "moveto"
+			},
+		{
+				"handlerName": "on_success",
+				"timestamp": "2024-06-26 11:32:19.700 -0400",
+				"message": "Do you want to Save the Changes  is found in Centre",
+				"scriptName": "Common/cLog.script",
+				"handlerLine": 2,
+				"identifier": "LogSuccess"
+			},
+		{
+				"handlerName": "on_clearsearchsection",
+				"timestamp": "2024-06-26 11:32:19.752 -0400",
+				"message": "SEARCHRECTANGLE = ",
+				"scriptName": "Common/search.script",
+				"handlerLine": 2,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "on_entertext",
+				"timestamp": "2024-06-26 11:32:20.703 -0400",
+				"message": "[rightArrow]",
+				"scriptName": "Common/keyBoard.script",
+				"handlerLine": 3,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_entertext",
+				"timestamp": "2024-06-26 11:32:21.745 -0400",
+				"message": "[returnKey]",
+				"scriptName": "Common/keyBoard.script",
+				"handlerLine": 3,
+				"identifier": "typetext"
+			},
+		{
+				"message": "(Duration:\"152.644\", Errors:\"8\", Exceptions:\"7\", StartTime:\"2024-06-26 11:29:49 -0400\", Successes:\"9\", TestCase:\"main.script\", Warnings:\"1\")",
+				"identifier": "EndTestCase",
+				"timestamp": "2024-06-26 11:32:21.822 -0400"
+			},
+		{
+				"image": "Screen_Error.png",
+				"message": "Script Error: Number of Errors logged: 2 -- Execution Time 0:02:32 main.script",
+				"identifier": "FAILURE",
+				"timestamp": "2024-06-26 11:32:21.950 -0400"
+			}
+	],
+	"createdTimestamp": "2024-06-26 11:32:06.747 -0400"
+}

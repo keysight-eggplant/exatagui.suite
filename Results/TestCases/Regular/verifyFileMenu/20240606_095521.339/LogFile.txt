@@ -1,0 +1,131 @@
+﻿2024-06-06 09:55:21.347 -0400	START		Running TestCases/Regular/verifyFileMenu.script	22	on_startregulartests	TestCases/Regular/testLauncher.script
+2024-06-06 09:55:21.394 -0400	BeginTestCase		verifyFileMenu	2	on_verifyfilemenu	TestCases/Regular/verifyFileMenu.script
+2024-06-06 09:55:21.579 -0400	CompareScreen	[Baseline_Screens]/GUI_Canvas_Windows6 6 2024 _ 9 47 28.png	CompareScreen "GUI_Canvas_Windows6 6 2024 _ 9 47 28" -- No significant differences from baseline	3	on_compare_screen	Common/check.script
+2024-06-06 09:55:21.720 -0400	CompareScreen	[Baseline_Screens]/GUI_Canvas_Windows6 6 2024 _ 9 47 28.png	CompareScreen "GUI_Canvas_Windows6 6 2024 _ 9 47 28" -- No significant differences from baseline	3	function_compare_screen	Common/check.script
+2024-06-06 09:55:22.120 -0400	set		SEARCHRECTANGLE = [[0,0],[249.6,151.2]]	3	on_setsearchsection	Common/search.script
+2024-06-06 09:55:22.913 -0400	click	(TEXT:"File")	at (14, 31)	6	on_leftevent	Common/clickEvent.script
+2024-06-06 09:55:23.255 -0400	imagefound	(TEXT:"New")	found at (44, 55)	9	function_isimagetextfound	Common/check.script
+2024-06-06 09:55:24.209 -0400	moveto	(TEXT:"New")	at (44, 55)	10	function_isimagetextfound	Common/check.script
+2024-06-06 09:55:24.242 -0400	LogSuccess		New  is found in 	2	on_success	Common/cLog.script
+2024-06-06 09:55:24.295 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-06 09:55:24.548 -0400	LogSuccess		File menu opened successfully	2	on_success	Common/cLog.script
+2024-06-06 09:55:24.671 -0400	capturescreen	verifyFileMenu.png	(0,2,808,810)	4	on_capturescreenshots	Common/captureScreenShots.script
+2024-06-06 09:55:24.830 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-06 09:55:25.134 -0400	set		SEARCHRECTANGLE = [[0,22.68],[232.32,416.88]]	3	on_setsearchsection	Common/search.script
+2024-06-06 09:55:25.606 -0400	imagefound	(TEXT:"New")	found at (44, 55)	9	on_isimagetextfound	Common/check.script
+2024-06-06 09:55:26.062 -0400	moveto	(TEXT:"New")	at (44, 55)	10	on_isimagetextfound	Common/check.script
+2024-06-06 09:55:26.155 -0400	LogSuccess		New  is found in FileMenu	2	on_success	Common/cLog.script
+2024-06-06 09:55:26.210 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-06 09:55:26.583 -0400	set		SEARCHRECTANGLE = [[0,22.68],[232.32,416.88]]	3	on_setsearchsection	Common/search.script
+2024-06-06 09:55:27.113 -0400	imagefound	(TEXT:"Open File")	found at (56, 77)	9	on_isimagetextfound	Common/check.script
+2024-06-06 09:55:27.682 -0400	moveto	(TEXT:"Open File")	at (56, 77)	10	on_isimagetextfound	Common/check.script
+2024-06-06 09:55:27.713 -0400	LogSuccess		Open File  is found in FileMenu	2	on_success	Common/cLog.script
+2024-06-06 09:55:27.765 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-06 09:55:28.153 -0400	set		SEARCHRECTANGLE = [[0,22.68],[232.32,416.88]]	3	on_setsearchsection	Common/search.script
+2024-06-06 09:55:28.645 -0400	imagefound	(TEXT:"Open Example")	found at (68, 99)	9	on_isimagetextfound	Common/check.script
+2024-06-06 09:55:29.237 -0400	moveto	(TEXT:"Open Example")	at (68, 99)	10	on_isimagetextfound	Common/check.script
+2024-06-06 09:55:29.274 -0400	LogSuccess		Open Example  is found in FileMenu	2	on_success	Common/cLog.script
+2024-06-06 09:55:29.320 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-06 09:55:29.679 -0400	set		SEARCHRECTANGLE = [[0,22.68],[232.32,416.88]]	3	on_setsearchsection	Common/search.script
+2024-06-06 09:55:30.112 -0400	imagefound	(TEXT:"Recent Files")	found at (62, 120)	9	on_isimagetextfound	Common/check.script
+2024-06-06 09:55:30.688 -0400	moveto	(TEXT:"Recent Files")	at (62, 120)	10	on_isimagetextfound	Common/check.script
+2024-06-06 09:55:30.726 -0400	LogSuccess		Recent Files  is found in FileMenu	2	on_success	Common/cLog.script
+2024-06-06 09:55:30.784 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-06 09:55:31.241 -0400	set		SEARCHRECTANGLE = [[0,22.68],[232.32,416.88]]	3	on_setsearchsection	Common/search.script
+2024-06-06 09:55:31.692 -0400	imagefound	(TEXT:"Import External Scenario")	found at (93, 143)	9	on_isimagetextfound	Common/check.script
+2024-06-06 09:55:32.237 -0400	moveto	(TEXT:"Import External Scenario")	at (93, 143)	10	on_isimagetextfound	Common/check.script
+2024-06-06 09:55:32.272 -0400	LogSuccess		Import External Scenario  is found in FileMenu	2	on_success	Common/cLog.script
+2024-06-06 09:55:32.321 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-06 09:55:32.715 -0400	set		SEARCHRECTANGLE = [[0,22.68],[232.32,416.88]]	3	on_setsearchsection	Common/search.script
+2024-06-06 09:55:33.143 -0400	imagefound	(TEXT:"Export Scenario")	found at (71, 166)	9	on_isimagetextfound	Common/check.script
+2024-06-06 09:55:33.714 -0400	moveto	(TEXT:"Export Scenario")	at (71, 166)	10	on_isimagetextfound	Common/check.script
+2024-06-06 09:55:33.751 -0400	LogSuccess		Export Scenario  is found in FileMenu	2	on_success	Common/cLog.script
+2024-06-06 09:55:33.794 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-06 09:55:34.166 -0400	set		SEARCHRECTANGLE = [[0,22.68],[232.32,416.88]]	3	on_setsearchsection	Common/search.script
+2024-06-06 09:55:34.579 -0400	imagefound	(TEXT:"Close")	found at (46, 186)	9	on_isimagetextfound	Common/check.script
+2024-06-06 09:55:35.163 -0400	moveto	(TEXT:"Close")	at (46, 186)	10	on_isimagetextfound	Common/check.script
+2024-06-06 09:55:35.215 -0400	LogSuccess		Close  is found in FileMenu	2	on_success	Common/cLog.script
+2024-06-06 09:55:35.267 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-06 09:55:35.633 -0400	set		SEARCHRECTANGLE = [[0,22.68],[232.32,416.88]]	3	on_setsearchsection	Common/search.script
+2024-06-06 09:55:36.092 -0400	imagefound	(TEXT:"Close All")	found at (53, 208)	9	on_isimagetextfound	Common/check.script
+2024-06-06 09:55:36.521 -0400	moveto	(TEXT:"Close All")	at (53, 208)	10	on_isimagetextfound	Common/check.script
+2024-06-06 09:55:36.577 -0400	LogSuccess		Close All  is found in FileMenu	2	on_success	Common/cLog.script
+2024-06-06 09:55:36.626 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-06 09:55:37.007 -0400	set		SEARCHRECTANGLE = [[0,22.68],[232.32,416.88]]	3	on_setsearchsection	Common/search.script
+2024-06-06 09:55:37.472 -0400	imagefound	(TEXT:"Save")	found at (45, 240)	9	on_isimagetextfound	Common/check.script
+2024-06-06 09:55:37.970 -0400	moveto	(TEXT:"Save")	at (45, 240)	10	on_isimagetextfound	Common/check.script
+2024-06-06 09:55:38.010 -0400	LogSuccess		Save  is found in FileMenu	2	on_success	Common/cLog.script
+2024-06-06 09:55:38.086 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-06 09:55:38.530 -0400	set		SEARCHRECTANGLE = [[0,22.68],[232.32,416.88]]	3	on_setsearchsection	Common/search.script
+2024-06-06 09:55:39.004 -0400	imagefound	(TEXT:"Save As")	found at (53, 262)	9	on_isimagetextfound	Common/check.script
+2024-06-06 09:55:39.638 -0400	moveto	(TEXT:"Save As")	at (53, 262)	10	on_isimagetextfound	Common/check.script
+2024-06-06 09:55:39.684 -0400	LogSuccess		Save As  is found in FileMenu	2	on_success	Common/cLog.script
+2024-06-06 09:55:39.736 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-06 09:55:40.085 -0400	set		SEARCHRECTANGLE = [[0,22.68],[232.32,416.88]]	3	on_setsearchsection	Common/search.script
+2024-06-06 09:55:40.671 -0400	imagefound	(TEXT:"Save As Portable")	found at (74, 283)	9	on_isimagetextfound	Common/check.script
+2024-06-06 09:55:41.351 -0400	moveto	(TEXT:"Save As Portable")	at (74, 283)	10	on_isimagetextfound	Common/check.script
+2024-06-06 09:55:41.401 -0400	LogSuccess		Save As Portable  is found in FileMenu	2	on_success	Common/cLog.script
+2024-06-06 09:55:41.451 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-06 09:55:41.828 -0400	set		SEARCHRECTANGLE = [[0,22.68],[232.32,416.88]]	3	on_setsearchsection	Common/search.script
+2024-06-06 09:55:42.363 -0400	imagefound	(TEXT:"Save As Signed")	found at (70, 306)	9	on_isimagetextfound	Common/check.script
+2024-06-06 09:55:42.893 -0400	moveto	(TEXT:"Save As Signed")	at (70, 306)	10	on_isimagetextfound	Common/check.script
+2024-06-06 09:55:42.952 -0400	LogSuccess		Save As Signed  is found in FileMenu	2	on_success	Common/cLog.script
+2024-06-06 09:55:42.998 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-06 09:55:43.371 -0400	set		SEARCHRECTANGLE = [[0,22.68],[232.32,416.88]]	3	on_setsearchsection	Common/search.script
+2024-06-06 09:55:43.794 -0400	imagefound	(TEXT:"Save All")	found at (52, 327)	9	on_isimagetextfound	Common/check.script
+2024-06-06 09:55:44.358 -0400	moveto	(TEXT:"Save All")	at (52, 327)	10	on_isimagetextfound	Common/check.script
+2024-06-06 09:55:44.402 -0400	LogSuccess		Save All  is found in FileMenu	2	on_success	Common/cLog.script
+2024-06-06 09:55:44.446 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-06 09:55:44.806 -0400	set		SEARCHRECTANGLE = [[0,22.68],[232.32,416.88]]	3	on_setsearchsection	Common/search.script
+2024-06-06 09:55:45.289 -0400	imagefound	(TEXT:"Page Setup")	found at (61, 360)	9	on_isimagetextfound	Common/check.script
+2024-06-06 09:55:45.793 -0400	moveto	(TEXT:"Page Setup")	at (61, 360)	10	on_isimagetextfound	Common/check.script
+2024-06-06 09:55:45.836 -0400	LogSuccess		Page Setup  is found in FileMenu	2	on_success	Common/cLog.script
+2024-06-06 09:55:45.888 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-06 09:55:46.231 -0400	set		SEARCHRECTANGLE = [[0,22.68],[232.32,416.88]]	3	on_setsearchsection	Common/search.script
+2024-06-06 09:55:46.703 -0400	imagefound	(TEXT:"Print")	found at (45, 381)	9	on_isimagetextfound	Common/check.script
+2024-06-06 09:55:47.293 -0400	moveto	(TEXT:"Print")	at (45, 381)	10	on_isimagetextfound	Common/check.script
+2024-06-06 09:55:47.332 -0400	LogSuccess		Print  is found in FileMenu	2	on_success	Common/cLog.script
+2024-06-06 09:55:47.380 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-06 09:55:47.739 -0400	set		SEARCHRECTANGLE = [[0,22.68],[232.32,416.88]]	3	on_setsearchsection	Common/search.script
+2024-06-06 09:55:48.222 -0400	imagefound	(TEXT:"Exit")	found at (43, 403)	9	on_isimagetextfound	Common/check.script
+2024-06-06 09:55:48.725 -0400	moveto	(TEXT:"Exit")	at (43, 403)	10	on_isimagetextfound	Common/check.script
+2024-06-06 09:55:48.786 -0400	LogSuccess		Exit  is found in FileMenu	2	on_success	Common/cLog.script
+2024-06-06 09:55:48.828 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-06 09:55:48.975 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-06 09:55:49.220 -0400	set		SEARCHRECTANGLE = [[0,22.68],[282.24,201.96]]	3	on_setsearchsection	Common/search.script
+2024-06-06 09:55:49.500 -0400	imagefound	(TEXT:"Edit")	found at (48, 31)	7	on_onfoundimagelocation	Common/clickEvent.script
+2024-06-06 09:55:50.481 -0400	click		at (48, 31)	8	on_onfoundimagelocation	Common/clickEvent.script
+2024-06-06 09:55:50.511 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-06 09:55:52.896 -0400	imagefound	(TEXT:"Architect")	found at (58, 59)	9	function_isimagetextfound	Common/check.script
+2024-06-06 09:55:55.288 -0400	moveto	(TEXT:"Architect")	at (58, 59)	10	function_isimagetextfound	Common/check.script
+2024-06-06 09:55:55.321 -0400	LogSuccess		Architect  is found in 	2	on_success	Common/cLog.script
+2024-06-06 09:55:55.368 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-06 09:55:55.434 -0400	LogSuccess		Edit menu closed successfully	2	on_success	Common/cLog.script
+2024-06-06 09:55:55.473 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-06 09:55:55.762 -0400	set		SEARCHRECTANGLE = [[0,43.2],[96,86.4]]	3	on_setsearchsection	Common/search.script
+2024-06-06 09:55:55.972 -0400	imagefound	(TEXT:"Architect")	found at (58, 59)	9	function_isimagetextfound	Common/check.script
+2024-06-06 09:55:56.437 -0400	moveto	(TEXT:"Architect")	at (58, 59)	10	function_isimagetextfound	Common/check.script
+2024-06-06 09:55:56.621 -0400	LogSuccess		Architect  is found in ArchitectButton	2	on_success	Common/cLog.script
+2024-06-06 09:55:56.672 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-06 09:55:57.039 -0400	set		SEARCHRECTANGLE = [[0,43.2],[96,86.4]]	3	on_setsearchsection	Common/search.script
+2024-06-06 09:55:57.397 -0400	imagefound	(TEXT:"Architect")	found at (58, 59)	7	on_onfoundimagelocation	Common/clickEvent.script
+2024-06-06 09:55:57.699 -0400	click		at (58, 59)	8	on_onfoundimagelocation	Common/clickEvent.script
+2024-06-06 09:55:57.737 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-06 09:55:58.095 -0400	set		SEARCHRECTANGLE = [[0,0],[249.6,151.2]]	3	on_setsearchsection	Common/search.script
+2024-06-06 09:55:59.106 -0400	click	(TEXT:"File")	at (14, 31)	6	on_leftevent	Common/clickEvent.script
+2024-06-06 09:56:00.671 -0400	imagefound	(TEXT:"New")	found at (44, 55)	9	function_isimagetextfound	Common/check.script
+2024-06-06 09:56:01.021 -0400	moveto	(TEXT:"New")	at (44, 55)	10	function_isimagetextfound	Common/check.script
+2024-06-06 09:56:01.056 -0400	LogSuccess		New  is found in 	2	on_success	Common/cLog.script
+2024-06-06 09:56:01.101 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-06 09:56:01.235 -0400	LogSuccess		File menu opened successfully	2	on_success	Common/cLog.script
+2024-06-06 09:56:01.348 -0400	capturescreen	verifyFileMenu.png	(0,2,808,810)	4	on_capturescreenshots	Common/captureScreenShots.script
+2024-06-06 09:56:01.496 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-06 09:56:01.778 -0400	set		SEARCHRECTANGLE = [[0,0],[480,270]]	3	on_setsearchsection	Common/search.script
+2024-06-06 09:56:02.959 -0400	click	(TEXT:"Close All")	at (53, 208)	6	on_leftevent	Common/clickEvent.script
+2024-06-06 09:56:03.003 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-06 09:56:03.987 -0400	CompareScreen	[Baseline_Screens]/GUI_Canvas_Windows6 6 2024 _ 9 47 28.png	CompareScreen "GUI_Canvas_Windows6 6 2024 _ 9 47 28" -- No significant differences from baseline	3	on_compare_screen	Common/check.script
+2024-06-06 09:56:04.126 -0400	CompareScreen	[Baseline_Screens]/GUI_Canvas_Windows6 6 2024 _ 9 47 28.png	CompareScreen "GUI_Canvas_Windows6 6 2024 _ 9 47 28" -- No significant differences from baseline	3	function_compare_screen	Common/check.script
+2024-06-06 09:56:06.349 -0400	click		at (960, 540)	3	on_clickscaled	Common/clickEvent.script
+2024-06-06 09:56:06.400 -0400	EndTestCase		(Duration:"45.006", Errors:"0", Exceptions:"0", StartTime:"2024-06-06 09:55:21 -0400", Successes:"23", TestCase:"verifyFileMenu", Warnings:"0")	68	on_verifyfilemenu	TestCases/Regular/verifyFileMenu.script
+2024-06-06 09:56:06.415 -0400	EndTestCase		(Duration:"45.063", Errors:"0", Exceptions:"0", StartTime:"2024-06-06 09:55:21 -0400", Successes:"23", TestCase:"TestCases/Regular/verifyFileMenu.script", Warnings:"0")	22	on_startregulartests	TestCases/Regular/testLauncher.script
+2024-06-06 09:56:06.461 -0400	SUCCESS		Execution Time 0:00:45 TestCases/Regular/verifyFileMenu.script	22	on_startregulartests	TestCases/Regular/testLauncher.script

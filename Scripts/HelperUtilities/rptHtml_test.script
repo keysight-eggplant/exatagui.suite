@@ -1,0 +1,16 @@
+﻿set precheckIssues to ("EXataGUI.exe not found","License Not found","Screen size is not 1920x1080","OS is not starting","EXataGUI.exe is not running", "...")
+
+rptHtml.startReportFile "Eggplant-result", me.name, precheckIssues
+
+rptHtml.startReportTable "Regular Tests"
+
+rptHtml.addReportLine "Node Placement", "Verify the node positions are correct", "", (3,8,418,637), true
+rptHtml.addReportLine "Node Placement", "Verify something", "", false, true
+rptHtml.addReportLine "Node Placement", "Verify something", "", false, false
+
+rptHtml.endReportTable
+
+rptHtml.addErrorMsg "OpenScenario", "Find File Menu", "Image Not found: File image not found"
+
+rptHtml.endReportFile
+

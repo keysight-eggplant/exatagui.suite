@@ -1,0 +1,152 @@
+﻿# This script contains all statistics file-related operations
+#
+
+# to verify the result from a statistics file
+#
+to verifyApplicationStats nodeId,interface,serverName,messageToCheck,portion,configFolderName
+	Try
+		global spath
+		if "Common/check".isImageTextFound("File Editor","TopHalf",true) then
+			"Common/clickEvent".onFoundImageLocation "File Editor"
+			"Common/search".clearSearchSection
+		else
+			"Common/cLog".cError "Text not found:" "File Editor text not found"
+			throw  "Text not found:","File Editor text not found"
+		end if
+		//  some preOpening operations
+		"Common/keyBoard".enterText windowsKey&"r"
+		"Common/waitForEvent".waitForText "Run","BottomLeftQuadrant"
+		"Common/keyBoard".enterText "powershell"
+		"Common/keyBoard".pressEnter
+		if "Common/check".isImageTextFound ("Windows cannot find","Centre",false,5.0) then
+			"Common/cLog".cError "powershell does not exists in the system"
+			throw "powershellExceptionNotFound","Please install powershell"
+		end if
+		"Common/keyBoard".enterText windowsKey&upArrow
+		// performing powershell operations to sort the sample folder by latest modified data and rename
+		// the latest file with config name
+		set exist to quote &"The path exists in the system"&quote
+		set not_exist to quote &"The path does not exists in the system"&quote
+		"Common/keyBoard".enterText "$path="& quote & spath&"\"&configFolderName & quote
+		"Common/keyBoard".pressEnter
+		"Common/keyBoard".enterText "clear"
+		"Common/keyBoard".pressEnter
+		"Common/keyBoard".enterText "$exist="&exist
+		"Common/keyBoard".pressEnter
+		"Common/keyBoard".enterText "clear"
+		"Common/keyBoard".pressEnter
+		"Common/keyBoard".enterText "$not_exist="&not_exist
+		"Common/keyBoard".pressEnter
+		"Common/keyBoard".enterText "clear"
+		"Common/keyBoard".pressEnter
+		"Common/keyBoard".enterText "if(Test-Path -Path $path) { Write-Host $exist } else { Write-Host $not_exist }" 
+		"Common/keyBoard".pressEnter
+		if "Common/check".isImageTextFound ("The Path does not exists in the system","",false,5.0) then
+			"Common/cLog".cError "verifyApplicationStats failed because" && spath && "not exist in the system"
+			"Common/keyBoard".enterText "exit"
+			"Common/keyBoard".pressEnter
+			throw "verifyApplicationStatsException",spath && "not exist in the system"	
+		else
+			"Common/keyBoard".enterText "cd" && spath&"\"&configFolderName		
+			"Common/keyBoard".pressEnter			
+		end if
+		"Common/keyBoard".enterText "$firstFile = Get-ChildItem | Sort-Object LastWriteTime -Descending | Select-Object -First 1"
+		"Common/keyBoard".pressEnter
+		"Common/keyBoard".enterText "Rename-Item -Path $firstFile.FullName -NewName" && quote &configFolderName&".stat" & quote
+		"Common/keyBoard".pressEnter
+		"common/keyboard".enterText "exit"
+		"Common/keyBoard".pressEnter
+		-- opening text file
+		"Common/keyBoard".enterText ControlKey&"o"
+		--entering the config file for which we want to see stat db
+		if "Common/check".isImageTextFound("cancel","",true) then
+			"Common/keyBoard".enterText configFolderName
+			"Common/keyBoard".pressEnter
+			if "Common/check".isImageTextFound("Results","TopLeftQuadrant",false,3.0) then
+				"Common/cLog".cError configFolderName && "typing in wrong find Box"
+				throw "typingInWrongFindBoxException",configFolderName && "typing in wrong find Box"
+			end if
+			"Common/keyBoard".enterText configFolderName&".stat"
+			"Common/keyBoard".pressEnter
+		end if 
+		--setting the formatted text so that its easy to fine
+		set formattedText to nodeId & ",               ,[" & interface & "], " & "Application" & ",  " & serverName & "," & messageToCheck
+		--finding the exact lines from statisticsFile
+		findExactLineFromStatisticsFile formattedText,portion,configFolderName
+		Catch theException
+		"Common/cLog".cError "verifyApplicationStats failed:"& theException's reason
+		throw theException -- re-throw the exception (if desired)
+	End try
+end verifyApplicationStats
+
+# to find the exact line from the statistics file
+#
+to findExactLineFromStatisticsFile formattedText,portion,configFolderName
+	Try
+		global spath,changeDirectory
+		
+		"Common/keyBoard".enterText windowsKey&"r"
+		"Common/waitForEvent".waitForText "Run","BottomLeftQuadrant"
+		"Common/keyBoard".enterText "notepad" && quote&spath&"\"&configFolderName&"\"&configFolderName&".stat"&quote
+		"Common/keyBoard".pressEnter
+		"Common/keyBoard".enterText windowsKey&upArrow
+		
+		"Common/keyBoard".enterText controlKey&"a"
+		"Common/keyBoard".enterText controlKey&"c"
+		put RemoteClipboard() into fileContent
+		put fileContent into file ResourcePath("statFileData.txt")
+		
+		set foundText to false
+		put formattedText into txtToFind
+		repeat with each line of fileContent    
+			if it contains txtToFind then 
+				"Common/cLog".cMessage "Line"&& repeatIndex()&&" is having the"&&quote&txtToFind&quote 
+				set foundText to true
+				"Common/keyBoard".enterText altKey&f4
+				exit repeat
+			end if    
+		end repeat
+		
+		if foundText is true then 
+		-- pressing control + f to find the data
+	"Common/keyBoard".enterText controlKey&"f"
+			"Common/keyBoard".enterText formattedText
+			
+			
+			-- clicking in the middle for clear search
+			"Common/clickEvent".clickScaled "0.5"
+			
+			if not "Common/check".isImageTextFound("Total Unicast Messages Received (messages) = 24",portion,true,10,"Yes") then
+				"Common/cLog".cError "Statistics Verification Failed:"& formattedText
+				throw "ImageTextNotFoundException",formattedText&":not found"
+			end if
+			"Common/cLog".success "The statistics have been successfully verified."
+			--taking the screenShot 
+			"Common/captureScreenShots".captureScreenshots "/basicEXataFunctionalityCheck.png",[21,806,677,1037]
+			"Common/keyBoard".enterText windowsKey&"r"
+			"Common/waitForEvent".waitForText "Run","BottomLeftQuadrant"
+			"Common/keyBoard".enterText "powershell"
+			"Common/keyBoard".pressEnter
+			"Common/keyBoard".enterText windowsKey&upArrow
+			"Common/keyBoard".enterText "cd" && spath&"\"&configFolderName
+			"Common/keyBoard".pressEnter
+			"Common/keyBoard".enterText "Remove-Item -Path" && quote&configFolderName&".stat"&quote
+			"Common/keyBoard".pressEnter
+			"common/keyboard".enterText "exit"
+			"Common/keyBoard".pressEnter
+			if "Common/check".isImageTextFound ("EXata","Centre",true,10) then
+				"Common/keyBoard".pressEnter
+			end if 
+			if "Common/check".isImageTextFound ("EXata","Centre",true,10) then
+				"Common/keyBoard".pressEnter
+			end if
+		else
+			"Common/cLog".cError "Statistics Verification Failed:"& formattedText
+			throw "ImageTextNotFoundException",formattedText&":not found"
+		end if
+	Catch theException
+		"Common/cLog".cError "findExactLineFromStatisticsFile failed:"& theException's reason
+		throw theException -- re-throw the exception (if desired)
+	End try
+end findExactLineFromStatisticsFile
+

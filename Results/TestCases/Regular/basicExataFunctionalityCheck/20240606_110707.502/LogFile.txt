@@ -1,0 +1,40 @@
+﻿2024-06-06 11:07:07.506 -0400	START		Running TestCases/Regular/basicExataFunctionalityCheck.script
+2024-06-06 11:07:07.653 -0400	BeginTestCase		basicEXataFunctionalityCheck	2	on_basicexatafunctionalitycheck	TestCases/Regular/basicExataFunctionalityCheck.script
+2024-06-06 11:07:07.852 -0400	CompareScreen	[Baseline_Screens]/GUI_Canvas_Windows.png	CompareScreen "GUI_Canvas_Windows" -- No significant differences from baseline	3	on_compare_screen	Common/check.script
+2024-06-06 11:07:07.946 -0400	CompareScreen	[Baseline_Screens]/GUI_Canvas_Windows.png	CompareScreen "GUI_Canvas_Windows" -- No significant differences from baseline	3	function_compare_screen	Common/check.script
+2024-06-06 11:07:08.348 -0400	click	Select_tool	at (131, 92)	4	on_validate	Common/clickEvent.script
+2024-06-06 11:07:08.374 -0400	LogSuccess		Select tool is present in Navigation Toolbar	2	on_success	Common/cLog.script
+2024-06-06 11:07:09.192 -0400	click	node_device	at (51, 222)	4	on_leftevent	Common/clickEvent.script
+2024-06-06 11:07:09.976 -0400	click		at (1085, 599)	3	on_clickscaled	Common/clickEvent.script
+2024-06-06 11:07:10.037 -0400	Log		Global Click Coordinates: [{key:1, value:"0.565-0.555"}]	2	on_cmessage	Common/cLog.script
+2024-06-06 11:07:10.762 -0400	click	Select_Tool	at (130, 92)	4	on_leftevent	Common/clickEvent.script
+2024-06-06 11:07:11.064 -0400	set		SEARCHRECTANGLE = [[211.2,993.6],[288,1026]]	3	on_setsearchsection	Common/search.script
+2024-06-06 11:07:11.179 -0400	imagefound	(TEXT:"Table View")	found at (253, 1008)	7	on_onfoundimagelocation	Common/clickEvent.script
+2024-06-06 11:07:11.545 -0400	click		at (253, 1008)	8	on_onfoundimagelocation	Common/clickEvent.script
+2024-06-06 11:07:11.578 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-06 11:07:11.960 -0400	set		SEARCHRECTANGLE = [[230.4,723.6],[268.8,766.8]]	3	on_setsearchsection	Common/search.script
+2024-06-06 11:07:12.083 -0400	imagefound	(TEXT:"Nodes")	found at (244, 743)	7	on_onfoundimagelocation	Common/clickEvent.script
+2024-06-06 11:07:12.328 -0400	click		at (244, 743)	8	on_onfoundimagelocation	Common/clickEvent.script
+2024-06-06 11:07:12.358 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-06 11:07:12.727 -0400	set		SEARCHRECTANGLE = [[230.4,766.8],[307.2,993.6]]	3	on_setsearchsection	Common/search.script
+2024-06-06 11:07:12.862 -0400	imagefound	(TEXT:"1")	found at (241, 805)	9	function_isimagetextfound	Common/check.script
+2024-06-06 11:07:13.066 -0400	moveto	(TEXT:"1")	at (241, 805)	10	function_isimagetextfound	Common/check.script
+2024-06-06 11:07:13.141 -0400	LogSuccess		1  is found in NodeIdView	2	on_success	Common/cLog.script
+2024-06-06 11:07:13.176 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-06 11:07:13.279 -0400	LogSuccess		node placement validated successfully	2	on_success	Common/cLog.script
+2024-06-06 11:07:13.587 -0400	set		SEARCHRECTANGLE = [[211.2,993.6],[288,1026]]	3	on_setsearchsection	Common/search.script
+2024-06-06 11:07:13.700 -0400	imagefound	(TEXT:"Table_View")	found at (253, 1008)	7	on_onfoundimagelocation	Common/clickEvent.script
+2024-06-06 11:07:13.850 -0400	click		at (253, 1008)	8	on_onfoundimagelocation	Common/clickEvent.script
+2024-06-06 11:07:13.887 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-06 11:07:13.996 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-06 11:07:14.644 -0400	click	links	at (52, 853)	4	on_validate	Common/clickEvent.script
+2024-06-06 11:07:14.676 -0400	LogSuccess		Links is present in Links toolbar	2	on_success	Common/cLog.script
+2024-06-06 11:07:15.438 -0400	click	links	at (53, 854)	4	on_leftevent	Common/clickEvent.script
+2024-06-06 11:07:15.602 -0400	Throw		missingkeyErrorException - 2: key not found	19	function_getlocation	EXataGUI/actions/canvas.script
+2024-06-06 11:07:15.663 -0400	LogError		Adding link to the nodes failed:ERROR: No Such Command: 'error'	2	on_cerror	Common/cLog.script
+2024-06-06 11:07:15.694 -0400	Throw		STUnknownMessage - ERROR: No Such Command: 'error'	19	on_createlink	EXataGUI/actions/canvas.script
+2024-06-06 11:07:15.739 -0400	LogError		Error in running basicEXataFunctionalityCheck TestCase	2	on_cerror	Common/cLog.script
+2024-06-06 11:07:15.828 -0400	Throw		STUnknownMessage - ERROR: No Such Command: 'error'	34	on_basicexatafunctionalitycheck	TestCases/Regular/basicExataFunctionalityCheck.script
+2024-06-06 11:07:15.850 -0400	EndTestCase		(Duration:"8.196", Errors:"3", Exceptions:"3", StartTime:"2024-06-06 11:07:07 -0400", Successes:"4", TestCase:"basicEXataFunctionalityCheck", Warnings:"0")
+2024-06-06 11:07:15.854 -0400	EndTestCase		(Duration:"8.344", Errors:"3", Exceptions:"3", StartTime:"2024-06-06 11:07:07 -0400", Successes:"4", TestCase:"TestCases/Regular/basicExataFunctionalityCheck.script", Warnings:"0")
+2024-06-06 11:07:15.954 -0400	FAILURE	Screen_Error.png	STUnknownMessage: ERROR: No Such Command: 'error' -- Execution Time 0:00:08 TestCases/Regular/basicExataFunctionalityCheck.script

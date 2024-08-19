@@ -1,0 +1,39 @@
+{
+	"lastmodifieddate": 1708417625.4000001,
+	"lastfoundlocation": [
+		76,
+		114,
+		23,
+		27
+	],
+	"originalcapturelocation": [
+		76,
+		114,
+		23,
+		27
+	],
+	"createddate": 1708417625.4000001,
+	"lastfounddate": 1708417825.372,
+	"testlocationdata": [
+		{
+				"name": "run_simulation/run_simulation.png",
+				"type": 1,
+				"properties": {
+					"CropRectangle": "[0,0,0,0]",
+					"Rotate": 0,
+					"Scale": "    1",
+					"HotSpot": "[11,9]",
+					"Tolerance": "_45",
+					"Discrepancy": "_0",
+					"SearchType": "Tolerant of Background"
+				},
+				"capturerect": [
+					76,
+					114,
+					23,
+					27
+				]
+			}
+	],
+	"name": "run_simulation/run_simulation"
+}

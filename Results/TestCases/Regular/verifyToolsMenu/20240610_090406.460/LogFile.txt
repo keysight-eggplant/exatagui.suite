@@ -1,0 +1,162 @@
+﻿2024-06-10 09:04:06.469 -0400	START		Running TestCases/Regular/verifyToolsMenu.script	22	on_startregulartests	TestCases/Regular/testLauncher.script
+2024-06-10 09:04:06.518 -0400	BeginTestCase		verifyToolsMenu	2	on_verifytoolsmenu	TestCases/Regular/verifyToolsMenu.script
+2024-06-10 09:04:06.806 -0400	CompareScreen	[Baseline_Screens]/GUI_Canvas_Windows10 6 2024 _ 8 48 35.png	CompareScreen "GUI_Canvas_Windows10 6 2024 _ 8 48 35" -- No significant differences from baseline	3	on_compare_screen	Common/check.script
+2024-06-10 09:04:06.991 -0400	CompareScreen	[Baseline_Screens]/GUI_Canvas_Windows10 6 2024 _ 8 48 35.png	CompareScreen "GUI_Canvas_Windows10 6 2024 _ 8 48 35" -- No significant differences from baseline	3	function_compare_screen	Common/check.script
+2024-06-10 09:04:07.466 -0400	set		SEARCHRECTANGLE = [[96,18.36],[347.52,590.76]]	3	on_setsearchsection	Common/search.script
+2024-06-10 09:04:10.342 -0400	click	(TEXT:"Tools")	at (122, 31)	6	on_leftevent	Common/clickEvent.script
+2024-06-10 09:04:11.425 -0400	imagefound	(TEXT:"Node Placement")	found at (178, 55)	9	function_isimagetextfound	Common/check.script
+2024-06-10 09:04:11.942 -0400	moveto	(TEXT:"Node Placement")	at (176, 54)	10	function_isimagetextfound	Common/check.script
+2024-06-10 09:04:11.988 -0400	LogSuccess		Node Placement  is found in 	2	on_success	Common/cLog.script
+2024-06-10 09:04:12.056 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-10 09:04:12.240 -0400	LogSuccess		Tools menu opened successfully	2	on_success	Common/cLog.script
+2024-06-10 09:04:12.375 -0400	capturescreen	verifyToolsMenu.png	(0,2,792,735)	4	on_capturescreenshots	Common/captureScreenShots.script
+2024-06-10 09:04:12.933 -0400	set		SEARCHRECTANGLE = [[96,18.36],[347.52,590.76]]	3	on_setsearchsection	Common/search.script
+2024-06-10 09:04:13.303 -0400	imagefound	(TEXT:"Node Placement")	found at (176, 54)	9	on_isimagetextfound	Common/check.script
+2024-06-10 09:04:13.620 -0400	moveto	(TEXT:"Node Placement")	at (176, 54)	10	on_isimagetextfound	Common/check.script
+2024-06-10 09:04:13.754 -0400	LogSuccess		Node Placement  is found in ToolsMenu	2	on_success	Common/cLog.script
+2024-06-10 09:04:13.846 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-10 09:04:14.270 -0400	set		SEARCHRECTANGLE = [[96,18.36],[347.52,590.76]]	3	on_setsearchsection	Common/search.script
+2024-06-10 09:04:14.623 -0400	imagefound	(TEXT:"Import Satellites and Orbits")	found at (203, 77)	9	on_isimagetextfound	Common/check.script
+2024-06-10 09:04:15.058 -0400	moveto	(TEXT:"Import Satellites and Orbits")	at (203, 77)	10	on_isimagetextfound	Common/check.script
+2024-06-10 09:04:15.101 -0400	LogSuccess		Import Satellites and Orbits  is found in ToolsMenu	2	on_success	Common/cLog.script
+2024-06-10 09:04:15.165 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-10 09:04:15.575 -0400	set		SEARCHRECTANGLE = [[96,18.36],[347.52,590.76]]	3	on_setsearchsection	Common/search.script
+2024-06-10 09:04:15.974 -0400	imagefound	(TEXT:"Snapshot")	found at (160, 99)	9	on_isimagetextfound	Common/check.script
+2024-06-10 09:04:16.503 -0400	moveto	(TEXT:"Snapshot")	at (160, 99)	10	on_isimagetextfound	Common/check.script
+2024-06-10 09:04:16.548 -0400	LogSuccess		Snapshot  is found in ToolsMenu	2	on_success	Common/cLog.script
+2024-06-10 09:04:16.624 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-10 09:04:17.102 -0400	set		SEARCHRECTANGLE = [[96,18.36],[347.52,590.76]]	3	on_setsearchsection	Common/search.script
+2024-06-10 09:04:17.605 -0400	imagefound	(TEXT:"View Scenario in File Editor")	found at (201, 129)	9	on_isimagetextfound	Common/check.script
+2024-06-10 09:04:18.100 -0400	moveto	(TEXT:"View Scenario in File Editor")	at (201, 129)	10	on_isimagetextfound	Common/check.script
+2024-06-10 09:04:18.145 -0400	LogSuccess		View Scenario in File Editor  is found in ToolsMenu	2	on_success	Common/cLog.script
+2024-06-10 09:04:18.205 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-10 09:04:18.625 -0400	set		SEARCHRECTANGLE = [[96,18.36],[347.52,590.76]]	3	on_setsearchsection	Common/search.script
+2024-06-10 09:04:19.003 -0400	imagefound	(TEXT:"Run Settings")	found at (168, 153)	9	on_isimagetextfound	Common/check.script
+2024-06-10 09:04:19.521 -0400	moveto	(TEXT:"Run Settings")	at (168, 153)	10	on_isimagetextfound	Common/check.script
+2024-06-10 09:04:19.576 -0400	LogSuccess		Run Settings  is found in ToolsMenu	2	on_success	Common/cLog.script
+2024-06-10 09:04:19.655 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-10 09:04:20.106 -0400	set		SEARCHRECTANGLE = [[96,18.36],[347.52,590.76]]	3	on_setsearchsection	Common/search.script
+2024-06-10 09:04:20.627 -0400	imagefound	(TEXT:"Run Emulation")	found at (171, 173)	9	on_isimagetextfound	Common/check.script
+2024-06-10 09:04:21.172 -0400	moveto	(TEXT:"Run Emulation")	at (171, 173)	10	on_isimagetextfound	Common/check.script
+2024-06-10 09:04:21.258 -0400	LogSuccess		Run Emulation  is found in ToolsMenu	2	on_success	Common/cLog.script
+2024-06-10 09:04:21.339 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-10 09:04:21.773 -0400	set		SEARCHRECTANGLE = [[96,18.36],[347.52,590.76]]	3	on_setsearchsection	Common/search.script
+2024-06-10 09:04:22.429 -0400	imagefound	(TEXT:"Record Animation")	found at (179, 195)	9	on_isimagetextfound	Common/check.script
+2024-06-10 09:04:22.981 -0400	moveto	(TEXT:"Record Animation")	at (179, 195)	10	on_isimagetextfound	Common/check.script
+2024-06-10 09:04:23.069 -0400	LogSuccess		Record Animation  is found in ToolsMenu	2	on_success	Common/cLog.script
+2024-06-10 09:04:23.137 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-10 09:04:23.571 -0400	set		SEARCHRECTANGLE = [[96,18.36],[347.52,590.76]]	3	on_setsearchsection	Common/search.script
+2024-06-10 09:04:24.060 -0400	imagefound	(TEXT:"Device Model Editor")	found at (184, 226)	9	on_isimagetextfound	Common/check.script
+2024-06-10 09:04:24.553 -0400	moveto	(TEXT:"Device Model Editor")	at (184, 226)	10	on_isimagetextfound	Common/check.script
+2024-06-10 09:04:24.642 -0400	LogSuccess		Device Model Editor  is found in ToolsMenu	2	on_success	Common/cLog.script
+2024-06-10 09:04:24.700 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-10 09:04:25.140 -0400	set		SEARCHRECTANGLE = [[96,18.36],[347.52,590.76]]	3	on_setsearchsection	Common/search.script
+2024-06-10 09:04:25.622 -0400	imagefound	(TEXT:"Hierarchy Model Editor")	found at (191, 249)	9	on_isimagetextfound	Common/check.script
+2024-06-10 09:04:26.077 -0400	moveto	(TEXT:"Hierarchy Model Editor")	at (191, 249)	10	on_isimagetextfound	Common/check.script
+2024-06-10 09:04:26.158 -0400	LogSuccess		Hierarchy Model Editor  is found in ToolsMenu	2	on_success	Common/cLog.script
+2024-06-10 09:04:26.224 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-10 09:04:26.672 -0400	set		SEARCHRECTANGLE = [[96,18.36],[347.52,590.76]]	3	on_setsearchsection	Common/search.script
+2024-06-10 09:04:27.181 -0400	imagefound	(TEXT:"Toolset Editor")	found at (170, 270)	9	on_isimagetextfound	Common/check.script
+2024-06-10 09:04:27.748 -0400	moveto	(TEXT:"Toolset Editor")	at (170, 270)	10	on_isimagetextfound	Common/check.script
+2024-06-10 09:04:27.801 -0400	LogSuccess		Toolset Editor  is found in ToolsMenu	2	on_success	Common/cLog.script
+2024-06-10 09:04:27.873 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-10 09:04:28.317 -0400	set		SEARCHRECTANGLE = [[96,18.36],[347.52,590.76]]	3	on_setsearchsection	Common/search.script
+2024-06-10 09:04:28.773 -0400	imagefound	(TEXT:"Multicast Group Editor")	found at (190, 293)	9	on_isimagetextfound	Common/check.script
+2024-06-10 09:04:29.256 -0400	moveto	(TEXT:"Multicast Group Editor")	at (190, 293)	10	on_isimagetextfound	Common/check.script
+2024-06-10 09:04:29.330 -0400	LogSuccess		Multicast Group Editor  is found in ToolsMenu	2	on_success	Common/cLog.script
+2024-06-10 09:04:29.408 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-10 09:04:29.919 -0400	set		SEARCHRECTANGLE = [[96,18.36],[347.52,590.76]]	3	on_setsearchsection	Common/search.script
+2024-06-10 09:04:30.416 -0400	imagefound	(TEXT:"Antenna Model Editor")	found at (189, 314)	9	on_isimagetextfound	Common/check.script
+2024-06-10 09:04:30.828 -0400	moveto	(TEXT:"Antenna Model Editor")	at (189, 314)	10	on_isimagetextfound	Common/check.script
+2024-06-10 09:04:30.906 -0400	LogSuccess		Antenna Model Editor  is found in ToolsMenu	2	on_success	Common/cLog.script
+2024-06-10 09:04:30.978 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-10 09:04:31.433 -0400	set		SEARCHRECTANGLE = [[96,18.36],[347.52,590.76]]	3	on_setsearchsection	Common/search.script
+2024-06-10 09:04:31.876 -0400	imagefound	(TEXT:"Visualize Heatmap")	found at (180, 337)	9	on_isimagetextfound	Common/check.script
+2024-06-10 09:04:32.382 -0400	moveto	(TEXT:"Visualize Heatmap")	at (180, 337)	10	on_isimagetextfound	Common/check.script
+2024-06-10 09:04:32.483 -0400	LogSuccess		Visualize Heatmap  is found in ToolsMenu	2	on_success	Common/cLog.script
+2024-06-10 09:04:32.551 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-10 09:04:32.941 -0400	set		SEARCHRECTANGLE = [[96,18.36],[347.52,590.76]]	3	on_setsearchsection	Common/search.script
+2024-06-10 09:04:33.431 -0400	imagefound	(TEXT:"Attack Template Editor")	found at (192, 359)	9	on_isimagetextfound	Common/check.script
+2024-06-10 09:04:33.946 -0400	moveto	(TEXT:"Attack Template Editor")	at (192, 359)	10	on_isimagetextfound	Common/check.script
+2024-06-10 09:04:33.996 -0400	LogSuccess		Attack Template Editor  is found in ToolsMenu	2	on_success	Common/cLog.script
+2024-06-10 09:04:34.062 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-10 09:04:34.516 -0400	set		SEARCHRECTANGLE = [[96,18.36],[347.52,590.76]]	3	on_setsearchsection	Common/search.script
+2024-06-10 09:04:34.996 -0400	imagefound	(TEXT:"Import Firewall Rules")	found at (187, 381)	9	on_isimagetextfound	Common/check.script
+2024-06-10 09:04:35.534 -0400	moveto	(TEXT:"Import Firewall Rules")	at (187, 381)	10	on_isimagetextfound	Common/check.script
+2024-06-10 09:04:35.607 -0400	LogSuccess		Import Firewall Rules  is found in ToolsMenu	2	on_success	Common/cLog.script
+2024-06-10 09:04:35.694 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-10 09:04:36.129 -0400	set		SEARCHRECTANGLE = [[96,18.36],[347.52,590.76]]	3	on_setsearchsection	Common/search.script
+2024-06-10 09:04:36.591 -0400	imagefound	(TEXT:"PROPSIM Configuration Editor")	found at (209, 403)	9	on_isimagetextfound	Common/check.script
+2024-06-10 09:04:37.207 -0400	moveto	(TEXT:"PROPSIM Configuration Editor")	at (209, 403)	10	on_isimagetextfound	Common/check.script
+2024-06-10 09:04:37.280 -0400	LogSuccess		PROPSIM Configuration Editor  is found in ToolsMenu	2	on_success	Common/cLog.script
+2024-06-10 09:04:37.349 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-10 09:04:37.755 -0400	set		SEARCHRECTANGLE = [[96,18.36],[347.52,590.76]]	3	on_setsearchsection	Common/search.script
+2024-06-10 09:04:38.233 -0400	imagefound	(TEXT:"Adaptive Attack Flowchart Editor")	found at (216, 425)	9	on_isimagetextfound	Common/check.script
+2024-06-10 09:04:38.771 -0400	moveto	(TEXT:"Adaptive Attack Flowchart Editor")	at (216, 425)	10	on_isimagetextfound	Common/check.script
+2024-06-10 09:04:38.822 -0400	LogSuccess		Adaptive Attack Flowchart Editor  is found in ToolsMenu	2	on_success	Common/cLog.script
+2024-06-10 09:04:38.910 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-10 09:04:39.355 -0400	set		SEARCHRECTANGLE = [[96,18.36],[347.52,590.76]]	3	on_setsearchsection	Common/search.script
+2024-06-10 09:04:39.807 -0400	imagefound	(TEXT:"Modified Parameters")	found at (186, 455)	9	on_isimagetextfound	Common/check.script
+2024-06-10 09:04:40.314 -0400	moveto	(TEXT:"Modified Parameters")	at (186, 455)	10	on_isimagetextfound	Common/check.script
+2024-06-10 09:04:40.367 -0400	LogSuccess		Modified Parameters  is found in ToolsMenu	2	on_success	Common/cLog.script
+2024-06-10 09:04:40.438 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-10 09:04:40.873 -0400	set		SEARCHRECTANGLE = [[96,18.36],[347.52,590.76]]	3	on_setsearchsection	Common/search.script
+2024-06-10 09:04:41.349 -0400	imagefound	(TEXT:"Weather Properties")	found at (184, 478)	9	on_isimagetextfound	Common/check.script
+2024-06-10 09:04:41.818 -0400	moveto	(TEXT:"Weather Properties")	at (184, 478)	10	on_isimagetextfound	Common/check.script
+2024-06-10 09:04:41.879 -0400	LogSuccess		Weather Properties  is found in ToolsMenu	2	on_success	Common/cLog.script
+2024-06-10 09:04:41.966 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-10 09:04:42.421 -0400	set		SEARCHRECTANGLE = [[96,18.36],[347.52,590.76]]	3	on_setsearchsection	Common/search.script
+2024-06-10 09:04:42.998 -0400	imagefound	(TEXT:"Propagation Zone Editor")	found at (195, 500)	9	on_isimagetextfound	Common/check.script
+2024-06-10 09:04:43.572 -0400	moveto	(TEXT:"Propagation Zone Editor")	at (195, 500)	10	on_isimagetextfound	Common/check.script
+2024-06-10 09:04:43.621 -0400	LogSuccess		Propagation Zone Editor  is found in ToolsMenu	2	on_success	Common/cLog.script
+2024-06-10 09:04:43.689 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-10 09:04:44.110 -0400	set		SEARCHRECTANGLE = [[96,18.36],[347.52,590.76]]	3	on_setsearchsection	Common/search.script
+2024-06-10 09:04:44.633 -0400	imagefound	(TEXT:"Override Configuration Editor")	found at (208, 522)	9	on_isimagetextfound	Common/check.script
+2024-06-10 09:04:45.191 -0400	moveto	(TEXT:"Override Configuration Editor")	at (208, 522)	10	on_isimagetextfound	Common/check.script
+2024-06-10 09:04:45.239 -0400	LogSuccess		Override Configuration Editor  is found in ToolsMenu	2	on_success	Common/cLog.script
+2024-06-10 09:04:45.337 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-10 09:04:45.785 -0400	set		SEARCHRECTANGLE = [[96,18.36],[347.52,590.76]]	3	on_setsearchsection	Common/search.script
+2024-06-10 09:04:46.318 -0400	imagefound	(TEXT:"Satellite Viewer")	found at (174, 543)	9	on_isimagetextfound	Common/check.script
+2024-06-10 09:04:46.896 -0400	moveto	(TEXT:"Satellite Viewer")	at (174, 543)	10	on_isimagetextfound	Common/check.script
+2024-06-10 09:04:46.968 -0400	LogSuccess		Satellite Viewer  is found in ToolsMenu	2	on_success	Common/cLog.script
+2024-06-10 09:04:47.048 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-10 09:04:47.456 -0400	set		SEARCHRECTANGLE = [[96,18.36],[347.52,590.76]]	3	on_setsearchsection	Common/search.script
+2024-06-10 09:04:48.000 -0400	imagefound	(TEXT:"Scenario Properties")	found at (184, 576)	9	on_isimagetextfound	Common/check.script
+2024-06-10 09:04:48.644 -0400	moveto	(TEXT:"Scenario Properties")	at (184, 576)	10	on_isimagetextfound	Common/check.script
+2024-06-10 09:04:48.693 -0400	LogSuccess		Scenario Properties  is found in ToolsMenu	2	on_success	Common/cLog.script
+2024-06-10 09:04:48.768 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-10 09:04:49.355 -0400	set		SEARCHRECTANGLE = [[96,18.36],[347.52,590.76]]	3	on_setsearchsection	Common/search.script
+2024-06-10 09:04:51.066 -0400	click	(TEXT:"Tools")	at (122, 31)	6	on_leftevent	Common/clickEvent.script
+2024-06-10 09:04:52.712 -0400	imagefound	(TEXT:"Analyzer")	found at (141, 59)	9	function_isimagetextfound	Common/check.script
+2024-06-10 09:04:54.541 -0400	moveto	(TEXT:"Analyzer")	at (141, 59)	10	function_isimagetextfound	Common/check.script
+2024-06-10 09:04:54.589 -0400	LogSuccess		Analyzer  is found in 	2	on_success	Common/cLog.script
+2024-06-10 09:04:54.670 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-10 09:04:54.842 -0400	LogSuccess		Tools menu closed successfully	2	on_success	Common/cLog.script
+2024-06-10 09:04:54.920 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-10 09:04:55.284 -0400	set		SEARCHRECTANGLE = [[0,43.2],[96,86.4]]	3	on_setsearchsection	Common/search.script
+2024-06-10 09:04:55.538 -0400	imagefound	(TEXT:"Architect")	found at (58, 59)	9	function_isimagetextfound	Common/check.script
+2024-06-10 09:04:55.998 -0400	moveto	(TEXT:"Architect")	at (58, 59)	10	function_isimagetextfound	Common/check.script
+2024-06-10 09:04:56.052 -0400	LogSuccess		Architect  is found in ArchitectButton	2	on_success	Common/cLog.script
+2024-06-10 09:04:56.120 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-10 09:04:56.520 -0400	set		SEARCHRECTANGLE = [[0,43.2],[96,86.4]]	3	on_setsearchsection	Common/search.script
+2024-06-10 09:04:56.793 -0400	imagefound	(TEXT:"Architect")	found at (58, 59)	7	on_onfoundimagelocation	Common/clickEvent.script
+2024-06-10 09:04:57.134 -0400	click		at (58, 59)	8	on_onfoundimagelocation	Common/clickEvent.script
+2024-06-10 09:04:57.197 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-10 09:04:57.617 -0400	set		SEARCHRECTANGLE = [[0,0],[249.6,151.2]]	3	on_setsearchsection	Common/search.script
+2024-06-10 09:04:58.546 -0400	click	(TEXT:"File")	at (14, 31)	6	on_leftevent	Common/clickEvent.script
+2024-06-10 09:04:58.825 -0400	imagefound	(TEXT:"New")	found at (44, 55)	9	function_isimagetextfound	Common/check.script
+2024-06-10 09:04:59.844 -0400	moveto	(TEXT:"New")	at (44, 55)	10	function_isimagetextfound	Common/check.script
+2024-06-10 09:04:59.897 -0400	LogSuccess		New  is found in 	2	on_success	Common/cLog.script
+2024-06-10 09:04:59.973 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-10 09:05:00.256 -0400	LogSuccess		File menu opened successfully	2	on_success	Common/cLog.script
+2024-06-10 09:05:00.394 -0400	capturescreen	verifyFileMenu.png	(0,2,808,810)	4	on_capturescreenshots	Common/captureScreenShots.script
+2024-06-10 09:05:00.613 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-10 09:05:00.930 -0400	set		SEARCHRECTANGLE = [[0,0],[480,270]]	3	on_setsearchsection	Common/search.script
+2024-06-10 09:05:02.091 -0400	click	(TEXT:"Close All")	at (53, 208)	6	on_leftevent	Common/clickEvent.script
+2024-06-10 09:05:02.154 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-10 09:05:03.113 -0400	CompareScreen	[Baseline_Screens]/GUI_Canvas_Windows10 6 2024 _ 8 48 35.png	CompareScreen "GUI_Canvas_Windows10 6 2024 _ 8 48 35" -- No significant differences from baseline	3	on_compare_screen	Common/check.script
+2024-06-10 09:05:03.281 -0400	CompareScreen	[Baseline_Screens]/GUI_Canvas_Windows10 6 2024 _ 8 48 35.png	CompareScreen "GUI_Canvas_Windows10 6 2024 _ 8 48 35" -- No significant differences from baseline	3	function_compare_screen	Common/check.script
+2024-06-10 09:05:05.510 -0400	click		at (960, 540)	3	on_clickscaled	Common/clickEvent.script
+2024-06-10 09:05:05.582 -0400	EndTestCase		(Duration:"59.063", Errors:"0", Exceptions:"0", StartTime:"2024-06-10 09:04:06 -0400", Successes:"30", TestCase:"verifyToolsMenu", Warnings:"0")	87	on_verifytoolsmenu	TestCases/Regular/verifyToolsMenu.script
+2024-06-10 09:05:05.607 -0400	EndTestCase		(Duration:"59.135", Errors:"0", Exceptions:"0", StartTime:"2024-06-10 09:04:06 -0400", Successes:"30", TestCase:"TestCases/Regular/verifyToolsMenu.script", Warnings:"0")	22	on_startregulartests	TestCases/Regular/testLauncher.script
+2024-06-10 09:05:05.660 -0400	SUCCESS		Execution Time 0:00:59 TestCases/Regular/verifyToolsMenu.script	22	on_startregulartests	TestCases/Regular/testLauncher.script

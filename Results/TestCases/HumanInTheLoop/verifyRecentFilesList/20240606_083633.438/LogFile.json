@@ -1,0 +1,517 @@
+{
+	"entries": [
+		{
+				"handlerName": "on_startregulartests",
+				"timestamp": "2024-06-06 08:36:33.444 -0400",
+				"message": "Running TestCases/HumanInTheLoop/verifyRecentFilesList.script",
+				"scriptName": "TestCases/Regular/testLauncher.script",
+				"handlerLine": 22,
+				"identifier": "START"
+			},
+		{
+				"handlerName": "on_verifyrecentfileslist",
+				"timestamp": "2024-06-06 08:36:33.477 -0400",
+				"message": "verifyRecentFilesList",
+				"scriptName": "TestCases/HumanInTheLoop/verifyRecentFilesList.script",
+				"handlerLine": 2,
+				"identifier": "BeginTestCase"
+			},
+		{
+				"handlerName": "on_compare_screen",
+				"timestamp": "2024-06-06 08:36:33.825 -0400",
+				"scriptName": "Common/check.script",
+				"message": "CompareScreen \"GUI_Canvas_Windows6 6 2024 _ 8 35 39\" -- No significant differences from baseline",
+				"image": "[Baseline_Screens]/GUI_Canvas_Windows6 6 2024 _ 8 35 39.png",
+				"handlerLine": 3,
+				"identifier": "CompareScreen"
+			},
+		{
+				"handlerName": "function_compare_screen",
+				"timestamp": "2024-06-06 08:36:33.991 -0400",
+				"scriptName": "Common/check.script",
+				"message": "CompareScreen \"GUI_Canvas_Windows6 6 2024 _ 8 35 39\" -- No significant differences from baseline",
+				"image": "[Baseline_Screens]/GUI_Canvas_Windows6 6 2024 _ 8 35 39.png",
+				"handlerLine": 3,
+				"identifier": "CompareScreen"
+			},
+		{
+				"handlerName": "on_keyboardshortcut",
+				"timestamp": "2024-06-06 08:36:34.439 -0400",
+				"message": "[controlKey]default",
+				"scriptName": "Common/keyBoard.script",
+				"handlerLine": 2,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "function_isimagetextfound",
+				"timestamp": "2024-06-06 08:36:44.297 -0400",
+				"scriptName": "Common/check.script",
+				"message": "found at (890, 528)",
+				"image": "(TEXT:\"cancel\")",
+				"handlerLine": 9,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "function_isimagetextfound",
+				"timestamp": "2024-06-06 08:36:50.059 -0400",
+				"scriptName": "Common/check.script",
+				"message": "at (890, 528)",
+				"image": "(TEXT:\"cancel\")",
+				"handlerLine": 10,
+				"identifier": "moveto"
+			},
+		{
+				"handlerName": "on_success",
+				"timestamp": "2024-06-06 08:36:50.092 -0400",
+				"message": "cancel  is found in ",
+				"scriptName": "Common/cLog.script",
+				"handlerLine": 2,
+				"identifier": "LogSuccess"
+			},
+		{
+				"handlerName": "on_clearsearchsection",
+				"timestamp": "2024-06-06 08:36:50.145 -0400",
+				"message": "SEARCHRECTANGLE = ",
+				"scriptName": "Common/search.script",
+				"handlerLine": 2,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "on_entertext",
+				"timestamp": "2024-06-06 08:36:51.285 -0400",
+				"message": "default",
+				"scriptName": "Common/keyBoard.script",
+				"handlerLine": 3,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_entertext",
+				"timestamp": "2024-06-06 08:36:56.946 -0400",
+				"message": "[returnKey]",
+				"scriptName": "Common/keyBoard.script",
+				"handlerLine": 3,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_entertext",
+				"timestamp": "2024-06-06 08:37:01.470 -0400",
+				"message": "default.config",
+				"scriptName": "Common/keyBoard.script",
+				"handlerLine": 3,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_entertext",
+				"timestamp": "2024-06-06 08:37:08.917 -0400",
+				"message": "[returnKey]",
+				"scriptName": "Common/keyBoard.script",
+				"handlerLine": 3,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_success",
+				"timestamp": "2024-06-06 08:37:11.753 -0400",
+				"message": "Open Example operation completed successfully.",
+				"scriptName": "Common/cLog.script",
+				"handlerLine": 2,
+				"identifier": "LogSuccess"
+			},
+		{
+				"handlerName": "on_waitfortext",
+				"timestamp": "2024-06-06 08:37:18.593 -0400",
+				"scriptName": "Common/waitForEvent.script",
+				"message": "found at (79, 266)",
+				"image": "(TEXT:\"default\")",
+				"handlerLine": 6,
+				"identifier": "waitfor"
+			},
+		{
+				"handlerName": "on_clearsearchsection",
+				"timestamp": "2024-06-06 08:37:19.929 -0400",
+				"message": "SEARCHRECTANGLE = ",
+				"scriptName": "Common/search.script",
+				"handlerLine": 2,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "on_setsearchsection",
+				"timestamp": "2024-06-06 08:37:25.859 -0400",
+				"message": "SEARCHRECTANGLE = [[0,0],[1920,540]]",
+				"scriptName": "Common/search.script",
+				"handlerLine": 3,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "function_isimagetextfound",
+				"timestamp": "2024-06-06 08:37:27.378 -0400",
+				"scriptName": "Common/check.script",
+				"message": "found at (79, 266)",
+				"image": "(TEXT:\"default\")",
+				"handlerLine": 9,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "function_isimagetextfound",
+				"timestamp": "2024-06-06 08:37:30.278 -0400",
+				"scriptName": "Common/check.script",
+				"message": "at (79, 266)",
+				"image": "(TEXT:\"default\")",
+				"handlerLine": 10,
+				"identifier": "moveto"
+			},
+		{
+				"handlerName": "on_success",
+				"timestamp": "2024-06-06 08:37:31.689 -0400",
+				"message": "default  is found in TopHalf",
+				"scriptName": "Common/cLog.script",
+				"handlerLine": 2,
+				"identifier": "LogSuccess"
+			},
+		{
+				"handlerName": "on_clearsearchsection",
+				"timestamp": "2024-06-06 08:37:33.401 -0400",
+				"message": "SEARCHRECTANGLE = ",
+				"scriptName": "Common/search.script",
+				"handlerLine": 2,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "on_success",
+				"timestamp": "2024-06-06 08:37:50.361 -0400",
+				"message": "Scenario Loaded successfully",
+				"scriptName": "Common/cLog.script",
+				"handlerLine": 2,
+				"identifier": "LogSuccess"
+			},
+		{
+				"handlerName": "on_keyboardshortcut",
+				"timestamp": "2024-06-06 08:37:55.916 -0400",
+				"message": "[controlKey]WiFiDemo",
+				"scriptName": "Common/keyBoard.script",
+				"handlerLine": 2,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "function_isimagetextfound",
+				"timestamp": "2024-06-06 08:38:02.347 -0400",
+				"scriptName": "Common/check.script",
+				"message": "found at (890, 528)",
+				"image": "(TEXT:\"cancel\")",
+				"handlerLine": 9,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "function_isimagetextfound",
+				"timestamp": "2024-06-06 08:38:07.607 -0400",
+				"scriptName": "Common/check.script",
+				"message": "at (890, 528)",
+				"image": "(TEXT:\"cancel\")",
+				"handlerLine": 10,
+				"identifier": "moveto"
+			},
+		{
+				"handlerName": "on_success",
+				"timestamp": "2024-06-06 08:38:09.233 -0400",
+				"message": "cancel  is found in ",
+				"scriptName": "Common/cLog.script",
+				"handlerLine": 2,
+				"identifier": "LogSuccess"
+			},
+		{
+				"handlerName": "on_clearsearchsection",
+				"timestamp": "2024-06-06 08:38:10.488 -0400",
+				"message": "SEARCHRECTANGLE = ",
+				"scriptName": "Common/search.script",
+				"handlerLine": 2,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "on_entertext",
+				"timestamp": "2024-06-06 08:38:13.359 -0400",
+				"message": "demo\\WiFiDemo",
+				"scriptName": "Common/keyBoard.script",
+				"handlerLine": 3,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_entertext",
+				"timestamp": "2024-06-06 08:38:16.338 -0400",
+				"message": "[returnKey]",
+				"scriptName": "Common/keyBoard.script",
+				"handlerLine": 3,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_entertext",
+				"timestamp": "2024-06-06 08:38:20.745 -0400",
+				"message": "WiFiDemo.config",
+				"scriptName": "Common/keyBoard.script",
+				"handlerLine": 3,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_entertext",
+				"timestamp": "2024-06-06 08:38:23.391 -0400",
+				"message": "[returnKey]",
+				"scriptName": "Common/keyBoard.script",
+				"handlerLine": 3,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_success",
+				"timestamp": "2024-06-06 08:38:24.656 -0400",
+				"message": "Open Example operation completed successfully.",
+				"scriptName": "Common/cLog.script",
+				"handlerLine": 2,
+				"identifier": "LogSuccess"
+			},
+		{
+				"handlerName": "on_waitfortext",
+				"timestamp": "2024-06-06 08:38:30.101 -0400",
+				"scriptName": "Common/waitForEvent.script",
+				"message": "found at (790, 69)",
+				"image": "(TEXT:\"WiFiDemo\")",
+				"handlerLine": 6,
+				"identifier": "waitfor"
+			},
+		{
+				"handlerName": "on_clearsearchsection",
+				"timestamp": "2024-06-06 08:38:32.401 -0400",
+				"message": "SEARCHRECTANGLE = ",
+				"scriptName": "Common/search.script",
+				"handlerLine": 2,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "on_setsearchsection",
+				"timestamp": "2024-06-06 08:38:56.881 -0400",
+				"message": "SEARCHRECTANGLE = [[0,0],[1920,540]]",
+				"scriptName": "Common/search.script",
+				"handlerLine": 3,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "function_isimagetextfound",
+				"timestamp": "2024-06-06 08:38:58.191 -0400",
+				"scriptName": "Common/check.script",
+				"message": "found at (790, 69)",
+				"image": "(TEXT:\"WiFiDemo\")",
+				"handlerLine": 9,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "function_isimagetextfound",
+				"timestamp": "2024-06-06 08:39:00.105 -0400",
+				"scriptName": "Common/check.script",
+				"message": "at (790, 69)",
+				"image": "(TEXT:\"WiFiDemo\")",
+				"handlerLine": 10,
+				"identifier": "moveto"
+			},
+		{
+				"handlerName": "on_success",
+				"timestamp": "2024-06-06 08:39:01.288 -0400",
+				"message": "WiFiDemo  is found in TopHalf",
+				"scriptName": "Common/cLog.script",
+				"handlerLine": 2,
+				"identifier": "LogSuccess"
+			},
+		{
+				"handlerName": "on_clearsearchsection",
+				"timestamp": "2024-06-06 08:39:02.449 -0400",
+				"message": "SEARCHRECTANGLE = ",
+				"scriptName": "Common/search.script",
+				"handlerLine": 2,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "on_success",
+				"timestamp": "2024-06-06 08:39:10.584 -0400",
+				"message": "Scenario Loaded successfully",
+				"scriptName": "Common/cLog.script",
+				"handlerLine": 2,
+				"identifier": "LogSuccess"
+			},
+		{
+				"handlerName": "on_keyboardshortcut",
+				"timestamp": "2024-06-06 08:39:14.390 -0400",
+				"message": "[controlKey]MultiChannel",
+				"scriptName": "Common/keyBoard.script",
+				"handlerLine": 2,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "function_isimagetextfound",
+				"timestamp": "2024-06-06 08:39:20.932 -0400",
+				"scriptName": "Common/check.script",
+				"message": "found at (890, 528)",
+				"image": "(TEXT:\"cancel\")",
+				"handlerLine": 9,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "function_isimagetextfound",
+				"timestamp": "2024-06-06 08:39:26.422 -0400",
+				"scriptName": "Common/check.script",
+				"message": "at (890, 528)",
+				"image": "(TEXT:\"cancel\")",
+				"handlerLine": 10,
+				"identifier": "moveto"
+			},
+		{
+				"handlerName": "on_success",
+				"timestamp": "2024-06-06 08:39:27.624 -0400",
+				"message": "cancel  is found in ",
+				"scriptName": "Common/cLog.script",
+				"handlerLine": 2,
+				"identifier": "LogSuccess"
+			},
+		{
+				"handlerName": "on_clearsearchsection",
+				"timestamp": "2024-06-06 08:39:28.584 -0400",
+				"message": "SEARCHRECTANGLE = ",
+				"scriptName": "Common/search.script",
+				"handlerLine": 2,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "on_entertext",
+				"timestamp": "2024-06-06 08:39:31.117 -0400",
+				"message": "demo\\MultiChannel",
+				"scriptName": "Common/keyBoard.script",
+				"handlerLine": 3,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_entertext",
+				"timestamp": "2024-06-06 08:39:32.902 -0400",
+				"message": "[returnKey]",
+				"scriptName": "Common/keyBoard.script",
+				"handlerLine": 3,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_entertext",
+				"timestamp": "2024-06-06 08:39:35.729 -0400",
+				"message": "MultiChannel.config",
+				"scriptName": "Common/keyBoard.script",
+				"handlerLine": 3,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_entertext",
+				"timestamp": "2024-06-06 08:39:38.236 -0400",
+				"message": "[returnKey]",
+				"scriptName": "Common/keyBoard.script",
+				"handlerLine": 3,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_success",
+				"timestamp": "2024-06-06 08:39:39.545 -0400",
+				"message": "Open Example operation completed successfully.",
+				"scriptName": "Common/cLog.script",
+				"handlerLine": 2,
+				"identifier": "LogSuccess"
+			},
+		{
+				"handlerName": "on_waitfortext",
+				"timestamp": "2024-06-06 08:40:57.438 -0400",
+				"scriptName": "Common/waitForEvent.script",
+				"message": "Unable To Find Any Image On Screen \"(TEXT:\"MultiChannel\")\" within 60.00 seconds. Text not found.",
+				"image": "(TEXT:\"MultiChannel\")",
+				"handlerLine": 6,
+				"identifier": "Exception"
+			},
+		{
+				"handlerName": "on_cerror",
+				"timestamp": "2024-06-06 08:41:28.129 -0400",
+				"message": "waitForTextAppearance Failed:waitfor Error - Unable To Find Any Image On Screen \"(TEXT:\"MultiChannel\")\" within 60.00 seconds. Text not found.",
+				"scriptName": "Common/cLog.script",
+				"handlerLine": 2,
+				"identifier": "LogError"
+			},
+		{
+				"handlerName": "on_waitfortext",
+				"timestamp": "2024-06-06 08:41:28.521 -0400",
+				"message": "Image Not Found - waitfor Error - Unable To Find Any Image On Screen \"(TEXT:\"MultiChannel\")\" within 60.00 seconds. Text not found.",
+				"scriptName": "Common/waitForEvent.script",
+				"handlerLine": 10,
+				"identifier": "Throw"
+			},
+		{
+				"handlerName": "on_cerror",
+				"timestamp": "2024-06-06 08:41:30.440 -0400",
+				"message": "validation of loaded scenario failed:waitfor Error - Unable To Find Any Image On Screen \"(TEXT:\"MultiChannel\")\" within 60.00 seconds. Text not found.",
+				"scriptName": "Common/cLog.script",
+				"handlerLine": 2,
+				"identifier": "LogError"
+			},
+		{
+				"handlerName": "on_loadedscenario",
+				"timestamp": "2024-06-06 08:41:30.866 -0400",
+				"message": "Image Not Found - waitfor Error - Unable To Find Any Image On Screen \"(TEXT:\"MultiChannel\")\" within 60.00 seconds. Text not found.",
+				"scriptName": "Common/check.script",
+				"handlerLine": 18,
+				"identifier": "Throw"
+			},
+		{
+				"handlerName": "on_cerror",
+				"timestamp": "2024-06-06 08:41:31.784 -0400",
+				"message": "loadScenario failed:waitfor Error - Unable To Find Any Image On Screen \"(TEXT:\"MultiChannel\")\" within 60.00 seconds. Text not found.",
+				"scriptName": "Common/cLog.script",
+				"handlerLine": 2,
+				"identifier": "LogError"
+			},
+		{
+				"handlerName": "on_loadscenario",
+				"timestamp": "2024-06-06 08:41:32.242 -0400",
+				"message": "Image Not Found - waitfor Error - Unable To Find Any Image On Screen \"(TEXT:\"MultiChannel\")\" within 60.00 seconds. Text not found.",
+				"scriptName": "EXataGUI/scenario.script",
+				"handlerLine": 25,
+				"identifier": "Throw"
+			},
+		{
+				"handlerName": "on_cerror",
+				"timestamp": "2024-06-06 08:41:32.977 -0400",
+				"message": "Error in running verifyRecentFilesList TestCase",
+				"scriptName": "Common/cLog.script",
+				"handlerLine": 2,
+				"identifier": "LogError"
+			},
+		{
+				"handlerName": "on_verifyrecentfileslist",
+				"timestamp": "2024-06-06 08:41:33.434 -0400",
+				"message": "Image Not Found - waitfor Error - Unable To Find Any Image On Screen \"(TEXT:\"MultiChannel\")\" within 60.00 seconds. Text not found.",
+				"scriptName": "TestCases/HumanInTheLoop/verifyRecentFilesList.script",
+				"handlerLine": 34,
+				"identifier": "Throw"
+			},
+		{
+				"handlerName": "on_startregulartests",
+				"timestamp": "2024-06-06 08:41:33.441 -0400",
+				"message": "(Duration:\"299.963\", Errors:\"5\", Exceptions:\"5\", StartTime:\"2024-06-06 08:36:33 -0400\", Successes:\"10\", TestCase:\"verifyRecentFilesList\", Warnings:\"0\")",
+				"scriptName": "TestCases/Regular/testLauncher.script",
+				"handlerLine": 22,
+				"identifier": "EndTestCase"
+			},
+		{
+				"handlerName": "on_startregulartests",
+				"timestamp": "2024-06-06 08:41:33.444 -0400",
+				"message": "(Duration:\"299.997\", Errors:\"5\", Exceptions:\"5\", StartTime:\"2024-06-06 08:36:33 -0400\", Successes:\"10\", TestCase:\"TestCases/HumanInTheLoop/verifyRecentFilesList.script\", Warnings:\"0\")",
+				"scriptName": "TestCases/Regular/testLauncher.script",
+				"handlerLine": 22,
+				"identifier": "EndTestCase"
+			},
+		{
+				"handlerName": "on_startregulartests",
+				"timestamp": "2024-06-06 08:41:33.572 -0400",
+				"scriptName": "TestCases/Regular/testLauncher.script",
+				"message": "Image Not Found: waitfor Error - Unable To Find Any Image On Screen \"(TEXT:\"MultiChannel\")\" within 60.00 seconds. Text not found. -- Execution Time 0:05:00 TestCases/HumanInTheLoop/verifyRecentFilesList.script",
+				"image": "Screen_Error.png",
+				"handlerLine": 22,
+				"identifier": "FAILURE"
+			}
+	],
+	"createdTimestamp": "2024-06-06 08:36:33.447 -0400"
+}

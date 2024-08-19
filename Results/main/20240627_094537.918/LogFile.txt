@@ -1,0 +1,36 @@
+﻿2024-06-27 09:45:37.928 -0400	START		Running main.script
+2024-06-27 09:45:38.035 -0400	Log		Started the Execution of the EXataGUI Regression Scripts at 09:45 AM on 06/27/24	2	on_cmessage	Common/cLog.script
+2024-06-27 09:45:38.089 -0400	setoptions		ImageUpdate = Off	2	on_variabledata	HelperUtilities/variableData.script
+2024-06-27 09:45:38.091 -0400	setoptions		MouseMoveMode = 2	2	on_variabledata	HelperUtilities/variableData.script
+2024-06-27 09:45:38.094 -0400	setoptions		MouseMoveSpeed = 10	2	on_variabledata	HelperUtilities/variableData.script
+2024-06-27 09:45:38.097 -0400	setoptions		remoteWorkInterval = 1	2	on_variabledata	HelperUtilities/variableData.script
+2024-06-27 09:45:38.272 -0400	Log		Screen Width: 1920, Screen Height: 1080	6	function_checkscreenresolution	Common/check.script
+2024-06-27 09:45:38.541 -0400	Log		C:\Program Files\Scalable\exata\8.2.0.0	2	on_cmessage	Common/cLog.script
+2024-06-27 09:45:38.658 -0400	Log		C:\Users\pratdaga\Documents\UserScenarios	2	on_cmessage	Common/cLog.script
+2024-06-27 09:45:38.781 -0400	Log		generateReport: true	2	on_cmessage	Common/cLog.script
+2024-06-27 09:45:38.935 -0400	Log		The mode of the Execution of Test : full	2	on_cmessage	Common/cLog.script
+2024-06-27 09:45:41.056 -0400	BeginTestCase		hideTaskBar	3	on_hidetaskbar	OS/windows.script
+2024-06-27 09:45:41.190 -0400	typetext		[windowsKey]	3	on_entertext	Common/keyBoard.script
+2024-06-27 09:45:42.688 -0400	typetext		taskbar settings	3	on_entertext	Common/keyBoard.script
+2024-06-27 09:45:43.722 -0400	typetext		[returnKey]	3	on_entertext	Common/keyBoard.script
+2024-06-27 09:45:44.924 -0400	set		SEARCHRECTANGLE = [[251.52,49.68],[741.12,317.52]]	3	on_setsearchsection	Common/search.script
+2024-06-27 09:46:45.124 -0400	imagefound	(TEXT:"hide the taskbar in desktop mode")	Unable to Find Image (TEXT:"hide the taskbar in desktop mode"). Text not found.	9	function_isimagetextfound	Common/check.script
+2024-06-27 09:46:45.252 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-27 09:46:45.387 -0400	LogError		Text: 'hide the taskbar in desktop mode' did not found	2	on_cerror	Common/cLog.script
+2024-06-27 09:46:45.421 -0400	Throw		hidetaskbarexception: - Unable to hide the taskbar	19	on_hidetaskbar	OS/windows.script
+2024-06-27 09:46:45.462 -0400	LogError		 Error in running hideTaskBar testcase	2	on_cerror	Common/cLog.script
+2024-06-27 09:46:45.494 -0400	Throw		hidetaskbarexception: - Unable to hide the taskbar	27	on_hidetaskbar	OS/windows.script
+2024-06-27 09:46:45.558 -0400	LogError		initTestCases failed: Unable to hide the taskbar	2	on_cerror	Common/cLog.script
+2024-06-27 09:46:45.593 -0400	Throw		hidetaskbarexception: - Unable to hide the taskbar	15	on_inittestcases	TestCases/launcher.script
+2024-06-27 09:46:45.643 -0400	LogError		main script failed:Unable to hide the taskbar	2	on_cerror	Common/cLog.script
+2024-06-27 09:46:45.952 -0400	set		SEARCHRECTANGLE = [[0,0],[960,540]]	3	on_setsearchsection	Common/search.script
+2024-06-27 09:46:50.770 -0400	imagefound	(TEXT:"Results")	Unable to Find Image (TEXT:"Results"). Text not found.	9	function_isimagetextfound	Common/check.script
+2024-06-27 09:46:50.825 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-27 09:46:51.160 -0400	typetext		[windowsAltKey][F4]	3	on_entertext	Common/keyBoard.script
+2024-06-27 09:46:52.198 -0400	typetext		[returnKey]	3	on_entertext	Common/keyBoard.script
+2024-06-27 09:46:52.443 -0400	set		SEARCHRECTANGLE = [[480,270],[1440,810]]	3	on_setsearchsection	Common/search.script
+2024-06-27 09:46:57.681 -0400	imagefound	(TEXT:"Do you want to Save the Changes")	Unable to Find Image (TEXT:"Do you want to Save the Changes"). Text not found.	9	function_isimagetextfound	Common/check.script
+2024-06-27 09:46:57.724 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-27 09:46:57.907 -0400	EndTestCase		(Duration:"76.851", Errors:"4", Exceptions:"3", StartTime:"2024-06-27 09:45:41 -0400", Successes:"0", TestCase:"hideTaskBar", Warnings:"0")
+2024-06-27 09:46:57.912 -0400	EndTestCase		(Duration:"79.98", Errors:"4", Exceptions:"3", StartTime:"2024-06-27 09:45:37 -0400", Successes:"0", TestCase:"main.script", Warnings:"0")
+2024-06-27 09:46:58.110 -0400	FAILURE	Screen_Error.png	Script Error: Number of Errors logged: 4 -- Execution Time 0:01:19 main.script

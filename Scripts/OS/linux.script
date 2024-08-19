@@ -1,0 +1,52 @@
+﻿# to run Linux command for running the EXataGUI
+to startEXataGUI
+	set the defaultTextPlatform.OCRStyles.Default.DPI to 144
+	Try
+		global changeDirectory, exataHome, bin, DateTime
+		"Common/keyBoard".enterText altKey&f2
+		"Common/waitForEvent".waitForText "Enter a Command","Centre"
+		"Common/keyBoard".enterText "gnome-terminal"
+		"Common/keyBoard".pressEnter
+		"Common/waitForEvent".waitForText "Terminal","",90,false
+		"Common/keyBoard".enterText changeDirectory && exataHome & "/" & bin
+		"Common/keyBoard".pressEnter
+		"Common/keyBoard".enterText "./EXataGUI"
+		"Common/keyBoard".pressEnter
+		"Common/search".clearSearchSection
+		"Common/clickEvent".clickScaled "0.7"
+		"Common/clickEvent".clickScaled "0.8"
+		//Capturing a Baseline Image
+		"Common/check".compare_screen  GUI_Canvas_Linux & DateTime,[465,254,927,702]
+	Catch theException
+		"Common/cLog".cError "runExataGUI function failed:"&theException's reason
+		throw theException 
+	End try
+end startEXataGUI
+
+# to run validation for linux
+to validateEmptyCanvas
+	set the defaultTextPlatform.OCRStyles.Default.DPI to 144
+	Try
+		global changeDirectory, exataHome, bin, osName, platfrm, ostype, DateTime
+		//Compares the screen with Baseline Image
+		"Common/check".compare_screen  GUI_Canvas_Linux & DateTime, [465,254,927,702]
+		
+		if "Common/check".compare_screen (GUI_Canvas_Linux & DateTime, [465,254,927,702]) isn't empty then
+			"Common/keyBoard".enterText altKey,f2
+			"Common/waitForEvent".waitForText "command",60,false
+			"Common/keyBoard".enterText "gnome-terminal"
+			"Common/keyBoard".pressEnter
+			"Common/waitForEvent".waitForText "Terminal",90,false
+			"Common/keyBoard".enterText "killall EXataGUI"
+			"Common/keyBoard".pressEnter
+			"Common/search".clearSearchSection
+			"Common/clickEvent".clickScaled "0.7"
+			"Common/clickEvent".clickScaled "0.8"
+		else 
+			Exit handler
+		end if
+	Catch theException
+		"Common/cLog".cError "Gui validation failed for Linux:"&theException's reason
+		throw theException -- re-throw the exception (if desired)
+	End try
+end validateEmptyCanvas

@@ -1,0 +1,44 @@
+﻿# to launch EXata GUI over the SUT
+to launchEXataGUI
+	Try
+		put "OS/OSType".getOSType into OS
+		if OS is "Linux" then
+			return "OS/linux".startEXataGUI
+		else
+			return "OS/windows".startEXataGUI
+		end if
+	Catch theException
+		"Common/cLog".cError "Error in launching EXataGUI:"&theException's reason
+		throw theException 
+	End try
+end launchEXataGUI
+
+# to close EXata GUI over the SUT
+to closeEXataGUI
+	set the defaultTextPlatform.OCRStyles.Default.DPI to 144
+	if "Common/check".isImageTextFound("Results","TopLeftQuadrant",false,3.0) then
+		"Common/keyBoard".enterText AltKey&f4
+	end if
+	-- clicking on the close icon
+	"Common/keyBoard".enterText AltKey&f4
+	"Common/keyBoard".pressEnter
+	-- check if save scenario Pops up
+	if "Common/check".isImageTextFound("Do you want to save","Centre",false,5.0) then
+		"Common/keyBoard".enterText rightArrow
+		"Common/keyBoard".pressEnter
+	end if
+end closeEXataGUI
+
+to validateEmptyCanvas
+	Try
+		put "OS/OSType".getOSType into OS
+		if OS is "Linux" then
+			"OS/linux".validateEmptyCanvas
+		else
+			"OS/windows".validateEmptyCanvas
+		end if
+	Catch theException
+		"Common/cLog".cError "Error in validating Canvas:"&theException's reason
+		throw theException 
+	End try
+end validateEmptyCanvas

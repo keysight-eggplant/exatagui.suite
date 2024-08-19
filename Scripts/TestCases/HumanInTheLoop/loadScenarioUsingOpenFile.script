@@ -1,0 +1,31 @@
+﻿Try
+	BeginTestCase "loadScenarioUsingOpenFile"
+	
+	global exatahome
+	
+	# initializing the scenario
+	"EXataGUI/scenario".initScenario
+	
+	# to load the dted terrain sample scenario
+	"EXataGUI/scenario".loadOpenFileScenario exatahome & "\" & "scenarios" & "\wireless\terrain-dted\dtedtest", "dtedtest", "", "dted", true
+	
+	#Click on Close Tab to close the Scenario
+	"EXataGUI/scenario".closeScenario "closetab"
+	
+	# to load the dted terrain sample scenario using a keyboard shortcut key
+	"EXataGUI/scenario".loadOpenFileScenario exatahome & "\" & "scenarios" & "\wireless\terrain-dted\dtedtest", "dtedtest", "o", "dted", true
+	
+	#Click on Close Tab to close the Scenario
+	"EXataGUI/scenario".closeScenario "closetab"
+	
+	# to load the dted terrain sample scenario using the "Open Scenario Configuration or Animation File" button
+	"EXataGUI/scenario".loadOpenFileScenario exatahome & "\" & "scenarios" & "\wireless\terrain-dted\dtedtest", "dtedtest", "","OpenConfigOrAniFile", "dted", true
+	
+	#Click on Close Tab to close the Scenario
+	"EXataGUI/scenario".closeScenario "closetab"
+	
+	EndTestCase "loadScenarioUsingOpenFile" 
+Catch theException
+	"Common/cLog".cError "Error in running loadScenarioUsingOpenFile TestCase"
+	throw theException 
+End try

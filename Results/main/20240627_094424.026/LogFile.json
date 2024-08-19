@@ -1,0 +1,145 @@
+{
+	"entries": [
+		{
+				"message": "Running main.script",
+				"identifier": "START",
+				"timestamp": "2024-06-27 09:44:24.030 -0400"
+			},
+		{
+				"handlerName": "on_cmessage",
+				"timestamp": "2024-06-27 09:44:24.237 -0400",
+				"message": "Started the Execution of the EXataGUI Regression Scripts at 09:44 AM on 06/27/24",
+				"scriptName": "Common/cLog.script",
+				"handlerLine": 2,
+				"identifier": "Log"
+			},
+		{
+				"handlerName": "on_variabledata",
+				"timestamp": "2024-06-27 09:44:24.282 -0400",
+				"message": "ImageUpdate = Off",
+				"scriptName": "HelperUtilities/variableData.script",
+				"handlerLine": 2,
+				"identifier": "setoptions"
+			},
+		{
+				"handlerName": "on_variabledata",
+				"timestamp": "2024-06-27 09:44:24.285 -0400",
+				"message": "MouseMoveMode = 2",
+				"scriptName": "HelperUtilities/variableData.script",
+				"handlerLine": 2,
+				"identifier": "setoptions"
+			},
+		{
+				"handlerName": "on_variabledata",
+				"timestamp": "2024-06-27 09:44:24.286 -0400",
+				"message": "MouseMoveSpeed = 10",
+				"scriptName": "HelperUtilities/variableData.script",
+				"handlerLine": 2,
+				"identifier": "setoptions"
+			},
+		{
+				"handlerName": "on_variabledata",
+				"timestamp": "2024-06-27 09:44:24.289 -0400",
+				"message": "remoteWorkInterval = 1",
+				"scriptName": "HelperUtilities/variableData.script",
+				"handlerLine": 2,
+				"identifier": "setoptions"
+			},
+		{
+				"handlerName": "function_checkscreenresolution",
+				"timestamp": "2024-06-27 09:44:24.437 -0400",
+				"message": "Screen Width: 1920, Screen Height: 1080",
+				"scriptName": "Common/check.script",
+				"handlerLine": 6,
+				"identifier": "Log"
+			},
+		{
+				"handlerName": "on_cmessage",
+				"timestamp": "2024-06-27 09:44:24.710 -0400",
+				"message": "C:\\Program Files\\Scalable\\exata\\8.2.0.0",
+				"scriptName": "Common/cLog.script",
+				"handlerLine": 2,
+				"identifier": "Log"
+			},
+		{
+				"handlerName": "on_cmessage",
+				"timestamp": "2024-06-27 09:44:24.827 -0400",
+				"message": "C:\\Users\\pratdaga\\Documents\\UserScenarios",
+				"scriptName": "Common/cLog.script",
+				"handlerLine": 2,
+				"identifier": "Log"
+			},
+		{
+				"handlerName": "on_cmessage",
+				"timestamp": "2024-06-27 09:44:24.934 -0400",
+				"message": "generateReport: true",
+				"scriptName": "Common/cLog.script",
+				"handlerLine": 2,
+				"identifier": "Log"
+			},
+		{
+				"handlerName": "on_cmessage",
+				"timestamp": "2024-06-27 09:44:25.071 -0400",
+				"message": "The mode of the Execution of Test : full",
+				"scriptName": "Common/cLog.script",
+				"handlerLine": 2,
+				"identifier": "Log"
+			},
+		{
+				"handlerName": "on_hidetaskbar",
+				"timestamp": "2024-06-27 09:44:27.420 -0400",
+				"message": "hideTaskBar",
+				"scriptName": "OS/windows.script",
+				"handlerLine": 3,
+				"identifier": "BeginTestCase"
+			},
+		{
+				"handlerName": "on_entertext",
+				"timestamp": "2024-06-27 09:44:30.945 -0400",
+				"message": "[windowsKey]",
+				"scriptName": "Common/keyBoard.script",
+				"handlerLine": 3,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_entertext",
+				"timestamp": "2024-06-27 09:44:32.455 -0400",
+				"message": "taskbar settings",
+				"scriptName": "Common/keyBoard.script",
+				"handlerLine": 3,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_entertext",
+				"timestamp": "2024-06-27 09:44:33.499 -0400",
+				"message": "[returnKey]",
+				"scriptName": "Common/keyBoard.script",
+				"handlerLine": 3,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_setsearchsection",
+				"timestamp": "2024-06-27 09:44:35.505 -0400",
+				"message": "SEARCHRECTANGLE = [[251.52,49.68],[741.12,317.52]]",
+				"scriptName": "Common/search.script",
+				"handlerLine": 3,
+				"identifier": "set"
+			},
+		{
+				"message": "(Duration:\"66.951\", Errors:\"1\", Exceptions:\"0\", StartTime:\"2024-06-27 09:44:27 -0400\", Successes:\"0\", TestCase:\"hideTaskBar\", Warnings:\"0\")",
+				"identifier": "EndTestCase",
+				"timestamp": "2024-06-27 09:45:34.371 -0400"
+			},
+		{
+				"message": "(Duration:\"70.34\", Errors:\"1\", Exceptions:\"0\", StartTime:\"2024-06-27 09:44:24 -0400\", Successes:\"0\", TestCase:\"main.script\", Warnings:\"0\")",
+				"identifier": "EndTestCase",
+				"timestamp": "2024-06-27 09:45:34.375 -0400"
+			},
+		{
+				"message": "Execution Time 0:01:10 main.script",
+				"identifier": "ABORTED",
+				"timestamp": "2024-06-27 09:45:34.385 -0400"
+			}
+	],
+	"createdTimestamp": "2024-06-27 09:44:24.035 -0400"
+}

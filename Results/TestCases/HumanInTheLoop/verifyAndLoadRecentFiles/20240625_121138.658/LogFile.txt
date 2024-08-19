@@ -1,0 +1,66 @@
+﻿2024-06-25 12:11:38.665 -0400	START		Running TestCases/HumanInTheLoop/verifyAndLoadRecentFiles.script	22	on_starthitltests	Testcases/HumanInTheLoop/testLauncher.script
+2024-06-25 12:11:38.735 -0400	BeginTestCase		verifyAndLoadRecentFiles	2	on_verifyandloadrecentfiles	TestCases/HumanInTheLoop/verifyAndLoadRecentFiles.script
+2024-06-25 12:11:38.948 -0400	CompareScreen	[Baseline_Screens]/GUI_Canvas_Windows25 6 2024 _ 11 45 20.png	CompareScreen "GUI_Canvas_Windows25 6 2024 _ 11 45 20" -- No significant differences from baseline	3	on_compare_screen	Common/check.script
+2024-06-25 12:11:39.086 -0400	CompareScreen	[Baseline_Screens]/GUI_Canvas_Windows25 6 2024 _ 11 45 20.png	CompareScreen "GUI_Canvas_Windows25 6 2024 _ 11 45 20" -- No significant differences from baseline	3	function_compare_screen	Common/check.script
+2024-06-25 12:11:39.405 -0400	set		SEARCHRECTANGLE = [[0,0],[249.6,151.2]]	3	on_setsearchsection	Common/search.script
+2024-06-25 12:11:41.401 -0400	click	(TEXT:"File")	at (14, 31)	6	on_leftevent	Common/clickEvent.script
+2024-06-25 12:11:42.467 -0400	imagefound	(TEXT:"New")	found at (44, 55)	9	function_isimagetextfound	Common/check.script
+2024-06-25 12:11:42.819 -0400	moveto	(TEXT:"New")	at (44, 55)	10	function_isimagetextfound	Common/check.script
+2024-06-25 12:11:42.868 -0400	LogSuccess		New  is found in 	2	on_success	Common/cLog.script
+2024-06-25 12:11:42.931 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-25 12:11:43.076 -0400	LogSuccess		File menu opened successfully	2	on_success	Common/cLog.script
+2024-06-25 12:11:43.198 -0400	capturescreen	verifyFileMenu.png	(0,2,808,810)	4	on_capturescreenshots	Common/captureScreenShots.script
+2024-06-25 12:11:43.384 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-25 12:11:43.586 -0400	set		SEARCHRECTANGLE = [[0,0],[249.6,151.2]]	3	on_setsearchsection	Common/search.script
+2024-06-25 12:11:44.185 -0400	click	(TEXT:"Open Example")	at (68, 99)	6	on_leftevent	Common/clickEvent.script
+2024-06-25 12:11:44.265 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-25 12:11:54.708 -0400	imagefound	(TEXT:"cancel")	found at (1381, 743)	9	function_isimagetextfound	Common/check.script
+2024-06-25 12:12:01.011 -0400	moveto	(TEXT:"cancel")	at (1381, 743)	10	function_isimagetextfound	Common/check.script
+2024-06-25 12:12:01.100 -0400	LogSuccess		cancel  is found in 	2	on_success	Common/cLog.script
+2024-06-25 12:12:01.169 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-25 12:12:01.249 -0400	LogSuccess		The Open File dialog box is successfully open after selecting the Open File option	2	on_success	Common/cLog.script
+2024-06-25 12:12:01.311 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-25 12:12:06.195 -0400	imagefound	(TEXT:"cancel")	found at (1381, 743)	9	function_isimagetextfound	Common/check.script
+2024-06-25 12:12:10.627 -0400	moveto	(TEXT:"cancel")	at (1381, 743)	10	function_isimagetextfound	Common/check.script
+2024-06-25 12:12:10.709 -0400	LogSuccess		cancel  is found in 	2	on_success	Common/cLog.script
+2024-06-25 12:12:10.785 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-25 12:12:11.718 -0400	typetext		default	3	on_entertext	Common/keyBoard.script
+2024-06-25 12:12:12.733 -0400	typetext		[returnKey]	3	on_entertext	Common/keyBoard.script
+2024-06-25 12:12:13.916 -0400	typetext		default.config	3	on_entertext	Common/keyBoard.script
+2024-06-25 12:12:14.931 -0400	typetext		[returnKey]	3	on_entertext	Common/keyBoard.script
+2024-06-25 12:12:20.519 -0400	waitfor	(TEXT:"default")	found at (1100, 284)	6	on_waitfortext	Common/waitForEvent.script
+2024-06-25 12:12:20.661 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-25 12:12:21.075 -0400	set		SEARCHRECTANGLE = [[0,0],[1920,540]]	3	on_setsearchsection	Common/search.script
+2024-06-25 12:12:23.893 -0400	imagefound	(TEXT:"default")	found at (314, 160)	9	function_isimagetextfound	Common/check.script
+2024-06-25 12:12:28.487 -0400	moveto	(TEXT:"default")	at (314, 160)	10	function_isimagetextfound	Common/check.script
+2024-06-25 12:12:28.573 -0400	LogSuccess		default  is found in TopHalf	2	on_success	Common/cLog.script
+2024-06-25 12:12:28.642 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-25 12:12:33.803 -0400	LogSuccess		Scenario Loaded successfully	2	on_success	Common/cLog.script
+2024-06-25 12:12:33.891 -0400	LogSuccess		Load scenario using Open Example operation completed successfully.	2	on_success	Common/cLog.script
+2024-06-25 12:12:34.039 -0400	capturescreen	default.png	(644,195,1522,1026)	4	on_capturescreenshots	Common/captureScreenShots.script
+2024-06-25 12:12:34.396 -0400	set		SEARCHRECTANGLE = [[0,0],[249.6,151.2]]	3	on_setsearchsection	Common/search.script
+2024-06-25 12:12:35.348 -0400	click	(TEXT:"File")	at (14, 31)	6	on_leftevent	Common/clickEvent.script
+2024-06-25 12:12:36.539 -0400	imagefound	(TEXT:"New")	found at (44, 55)	9	function_isimagetextfound	Common/check.script
+2024-06-25 12:12:36.880 -0400	moveto	(TEXT:"New")	at (44, 55)	10	function_isimagetextfound	Common/check.script
+2024-06-25 12:12:36.927 -0400	LogSuccess		New  is found in 	2	on_success	Common/cLog.script
+2024-06-25 12:12:36.996 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-25 12:12:37.131 -0400	LogSuccess		File menu opened successfully	2	on_success	Common/cLog.script
+2024-06-25 12:12:37.250 -0400	capturescreen	verifyFileMenu.png	(0,2,808,810)	4	on_capturescreenshots	Common/captureScreenShots.script
+2024-06-25 12:12:37.425 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-25 12:12:37.629 -0400	set		SEARCHRECTANGLE = [[0,0],[249.6,151.2]]	3	on_setsearchsection	Common/search.script
+2024-06-25 12:12:38.231 -0400	click	(TEXT:"Open Example")	at (68, 99)	6	on_leftevent	Common/clickEvent.script
+2024-06-25 12:12:38.319 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-25 12:14:00.603 -0400	imagefound	(TEXT:"cancel")	Unable to Find Image (TEXT:"cancel"). Text not found.	9	function_isimagetextfound	Common/check.script
+2024-06-25 12:14:00.687 -0400	LogError		Image text not found: cancel	2	on_cerror	Common/cLog.script
+2024-06-25 12:14:00.745 -0400	Throw		ImageTextNotFoundException:  - cancel:not found	17	function_isimagetextfound	Common/check.script
+2024-06-25 12:14:00.835 -0400	LogError		isImageTextFound failed: cancel:not found	2	on_cerror	Common/cLog.script
+2024-06-25 12:14:00.908 -0400	Throw		ImageTextNotFoundException:  - cancel:not found	26	function_isimagetextfound	Common/check.script
+2024-06-25 12:14:00.990 -0400	LogError		open File file menu failed:cancel:not found	2	on_cerror	Common/cLog.script
+2024-06-25 12:14:01.061 -0400	Throw		ImageTextNotFoundException:  - cancel:not found	18	on_selectopenfile	EXataGUI/actions/menuBar.script
+2024-06-25 12:14:01.132 -0400	LogError		loadScenario failed:cancel:not found	2	on_cerror	Common/cLog.script
+2024-06-25 12:14:01.195 -0400	Throw		ImageTextNotFoundException:  - cancel:not found	34	on_loadopenexamplescenario	EXataGUI/scenario.script
+2024-06-25 12:14:01.266 -0400	LogError		Error in running verifyAndLoadRecentFiles TestCase	2	on_cerror	Common/cLog.script
+2024-06-25 12:14:01.314 -0400	Throw		ImageTextNotFoundException:  - cancel:not found	34	on_verifyandloadrecentfiles	TestCases/HumanInTheLoop/verifyAndLoadRecentFiles.script
+2024-06-25 12:14:01.323 -0400	EndTestCase		(Duration:"142.655", Errors:"6", Exceptions:"5", StartTime:"2024-06-25 12:11:38 -0400", Successes:"10", TestCase:"TestCases/HumanInTheLoop/verifyAndLoadRecentFiles.script", Warnings:"0")	22	on_starthitltests	Testcases/HumanInTheLoop/testLauncher.script
+2024-06-25 12:14:01.345 -0400	EndTestCase		(Duration:"142.611", Errors:"6", Exceptions:"5", StartTime:"2024-06-25 12:11:38 -0400", Successes:"10", TestCase:"verifyAndLoadRecentFiles", Warnings:"0")	22	on_starthitltests	Testcases/HumanInTheLoop/testLauncher.script
+2024-06-25 12:14:01.497 -0400	FAILURE	Screen_Error.png	ImageTextNotFoundException: : cancel:not found -- Execution Time 0:02:22 TestCases/HumanInTheLoop/verifyAndLoadRecentFiles.script	22	on_starthitltests	Testcases/HumanInTheLoop/testLauncher.script

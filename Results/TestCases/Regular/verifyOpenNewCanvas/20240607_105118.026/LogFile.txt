@@ -1,0 +1,114 @@
+﻿2024-06-07 10:51:18.035 -0400	START		Running TestCases/Regular/verifyOpenNewCanvas.script	22	on_startregulartests	TestCases/Regular/testLauncher.script
+2024-06-07 10:51:18.082 -0400	BeginTestCase		verifyOpenNewCanvas	2	on_verifyopennewcanvas	TestCases/Regular/verifyOpenNewCanvas.script
+2024-06-07 10:51:18.431 -0400	CompareScreen	[Baseline_Screens]/GUI_Canvas_Windows7 6 2024 _ 10 45 49.png	CompareScreen "GUI_Canvas_Windows7 6 2024 _ 10 45 49" -- No significant differences from baseline	3	on_compare_screen	Common/check.script
+2024-06-07 10:51:18.558 -0400	CompareScreen	[Baseline_Screens]/GUI_Canvas_Windows7 6 2024 _ 10 45 49.png	CompareScreen "GUI_Canvas_Windows7 6 2024 _ 10 45 49" -- No significant differences from baseline	3	function_compare_screen	Common/check.script
+2024-06-07 10:51:18.942 -0400	set		SEARCHRECTANGLE = [[0,0],[249.6,151.2]]	3	on_setsearchsection	Common/search.script
+2024-06-07 10:51:19.314 -0400	set		SEARCHRECTANGLE = [[0,0],[249.6,151.2]]	3	on_setsearchsection	Common/search.script
+2024-06-07 10:51:22.053 -0400	click	(TEXT:"File")	at (14, 31)	6	on_leftevent	Common/clickEvent.script
+2024-06-07 10:51:23.429 -0400	imagefound	(TEXT:"New")	found at (44, 55)	9	function_isimagetextfound	Common/check.script
+2024-06-07 10:51:23.745 -0400	moveto	(TEXT:"New")	at (44, 55)	10	function_isimagetextfound	Common/check.script
+2024-06-07 10:51:23.784 -0400	LogSuccess		New  is found in 	2	on_success	Common/cLog.script
+2024-06-07 10:51:23.851 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-07 10:51:23.985 -0400	LogSuccess		File menu opened successfully	2	on_success	Common/cLog.script
+2024-06-07 10:51:24.114 -0400	capturescreen	verifyFileMenu.png	(0,2,808,810)	4	on_capturescreenshots	Common/captureScreenShots.script
+2024-06-07 10:51:24.268 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-07 10:51:24.591 -0400	set		SEARCHRECTANGLE = [[0,0],[249.6,151.2]]	3	on_setsearchsection	Common/search.script
+2024-06-07 10:51:25.115 -0400	click	(TEXT:"New")	at (44, 55)	6	on_leftevent	Common/clickEvent.script
+2024-06-07 10:51:25.175 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-07 10:51:25.695 -0400	set		SEARCHRECTANGLE = [[216.96,143.64],[412.8,195.48]]	3	on_setsearchsection	Common/search.script
+2024-06-07 10:51:25.886 -0400	waitfor	(TEXT:"2")	found at (342, 160)	6	on_waitfortext	Common/waitForEvent.script
+2024-06-07 10:51:25.969 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-07 10:51:26.077 -0400	LogSuccess		The New Canvas is successfully opened after selecting the New option	2	on_success	Common/cLog.script
+2024-06-07 10:51:26.221 -0400	capturescreen	NewCanvas.png	(6,8,1158,634)	4	on_capturescreenshots	Common/captureScreenShots.script
+2024-06-07 10:51:26.468 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-07 10:51:26.784 -0400	set		SEARCHRECTANGLE = [[0,43.2],[96,86.4]]	3	on_setsearchsection	Common/search.script
+2024-06-07 10:51:26.985 -0400	imagefound	(TEXT:"Architect")	found at (58, 59)	9	function_isimagetextfound	Common/check.script
+2024-06-07 10:51:27.186 -0400	moveto	(TEXT:"Architect")	at (58, 59)	10	function_isimagetextfound	Common/check.script
+2024-06-07 10:51:27.246 -0400	LogSuccess		Architect  is found in ArchitectButton	2	on_success	Common/cLog.script
+2024-06-07 10:51:27.299 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-07 10:51:27.814 -0400	set		SEARCHRECTANGLE = [[0,43.2],[96,86.4]]	3	on_setsearchsection	Common/search.script
+2024-06-07 10:51:28.059 -0400	imagefound	(TEXT:"Architect")	found at (58, 59)	7	on_onfoundimagelocation	Common/clickEvent.script
+2024-06-07 10:51:28.320 -0400	click		at (58, 59)	8	on_onfoundimagelocation	Common/clickEvent.script
+2024-06-07 10:51:28.430 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-07 10:51:28.829 -0400	set		SEARCHRECTANGLE = [[0,0],[249.6,151.2]]	3	on_setsearchsection	Common/search.script
+2024-06-07 10:51:29.735 -0400	click	(TEXT:"File")	at (14, 31)	6	on_leftevent	Common/clickEvent.script
+2024-06-07 10:51:30.797 -0400	imagefound	(TEXT:"New")	found at (44, 55)	9	function_isimagetextfound	Common/check.script
+2024-06-07 10:51:31.134 -0400	moveto	(TEXT:"New")	at (44, 55)	10	function_isimagetextfound	Common/check.script
+2024-06-07 10:51:31.161 -0400	LogSuccess		New  is found in 	2	on_success	Common/cLog.script
+2024-06-07 10:51:31.220 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-07 10:51:31.364 -0400	LogSuccess		File menu opened successfully	2	on_success	Common/cLog.script
+2024-06-07 10:51:31.507 -0400	capturescreen	verifyFileMenu.png	(0,2,808,810)	4	on_capturescreenshots	Common/captureScreenShots.script
+2024-06-07 10:51:31.652 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-07 10:51:31.952 -0400	set		SEARCHRECTANGLE = [[0,0],[480,270]]	3	on_setsearchsection	Common/search.script
+2024-06-07 10:51:33.145 -0400	click	(TEXT:"Close All")	at (53, 208)	6	on_leftevent	Common/clickEvent.script
+2024-06-07 10:51:33.196 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-07 10:51:34.176 -0400	CompareScreen	[Baseline_Screens]/GUI_Canvas_Windows7 6 2024 _ 10 45 49.png	CompareScreen "GUI_Canvas_Windows7 6 2024 _ 10 45 49" -- No significant differences from baseline	3	on_compare_screen	Common/check.script
+2024-06-07 10:51:34.312 -0400	CompareScreen	[Baseline_Screens]/GUI_Canvas_Windows7 6 2024 _ 10 45 49.png	CompareScreen "GUI_Canvas_Windows7 6 2024 _ 10 45 49" -- No significant differences from baseline	3	function_compare_screen	Common/check.script
+2024-06-07 10:51:36.546 -0400	click		at (960, 540)	3	on_clickscaled	Common/clickEvent.script
+2024-06-07 10:51:36.885 -0400	set		SEARCHRECTANGLE = [[0,0],[249.6,151.2]]	3	on_setsearchsection	Common/search.script
+2024-06-07 10:51:39.905 -0400	click	CreateANewScenario	at (23, 92)	4	on_leftevent	Common/clickEvent.script
+2024-06-07 10:51:39.974 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-07 10:51:40.428 -0400	set		SEARCHRECTANGLE = [[216.96,143.64],[412.8,195.48]]	3	on_setsearchsection	Common/search.script
+2024-06-07 10:51:40.613 -0400	imagefound	(TEXT:"2")	found at (342, 160)	9	function_isimagetextfound	Common/check.script
+2024-06-07 10:51:41.633 -0400	moveto	(TEXT:"2")	at (342, 160)	10	function_isimagetextfound	Common/check.script
+2024-06-07 10:51:41.676 -0400	LogSuccess		2  is found in untitled	2	on_success	Common/cLog.script
+2024-06-07 10:51:41.730 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-07 10:51:41.929 -0400	LogSuccess		The New Canvas is successfully opened on clicking 'Create A New Scenario' button	2	on_success	Common/cLog.script
+2024-06-07 10:51:42.082 -0400	capturescreen	openCanvasUsingCreateANewScenario.png	(6,8,1158,634)	4	on_capturescreenshots	Common/captureScreenShots.script
+2024-06-07 10:51:42.661 -0400	set		SEARCHRECTANGLE = [[0,43.2],[96,86.4]]	3	on_setsearchsection	Common/search.script
+2024-06-07 10:51:42.841 -0400	imagefound	(TEXT:"Architect")	found at (58, 59)	9	function_isimagetextfound	Common/check.script
+2024-06-07 10:51:43.684 -0400	moveto	(TEXT:"Architect")	at (58, 59)	10	function_isimagetextfound	Common/check.script
+2024-06-07 10:51:43.732 -0400	LogSuccess		Architect  is found in ArchitectButton	2	on_success	Common/cLog.script
+2024-06-07 10:51:43.796 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-07 10:51:44.229 -0400	set		SEARCHRECTANGLE = [[0,43.2],[96,86.4]]	3	on_setsearchsection	Common/search.script
+2024-06-07 10:51:44.495 -0400	imagefound	(TEXT:"Architect")	found at (58, 59)	7	on_onfoundimagelocation	Common/clickEvent.script
+2024-06-07 10:51:44.821 -0400	click		at (58, 59)	8	on_onfoundimagelocation	Common/clickEvent.script
+2024-06-07 10:51:44.858 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-07 10:51:45.233 -0400	set		SEARCHRECTANGLE = [[0,0],[249.6,151.2]]	3	on_setsearchsection	Common/search.script
+2024-06-07 10:51:46.223 -0400	click	(TEXT:"File")	at (14, 31)	6	on_leftevent	Common/clickEvent.script
+2024-06-07 10:51:47.480 -0400	imagefound	(TEXT:"New")	found at (44, 55)	9	function_isimagetextfound	Common/check.script
+2024-06-07 10:51:47.796 -0400	moveto	(TEXT:"New")	at (44, 55)	10	function_isimagetextfound	Common/check.script
+2024-06-07 10:51:47.825 -0400	LogSuccess		New  is found in 	2	on_success	Common/cLog.script
+2024-06-07 10:51:47.886 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-07 10:51:48.013 -0400	LogSuccess		File menu opened successfully	2	on_success	Common/cLog.script
+2024-06-07 10:51:48.137 -0400	capturescreen	verifyFileMenu.png	(0,2,808,810)	4	on_capturescreenshots	Common/captureScreenShots.script
+2024-06-07 10:51:48.302 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-07 10:51:48.591 -0400	set		SEARCHRECTANGLE = [[0,0],[480,270]]	3	on_setsearchsection	Common/search.script
+2024-06-07 10:51:49.759 -0400	click	(TEXT:"Close All")	at (53, 208)	6	on_leftevent	Common/clickEvent.script
+2024-06-07 10:51:49.827 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-07 10:51:50.791 -0400	CompareScreen	[Baseline_Screens]/GUI_Canvas_Windows7 6 2024 _ 10 45 49.png	CompareScreen "GUI_Canvas_Windows7 6 2024 _ 10 45 49" -- No significant differences from baseline	3	on_compare_screen	Common/check.script
+2024-06-07 10:51:50.924 -0400	CompareScreen	[Baseline_Screens]/GUI_Canvas_Windows7 6 2024 _ 10 45 49.png	CompareScreen "GUI_Canvas_Windows7 6 2024 _ 10 45 49" -- No significant differences from baseline	3	function_compare_screen	Common/check.script
+2024-06-07 10:51:53.219 -0400	click		at (960, 540)	3	on_clickscaled	Common/clickEvent.script
+2024-06-07 10:51:54.269 -0400	typetext		[controlKey]n	3	on_keyboardshortcut	Common/keyBoard.script
+2024-06-07 10:51:54.625 -0400	set		SEARCHRECTANGLE = [[216.96,143.64],[412.8,195.48]]	3	on_setsearchsection	Common/search.script
+2024-06-07 10:51:54.818 -0400	waitfor	(TEXT:"2")	found at (342, 160)	6	on_waitfortext	Common/waitForEvent.script
+2024-06-07 10:51:54.898 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-07 10:51:55.018 -0400	LogSuccess		The New Canvas is successfully opened by keyboard shortcut	2	on_success	Common/cLog.script
+2024-06-07 10:51:55.157 -0400	capturescreen	openNewCanvasUsingKeyboardShortcut.png	(6,8,1158,634)	4	on_capturescreenshots	Common/captureScreenShots.script
+2024-06-07 10:51:55.626 -0400	set		SEARCHRECTANGLE = [[0,43.2],[96,86.4]]	3	on_setsearchsection	Common/search.script
+2024-06-07 10:51:55.826 -0400	imagefound	(TEXT:"Architect")	found at (58, 59)	9	function_isimagetextfound	Common/check.script
+2024-06-07 10:51:58.218 -0400	moveto	(TEXT:"Architect")	at (58, 59)	10	function_isimagetextfound	Common/check.script
+2024-06-07 10:51:58.256 -0400	LogSuccess		Architect  is found in ArchitectButton	2	on_success	Common/cLog.script
+2024-06-07 10:51:58.314 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-07 10:51:58.664 -0400	set		SEARCHRECTANGLE = [[0,43.2],[96,86.4]]	3	on_setsearchsection	Common/search.script
+2024-06-07 10:51:58.898 -0400	imagefound	(TEXT:"Architect")	found at (58, 59)	7	on_onfoundimagelocation	Common/clickEvent.script
+2024-06-07 10:51:59.352 -0400	click		at (58, 59)	8	on_onfoundimagelocation	Common/clickEvent.script
+2024-06-07 10:51:59.381 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-07 10:51:59.765 -0400	set		SEARCHRECTANGLE = [[0,0],[249.6,151.2]]	3	on_setsearchsection	Common/search.script
+2024-06-07 10:52:00.752 -0400	click	(TEXT:"File")	at (14, 31)	6	on_leftevent	Common/clickEvent.script
+2024-06-07 10:52:01.992 -0400	imagefound	(TEXT:"New")	found at (44, 55)	9	function_isimagetextfound	Common/check.script
+2024-06-07 10:52:02.325 -0400	moveto	(TEXT:"New")	at (44, 55)	10	function_isimagetextfound	Common/check.script
+2024-06-07 10:52:02.370 -0400	LogSuccess		New  is found in 	2	on_success	Common/cLog.script
+2024-06-07 10:52:02.429 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-07 10:52:02.556 -0400	LogSuccess		File menu opened successfully	2	on_success	Common/cLog.script
+2024-06-07 10:52:02.669 -0400	capturescreen	verifyFileMenu.png	(0,2,808,810)	4	on_capturescreenshots	Common/captureScreenShots.script
+2024-06-07 10:52:02.847 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-07 10:52:03.129 -0400	set		SEARCHRECTANGLE = [[0,0],[480,270]]	3	on_setsearchsection	Common/search.script
+2024-06-07 10:52:04.568 -0400	click	(TEXT:"Close All")	at (53, 208)	6	on_leftevent	Common/clickEvent.script
+2024-06-07 10:52:04.634 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-07 10:52:05.596 -0400	CompareScreen	[Baseline_Screens]/GUI_Canvas_Windows7 6 2024 _ 10 45 49.png	CompareScreen "GUI_Canvas_Windows7 6 2024 _ 10 45 49" -- No significant differences from baseline	3	on_compare_screen	Common/check.script
+2024-06-07 10:52:05.734 -0400	CompareScreen	[Baseline_Screens]/GUI_Canvas_Windows7 6 2024 _ 10 45 49.png	CompareScreen "GUI_Canvas_Windows7 6 2024 _ 10 45 49" -- No significant differences from baseline	3	function_compare_screen	Common/check.script
+2024-06-07 10:52:07.926 -0400	click		at (960, 540)	3	on_clickscaled	Common/clickEvent.script
+2024-06-07 10:52:07.962 -0400	EndTestCase		(Duration:"49.88", Errors:"0", Exceptions:"0", StartTime:"2024-06-07 10:51:18 -0400", Successes:"15", TestCase:"verifyOpenNewCanvas", Warnings:"0")	25	on_verifyopennewcanvas	TestCases/Regular/verifyOpenNewCanvas.script
+2024-06-07 10:52:07.983 -0400	EndTestCase		(Duration:"49.94", Errors:"0", Exceptions:"0", StartTime:"2024-06-07 10:51:18 -0400", Successes:"15", TestCase:"TestCases/Regular/verifyOpenNewCanvas.script", Warnings:"0")	22	on_startregulartests	TestCases/Regular/testLauncher.script
+2024-06-07 10:52:08.021 -0400	SUCCESS		Execution Time 0:00:49 TestCases/Regular/verifyOpenNewCanvas.script	22	on_startregulartests	TestCases/Regular/testLauncher.script

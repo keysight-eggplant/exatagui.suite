@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+ <testsuite name="TestCases/Regular/closeScenarioUsingCloseOption_script" package="exatagui.suite" timestamp="2024-06-25 08:23:34.658 -0400"
+ tests="2"  failures="0" errors="0" time="75.123000">
+  <properties>
+   <property name="RunDate" value="2024-06-25 08:23:34.658 -0400"/>
+   <property name="Status" value="Success"/>
+  </properties>
+  <testcase name="closeScenarioUsingCloseOption" assertions="16" status="success"  time="75.081">
+  </testcase>
+  <testcase name="TestCases/Regular/closeScenarioUsingCloseOption.script" assertions="16" status="success"  time="75.115">
+  </testcase>
+ </testsuite>
+</testsuites>

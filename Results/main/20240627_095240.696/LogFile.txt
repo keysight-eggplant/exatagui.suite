@@ -1,0 +1,48 @@
+﻿2024-06-27 09:52:40.701 -0400	START		Running main.script
+2024-06-27 09:52:40.892 -0400	Log		Started the Execution of the EXataGUI Regression Scripts at 09:52 AM on 06/27/24	2	on_cmessage	Common/cLog.script
+2024-06-27 09:52:40.935 -0400	setoptions		ImageUpdate = Off	2	on_variabledata	HelperUtilities/variableData.script
+2024-06-27 09:52:40.937 -0400	setoptions		MouseMoveMode = 2	2	on_variabledata	HelperUtilities/variableData.script
+2024-06-27 09:52:40.939 -0400	setoptions		MouseMoveSpeed = 10	2	on_variabledata	HelperUtilities/variableData.script
+2024-06-27 09:52:40.942 -0400	setoptions		remoteWorkInterval = 1	2	on_variabledata	HelperUtilities/variableData.script
+2024-06-27 09:52:41.075 -0400	Log		Screen Width: 1920, Screen Height: 1080	6	function_checkscreenresolution	Common/check.script
+2024-06-27 09:52:41.325 -0400	Log		C:\Program Files\Scalable\exata\8.2.0.0	2	on_cmessage	Common/cLog.script
+2024-06-27 09:52:41.439 -0400	Log		C:\Users\pratdaga\Documents\UserScenarios	2	on_cmessage	Common/cLog.script
+2024-06-27 09:52:41.553 -0400	Log		generateReport: true	2	on_cmessage	Common/cLog.script
+2024-06-27 09:52:41.693 -0400	Log		The mode of the Execution of Test : full	2	on_cmessage	Common/cLog.script
+2024-06-27 09:52:44.043 -0400	set		DEFAULTTEXTPLATFORM = Generic OCR	2	function_startexatagui	OS/windows.script
+2024-06-27 09:52:44.217 -0400	typetext		[windowsKey]r	3	on_entertext	Common/keyboard.script
+2024-06-27 09:52:45.785 -0400	waitfor	(TEXT:"Run")	found at (54, 814)	6	on_waitfortext	Common/waitForEvent.script
+2024-06-27 09:52:45.854 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-27 09:52:47.776 -0400	typetext		C:\Program Files\Scalable\exata\8.2.0.0\bin\EXataGUI.exe	3	on_entertext	Common/keyBoard.script
+2024-06-27 09:52:48.822 -0400	typetext		[returnKey]	3	on_entertext	Common/keyBoard.script
+2024-06-27 09:52:48.895 -0400	set		DEFAULTTEXTPLATFORM = Generic OCR	2	function_isimagetextfound	Common/check.script
+2024-06-27 09:52:49.011 -0400	set		SEARCHRECTANGLE = [[480,270],[1440,810]]	3	on_setsearchsection	Common/search.script
+2024-06-27 09:52:54.621 -0400	imagefound	(TEXT:"Windows cannot find")	Unable to Find Image (TEXT:"Windows cannot find"). Text not found.	10	function_isimagetextfound	Common/check.script
+2024-06-27 09:52:54.666 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-27 09:52:54.793 -0400	set		DEFAULTTEXTPLATFORM = Generic OCR	2	function_isimagetextfound	Common/check.script
+2024-06-27 09:52:54.907 -0400	set		SEARCHRECTANGLE = [[0,0],[1920,540]]	3	on_setsearchsection	Common/search.script
+2024-06-27 09:52:55.345 -0400	imagefound	(TEXT:"EXata")	found at (814, 422)	10	function_isimagetextfound	Common/check.script
+2024-06-27 09:52:57.763 -0400	moveto	(TEXT:"EXata")	at (814, 422)	11	function_isimagetextfound	Common/check.script
+2024-06-27 09:52:57.784 -0400	LogSuccess		EXata  is found in TopHalf	2	on_success	Common/cLog.script
+2024-06-27 09:52:57.817 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-27 09:52:58.023 -0400	set		SEARCHRECTANGLE = [[0,0],[480,270]]	3	on_setsearchsection	Common/search.script
+2024-06-27 09:52:59.248 -0400	waitfor	(TEXT:"Scenario Properties")	found at (124, 162)	6	on_waitfortext	Common/waitForEvent.script
+2024-06-27 09:52:59.324 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-27 09:52:59.428 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-27 09:52:59.483 -0400	set		DEFAULTTEXTPLATFORM = Generic OCR	2	on_compare_screen	Common/check.script
+2024-06-27 09:52:59.521 -0400	CompareScreen	[Baseline_Screens]/GUI_Canvas_Windows27 6 2024 _ 9 52 41.png	Captured initial baseline image "GUI_Canvas_Windows27 6 2024 _ 9 52 41"	4	on_compare_screen	Common/check.script
+2024-06-27 09:52:59.664 -0400	Log		main	9	on_startreportfile	HelperUtilities/rptHtml.script
+2024-06-27 09:52:59.706 -0400	Log		C:/Users/pratdaga/Desktop/eggplant_automation/exatagui.suite/Results/main/20240627_095240.696/	13	on_startreportfile	HelperUtilities/rptHtml.script
+2024-06-27 09:53:02.380 -0400	runwithnewresults		basicExataFunctionalityCheck.script (C:/Users/pratdaga/Desktop/eggplant_automation/exatagui.suite/Results/TestCases/Regular/basicExataFunctionalityCheck/20240627_095302.378/LogFile.txt)	22	on_startregulartests	TestCases/Regular/testLauncher.script
+2024-06-27 09:54:59.243 -0400	LogError		TestCases/Regular/basicEXataFunctionalityCheck FAIL	2	on_cerror	Common/cLog.script
+2024-06-27 09:54:59.336 -0400	Throw		basicEXataFunctionalityCheck - ImageTextNotFoundException:  -- 2:not found	30	on_startregulartests	TestCases/Regular/testLauncher.script
+2024-06-27 09:54:59.853 -0400	capturescreen	Screen_Capture_0001.png		37	on_addreportline	HelperUtilities/rptHtml.script
+2024-06-27 09:54:59.994 -0400	LogWarning		step step failed	69	on_addreportline	HelperUtilities/rptHtml.script
+2024-06-27 09:55:00.452 -0400	Throw		basicEXataFunctionalityCheck - ImageTextNotFoundException:  -- 2:not found	49	on_startregulartests	TestCases/Regular/testLauncher.script
+2024-06-27 09:55:00.498 -0400	LogError		main script failed:ImageTextNotFoundException:  -- 2:not found	2	on_cerror	Common/cLog.script
+2024-06-27 09:55:00.652 -0400	set		DEFAULTTEXTPLATFORM = Generic OCR	2	on_closeexatagui	OS/utility.script
+2024-06-27 09:55:00.724 -0400	set		DEFAULTTEXTPLATFORM = Generic OCR	2	function_isimagetextfound	Common/check.script
+2024-06-27 09:55:00.874 -0400	set		SEARCHRECTANGLE = [[0,0],[960,540]]	3	on_setsearchsection	Common/search.script
+2024-06-27 09:55:02.825 -0400	Exception		Searching For Image: OCR Error: Operation was aborted	10	function_isimagetextfound	Common/check.script
+2024-06-27 09:55:02.894 -0400	EndTestCase		(Duration:"142.19", Errors:"9", Exceptions:"8", StartTime:"2024-06-27 09:52:40 -0400", Successes:"8", TestCase:"main.script", Warnings:"1")
+2024-06-27 09:55:02.900 -0400	ABORTED		Execution Time 0:02:22 main.script

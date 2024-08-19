@@ -1,0 +1,2 @@
+﻿//Changes the movement behavior and movement speed of the mouse cursor.
+setOptions {MouseMoveMode:2,MouseMoveSpeed:10,remoteWorkInterval:1,ImageUpdate:off} 

@@ -1,0 +1,69 @@
+﻿2024-06-05 20:43:29.042 -0400	START		Running TestCases/Regular/closeScenarioUsingCloseOption.script	22	on_startregulartests	TestCases/Regular/testLauncher.script
+2024-06-05 20:43:29.066 -0400	BeginTestCase		closeScenarioUsingCloseOption	2	on_closescenariousingcloseoption	TestCases/Regular/closeScenarioUsingCloseOption.script
+2024-06-05 20:43:29.303 -0400	CompareScreen	[Baseline_Screens]/GUI_Canvas_Windows5 6 2024 _ 20 37 27.png	CompareScreen "GUI_Canvas_Windows5 6 2024 _ 20 37 27" -- No significant differences from baseline	3	on_compare_screen	Common/check.script
+2024-06-05 20:43:29.442 -0400	CompareScreen	[Baseline_Screens]/GUI_Canvas_Windows5 6 2024 _ 20 37 27.png	CompareScreen "GUI_Canvas_Windows5 6 2024 _ 20 37 27" -- No significant differences from baseline	3	function_compare_screen	Common/check.script
+2024-06-05 20:43:29.841 -0400	set		SEARCHRECTANGLE = [[0,0],[249.6,151.2]]	3	on_setsearchsection	Common/search.script
+2024-06-05 20:43:32.507 -0400	click	(TEXT:"File")	at (14, 31)	6	on_leftevent	Common/clickEvent.script
+2024-06-05 20:43:33.564 -0400	imagefound	(TEXT:"New")	found at (44, 55)	9	function_isimagetextfound	Common/check.script
+2024-06-05 20:43:33.863 -0400	moveto	(TEXT:"New")	at (44, 55)	10	function_isimagetextfound	Common/check.script
+2024-06-05 20:43:33.889 -0400	LogSuccess		New  is found in 	2	on_success	Common/cLog.script
+2024-06-05 20:43:33.936 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-05 20:43:34.075 -0400	LogSuccess		File menu opened successfully	2	on_success	Common/cLog.script
+2024-06-05 20:43:34.170 -0400	capturescreen	verifyFileMenu.png	(0,2,808,810)	4	on_capturescreenshots	Common/captureScreenShots.script
+2024-06-05 20:43:34.346 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-05 20:43:34.613 -0400	set		SEARCHRECTANGLE = [[0,0],[480,270]]	3	on_setsearchsection	Common/search.script
+2024-06-05 20:43:35.541 -0400	click	(TEXT:"Open Example")	at (68, 99)	6	on_leftevent	Common/clickEvent.script
+2024-06-05 20:43:35.586 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-05 20:43:44.973 -0400	imagefound	(TEXT:"cancel")	found at (890, 528)	9	function_isimagetextfound	Common/check.script
+2024-06-05 20:43:51.354 -0400	moveto	(TEXT:"cancel")	at (890, 528)	10	function_isimagetextfound	Common/check.script
+2024-06-05 20:43:51.381 -0400	LogSuccess		cancel  is found in 	2	on_success	Common/cLog.script
+2024-06-05 20:43:51.429 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-05 20:43:51.491 -0400	LogSuccess		The Open File dialog box is successfully open after selecting the Open Example option	2	on_success	Common/cLog.script
+2024-06-05 20:43:51.535 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-05 20:43:54.770 -0400	imagefound	(TEXT:"cancel")	found at (890, 528)	9	function_isimagetextfound	Common/check.script
+2024-06-05 20:43:58.003 -0400	moveto	(TEXT:"cancel")	at (890, 528)	10	function_isimagetextfound	Common/check.script
+2024-06-05 20:43:58.064 -0400	LogSuccess		cancel  is found in 	2	on_success	Common/cLog.script
+2024-06-05 20:43:58.111 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-05 20:43:59.270 -0400	typetext		default	3	on_entertext	Common/keyBoard.script
+2024-06-05 20:44:00.318 -0400	typetext		[returnKey]	3	on_entertext	Common/keyBoard.script
+2024-06-05 20:44:01.753 -0400	typetext		default.config	3	on_entertext	Common/keyBoard.script
+2024-06-05 20:44:02.789 -0400	typetext		[returnKey]	3	on_entertext	Common/keyBoard.script
+2024-06-05 20:44:02.857 -0400	LogSuccess		Open Example operation completed successfully.	2	on_success	Common/cLog.script
+2024-06-05 20:44:10.464 -0400	waitfor	(TEXT:"default")	found at (314, 160)	6	on_waitfortext	Common/waitForEvent.script
+2024-06-05 20:44:10.599 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-05 20:44:10.945 -0400	set		SEARCHRECTANGLE = [[0,0],[1920,540]]	3	on_setsearchsection	Common/search.script
+2024-06-05 20:44:12.475 -0400	imagefound	(TEXT:"default")	found at (942, 510)	9	function_isimagetextfound	Common/check.script
+2024-06-05 20:44:15.662 -0400	moveto	(TEXT:"default")	at (314, 160)	10	function_isimagetextfound	Common/check.script
+2024-06-05 20:44:15.691 -0400	LogSuccess		default  is found in TopHalf	2	on_success	Common/cLog.script
+2024-06-05 20:44:15.739 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-05 20:44:20.911 -0400	LogSuccess		Scenario Loaded successfully	2	on_success	Common/cLog.script
+2024-06-05 20:44:21.214 -0400	set		SEARCHRECTANGLE = [[0,43.2],[96,86.4]]	3	on_setsearchsection	Common/search.script
+2024-06-05 20:44:21.417 -0400	imagefound	(TEXT:"Architect")	found at (58, 59)	9	function_isimagetextfound	Common/check.script
+2024-06-05 20:44:22.155 -0400	moveto	(TEXT:"Architect")	at (58, 59)	10	function_isimagetextfound	Common/check.script
+2024-06-05 20:44:22.187 -0400	LogSuccess		Architect  is found in ArchitectButton	2	on_success	Common/cLog.script
+2024-06-05 20:44:22.238 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-05 20:44:22.585 -0400	set		SEARCHRECTANGLE = [[0,43.2],[96,86.4]]	3	on_setsearchsection	Common/search.script
+2024-06-05 20:44:22.935 -0400	imagefound	(TEXT:"Architect")	found at (58, 59)	7	on_onfoundimagelocation	Common/clickEvent.script
+2024-06-05 20:44:23.286 -0400	click		at (58, 59)	8	on_onfoundimagelocation	Common/clickEvent.script
+2024-06-05 20:44:23.312 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-05 20:44:23.625 -0400	set		SEARCHRECTANGLE = [[0,0],[249.6,151.2]]	3	on_setsearchsection	Common/search.script
+2024-06-05 20:44:23.956 -0400	set		SEARCHRECTANGLE = [[0,0],[249.6,151.2]]	3	on_setsearchsection	Common/search.script
+2024-06-05 20:44:24.757 -0400	click	(TEXT:"File")	at (14, 31)	6	on_leftevent	Common/clickEvent.script
+2024-06-05 20:44:25.912 -0400	imagefound	(TEXT:"New")	found at (44, 55)	9	function_isimagetextfound	Common/check.script
+2024-06-05 20:44:26.216 -0400	moveto	(TEXT:"New")	at (44, 55)	10	function_isimagetextfound	Common/check.script
+2024-06-05 20:44:26.243 -0400	LogSuccess		New  is found in 	2	on_success	Common/cLog.script
+2024-06-05 20:44:26.290 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-05 20:44:26.421 -0400	LogSuccess		File menu opened successfully	2	on_success	Common/cLog.script
+2024-06-05 20:44:26.507 -0400	capturescreen	verifyFileMenu.png	(0,2,808,810)	4	on_capturescreenshots	Common/captureScreenShots.script
+2024-06-05 20:44:26.674 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-05 20:44:30.445 -0400	waitfor	(TEXT:"Close")	found at (46, 186)	6	on_waitfortext	Common/waitForEvent.script
+2024-06-05 20:44:30.543 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-05 20:44:34.615 -0400	click	(TEXT:"Close")	at (46, 186)	6	on_leftevent	Common/clickEvent.script
+2024-06-05 20:44:34.662 -0400	LogSuccess		Close Scenario operation completed successfully.	2	on_success	Common/cLog.script
+2024-06-05 20:44:34.735 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-05 20:44:35.643 -0400	CompareScreen	[Baseline_Screens]/GUI_Canvas_Windows5 6 2024 _ 20 37 27.png	CompareScreen "GUI_Canvas_Windows5 6 2024 _ 20 37 27" -- No significant differences from baseline	3	on_compare_screen	Common/check.script
+2024-06-05 20:44:35.779 -0400	CompareScreen	[Baseline_Screens]/GUI_Canvas_Windows5 6 2024 _ 20 37 27.png	CompareScreen "GUI_Canvas_Windows5 6 2024 _ 20 37 27" -- No significant differences from baseline	3	function_compare_screen	Common/check.script
+2024-06-05 20:44:35.929 -0400	LogSuccess		Scenario is closed using Close option	2	on_success	Common/cLog.script
+2024-06-05 20:44:35.969 -0400	EndTestCase		(Duration:"66.903", Errors:"0", Exceptions:"0", StartTime:"2024-06-05 20:43:29 -0400", Successes:"13", TestCase:"closeScenarioUsingCloseOption", Warnings:"0")	13	on_closescenariousingcloseoption	TestCases/Regular/closeScenarioUsingCloseOption.script
+2024-06-05 20:44:35.980 -0400	EndTestCase		(Duration:"66.934", Errors:"0", Exceptions:"0", StartTime:"2024-06-05 20:43:29 -0400", Successes:"13", TestCase:"TestCases/Regular/closeScenarioUsingCloseOption.script", Warnings:"0")	22	on_startregulartests	TestCases/Regular/testLauncher.script
+2024-06-05 20:44:36.017 -0400	SUCCESS		Execution Time 0:01:06 TestCases/Regular/closeScenarioUsingCloseOption.script	22	on_startregulartests	TestCases/Regular/testLauncher.script

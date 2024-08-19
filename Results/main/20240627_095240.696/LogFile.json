@@ -1,0 +1,95 @@
+{
+	"entries": [
+		{
+				"handlerName": "on_cerror",
+				"timestamp": "2024-06-27 09:54:59.243 -0400",
+				"message": "TestCases/Regular/basicEXataFunctionalityCheck FAIL",
+				"scriptName": "Common/cLog.script",
+				"handlerLine": 2,
+				"identifier": "LogError"
+			},
+		{
+				"handlerName": "on_startregulartests",
+				"timestamp": "2024-06-27 09:54:59.336 -0400",
+				"message": "basicEXataFunctionalityCheck - ImageTextNotFoundException:  -- 2:not found",
+				"scriptName": "TestCases/Regular/testLauncher.script",
+				"handlerLine": 30,
+				"identifier": "Throw"
+			},
+		{
+				"handlerName": "on_addreportline",
+				"timestamp": "2024-06-27 09:54:59.853 -0400",
+				"scriptName": "HelperUtilities/rptHtml.script",
+				"image": "Screen_Capture_0001.png",
+				"handlerLine": 37,
+				"identifier": "capturescreen"
+			},
+		{
+				"handlerName": "on_addreportline",
+				"timestamp": "2024-06-27 09:54:59.994 -0400",
+				"message": "step step failed",
+				"scriptName": "HelperUtilities/rptHtml.script",
+				"handlerLine": 69,
+				"identifier": "LogWarning"
+			},
+		{
+				"handlerName": "on_startregulartests",
+				"timestamp": "2024-06-27 09:55:00.452 -0400",
+				"message": "basicEXataFunctionalityCheck - ImageTextNotFoundException:  -- 2:not found",
+				"scriptName": "TestCases/Regular/testLauncher.script",
+				"handlerLine": 49,
+				"identifier": "Throw"
+			},
+		{
+				"handlerName": "on_cerror",
+				"timestamp": "2024-06-27 09:55:00.498 -0400",
+				"message": "main script failed:ImageTextNotFoundException:  -- 2:not found",
+				"scriptName": "Common/cLog.script",
+				"handlerLine": 2,
+				"identifier": "LogError"
+			},
+		{
+				"handlerName": "on_closeexatagui",
+				"timestamp": "2024-06-27 09:55:00.652 -0400",
+				"message": "DEFAULTTEXTPLATFORM = Generic OCR",
+				"scriptName": "OS/utility.script",
+				"handlerLine": 2,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "function_isimagetextfound",
+				"timestamp": "2024-06-27 09:55:00.724 -0400",
+				"message": "DEFAULTTEXTPLATFORM = Generic OCR",
+				"scriptName": "Common/check.script",
+				"handlerLine": 2,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "on_setsearchsection",
+				"timestamp": "2024-06-27 09:55:00.874 -0400",
+				"message": "SEARCHRECTANGLE = [[0,0],[960,540]]",
+				"scriptName": "Common/search.script",
+				"handlerLine": 3,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "function_isimagetextfound",
+				"timestamp": "2024-06-27 09:55:02.825 -0400",
+				"message": "Searching For Image: OCR Error: Operation was aborted",
+				"scriptName": "Common/check.script",
+				"handlerLine": 10,
+				"identifier": "Exception"
+			},
+		{
+				"message": "(Duration:\"142.19\", Errors:\"9\", Exceptions:\"8\", StartTime:\"2024-06-27 09:52:40 -0400\", Successes:\"8\", TestCase:\"main.script\", Warnings:\"1\")",
+				"identifier": "EndTestCase",
+				"timestamp": "2024-06-27 09:55:02.894 -0400"
+			},
+		{
+				"message": "Execution Time 0:02:22 main.script",
+				"identifier": "ABORTED",
+				"timestamp": "2024-06-27 09:55:02.900 -0400"
+			}
+	],
+	"createdTimestamp": "2024-06-27 09:54:59.246 -0400"
+}

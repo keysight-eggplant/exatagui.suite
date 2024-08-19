@@ -1,0 +1,9 @@
+﻿Date Run,Status,Time,# of Errors,# of Warnings,# of Exceptions,Log File,Return Value,Error Message,# of Successes
+2024-06-24 12:59:16.926 -0400,"Failure",0:06:57,4,0,4,"20240624_125916.926/LogFile.txt","","Image Not Found -- click Error - No Text Found On Screen: ""(TEXT:""seconds"")"". Text not found.  Restricted Search Rectangle ((480,0),(1440,1080))\n",29
+2024-06-24 14:16:41.171 -0400,"Failure",0:04:37,4,0,4,"20240624_141641.171/LogFile.txt","","Image Not Found -- click Error - No Text Found On Screen: ""(TEXT:""seconds"")"". Text not found.  Restricted Search Rectangle ((480,0),(1440,1080))\n",31
+2024-06-24 18:03:08.131 -0400,"Failure",0:03:00,3,0,2,"20240624_180308.131/LogFile.txt","","SenseTalk Compiler Exception -- in <do>:\nSyntax Error at line 1: can't understand ""3"" at character 1",20
+2024-06-24 18:13:34.385 -0400,"Failure",0:06:04,4,0,4,"20240624_181334.385/LogFile.txt","","Image Not Found -- click Error - No Text Found On Screen: ""(TEXT:""seconds"")"". Text not found.  Restricted Search Rectangle ((480,0),(1440,1080))\n",31
+2024-06-25 08:10:45.074 -0400,"Success",0:06:45,0,0,0,"20240625_081045.074/LogFile.txt","","",40
+2024-06-25 08:32:18.780 -0400,"Success",0:06:03,0,0,0,"20240625_083218.780/LogFile.txt","","",40
+2024-06-25 09:27:08.345 -0400,"Success",0:06:16,0,0,0,"20240625_092708.345/LogFile.txt","","",40
+2024-06-25 11:58:33.179 -0400,"Success",0:05:54,0,0,0,"20240625_115833.179/LogFile.txt","","",40

@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<runHistory script="TestCases/HumanInTheLoop/loadScenarioUsingOpenExample">
+ <run>
+  <RunDate>2024-06-25 08:43:02.096 -0400</RunDate>
+  <Status>Success</Status>
+  <Duration>123.928000</Duration>
+  <Errors>0</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>18</Successes>
+  <LogFile>20240625_084302.096/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage></ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2024-06-25 09:38:41.144 -0400</RunDate>
+  <Status>Success</Status>
+  <Duration>118.066000</Duration>
+  <Errors>0</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>18</Successes>
+  <LogFile>20240625_093841.144/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage></ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2024-06-25 12:09:02.516 -0400</RunDate>
+  <Status>Success</Status>
+  <Duration>109.219000</Duration>
+  <Errors>0</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>18</Successes>
+  <LogFile>20240625_120902.516/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage></ErrorMessage>
+ </run>
+</runHistory>

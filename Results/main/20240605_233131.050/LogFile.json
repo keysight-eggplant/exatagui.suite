@@ -1,0 +1,130 @@
+{
+	"entries": [
+		{
+				"handlerName": "on_cerror",
+				"timestamp": "2024-06-05 23:44:11.845 -0400",
+				"message": "TestCases/HumanInTheLoop/verifyRecentFilesList FAIL",
+				"scriptName": "Common/cLog.script",
+				"handlerLine": 2,
+				"identifier": "LogError"
+			},
+		{
+				"handlerName": "on_startregulartests",
+				"timestamp": "2024-06-05 23:44:12.005 -0400",
+				"message": "verifyRecentFilesList - Image Not Found -- waitfor Error - Unable To Find Any Image On Screen \"(TEXT:\"MultiChannel\")\" within 60.00 seconds. Text not found.",
+				"scriptName": "TestCases/Regular/testLauncher.script",
+				"handlerLine": 30,
+				"identifier": "Throw"
+			},
+		{
+				"handlerName": "on_addreportline",
+				"timestamp": "2024-06-05 23:44:12.306 -0400",
+				"scriptName": "HelperUtilities/rptHtml.script",
+				"image": "Screen_Capture_0002.png",
+				"handlerLine": 37,
+				"identifier": "capturescreen"
+			},
+		{
+				"handlerName": "on_addreportline",
+				"timestamp": "2024-06-05 23:44:12.461 -0400",
+				"message": "step step failed",
+				"scriptName": "HelperUtilities/rptHtml.script",
+				"handlerLine": 69,
+				"identifier": "LogWarning"
+			},
+		{
+				"handlerName": "on_startregulartests",
+				"timestamp": "2024-06-05 23:44:12.913 -0400",
+				"message": "verifyRecentFilesList - Image Not Found -- waitfor Error - Unable To Find Any Image On Screen \"(TEXT:\"MultiChannel\")\" within 60.00 seconds. Text not found.",
+				"scriptName": "TestCases/Regular/testLauncher.script",
+				"handlerLine": 49,
+				"identifier": "Throw"
+			},
+		{
+				"handlerName": "on_cerror",
+				"timestamp": "2024-06-05 23:44:12.989 -0400",
+				"message": "main script failed:Image Not Found -- waitfor Error - Unable To Find Any Image On Screen \"(TEXT:\"MultiChannel\")\" within 60.00 seconds. Text not found.",
+				"scriptName": "Common/cLog.script",
+				"handlerLine": 2,
+				"identifier": "LogError"
+			},
+		{
+				"handlerName": "on_setsearchsection",
+				"timestamp": "2024-06-05 23:44:13.400 -0400",
+				"message": "SEARCHRECTANGLE = [[384,216],[460.8,248.4]]",
+				"scriptName": "Common/search.script",
+				"handlerLine": 3,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "function_isimagetextfound",
+				"timestamp": "2024-06-05 23:44:16.604 -0400",
+				"scriptName": "Common/check.script",
+				"message": "Unable to Find Image (TEXT:\"Results\"). Text not found.",
+				"image": "(TEXT:\"Results\")",
+				"handlerLine": 9,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "on_clearsearchsection",
+				"timestamp": "2024-06-05 23:44:16.664 -0400",
+				"message": "SEARCHRECTANGLE = ",
+				"scriptName": "Common/search.script",
+				"handlerLine": 2,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "on_entertext",
+				"timestamp": "2024-06-05 23:44:17.003 -0400",
+				"message": "[windowsAltKey][F4]",
+				"scriptName": "Common/keyBoard.script",
+				"handlerLine": 3,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_entertext",
+				"timestamp": "2024-06-05 23:44:18.048 -0400",
+				"message": "[returnKey]",
+				"scriptName": "Common/keyBoard.script",
+				"handlerLine": 3,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_setsearchsection",
+				"timestamp": "2024-06-05 23:44:18.399 -0400",
+				"message": "SEARCHRECTANGLE = [[710.4,453.6],[1209.6,572.4]]",
+				"scriptName": "Common/search.script",
+				"handlerLine": 3,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "function_isimagetextfound",
+				"timestamp": "2024-06-05 23:44:23.711 -0400",
+				"scriptName": "Common/check.script",
+				"message": "Unable to Find Image (TEXT:\"Do you want to Save the Changes\"). Text not found.",
+				"image": "(TEXT:\"Do you want to Save the Changes\")",
+				"handlerLine": 9,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "on_clearsearchsection",
+				"timestamp": "2024-06-05 23:44:23.773 -0400",
+				"message": "SEARCHRECTANGLE = ",
+				"scriptName": "Common/search.script",
+				"handlerLine": 2,
+				"identifier": "set"
+			},
+		{
+				"message": "(Duration:\"772.912\", Errors:\"7\", Exceptions:\"7\", StartTime:\"2024-06-05 23:31:31 -0400\", Successes:\"137\", TestCase:\"main.script\", Warnings:\"1\")",
+				"identifier": "EndTestCase",
+				"timestamp": "2024-06-05 23:44:23.975 -0400"
+			},
+		{
+				"image": "Screen_Error.png",
+				"message": "Script Error: Number of Errors logged: 2 -- Execution Time 0:12:52 main.script",
+				"identifier": "FAILURE",
+				"timestamp": "2024-06-05 23:44:24.090 -0400"
+			}
+	],
+	"createdTimestamp": "2024-06-05 23:44:11.849 -0400"
+}

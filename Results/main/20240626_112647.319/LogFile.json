@@ -1,0 +1,220 @@
+{
+	"entries": [
+		{
+				"message": "Running main.script",
+				"identifier": "START",
+				"timestamp": "2024-06-26 11:26:47.324 -0400"
+			},
+		{
+				"handlerName": "on_cmessage",
+				"timestamp": "2024-06-26 11:26:47.499 -0400",
+				"message": "Started the Execution of the EXataGUI Regression Scripts at 11:26 AM on 06/26/24",
+				"scriptName": "Common/cLog.script",
+				"handlerLine": 2,
+				"identifier": "Log"
+			},
+		{
+				"handlerName": "on_variabledata",
+				"timestamp": "2024-06-26 11:26:47.548 -0400",
+				"message": "ImageUpdate = Off",
+				"scriptName": "HelperUtilities/variableData.script",
+				"handlerLine": 2,
+				"identifier": "setoptions"
+			},
+		{
+				"handlerName": "on_variabledata",
+				"timestamp": "2024-06-26 11:26:47.551 -0400",
+				"message": "MouseMoveMode = 2",
+				"scriptName": "HelperUtilities/variableData.script",
+				"handlerLine": 2,
+				"identifier": "setoptions"
+			},
+		{
+				"handlerName": "on_variabledata",
+				"timestamp": "2024-06-26 11:26:47.553 -0400",
+				"message": "MouseMoveSpeed = 10",
+				"scriptName": "HelperUtilities/variableData.script",
+				"handlerLine": 2,
+				"identifier": "setoptions"
+			},
+		{
+				"handlerName": "on_variabledata",
+				"timestamp": "2024-06-26 11:26:47.555 -0400",
+				"message": "remoteWorkInterval = 1",
+				"scriptName": "HelperUtilities/variableData.script",
+				"handlerLine": 2,
+				"identifier": "setoptions"
+			},
+		{
+				"handlerName": "function_checkscreenresolution",
+				"timestamp": "2024-06-26 11:26:47.708 -0400",
+				"message": "Screen Width: 1920, Screen Height: 1080",
+				"scriptName": "Common/check.script",
+				"handlerLine": 6,
+				"identifier": "Log"
+			},
+		{
+				"handlerName": "on_cmessage",
+				"timestamp": "2024-06-26 11:26:48.025 -0400",
+				"message": "C:\\Program Files\\Scalable\\exata\\8.2.0.0",
+				"scriptName": "Common/cLog.script",
+				"handlerLine": 2,
+				"identifier": "Log"
+			},
+		{
+				"handlerName": "on_cmessage",
+				"timestamp": "2024-06-26 11:26:48.163 -0400",
+				"message": "C:\\Users\\pratdaga\\Documents\\UserScenarios",
+				"scriptName": "Common/cLog.script",
+				"handlerLine": 2,
+				"identifier": "Log"
+			},
+		{
+				"handlerName": "on_cmessage",
+				"timestamp": "2024-06-26 11:26:48.289 -0400",
+				"message": "generateReport: true",
+				"scriptName": "Common/cLog.script",
+				"handlerLine": 2,
+				"identifier": "Log"
+			},
+		{
+				"handlerName": "on_cmessage",
+				"timestamp": "2024-06-26 11:26:48.435 -0400",
+				"message": "The mode of the Execution of Test : full",
+				"scriptName": "Common/cLog.script",
+				"handlerLine": 2,
+				"identifier": "Log"
+			},
+		{
+				"handlerName": "on_hidetaskbar",
+				"timestamp": "2024-06-26 11:26:50.561 -0400",
+				"message": "hideTaskBar",
+				"scriptName": "OS/windows.script",
+				"handlerLine": 3,
+				"identifier": "BeginTestCase"
+			},
+		{
+				"handlerName": "on_cerror",
+				"timestamp": "2024-06-26 11:26:50.593 -0400",
+				"message": " Error in running hideTaskBar testcase",
+				"scriptName": "Common/cLog.script",
+				"handlerLine": 2,
+				"identifier": "LogError"
+			},
+		{
+				"handlerName": "on_hidetaskbar",
+				"timestamp": "2024-06-26 11:26:50.615 -0400",
+				"message": "STUnknownMessage - ERROR: No Such Command: 'presswindowskey'",
+				"scriptName": "OS/windows.script",
+				"handlerLine": 27,
+				"identifier": "Throw"
+			},
+		{
+				"handlerName": "on_cerror",
+				"timestamp": "2024-06-26 11:26:50.653 -0400",
+				"message": "initTestCases failed: ERROR: No Such Command: 'presswindowskey'",
+				"scriptName": "Common/cLog.script",
+				"handlerLine": 2,
+				"identifier": "LogError"
+			},
+		{
+				"handlerName": "on_inittestcases",
+				"timestamp": "2024-06-26 11:26:50.674 -0400",
+				"message": "STUnknownMessage - ERROR: No Such Command: 'presswindowskey'",
+				"scriptName": "TestCases/launcher.script",
+				"handlerLine": 15,
+				"identifier": "Throw"
+			},
+		{
+				"handlerName": "on_cerror",
+				"timestamp": "2024-06-26 11:26:50.712 -0400",
+				"message": "main script failed:ERROR: No Such Command: 'presswindowskey'",
+				"scriptName": "Common/cLog.script",
+				"handlerLine": 2,
+				"identifier": "LogError"
+			},
+		{
+				"handlerName": "on_setsearchsection",
+				"timestamp": "2024-06-26 11:26:50.939 -0400",
+				"message": "SEARCHRECTANGLE = [[0,0],[960,540]]",
+				"scriptName": "Common/search.script",
+				"handlerLine": 3,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "function_isimagetextfound",
+				"timestamp": "2024-06-26 11:26:54.551 -0400",
+				"scriptName": "Common/check.script",
+				"message": "Unable to Find Image (TEXT:\"Results\"). Text not found.",
+				"image": "(TEXT:\"Results\")",
+				"handlerLine": 9,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "on_clearsearchsection",
+				"timestamp": "2024-06-26 11:26:54.607 -0400",
+				"message": "SEARCHRECTANGLE = ",
+				"scriptName": "Common/search.script",
+				"handlerLine": 2,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "on_entertext",
+				"timestamp": "2024-06-26 11:26:54.836 -0400",
+				"message": "[windowsAltKey][F4]",
+				"scriptName": "Common/keyBoard.script",
+				"handlerLine": 3,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_entertext",
+				"timestamp": "2024-06-26 11:26:55.876 -0400",
+				"message": "[returnKey]",
+				"scriptName": "Common/keyBoard.script",
+				"handlerLine": 3,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_setsearchsection",
+				"timestamp": "2024-06-26 11:26:56.031 -0400",
+				"message": "SEARCHRECTANGLE = [[480,270],[1440,810]]",
+				"scriptName": "Common/search.script",
+				"handlerLine": 3,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "function_isimagetextfound",
+				"timestamp": "2024-06-26 11:27:01.325 -0400",
+				"scriptName": "Common/check.script",
+				"message": "Unable to Find Image (TEXT:\"Do you want to Save the Changes\"). Text not found.",
+				"image": "(TEXT:\"Do you want to Save the Changes\")",
+				"handlerLine": 9,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "on_clearsearchsection",
+				"timestamp": "2024-06-26 11:27:01.381 -0400",
+				"message": "SEARCHRECTANGLE = ",
+				"scriptName": "Common/search.script",
+				"handlerLine": 2,
+				"identifier": "set"
+			},
+		{
+				"message": "(Duration:\"10.97\", Errors:\"3\", Exceptions:\"2\", StartTime:\"2024-06-26 11:26:50 -0400\", Successes:\"0\", TestCase:\"hideTaskBar\", Warnings:\"0\")",
+				"identifier": "EndTestCase",
+				"timestamp": "2024-06-26 11:27:01.532 -0400"
+			},
+		{
+				"message": "(Duration:\"14.21\", Errors:\"3\", Exceptions:\"2\", StartTime:\"2024-06-26 11:26:47 -0400\", Successes:\"0\", TestCase:\"main.script\", Warnings:\"0\")",
+				"identifier": "EndTestCase",
+				"timestamp": "2024-06-26 11:27:01.536 -0400"
+			},
+		{
+				"image": "Screen_Error.png",
+				"message": "Script Error: Number of Errors logged: 3 -- Execution Time 0:00:14 main.script",
+				"identifier": "FAILURE",
+				"timestamp": "2024-06-26 11:27:01.694 -0400"
+			}
+	],
+	"createdTimestamp": "2024-06-26 11:26:47.326 -0400"
+}

@@ -1,0 +1,70 @@
+﻿# This script is containing all the click events
+#
+
+# to perform left click operation over SUT
+#-------------------------------------------------------
+to leftEvent myObject
+	Try
+		if file (suiteinfo().imagesFolder&"/"&myObject&"/") exists then
+			Click {image:myObject,}
+		else
+			Click {text:myObject, IgnoreNewlines:"Yes", IgnoreSpaces:"Yes", TrimWhitespace:"Yes",caseSensitive:true}
+		end if
+	Catch theException
+		"Common/cLog".cError "leftClick failed for: " & myObject
+		throw theException 
+	End try
+end leftEvent
+
+# to perform click event validate over application
+#----------------------------------------------------------------
+to validate event, successMsg, errorMsg ,contrast: "ON"
+	Try
+		if file (suiteinfo().imagesFolder&"/"&event&"/") exists then
+			Click {image:event}
+			"Common/cLog".success successMsg
+		else if Imagefound(text:event, IgnoreNewlines:"Yes", IgnoreSpaces:"Yes", TrimWhitespace:"Yes") then 
+			Click FoundImageLocation()
+			"Common/cLog".success successMsg
+		else
+			"Common/cLog".cError errorMsg
+			throw errorMessage,"event not found:"&event
+		end if
+	Catch theException
+		"Common/cLog".cError "event validate failed for: "&theException's reason
+		throw theException
+	End try
+end validate
+
+# to click remote screen part
+#-------------------------------------
+to clickScaled part
+	Try
+		Click the RemoteScreenSize*part
+	Catch theException
+		"Common/cLog".cError "clickScaled failed:",part&theException's reason
+		throw theException 
+	End try
+end clickScaled
+
+# to click on found image location
+#---------------------------------------------
+to onFoundImageLocation imageText,portion,stopTime:40
+	Try
+		if portion is not empty then
+			"Common/search".setSearchSection(portion)
+		end if
+		
+		if ImageFound (text:imageText, waitFor:stopTime) then
+			click FoundImageLocation()
+		else
+			"Common/cLog".cError "imageText not found:"&imageText&":not found"
+			throw "ImageTextNotFoundException:",imageText&":not found"
+		end if
+		"Common/search".clearSearchSection
+	Catch theException
+		"Common/cLog".cError "click on foundImageLocation failed:"&theException's reason
+		throw theException
+	End try
+end onFoundImageLocation
+

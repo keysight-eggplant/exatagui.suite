@@ -1,0 +1,39 @@
+﻿Try
+	BeginTestCase "verifyAnimationMenu"
+	
+	# initializing the scenario
+	"EXataGUI/scenario".initScenario
+	
+	#Open Animation 
+	"EXataGUI/actions/menuBar".openAnimation
+	
+	#Verify Animation Menu Option
+	
+	#verify availability of  Animation Colors option 
+	"Common/check".isImageTextFound "Animation Colors",AnimationMenu
+	
+	# verify availability of Step Setting  option 
+	"Common/check".isImageTextFound "Step Setting",AnimationMenu
+	
+	#verify availability of Communication Interval option 
+	"Common/check".isImageTextFound "Communication Interval",AnimationMenu
+	
+	#verify availability of Event Filters option
+	"Common/check".isImageTextFound "Event Filters",AnimationMenu
+	
+	#verify availability of Layer Filters option 
+	"Common/check".isImageTextFound "Layer Filters",AnimationMenu 
+	
+	#verify availability of Dynamic Statistics option 
+	"Common/check".isImageTextFound "Dynamic Statistics",AnimationMenu 
+	
+	# Closes the animation menu by clicking at the centre of the canvas
+	"Common/clickEvent".clickScaled "0.5"
+	
+	EndTestCase "verifyAnimationMenu"
+	
+	
+Catch theException
+	"Common/cLog".cError "Error in running  verifyAnimationMenu TestCase"
+	throw theException 
+End try

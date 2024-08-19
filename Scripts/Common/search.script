@@ -1,0 +1,19 @@
+﻿# This script is used for setting search rectangle and clearing search rectangle
+#
+
+# to set the search rectangle over the application
+#--------------------------------------------------
+to setSearchSection portion
+	Try
+		set the SearchRectangle to "HelperUtilities/core".ScreenPart(portion)
+	Catch theException
+		"Common/cLog".cError "SearchRectangle failed: "&theException's reason
+		throw theException 
+	End try
+end setSearchSection
+
+# to set the search rectangle to empty over the application
+#-------------------------------------------------------------
+to clearSearchSection
+	set the SearchRectangle to empty
+end clearSearchSection

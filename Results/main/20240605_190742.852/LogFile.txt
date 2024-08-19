@@ -1,0 +1,53 @@
+﻿2024-06-05 19:07:42.857 -0400	START		Running main.script
+2024-06-05 19:07:43.050 -0400	Log		Started the Execution of the EXataGUI Regression Scripts at 07:07 PM on 06/05/24	2	on_cmessage	Common/cLog.script
+2024-06-05 19:07:43.099 -0400	setoptions		ImageUpdate = Off	2	on_variabledata	HelperUtilities/variableData.script
+2024-06-05 19:07:43.101 -0400	setoptions		MouseMoveMode = 2	2	on_variabledata	HelperUtilities/variableData.script
+2024-06-05 19:07:43.103 -0400	setoptions		MouseMoveSpeed = 10	2	on_variabledata	HelperUtilities/variableData.script
+2024-06-05 19:07:43.105 -0400	setoptions		remoteWorkInterval = 1	2	on_variabledata	HelperUtilities/variableData.script
+2024-06-05 19:07:43.255 -0400	Log		Screen Width: 1920, Screen Height: 1080	6	function_checkscreenresolution	Common/check.script
+2024-06-05 19:07:43.518 -0400	Log		C:\Program Files\Scalable\exata\8.2.0.0	2	on_cmessage	Common/cLog.script
+2024-06-05 19:07:43.615 -0400	Log		C:\Users\pratdaga\Documents\UserScenarios	2	on_cmessage	Common/cLog.script
+2024-06-05 19:07:43.710 -0400	Log		generateReport: true	2	on_cmessage	Common/cLog.script
+2024-06-05 19:07:43.847 -0400	Log		The mode of the Execution of Test : custom	2	on_cmessage	Common/cLog.script
+2024-06-05 19:07:43.956 -0400	Log		[closeUnsavedScenario]	2	on_cmessage	Common/cLog.script
+2024-06-05 19:07:49.722 -0400	typetext		[windowsKey]r	3	on_entertext	Common/keyboard.script
+2024-06-05 19:07:53.496 -0400	waitfor	(TEXT:"Run")	found at (54, 837)	6	on_waitfortext	Common/waitForEvent.script
+2024-06-05 19:07:53.568 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-05 19:07:55.569 -0400	typetext		C:\Program Files\Scalable\exata\8.2.0.0\bin\EXataGUI.exe	3	on_entertext	Common/keyBoard.script
+2024-06-05 19:07:56.606 -0400	typetext		[returnKey]	3	on_entertext	Common/keyBoard.script
+2024-06-05 19:07:58.424 -0400	set		SEARCHRECTANGLE = [[672,421.2],[1228.8,540]]	3	on_setsearchsection	Common/search.script
+2024-06-05 19:08:03.725 -0400	imagefound	(TEXT:"Windows cannot find")	Unable to Find Image (TEXT:"Windows cannot find"). Text not found.	9	function_isimagetextfound	Common/check.script
+2024-06-05 19:08:03.942 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-05 19:08:04.282 -0400	set		SEARCHRECTANGLE = [[0,0],[76.8,32.4]]	3	on_setsearchsection	Common/search.script
+2024-06-05 19:08:38.925 -0400	imagefound	(TEXT:"EXata")	found at (36, 10)	9	function_isimagetextfound	Common/check.script
+2024-06-05 19:08:40.370 -0400	moveto	(TEXT:"EXata")	at (36, 10)	10	function_isimagetextfound	Common/check.script
+2024-06-05 19:08:40.401 -0400	LogSuccess		EXata  is found in EXataGUITitleBar	2	on_success	Common/cLog.script
+2024-06-05 19:08:40.475 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-05 19:08:40.894 -0400	set		SEARCHRECTANGLE = [[0,0],[480,270]]	3	on_setsearchsection	Common/search.script
+2024-06-05 19:08:41.372 -0400	waitfor	(TEXT:"Scenario Properties")	found at (124, 162)	6	on_waitfortext	Common/waitForEvent.script
+2024-06-05 19:08:41.483 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-05 19:08:41.619 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-05 19:08:41.697 -0400	CompareScreen	[Baseline_Screens]/GUI_Canvas_Windows5 6 2024 _ 19 7 43.png	Captured initial baseline image "GUI_Canvas_Windows5 6 2024 _ 19 7 43"	3	on_compare_screen	Common/check.script
+2024-06-05 19:08:41.934 -0400	Log		main	9	on_startreportfile	HelperUtilities/rptHtml.script
+2024-06-05 19:08:42.153 -0400	Log		C:/Users/pratdaga/Desktop/eggplant_automation/exatagui.suite/Results/main/20240605_190742.852/	13	on_startreportfile	HelperUtilities/rptHtml.script
+2024-06-05 19:08:44.463 -0400	runwithnewresults		closeUnsavedScenario.script (C:/Users/pratdaga/Desktop/eggplant_automation/exatagui.suite/Results/TestCases/Regular/closeUnsavedScenario/20240605_190844.460/LogFile.txt)	22	on_startregulartests	TestCases/Regular/testLauncher.script
+2024-06-05 19:11:06.336 -0400	LogError		TestCases/Regular/closeUnsavedScenario FAIL	2	on_cerror	Common/cLog.script
+2024-06-05 19:11:07.968 -0400	Throw		closeUnsavedScenario - ImageTextNotFoundException:  -- 1:not found	30	on_startregulartests	TestCases/Regular/testLauncher.script
+2024-06-05 19:11:11.227 -0400	capturescreen	Screen_Capture_0001.png		37	on_addreportline	HelperUtilities/rptHtml.script
+2024-06-05 19:11:14.000 -0400	LogWarning		step step failed	69	on_addreportline	HelperUtilities/rptHtml.script
+2024-06-05 19:11:15.070 -0400	Throw		closeUnsavedScenario - ImageTextNotFoundException:  -- 1:not found	49	on_startregulartests	TestCases/Regular/testLauncher.script
+2024-06-05 19:11:15.263 -0400	LogError		main script failed:ImageTextNotFoundException:  -- 1:not found	2	on_cerror	Common/cLog.script
+2024-06-05 19:11:16.213 -0400	set		SEARCHRECTANGLE = [[384,216],[460.8,248.4]]	3	on_setsearchsection	Common/search.script
+2024-06-05 19:11:19.482 -0400	imagefound	(TEXT:"Results")	Unable to Find Image (TEXT:"Results"). Text not found.	9	function_isimagetextfound	Common/check.script
+2024-06-05 19:11:19.550 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-05 19:11:20.136 -0400	typetext		[windowsAltKey][F4]	3	on_entertext	Common/keyBoard.script
+2024-06-05 19:11:21.174 -0400	typetext		[returnKey]	3	on_entertext	Common/keyBoard.script
+2024-06-05 19:11:21.983 -0400	set		SEARCHRECTANGLE = [[710.4,453.6],[1209.6,572.4]]	3	on_setsearchsection	Common/search.script
+2024-06-05 19:11:22.486 -0400	imagefound	(TEXT:"Do you want to Save the Changes")	found at (1105, 502)	9	function_isimagetextfound	Common/check.script
+2024-06-05 19:11:24.545 -0400	moveto	(TEXT:"Do you want to Save the Changes")	at (1105, 502)	10	function_isimagetextfound	Common/check.script
+2024-06-05 19:11:24.591 -0400	LogSuccess		Do you want to Save the Changes  is found in CloseEXataGUIBox	2	on_success	Common/cLog.script
+2024-06-05 19:11:24.680 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-05 19:11:25.586 -0400	typetext		[rightArrow]	3	on_entertext	Common/keyBoard.script
+2024-06-05 19:11:26.628 -0400	typetext		[returnKey]	3	on_entertext	Common/keyBoard.script
+2024-06-05 19:11:26.792 -0400	EndTestCase		(Duration:"223.93", Errors:"8", Exceptions:"7", StartTime:"2024-06-05 19:07:42 -0400", Successes:"3", TestCase:"main.script", Warnings:"1")
+2024-06-05 19:11:27.024 -0400	FAILURE	Screen_Error.png	Script Error: Number of Errors logged: 2 -- Execution Time 0:03:43 main.script

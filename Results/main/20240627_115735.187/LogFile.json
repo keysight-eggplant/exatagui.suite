@@ -1,0 +1,15 @@
+{
+	"entries": [
+		{
+				"message": "(Duration:\"728.917\", Errors:\"2\", Exceptions:\"1\", StartTime:\"2024-06-27 11:57:35 -0400\", Successes:\"151\", TestCase:\"main.script\", Warnings:\"0\")",
+				"identifier": "EndTestCase",
+				"timestamp": "2024-06-27 12:09:44.117 -0400"
+			},
+		{
+				"message": "Execution Time 0:12:08 main.script",
+				"identifier": "ABORTED",
+				"timestamp": "2024-06-27 12:09:44.129 -0400"
+			}
+	],
+	"createdTimestamp": "2024-06-27 12:09:44.120 -0400"
+}

@@ -1,0 +1,129 @@
+{
+	"entries": [
+		{
+				"handlerName": "on_cerror",
+				"timestamp": "2024-06-26 11:41:11.760 -0400",
+				"message": "TestCases/Regular/basicEXataFunctionalityCheck FAIL",
+				"scriptName": "Common/cLog.script",
+				"handlerLine": 2,
+				"identifier": "LogError"
+			},
+		{
+				"handlerName": "on_startregulartests",
+				"timestamp": "2024-06-26 11:41:11.867 -0400",
+				"message": "basicEXataFunctionalityCheck - verifyApplicationStatsException -- C:\\Users\\pratdaga\\Documents\\UserScenarios not exist in the system",
+				"scriptName": "TestCases/Regular/testLauncher.script",
+				"handlerLine": 30,
+				"identifier": "Throw"
+			},
+		{
+				"handlerName": "on_addreportline",
+				"timestamp": "2024-06-26 11:41:12.086 -0400",
+				"scriptName": "HelperUtilities/rptHtml.script",
+				"image": "Screen_Capture_0001.png",
+				"handlerLine": 37,
+				"identifier": "capturescreen"
+			},
+		{
+				"handlerName": "on_addreportline",
+				"timestamp": "2024-06-26 11:41:12.219 -0400",
+				"message": "step step failed",
+				"scriptName": "HelperUtilities/rptHtml.script",
+				"handlerLine": 69,
+				"identifier": "LogWarning"
+			},
+		{
+				"handlerName": "on_startregulartests",
+				"timestamp": "2024-06-26 11:41:12.698 -0400",
+				"message": "basicEXataFunctionalityCheck - verifyApplicationStatsException -- C:\\Users\\pratdaga\\Documents\\UserScenarios not exist in the system",
+				"scriptName": "TestCases/Regular/testLauncher.script",
+				"handlerLine": 49,
+				"identifier": "Throw"
+			},
+		{
+				"handlerName": "on_cerror",
+				"timestamp": "2024-06-26 11:41:12.763 -0400",
+				"message": "main script failed:verifyApplicationStatsException -- C:\\Users\\pratdaga\\Documents\\UserScenarios not exist in the system",
+				"scriptName": "Common/cLog.script",
+				"handlerLine": 2,
+				"identifier": "LogError"
+			},
+		{
+				"handlerName": "on_setsearchsection",
+				"timestamp": "2024-06-26 11:41:13.100 -0400",
+				"message": "SEARCHRECTANGLE = [[0,0],[960,540]]",
+				"scriptName": "Common/search.script",
+				"handlerLine": 3,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "function_isimagetextfound",
+				"timestamp": "2024-06-26 11:41:16.822 -0400",
+				"scriptName": "Common/check.script",
+				"message": "Unable to Find Image (TEXT:\"Results\"). Text not found.",
+				"image": "(TEXT:\"Results\")",
+				"handlerLine": 9,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "on_clearsearchsection",
+				"timestamp": "2024-06-26 11:41:16.908 -0400",
+				"message": "SEARCHRECTANGLE = ",
+				"scriptName": "Common/search.script",
+				"handlerLine": 2,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "on_entertext",
+				"timestamp": "2024-06-26 11:41:17.175 -0400",
+				"message": "[windowsAltKey][F4]",
+				"scriptName": "Common/keyBoard.script",
+				"handlerLine": 3,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_entertext",
+				"timestamp": "2024-06-26 11:41:18.216 -0400",
+				"message": "[returnKey]",
+				"scriptName": "Common/keyBoard.script",
+				"handlerLine": 3,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_setsearchsection",
+				"timestamp": "2024-06-26 11:41:18.405 -0400",
+				"message": "SEARCHRECTANGLE = [[480,270],[1440,810]]",
+				"scriptName": "Common/search.script",
+				"handlerLine": 3,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "function_isimagetextfound",
+				"timestamp": "2024-06-26 11:41:23.729 -0400",
+				"scriptName": "Common/check.script",
+				"message": "Unable to Find Image (TEXT:\"Do you want to Save the Changes\"). Text not found.",
+				"image": "(TEXT:\"Do you want to Save the Changes\")",
+				"handlerLine": 9,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "on_clearsearchsection",
+				"timestamp": "2024-06-26 11:41:23.781 -0400",
+				"message": "SEARCHRECTANGLE = ",
+				"scriptName": "Common/search.script",
+				"handlerLine": 2,
+				"identifier": "set"
+			},
+		{
+				"message": "(Duration:\"194.746\", Errors:\"7\", Exceptions:\"5\", StartTime:\"2024-06-26 11:38:09 -0400\", Successes:\"26\", TestCase:\"main.script\", Warnings:\"1\")",
+				"identifier": "EndTestCase",
+				"timestamp": "2024-06-26 11:41:24.035 -0400"
+			},
+		{
+				"message": "Execution Time 0:03:14 main.script",
+				"identifier": "ABORTED",
+				"timestamp": "2024-06-26 11:41:24.045 -0400"
+			}
+	],
+	"createdTimestamp": "2024-06-26 11:41:11.763 -0400"
+}

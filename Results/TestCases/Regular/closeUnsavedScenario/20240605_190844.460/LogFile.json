@@ -1,0 +1,278 @@
+{
+	"entries": [
+		{
+				"handlerName": "on_startregulartests",
+				"timestamp": "2024-06-05 19:08:44.466 -0400",
+				"message": "Running TestCases/Regular/closeUnsavedScenario.script",
+				"scriptName": "TestCases/Regular/testLauncher.script",
+				"handlerLine": 22,
+				"identifier": "START"
+			},
+		{
+				"handlerName": "on_closeunsavedscenario",
+				"timestamp": "2024-06-05 19:08:44.498 -0400",
+				"message": "closeUnsavedScenario",
+				"scriptName": "TestCases/Regular/closeUnsavedScenario.script",
+				"handlerLine": 3,
+				"identifier": "BeginTestCase"
+			},
+		{
+				"handlerName": "on_compare_screen",
+				"timestamp": "2024-06-05 19:08:44.864 -0400",
+				"scriptName": "Common/check.script",
+				"message": "CompareScreen \"GUI_Canvas_Windows5 6 2024 _ 19 7 43\" -- No significant differences from baseline",
+				"image": "[Baseline_Screens]/GUI_Canvas_Windows5 6 2024 _ 19 7 43.png",
+				"handlerLine": 3,
+				"identifier": "CompareScreen"
+			},
+		{
+				"handlerName": "function_compare_screen",
+				"timestamp": "2024-06-05 19:08:45.028 -0400",
+				"scriptName": "Common/check.script",
+				"message": "CompareScreen \"GUI_Canvas_Windows5 6 2024 _ 19 7 43\" -- No significant differences from baseline",
+				"image": "[Baseline_Screens]/GUI_Canvas_Windows5 6 2024 _ 19 7 43.png",
+				"handlerLine": 3,
+				"identifier": "CompareScreen"
+			},
+		{
+				"handlerName": "on_validate",
+				"timestamp": "2024-06-05 19:08:45.764 -0400",
+				"scriptName": "Common/clickEvent.script",
+				"message": "at (130, 92)",
+				"image": "Select_tool",
+				"handlerLine": 4,
+				"identifier": "click"
+			},
+		{
+				"handlerName": "on_success",
+				"timestamp": "2024-06-05 19:08:45.800 -0400",
+				"message": "Select tool is present in Navigation Toolbar",
+				"scriptName": "Common/cLog.script",
+				"handlerLine": 2,
+				"identifier": "LogSuccess"
+			},
+		{
+				"handlerName": "on_leftevent",
+				"timestamp": "2024-06-05 19:08:47.269 -0400",
+				"scriptName": "Common/clickEvent.script",
+				"message": "at (51, 222)",
+				"image": "node_device",
+				"handlerLine": 4,
+				"identifier": "click"
+			},
+		{
+				"handlerName": "on_clickscaled",
+				"timestamp": "2024-06-05 19:09:12.269 -0400",
+				"message": "at (1085, 599)",
+				"scriptName": "Common/clickEvent.script",
+				"handlerLine": 3,
+				"identifier": "click"
+			},
+		{
+				"handlerName": "on_cmessage",
+				"timestamp": "2024-06-05 19:09:16.518 -0400",
+				"message": "Global Click Coordinates: [{key:1, value:\"0.565-0.555\"}]",
+				"scriptName": "Common/cLog.script",
+				"handlerLine": 2,
+				"identifier": "Log"
+			},
+		{
+				"handlerName": "on_leftevent",
+				"timestamp": "2024-06-05 19:09:23.434 -0400",
+				"scriptName": "Common/clickEvent.script",
+				"message": "at (130, 92)",
+				"image": "Select_Tool",
+				"handlerLine": 4,
+				"identifier": "click"
+			},
+		{
+				"handlerName": "on_setsearchsection",
+				"timestamp": "2024-06-05 19:09:33.239 -0400",
+				"message": "SEARCHRECTANGLE = [[211.2,993.6],[288,1026]]",
+				"scriptName": "Common/search.script",
+				"handlerLine": 3,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "on_onfoundimagelocation",
+				"timestamp": "2024-06-05 19:09:34.616 -0400",
+				"scriptName": "Common/clickEvent.script",
+				"message": "found at (253, 1008)",
+				"image": "(TEXT:\"Table View\")",
+				"handlerLine": 7,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "on_onfoundimagelocation",
+				"timestamp": "2024-06-05 19:09:37.012 -0400",
+				"message": "at (253, 1008)",
+				"scriptName": "Common/clickEvent.script",
+				"handlerLine": 8,
+				"identifier": "click"
+			},
+		{
+				"handlerName": "on_clearsearchsection",
+				"timestamp": "2024-06-05 19:09:39.118 -0400",
+				"message": "SEARCHRECTANGLE = ",
+				"scriptName": "Common/search.script",
+				"handlerLine": 2,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "on_setsearchsection",
+				"timestamp": "2024-06-05 19:09:47.727 -0400",
+				"message": "SEARCHRECTANGLE = [[230.4,723.6],[268.8,766.8]]",
+				"scriptName": "Common/search.script",
+				"handlerLine": 3,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "on_onfoundimagelocation",
+				"timestamp": "2024-06-05 19:09:48.662 -0400",
+				"scriptName": "Common/clickEvent.script",
+				"message": "found at (244, 743)",
+				"image": "(TEXT:\"Nodes\")",
+				"handlerLine": 7,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "on_onfoundimagelocation",
+				"timestamp": "2024-06-05 19:09:49.607 -0400",
+				"message": "at (244, 743)",
+				"scriptName": "Common/clickEvent.script",
+				"handlerLine": 8,
+				"identifier": "click"
+			},
+		{
+				"handlerName": "on_clearsearchsection",
+				"timestamp": "2024-06-05 19:09:51.198 -0400",
+				"message": "SEARCHRECTANGLE = ",
+				"scriptName": "Common/search.script",
+				"handlerLine": 2,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "on_setsearchsection",
+				"timestamp": "2024-06-05 19:09:57.927 -0400",
+				"message": "SEARCHRECTANGLE = [[230.4,766.8],[307.2,993.6]]",
+				"scriptName": "Common/search.script",
+				"handlerLine": 3,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "function_isimagetextfound",
+				"timestamp": "2024-06-05 19:10:38.942 -0400",
+				"scriptName": "Common/check.script",
+				"message": "Unable to Find Image (TEXT:\"1\"). Text not found.",
+				"image": "(TEXT:\"1\")",
+				"handlerLine": 9,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "on_cerror",
+				"timestamp": "2024-06-05 19:10:44.754 -0400",
+				"message": "Image text not found: 1",
+				"scriptName": "Common/cLog.script",
+				"handlerLine": 2,
+				"identifier": "LogError"
+			},
+		{
+				"handlerName": "function_isimagetextfound",
+				"timestamp": "2024-06-05 19:10:49.457 -0400",
+				"message": "ImageTextNotFoundException:  - 1:not found",
+				"scriptName": "Common/check.script",
+				"handlerLine": 17,
+				"identifier": "Throw"
+			},
+		{
+				"handlerName": "on_cerror",
+				"timestamp": "2024-06-05 19:10:52.250 -0400",
+				"message": "isImageTextFound failed: 1:not found",
+				"scriptName": "Common/cLog.script",
+				"handlerLine": 2,
+				"identifier": "LogError"
+			},
+		{
+				"handlerName": "function_isimagetextfound",
+				"timestamp": "2024-06-05 19:10:53.466 -0400",
+				"message": "ImageTextNotFoundException:  - 1:not found",
+				"scriptName": "Common/check.script",
+				"handlerLine": 26,
+				"identifier": "Throw"
+			},
+		{
+				"handlerName": "on_cerror",
+				"timestamp": "2024-06-05 19:10:56.520 -0400",
+				"message": "validation of Node Placement failed:1:not found",
+				"scriptName": "Common/cLog.script",
+				"handlerLine": 2,
+				"identifier": "LogError"
+			},
+		{
+				"handlerName": "on_nodesplacement",
+				"timestamp": "2024-06-05 19:10:57.633 -0400",
+				"message": "ImageTextNotFoundException:  - 1:not found",
+				"scriptName": "Common/check.script",
+				"handlerLine": 15,
+				"identifier": "Throw"
+			},
+		{
+				"handlerName": "on_cerror",
+				"timestamp": "2024-06-05 19:10:59.656 -0400",
+				"message": "addNodes failed: 1:not found",
+				"scriptName": "Common/cLog.script",
+				"handlerLine": 2,
+				"identifier": "LogError"
+			},
+		{
+				"handlerName": "on_addnodes",
+				"timestamp": "2024-06-05 19:11:00.801 -0400",
+				"message": "ImageTextNotFoundException:  - 1:not found",
+				"scriptName": "EXataGUI/actions/canvas.script",
+				"handlerLine": 63,
+				"identifier": "Throw"
+			},
+		{
+				"handlerName": "on_cerror",
+				"timestamp": "2024-06-05 19:11:02.785 -0400",
+				"message": " Error in Running closeUnsavedScenario TestCase",
+				"scriptName": "Common/cLog.script",
+				"handlerLine": 2,
+				"identifier": "LogError"
+			},
+		{
+				"handlerName": "on_closeunsavedscenario",
+				"timestamp": "2024-06-05 19:11:03.818 -0400",
+				"message": "ImageTextNotFoundException:  - 1:not found",
+				"scriptName": "TestCases/Regular/closeUnsavedScenario.script",
+				"handlerLine": 25,
+				"identifier": "Throw"
+			},
+		{
+				"handlerName": "on_startregulartests",
+				"timestamp": "2024-06-05 19:11:03.825 -0400",
+				"message": "(Duration:\"139.327\", Errors:\"6\", Exceptions:\"5\", StartTime:\"2024-06-05 19:08:44 -0400\", Successes:\"1\", TestCase:\"closeUnsavedScenario\", Warnings:\"0\")",
+				"scriptName": "TestCases/Regular/testLauncher.script",
+				"handlerLine": 22,
+				"identifier": "EndTestCase"
+			},
+		{
+				"handlerName": "on_startregulartests",
+				"timestamp": "2024-06-05 19:11:03.830 -0400",
+				"message": "(Duration:\"139.36\", Errors:\"6\", Exceptions:\"5\", StartTime:\"2024-06-05 19:08:44 -0400\", Successes:\"1\", TestCase:\"TestCases/Regular/closeUnsavedScenario.script\", Warnings:\"0\")",
+				"scriptName": "TestCases/Regular/testLauncher.script",
+				"handlerLine": 22,
+				"identifier": "EndTestCase"
+			},
+		{
+				"handlerName": "on_startregulartests",
+				"timestamp": "2024-06-05 19:11:03.982 -0400",
+				"scriptName": "TestCases/Regular/testLauncher.script",
+				"message": "ImageTextNotFoundException: : 1:not found -- Execution Time 0:02:19 TestCases/Regular/closeUnsavedScenario.script",
+				"image": "Screen_Error.png",
+				"handlerLine": 22,
+				"identifier": "FAILURE"
+			}
+	],
+	"createdTimestamp": "2024-06-05 19:08:44.469 -0400"
+}

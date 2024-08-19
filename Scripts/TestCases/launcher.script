@@ -1,0 +1,33 @@
+﻿# to initialize the testcases
+#--------------------------------
+to initTestCases
+	Try
+		// PreChecking for issues before Running the Test Cases 
+		run "HelperUtilities/variableData"
+		set precheckIssues to "Common/check".preCheckIssues
+		global executionMode,customTestCases
+		put executionMode into mode
+		put customTestCases into testCases
+		
+		"HelperUtilities/rptHtml".startReportFile "Eggplant-result",main, precheckIssues
+		-- filtering the testCases on the basis of executionMode 
+		"EXataGUI/Constants/testCasesDetails".filterTestCases mode,testCases
+	Catch theException
+		"Common/cLog".cError "initTestCases failed:" && theException's reason
+		throw theException -- re-throw the exception (if desired)
+	End try
+end initTestCases
+
+
+# to cleanup the testcases
+#----------------------------------
+to cleanUpTestCases
+	Try
+		"HelperUtilities/rptHtml".endReportFile
+		--closing ExataGUI
+		"OS/Utility".closeEXataGUI
+	Catch theException
+		"Common/cLog".cError "cleanUpTestCases failed:" && theException's reason
+		throw theException -- re-throw the exception (if desired)
+	End try
+end cleanUpTestCases

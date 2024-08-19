@@ -1,0 +1,12 @@
+﻿# to get OS type i.e Windows or Linux
+to getOsType
+	Try
+		put "OS/connectionName".getName into osName
+		put osName split by "-" into platfrm
+		put last item of platfrm into osType
+		return osType
+	Catch theException
+		"Common/cLog".cError "getOsType failed:"&theException's reason
+		throw theException 
+	End try
+end getOsType

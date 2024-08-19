@@ -1,0 +1,70 @@
+﻿2024-06-25 09:22:24.449 -0400	START		Running TestCases/Regular/verifyHelpMenu.script	22	on_startregulartests	TestCases/Regular/testLauncher.script
+2024-06-25 09:22:24.500 -0400	BeginTestCase		verifyHelpMenu	2	on_verifyhelpmenu	TestCases/Regular/verifyHelpMenu.script
+2024-06-25 09:22:24.850 -0400	CompareScreen	[Baseline_Screens]/GUI_Canvas_Windows25 6 2024 _ 9 12 2.png	CompareScreen "GUI_Canvas_Windows25 6 2024 _ 9 12 2" -- No significant differences from baseline	3	on_compare_screen	Common/check.script
+2024-06-25 09:22:25.006 -0400	CompareScreen	[Baseline_Screens]/GUI_Canvas_Windows25 6 2024 _ 9 12 2.png	CompareScreen "GUI_Canvas_Windows25 6 2024 _ 9 12 2" -- No significant differences from baseline	3	function_compare_screen	Common/check.script
+2024-06-25 09:22:25.340 -0400	set		SEARCHRECTANGLE = [[195.84,5.4],[424.32,282.96]]	3	on_setsearchsection	Common/search.script
+2024-06-25 09:22:27.756 -0400	click	(TEXT:"Help")	at (225, 32)	6	on_leftevent	Common/clickEvent.script
+2024-06-25 09:22:28.681 -0400	imagefound	(TEXT:"Keyboard Shortcuts")	found at (289, 55)	9	function_isimagetextfound	Common/check.script
+2024-06-25 09:22:28.993 -0400	moveto	(TEXT:"Keyboard Shortcuts")	at (289, 55)	10	function_isimagetextfound	Common/check.script
+2024-06-25 09:22:29.038 -0400	LogSuccess		Keyboard Shortcuts  is found in 	2	on_success	Common/cLog.script
+2024-06-25 09:22:29.131 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-25 09:22:29.287 -0400	LogSuccess		Help menu opened successfully	2	on_success	Common/cLog.script
+2024-06-25 09:22:29.422 -0400	capturescreen	verifyHelpMenu.png	(2,6,787,513)	4	on_capturescreenshots	Common/captureScreenShots.script
+2024-06-25 09:22:29.852 -0400	set		SEARCHRECTANGLE = [[195.84,5.4],[424.32,282.96]]	3	on_setsearchsection	Common/search.script
+2024-06-25 09:22:30.177 -0400	imagefound	(TEXT:"Keyboard Shortcuts")	found at (289, 55)	9	on_isimagetextfound	Common/check.script
+2024-06-25 09:22:30.351 -0400	moveto	(TEXT:"Keyboard Shortcuts")	at (289, 55)	10	on_isimagetextfound	Common/check.script
+2024-06-25 09:22:30.430 -0400	LogSuccess		Keyboard Shortcuts  is found in HelpMenu	2	on_success	Common/cLog.script
+2024-06-25 09:22:30.501 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-25 09:22:30.904 -0400	set		SEARCHRECTANGLE = [[195.84,5.4],[424.32,282.96]]	3	on_setsearchsection	Common/search.script
+2024-06-25 09:22:31.089 -0400	imagefound	(TEXT:"FAQ")	found at (252, 78)	9	on_isimagetextfound	Common/check.script
+2024-06-25 09:22:31.541 -0400	moveto	(TEXT:"FAQ")	at (252, 78)	10	on_isimagetextfound	Common/check.script
+2024-06-25 09:22:31.627 -0400	LogSuccess		FAQ  is found in HelpMenu	2	on_success	Common/cLog.script
+2024-06-25 09:22:31.713 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-25 09:22:32.039 -0400	set		SEARCHRECTANGLE = [[195.84,5.4],[424.32,282.96]]	3	on_setsearchsection	Common/search.script
+2024-06-25 09:22:32.219 -0400	imagefound	(TEXT:"Documentation Folder")	found at (294, 107)	9	on_isimagetextfound	Common/check.script
+2024-06-25 09:22:32.746 -0400	moveto	(TEXT:"Documentation Folder")	at (294, 107)	10	on_isimagetextfound	Common/check.script
+2024-06-25 09:22:32.802 -0400	LogSuccess		Documentation Folder  is found in HelpMenu	2	on_success	Common/cLog.script
+2024-06-25 09:22:32.888 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-25 09:22:33.198 -0400	set		SEARCHRECTANGLE = [[195.84,5.4],[424.32,282.96]]	3	on_setsearchsection	Common/search.script
+2024-06-25 09:22:33.416 -0400	imagefound	(TEXT:"Visit the Product Website")	found at (301, 138)	9	on_isimagetextfound	Common/check.script
+2024-06-25 09:22:33.909 -0400	moveto	(TEXT:"Visit the Product Website")	at (301, 138)	10	on_isimagetextfound	Common/check.script
+2024-06-25 09:22:33.982 -0400	LogSuccess		Visit the Product Website  is found in HelpMenu	2	on_success	Common/cLog.script
+2024-06-25 09:22:34.068 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-25 09:22:34.401 -0400	set		SEARCHRECTANGLE = [[195.84,5.4],[424.32,282.96]]	3	on_setsearchsection	Common/search.script
+2024-06-25 09:22:34.622 -0400	imagefound	(TEXT:"License and Libraries")	found at (291, 160)	9	on_isimagetextfound	Common/check.script
+2024-06-25 09:22:35.071 -0400	moveto	(TEXT:"License and Libraries")	at (291, 160)	10	on_isimagetextfound	Common/check.script
+2024-06-25 09:22:35.171 -0400	LogSuccess		License and Libraries  is found in HelpMenu	2	on_success	Common/cLog.script
+2024-06-25 09:22:35.256 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-25 09:22:35.601 -0400	set		SEARCHRECTANGLE = [[195.84,5.4],[424.32,282.96]]	3	on_setsearchsection	Common/search.script
+2024-06-25 09:22:35.787 -0400	imagefound	(TEXT:"About EXata")	found at (271, 182)	9	on_isimagetextfound	Common/check.script
+2024-06-25 09:22:36.226 -0400	moveto	(TEXT:"About EXata")	at (271, 182)	10	on_isimagetextfound	Common/check.script
+2024-06-25 09:22:36.313 -0400	LogSuccess		About EXata  is found in HelpMenu	2	on_success	Common/cLog.script
+2024-06-25 09:22:36.404 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-25 09:22:38.927 -0400	click		at (960, 540)	3	on_clickscaled	Common/clickEvent.script
+2024-06-25 09:22:39.202 -0400	set		SEARCHRECTANGLE = [[0,0],[249.6,151.2]]	3	on_setsearchsection	Common/search.script
+2024-06-25 09:22:39.478 -0400	imagefound	(TEXT:"Architect")	found at (58, 59)	9	function_isimagetextfound	Common/check.script
+2024-06-25 09:22:42.266 -0400	moveto	(TEXT:"Architect")	at (58, 59)	10	function_isimagetextfound	Common/check.script
+2024-06-25 09:22:42.316 -0400	LogSuccess		Architect  is found in TopLeft	2	on_success	Common/cLog.script
+2024-06-25 09:22:42.380 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-25 09:22:42.667 -0400	set		SEARCHRECTANGLE = [[0,0],[249.6,151.2]]	3	on_setsearchsection	Common/search.script
+2024-06-25 09:22:42.928 -0400	imagefound	(TEXT:"Architect")	found at (58, 59)	7	on_onfoundimagelocation	Common/clickEvent.script
+2024-06-25 09:22:43.398 -0400	click		at (58, 59)	8	on_onfoundimagelocation	Common/clickEvent.script
+2024-06-25 09:22:43.441 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-25 09:22:43.744 -0400	set		SEARCHRECTANGLE = [[0,0],[249.6,151.2]]	3	on_setsearchsection	Common/search.script
+2024-06-25 09:22:44.783 -0400	click	(TEXT:"File")	at (14, 31)	6	on_leftevent	Common/clickEvent.script
+2024-06-25 09:22:45.844 -0400	imagefound	(TEXT:"New")	found at (44, 55)	9	function_isimagetextfound	Common/check.script
+2024-06-25 09:22:46.211 -0400	moveto	(TEXT:"New")	at (44, 55)	10	function_isimagetextfound	Common/check.script
+2024-06-25 09:22:46.259 -0400	LogSuccess		New  is found in 	2	on_success	Common/cLog.script
+2024-06-25 09:22:46.343 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-25 09:22:46.497 -0400	LogSuccess		File menu opened successfully	2	on_success	Common/cLog.script
+2024-06-25 09:22:46.649 -0400	capturescreen	verifyFileMenu.png	(0,2,808,810)	4	on_capturescreenshots	Common/captureScreenShots.script
+2024-06-25 09:22:46.874 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-25 09:22:47.162 -0400	set		SEARCHRECTANGLE = [[0,0],[480,270]]	3	on_setsearchsection	Common/search.script
+2024-06-25 09:22:48.362 -0400	click	(TEXT:"Close All")	at (53, 208)	6	on_leftevent	Common/clickEvent.script
+2024-06-25 09:22:48.429 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-25 09:22:49.391 -0400	CompareScreen	[Baseline_Screens]/GUI_Canvas_Windows25 6 2024 _ 9 12 2.png	CompareScreen "GUI_Canvas_Windows25 6 2024 _ 9 12 2" -- No significant differences from baseline	3	on_compare_screen	Common/check.script
+2024-06-25 09:22:49.519 -0400	CompareScreen	[Baseline_Screens]/GUI_Canvas_Windows25 6 2024 _ 9 12 2.png	CompareScreen "GUI_Canvas_Windows25 6 2024 _ 9 12 2" -- No significant differences from baseline	3	function_compare_screen	Common/check.script
+2024-06-25 09:22:51.713 -0400	click		at (960, 540)	3	on_clickscaled	Common/clickEvent.script
+2024-06-25 09:22:51.764 -0400	EndTestCase		(Duration:"27.264", Errors:"0", Exceptions:"0", StartTime:"2024-06-25 09:22:24 -0400", Successes:"11", TestCase:"verifyHelpMenu", Warnings:"0")	36	on_verifyhelpmenu	TestCases/Regular/verifyHelpMenu.script
+2024-06-25 09:22:51.796 -0400	EndTestCase		(Duration:"27.344", Errors:"0", Exceptions:"0", StartTime:"2024-06-25 09:22:24 -0400", Successes:"11", TestCase:"TestCases/Regular/verifyHelpMenu.script", Warnings:"0")	22	on_startregulartests	TestCases/Regular/testLauncher.script
+2024-06-25 09:22:51.848 -0400	SUCCESS		Execution Time 0:00:27 TestCases/Regular/verifyHelpMenu.script	22	on_startregulartests	TestCases/Regular/testLauncher.script

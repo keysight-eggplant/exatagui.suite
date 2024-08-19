@@ -1,0 +1,63 @@
+﻿2024-06-27 11:57:35.194 -0400	START		Running main.script
+2024-06-27 11:57:35.394 -0400	Log		Started the Execution of the EXataGUI Regression Scripts at 11:57 AM on 06/27/24	2	on_cmessage	Common/cLog.script
+2024-06-27 11:57:35.436 -0400	setoptions		ImageUpdate = Off	2	on_variabledata	HelperUtilities/variableData.script
+2024-06-27 11:57:35.439 -0400	setoptions		MouseMoveMode = 2	2	on_variabledata	HelperUtilities/variableData.script
+2024-06-27 11:57:35.442 -0400	setoptions		MouseMoveSpeed = 10	2	on_variabledata	HelperUtilities/variableData.script
+2024-06-27 11:57:35.444 -0400	setoptions		remoteWorkInterval = 1	2	on_variabledata	HelperUtilities/variableData.script
+2024-06-27 11:57:35.579 -0400	Log		Screen Width: 1920, Screen Height: 1080	6	function_checkscreenresolution	Common/check.script
+2024-06-27 11:57:35.830 -0400	Log		C:\Program Files\Scalable\exata\8.2.0.0	2	on_cmessage	Common/cLog.script
+2024-06-27 11:57:35.940 -0400	Log		C:\Users\Administrator\Documents\UserScenarios	2	on_cmessage	Common/cLog.script
+2024-06-27 11:57:36.283 -0400	Log		generateReport: true	2	on_cmessage	Common/cLog.script
+2024-06-27 11:57:36.773 -0400	Log		The mode of the Execution of Test : full	2	on_cmessage	Common/cLog.script
+2024-06-27 11:57:38.882 -0400	BeginTestCase		hideTaskBar	3	on_hidetaskbar	OS/windows.script
+2024-06-27 11:57:39.017 -0400	typetext		[windowsKey]	3	on_entertext	Common/keyBoard.script
+2024-06-27 11:57:40.517 -0400	typetext		taskbar settings	3	on_entertext	Common/keyBoard.script
+2024-06-27 11:57:41.561 -0400	typetext		[returnKey]	3	on_entertext	Common/keyBoard.script
+2024-06-27 11:57:42.775 -0400	typetext		[windowsKey][upArrow]	3	on_entertext	Common/keyBoard.script
+2024-06-27 11:57:42.906 -0400	set		SEARCHRECTANGLE = [[251.52,49.68],[741.12,317.52]]	3	on_setsearchsection	Common/search.script
+2024-06-27 11:57:47.139 -0400	imagefound	(TEXT:"hide the taskbar in desktop mode")	found at (535, 227)	9	function_isimagetextfound	Common/check.script
+2024-06-27 11:57:48.523 -0400	moveto	(TEXT:"hide the taskbar in desktop mode")	at (535, 227)	10	function_isimagetextfound	Common/check.script
+2024-06-27 11:57:48.594 -0400	LogSuccess		hide the taskbar in desktop mode  is found in HideTaskBar	2	on_success	Common/cLog.script
+2024-06-27 11:57:48.626 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-27 11:57:48.835 -0400	set		SEARCHRECTANGLE = [[251.52,49.68],[741.12,317.52]]	3	on_setsearchsection	Common/search.script
+2024-06-27 11:58:49.193 -0400	imagefound	(TEXT:"Off")	Unable to Find Image (TEXT:"Off"). Text not found.	9	function_isimagetextfound	Common/check.script
+2024-06-27 11:58:49.307 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-27 11:58:49.451 -0400	LogSuccess		Taskbar is already hidden	2	on_success	Common/cLog.script
+2024-06-27 11:58:49.655 -0400	typetext		[windowsAltKey][F4]	3	on_entertext	Common/keyBoard.script
+2024-06-27 11:58:49.677 -0400	EndTestCase		(Duration:"70.794", Errors:"0", Exceptions:"0", StartTime:"2024-06-27 11:57:38 -0400", Successes:"2", TestCase:"hideTaskBar", Warnings:"0")	24	on_hidetaskbar	OS/windows.script
+2024-06-27 11:58:50.708 -0400	typetext		[windowsKey]r	3	on_entertext	Common/keyBoard.script
+2024-06-27 11:58:53.025 -0400	waitfor	(TEXT:"Run")	found at (54, 854)	6	on_waitfortext	Common/waitForEvent.script
+2024-06-27 11:58:53.127 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-27 11:58:55.104 -0400	typetext		C:\Program Files\Scalable\exata\8.2.0.0\bin\EXataGUI.exe	3	on_entertext	Common/keyBoard.script
+2024-06-27 11:58:56.146 -0400	typetext		[returnKey]	3	on_entertext	Common/keyBoard.script
+2024-06-27 11:58:56.306 -0400	set		SEARCHRECTANGLE = [[480,270],[1440,810]]	3	on_setsearchsection	Common/search.script
+2024-06-27 11:59:01.481 -0400	imagefound	(TEXT:"Windows cannot find")	Unable to Find Image (TEXT:"Windows cannot find"). Text not found.	9	function_isimagetextfound	Common/check.script
+2024-06-27 11:59:01.522 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-27 11:59:01.819 -0400	set		SEARCHRECTANGLE = [[0,0],[1920,540]]	3	on_setsearchsection	Common/search.script
+2024-06-27 11:59:02.029 -0400	imagefound	(TEXT:"EXata")	found at (36, 10)	9	function_isimagetextfound	Common/check.script
+2024-06-27 11:59:04.981 -0400	moveto	(TEXT:"EXata")	at (36, 10)	10	function_isimagetextfound	Common/check.script
+2024-06-27 11:59:05.081 -0400	LogSuccess		EXata  is found in TopHalf	2	on_success	Common/cLog.script
+2024-06-27 11:59:05.124 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-27 11:59:05.401 -0400	set		SEARCHRECTANGLE = [[0,0],[480,270]]	3	on_setsearchsection	Common/search.script
+2024-06-27 11:59:05.853 -0400	waitfor	(TEXT:"Scenario Properties")	found at (124, 162)	6	on_waitfortext	Common/waitForEvent.script
+2024-06-27 11:59:05.956 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-27 11:59:06.091 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-27 11:59:06.178 -0400	CompareScreen	[Baseline_Screens]/GUI_Canvas_Windows27 6 2024 _ 11 57 35.png	Captured initial baseline image "GUI_Canvas_Windows27 6 2024 _ 11 57 35"	3	on_compare_screen	Common/check.script
+2024-06-27 11:59:06.364 -0400	Log		main	9	on_startreportfile	HelperUtilities/rptHtml.script
+2024-06-27 11:59:06.427 -0400	Log		C:/Users/pratdaga/Desktop/eggplant_automation/exatagui.suite/Results/main/20240627_115735.187/	13	on_startreportfile	HelperUtilities/rptHtml.script
+2024-06-27 11:59:09.727 -0400	runwithnewresults		basicExataFunctionalityCheck.script (C:/Users/pratdaga/Desktop/eggplant_automation/exatagui.suite/Results/TestCases/Regular/basicExataFunctionalityCheck/20240627_115909.722/LogFile.txt)	22	on_startregulartests	TestCases/Regular/testLauncher.script
+2024-06-27 12:03:54.215 -0400	LogSuccess		basicEXataFunctionalityCheck SUCCESS	2	on_success	Common/cLog.script
+2024-06-27 12:03:55.077 -0400	runwithnewresults		verifyOpenNewCanvas.script (C:/Users/pratdaga/Desktop/eggplant_automation/exatagui.suite/Results/TestCases/Regular/verifyOpenNewCanvas/20240627_120355.073/LogFile.txt)	22	on_startregulartests	TestCases/Regular/testLauncher.script
+2024-06-27 12:04:49.670 -0400	LogSuccess		verifyOpenNewCanvas SUCCESS	2	on_success	Common/cLog.script
+2024-06-27 12:04:50.598 -0400	runwithnewresults		closeScenarioUsingCloseOption.script (C:/Users/pratdaga/Desktop/eggplant_automation/exatagui.suite/Results/TestCases/Regular/closeScenarioUsingCloseOption/20240627_120450.595/LogFile.txt)	22	on_startregulartests	TestCases/Regular/testLauncher.script
+2024-06-27 12:06:26.125 -0400	LogSuccess		closeScenarioUsingCloseOption SUCCESS	2	on_success	Common/cLog.script
+2024-06-27 12:06:26.449 -0400	capturescreen	Screen_Capture_0001.png		37	on_addreportline	HelperUtilities/rptHtml.script
+2024-06-27 12:06:26.872 -0400	runwithnewresults		verifyFileMenu.script (C:/Users/pratdaga/Desktop/eggplant_automation/exatagui.suite/Results/TestCases/Regular/verifyFileMenu/20240627_120626.869/LogFile.txt)	22	on_startregulartests	TestCases/Regular/testLauncher.script
+2024-06-27 12:07:21.053 -0400	LogSuccess		verifyFileMenu SUCCESS	2	on_success	Common/cLog.script
+2024-06-27 12:07:21.840 -0400	runwithnewresults		verifyEditMenu.script (C:/Users/pratdaga/Desktop/eggplant_automation/exatagui.suite/Results/TestCases/Regular/verifyEditMenu/20240627_120721.836/LogFile.txt)	22	on_startregulartests	TestCases/Regular/testLauncher.script
+2024-06-27 12:07:58.427 -0400	LogSuccess		verifyEditMenu SUCCESS	2	on_success	Common/cLog.script
+2024-06-27 12:07:59.499 -0400	runwithnewresults		verifyViewMenu.script (C:/Users/pratdaga/Desktop/eggplant_automation/exatagui.suite/Results/TestCases/Regular/verifyViewMenu/20240627_120759.495/LogFile.txt)	22	on_startregulartests	TestCases/Regular/testLauncher.script
+2024-06-27 12:08:48.587 -0400	LogSuccess		verifyViewMenu SUCCESS	2	on_success	Common/cLog.script
+2024-06-27 12:08:49.628 -0400	runwithnewresults		verifyToolsMenu.script (C:/Users/pratdaga/Desktop/eggplant_automation/exatagui.suite/Results/TestCases/Regular/verifyToolsMenu/20240627_120849.625/LogFile.txt)	22	on_startregulartests	TestCases/Regular/testLauncher.script
+2024-06-27 12:09:44.117 -0400	EndTestCase		(Duration:"728.917", Errors:"2", Exceptions:"1", StartTime:"2024-06-27 11:57:35 -0400", Successes:"151", TestCase:"main.script", Warnings:"0")
+2024-06-27 12:09:44.129 -0400	ABORTED		Execution Time 0:12:08 main.script

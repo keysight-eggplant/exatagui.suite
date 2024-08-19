@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+ <testsuite name="main_script" package="exatagui.suite" timestamp="2024-06-06 09:47:27.897 -0400"
+ tests="1"  failures="2" errors="2" time="612.251000">
+  <properties>
+   <property name="RunDate" value="2024-06-06 09:47:27.897 -0400"/>
+   <property name="Status" value="Failure"/>
+  </properties>
+  <testcase name="main.script" assertions="124" status="error"  time="612.24">
+    <failure type="LogError" message="main script failed:runwithnewresults Error - Unable to locate script named: TestCases/HumanInTheLoop/verifyRecentFilesList" />
+    <failure type="FAILURE" message="Script Error: Number of Errors logged: 1 -- Execution Time 0:10:12 main.script" />
+    <error type="Throw" message="Error Running Script Command - runwithnewresults Error - Unable to locate script named: TestCases/HumanInTheLoop/verifyRecentFilesList" />
+  </testcase>
+ </testsuite>
+</testsuites>

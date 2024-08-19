@@ -1,0 +1,51 @@
+﻿Try
+	BeginTestCase "verifySaveFunctionality"
+	
+	#Initialize Scenario 
+	"EXataGUI/scenario".initScenario
+	
+	#Saving scenario with file save option 
+	#
+	#Add 2 Node in the Canvas 
+	"EXataGUI/actions/canvas".addNodes "2"
+	
+	#To Save the Scenario 
+	"EXataGUI/actions/menuBar".save "File_save_scenario", ""
+	
+	#Click on Close Tab to close the Scenario
+	"EXataGUI/scenario".closeScenario "closetab"
+	
+	#Saving scenario with keyboard shortcut 
+	#
+	#Add 2 Node in the Canvas 
+	"EXataGUI/actions/canvas".addNodes "2"
+	
+	#Save the Scenrio Using ctrl+s Shortcut Key 
+	"EXataGUI/actions/menuBar".save "Save_keyboard_shortcut", "s"
+	
+	#Click on Close Tab to close the Scenario
+	"EXataGUI/scenario".closeScenario "closetab"
+	
+	#Save scenario after modifying sample sceanrio
+	#
+	# to load the WiFiDemo sample scenario
+	"EXataGUI/scenario".loadOpenExampleScenario "demo\WiFiDemo", "WiFiDemo", "", "loadScenarioUsingOpenExample", true  //enter config name without .config extension
+	
+	#Edit scenario properteis 
+	"EXataGUI/scenario".editScenarioProperties
+	
+	#To Save the Scenario 
+	"EXataGUI/actions/menuBar".save "Save_open_example", ""
+	
+	#Click on Close Tab to close the Scenario
+	"EXataGUI/scenario".closeScenario "closetab"
+	
+	EndTestCase "verifySaveFunctionality"
+	
+Catch theException
+	"Common/cLog".cError "Error in running verifySaveFunctionality testcase"
+	throw theException 
+End try
+
+
+

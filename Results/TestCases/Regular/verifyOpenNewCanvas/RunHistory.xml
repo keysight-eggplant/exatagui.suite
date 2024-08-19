@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<runHistory script="TestCases/Regular/verifyOpenNewCanvas">
+ <run>
+  <RunDate>2024-06-24 12:48:53.649 -0400</RunDate>
+  <Status>Success</Status>
+  <Duration>52.740000</Duration>
+  <Errors>0</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>15</Successes>
+  <LogFile>20240624_124853.649/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage></ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2024-06-24 14:06:46.790 -0400</RunDate>
+  <Status>Success</Status>
+  <Duration>49.324000</Duration>
+  <Errors>0</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>15</Successes>
+  <LogFile>20240624_140646.790/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage></ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2024-06-25 08:22:46.692 -0400</RunDate>
+  <Status>Success</Status>
+  <Duration>47.290000</Duration>
+  <Errors>0</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>15</Successes>
+  <LogFile>20240625_082246.692/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage></ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2024-06-25 09:16:53.051 -0400</RunDate>
+  <Status>Success</Status>
+  <Duration>51.481000</Duration>
+  <Errors>0</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>15</Successes>
+  <LogFile>20240625_091653.051/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage></ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2024-06-25 11:49:28.946 -0400</RunDate>
+  <Status>Success</Status>
+  <Duration>42.762000</Duration>
+  <Errors>0</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>15</Successes>
+  <LogFile>20240625_114928.946/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage></ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2024-06-27 12:03:55.073 -0400</RunDate>
+  <Status>Success</Status>
+  <Duration>54.288000</Duration>
+  <Errors>0</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>15</Successes>
+  <LogFile>20240627_120355.073/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage></ErrorMessage>
+ </run>
+</runHistory>

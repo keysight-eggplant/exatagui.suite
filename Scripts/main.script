@@ -1,0 +1,38 @@
+﻿#Pre-requisites:
+#
+#1. To perform the EXataGUI regression all the scripts should be executed from this "main.script"
+#2. To execute the script from the Eggplant GUI, go to Eggplant menu --> Preferences and,
+#     set the default suite directory to the current Eggplant directory
+#3. Set the Screen Resolution of all the SUT machines to 1920 x 1080
+#4. Disable Ubuntu Dock on Ubuntu SUT machines
+#5. EXata should be installed on the SUT machines and supported valid license should be used
+#6. Set the EXata Install_dir in "configure.xml" file. The file is present at "Eggplant suite directory/Resources"
+#7. Set the "UserScenarios" directory path in the "configure.xml" file 
+#8. SUT Display Name for all the Linux machines should end with "-Linux"
+
+
+Try
+	"Common/cLog".cMessage "Started the Execution of the EXataGUI Regression Scripts at" && the time && "on" && the date
+	put the time into StartTime
+	
+	"TestCases/launcher".initTestCases
+	-- Starting Regular Tests
+	"TestCases/Regular/testLauncher".startRegularTests
+	--starting Human in the loop Tests
+	"Testcases/HumanInTheLoop/testLauncher".startHITLTests
+	
+	(*sendMail {To:"neha.rawat@mtree.co.in,chandan.kumar@mtree.co.in,gaurav.jain@mtree.co.in", from:"gauravmtree@gmail.com", smtp_host:"smtp.gmail.com",smtp_type:"login", smtp_user:"gauravmtree@gmail.com", smtp_password:"plmzatpgnasjsmqk", smtp_port:"587" ,Subject:"Eggplant Test Result", attachment:"E:\Eggplant_Script_Working_Directory\eggplant_automation\exatagui.suite\Results\SuiteStatistics.csv"}*)
+	
+	"TestCases/launcher".cleanUpTestCases
+	
+	put the time into StopTime
+	"Common/cLog".cMessage "The execution of EXataGUI Regression Script took" && (StopTime - StartTime) && "to complete."
+	Exit all
+Catch theException
+	"Common/cLog".cError "main script failed:" & theException's reason
+	"TestCases/launcher".cleanUpTestCases
+	Exit all
+End try
+
+
+

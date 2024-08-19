@@ -1,0 +1,39 @@
+﻿Try
+	BeginTestCase "verifyHelpMenu"
+	
+	# initializing the scenario
+	"EXataGUI/scenario".initScenario
+	
+	#open Help Menu 
+	"EXataGUI/actions/menuBar".openHelp
+	
+	#Verify Help Menu
+	
+	#verify availability of Keyboard Shortcuts  
+	"Common/check".isImageTextFound "Keyboard Shortcuts",HelpMenu
+	
+	# verify availability of FAQ 
+	"Common/check".isImageTextFound "FAQ",HelpMenu
+	
+	# verify availability of Documentation Folder 
+	"Common/check".isImageTextFound "Documentation Folder",HelpMenu
+	
+	# verify availability ofVisit the Product Website
+	"Common/check".isImageTextFound "Visit the Product Website",HelpMenu
+	
+	# verify availability of License and Libraries
+	"Common/check".isImageTextFound "License and Libraries",HelpMenu 
+	
+	# verify availability of About EXata
+	"Common/check".isImageTextFound "About EXata",HelpMenu 
+	
+	# Closes the help menu by clicking at the centre of the canvas
+	"Common/clickEvent".clickScaled "0.5"
+	
+	EndTestCase "verifyHelpMenu"
+	
+	
+Catch theException
+	"Common/cLog".cError "Error in Running  verifyHelpMenu TestCase"
+	throw theException 
+End try

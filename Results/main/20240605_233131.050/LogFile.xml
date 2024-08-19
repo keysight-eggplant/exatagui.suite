@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+ <testsuite name="main_script" package="exatagui.suite" timestamp="2024-06-05 23:31:31.050 -0400"
+ tests="1"  failures="3" errors="2" time="772.924000">
+  <properties>
+   <property name="RunDate" value="2024-06-05 23:31:31.050 -0400"/>
+   <property name="Status" value="Failure"/>
+  </properties>
+  <testcase name="main.script" assertions="144" status="error"  time="772.912">
+    <failure type="LogError" message="TestCases/HumanInTheLoop/verifyRecentFilesList FAIL" />
+    <failure type="LogError" message="main script failed:Image Not Found -- waitfor Error - Unable To Find Any Image On Screen &quot;(TEXT:&quot;MultiChannel&quot;)&quot; within 60.00 seconds. Text not found." />
+    <failure type="FAILURE" message="Script Error: Number of Errors logged: 2 -- Execution Time 0:12:52 main.script" />
+    <error type="Throw" message="verifyRecentFilesList - Image Not Found -- waitfor Error - Unable To Find Any Image On Screen &quot;(TEXT:&quot;MultiChannel&quot;)&quot; within 60.00 seconds. Text not found." />
+  </testcase>
+ </testsuite>
+</testsuites>

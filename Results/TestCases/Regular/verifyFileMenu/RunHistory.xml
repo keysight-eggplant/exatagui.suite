@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<runHistory script="TestCases/Regular/verifyFileMenu">
+ <run>
+  <RunDate>2024-06-24 12:51:12.824 -0400</RunDate>
+  <Status>Success</Status>
+  <Duration>48.867000</Duration>
+  <Errors>0</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>21</Successes>
+  <LogFile>20240624_125112.824/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage></ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2024-06-24 14:09:00.401 -0400</RunDate>
+  <Status>Success</Status>
+  <Duration>44.909000</Duration>
+  <Errors>0</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>21</Successes>
+  <LogFile>20240624_140900.401/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage></ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2024-06-25 08:24:50.391 -0400</RunDate>
+  <Status>Success</Status>
+  <Duration>43.883000</Duration>
+  <Errors>0</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>21</Successes>
+  <LogFile>20240625_082450.391/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage></ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2024-06-25 09:19:12.836 -0400</RunDate>
+  <Status>Success</Status>
+  <Duration>58.014000</Duration>
+  <Errors>0</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>21</Successes>
+  <LogFile>20240625_091912.836/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage></ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2024-06-25 11:51:26.867 -0400</RunDate>
+  <Status>Success</Status>
+  <Duration>41.471000</Duration>
+  <Errors>0</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>21</Successes>
+  <LogFile>20240625_115126.867/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage></ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2024-06-27 12:06:26.869 -0400</RunDate>
+  <Status>Success</Status>
+  <Duration>53.896000</Duration>
+  <Errors>0</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>21</Successes>
+  <LogFile>20240627_120626.869/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage></ErrorMessage>
+ </run>
+</runHistory>

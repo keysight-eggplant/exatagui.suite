@@ -1,0 +1,82 @@
+﻿2024-06-07 13:57:40.897 -0400	START		Running TestCases/Regular/verifyAnimationMenu.script	22	on_startregulartests	TestCases/Regular/testLauncher.script
+2024-06-07 13:57:40.954 -0400	BeginTestCase		verifyAnimationMenu	2	on_verifyanimationmenu	TestCases/Regular/verifyAnimationMenu.script
+2024-06-07 13:57:41.176 -0400	CompareScreen	[Baseline_Screens]/GUI_Canvas_Windows7 6 2024 _ 13 41 18.png	CompareScreen "GUI_Canvas_Windows7 6 2024 _ 13 41 18" -- No significant differences from baseline	3	on_compare_screen	Common/check.script
+2024-06-07 13:57:41.317 -0400	CompareScreen	[Baseline_Screens]/GUI_Canvas_Windows7 6 2024 _ 13 41 18.png	CompareScreen "GUI_Canvas_Windows7 6 2024 _ 13 41 18" -- No significant differences from baseline	3	function_compare_screen	Common/check.script
+2024-06-07 13:57:41.705 -0400	set		SEARCHRECTANGLE = [[138.24,14.04],[336,189]]	3	on_setsearchsection	Common/search.script
+2024-06-07 13:57:44.159 -0400	click	(TEXT:"Animation")	at (175, 32)	6	on_leftevent	Common/clickEvent.script
+2024-06-07 13:57:45.509 -0400	imagefound	(TEXT:"Animation Colors")	found at (218, 54)	9	function_isimagetextfound	Common/check.script
+2024-06-07 13:57:45.809 -0400	moveto	(TEXT:"Animation Colors")	at (218, 54)	10	function_isimagetextfound	Common/check.script
+2024-06-07 13:57:45.864 -0400	LogSuccess		Animation Colors  is found in 	2	on_success	Common/cLog.script
+2024-06-07 13:57:45.927 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-07 13:57:46.045 -0400	LogSuccess		Animation menu opened successfully	2	on_success	Common/cLog.script
+2024-06-07 13:57:46.157 -0400	capturescreen	verifyAnimationMenu.png	(2,6,787,513)	4	on_capturescreenshots	Common/captureScreenShots.script
+2024-06-07 13:57:46.620 -0400	set		SEARCHRECTANGLE = [[138.24,14.04],[336,189]]	3	on_setsearchsection	Common/search.script
+2024-06-07 13:57:46.877 -0400	imagefound	(TEXT:"Animation Colors")	found at (218, 54)	9	on_isimagetextfound	Common/check.script
+2024-06-07 13:57:47.131 -0400	moveto	(TEXT:"Animation Colors")	at (218, 54)	10	on_isimagetextfound	Common/check.script
+2024-06-07 13:57:47.209 -0400	LogSuccess		Animation Colors  is found in AnimationMenu	2	on_success	Common/cLog.script
+2024-06-07 13:57:47.270 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-07 13:57:47.705 -0400	set		SEARCHRECTANGLE = [[138.24,14.04],[336,189]]	3	on_setsearchsection	Common/search.script
+2024-06-07 13:57:47.943 -0400	imagefound	(TEXT:"Step Setting")	found at (208, 78)	9	on_isimagetextfound	Common/check.script
+2024-06-07 13:57:48.296 -0400	moveto	(TEXT:"Step Setting")	at (208, 78)	10	on_isimagetextfound	Common/check.script
+2024-06-07 13:57:48.403 -0400	LogSuccess		Step Setting  is found in AnimationMenu	2	on_success	Common/cLog.script
+2024-06-07 13:57:48.460 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-07 13:57:48.842 -0400	set		SEARCHRECTANGLE = [[138.24,14.04],[336,189]]	3	on_setsearchsection	Common/search.script
+2024-06-07 13:57:49.040 -0400	imagefound	(TEXT:"Communication Interval")	found at (235, 98)	9	on_isimagetextfound	Common/check.script
+2024-06-07 13:57:49.587 -0400	moveto	(TEXT:"Communication Interval")	at (235, 98)	10	on_isimagetextfound	Common/check.script
+2024-06-07 13:57:49.641 -0400	LogSuccess		Communication Interval  is found in AnimationMenu	2	on_success	Common/cLog.script
+2024-06-07 13:57:49.708 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-07 13:57:50.078 -0400	set		SEARCHRECTANGLE = [[138.24,14.04],[336,189]]	3	on_setsearchsection	Common/search.script
+2024-06-07 13:57:50.272 -0400	imagefound	(TEXT:"Event Filters")	found at (208, 120)	9	on_isimagetextfound	Common/check.script
+2024-06-07 13:57:50.803 -0400	moveto	(TEXT:"Event Filters")	at (208, 120)	10	on_isimagetextfound	Common/check.script
+2024-06-07 13:57:50.850 -0400	LogSuccess		Event Filters  is found in AnimationMenu	2	on_success	Common/cLog.script
+2024-06-07 13:57:50.919 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-07 13:57:51.324 -0400	set		SEARCHRECTANGLE = [[138.24,14.04],[336,189]]	3	on_setsearchsection	Common/search.script
+2024-06-07 13:57:51.535 -0400	imagefound	(TEXT:"Layer Filters")	found at (208, 143)	9	on_isimagetextfound	Common/check.script
+2024-06-07 13:57:51.999 -0400	moveto	(TEXT:"Layer Filters")	at (208, 143)	10	on_isimagetextfound	Common/check.script
+2024-06-07 13:57:52.056 -0400	LogSuccess		Layer Filters  is found in AnimationMenu	2	on_success	Common/cLog.script
+2024-06-07 13:57:52.126 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-07 13:57:52.538 -0400	set		SEARCHRECTANGLE = [[138.24,14.04],[336,189]]	3	on_setsearchsection	Common/search.script
+2024-06-07 13:57:52.799 -0400	imagefound	(TEXT:"Dynamic Statistics")	found at (221, 166)	9	on_isimagetextfound	Common/check.script
+2024-06-07 13:57:53.216 -0400	moveto	(TEXT:"Dynamic Statistics")	at (221, 166)	10	on_isimagetextfound	Common/check.script
+2024-06-07 13:57:53.273 -0400	LogSuccess		Dynamic Statistics  is found in AnimationMenu	2	on_success	Common/cLog.script
+2024-06-07 13:57:53.357 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-07 13:57:53.748 -0400	set		SEARCHRECTANGLE = [[138.24,14.04],[336,189]]	3	on_setsearchsection	Common/search.script
+2024-06-07 13:57:53.954 -0400	imagefound	(TEXT:"Animation Colors")	found at (218, 54)	9	on_isimagetextfound	Common/check.script
+2024-06-07 13:57:54.581 -0400	moveto	(TEXT:"Animation Colors")	at (218, 54)	10	on_isimagetextfound	Common/check.script
+2024-06-07 13:57:54.628 -0400	LogSuccess		Animation Colors  is found in AnimationMenu	2	on_success	Common/cLog.script
+2024-06-07 13:57:54.700 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-07 13:57:55.095 -0400	set		SEARCHRECTANGLE = [[138.24,14.04],[336,189]]	3	on_setsearchsection	Common/search.script
+2024-06-07 13:57:55.917 -0400	click	(TEXT:"Animation")	at (175, 32)	6	on_leftevent	Common/clickEvent.script
+2024-06-07 13:57:56.580 -0400	imagefound	(TEXT:"Packet Tracer")	found at (234, 58)	9	function_isimagetextfound	Common/check.script
+2024-06-07 13:57:57.952 -0400	moveto	(TEXT:"Packet Tracer")	at (234, 58)	10	function_isimagetextfound	Common/check.script
+2024-06-07 13:57:58.019 -0400	LogSuccess		Packet Tracer  is found in 	2	on_success	Common/cLog.script
+2024-06-07 13:57:58.095 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-07 13:57:58.254 -0400	LogSuccess		Animation menu closed successfully	2	on_success	Common/cLog.script
+2024-06-07 13:57:58.363 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-07 13:57:58.816 -0400	set		SEARCHRECTANGLE = [[0,43.2],[96,86.4]]	3	on_setsearchsection	Common/search.script
+2024-06-07 13:57:59.169 -0400	imagefound	(TEXT:"Architect")	found at (58, 59)	9	function_isimagetextfound	Common/check.script
+2024-06-07 13:57:59.711 -0400	moveto	(TEXT:"Architect")	at (58, 59)	10	function_isimagetextfound	Common/check.script
+2024-06-07 13:57:59.773 -0400	LogSuccess		Architect  is found in ArchitectButton	2	on_success	Common/cLog.script
+2024-06-07 13:57:59.858 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-07 13:58:00.277 -0400	set		SEARCHRECTANGLE = [[0,43.2],[96,86.4]]	3	on_setsearchsection	Common/search.script
+2024-06-07 13:58:00.610 -0400	imagefound	(TEXT:"Architect")	found at (58, 59)	7	on_onfoundimagelocation	Common/clickEvent.script
+2024-06-07 13:58:00.881 -0400	click		at (58, 59)	8	on_onfoundimagelocation	Common/clickEvent.script
+2024-06-07 13:58:00.925 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-07 13:58:01.301 -0400	set		SEARCHRECTANGLE = [[0,0],[249.6,151.2]]	3	on_setsearchsection	Common/search.script
+2024-06-07 13:58:02.281 -0400	click	(TEXT:"File")	at (14, 31)	6	on_leftevent	Common/clickEvent.script
+2024-06-07 13:58:03.610 -0400	imagefound	(TEXT:"New")	found at (44, 55)	9	function_isimagetextfound	Common/check.script
+2024-06-07 13:58:03.936 -0400	moveto	(TEXT:"New")	at (44, 55)	10	function_isimagetextfound	Common/check.script
+2024-06-07 13:58:03.991 -0400	LogSuccess		New  is found in 	2	on_success	Common/cLog.script
+2024-06-07 13:58:04.052 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-07 13:58:04.194 -0400	LogSuccess		File menu opened successfully	2	on_success	Common/cLog.script
+2024-06-07 13:58:04.320 -0400	capturescreen	verifyFileMenu.png	(0,2,808,810)	4	on_capturescreenshots	Common/captureScreenShots.script
+2024-06-07 13:58:04.498 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-07 13:58:04.924 -0400	set		SEARCHRECTANGLE = [[0,0],[480,270]]	3	on_setsearchsection	Common/search.script
+2024-06-07 13:58:06.066 -0400	click	(TEXT:"Close All")	at (53, 208)	6	on_leftevent	Common/clickEvent.script
+2024-06-07 13:58:06.139 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-07 13:58:07.093 -0400	CompareScreen	[Baseline_Screens]/GUI_Canvas_Windows7 6 2024 _ 13 41 18.png	CompareScreen "GUI_Canvas_Windows7 6 2024 _ 13 41 18" -- No significant differences from baseline	3	on_compare_screen	Common/check.script
+2024-06-07 13:58:07.263 -0400	CompareScreen	[Baseline_Screens]/GUI_Canvas_Windows7 6 2024 _ 13 41 18.png	CompareScreen "GUI_Canvas_Windows7 6 2024 _ 13 41 18" -- No significant differences from baseline	3	function_compare_screen	Common/check.script
+2024-06-07 13:58:09.463 -0400	click		at (960, 540)	3	on_clickscaled	Common/clickEvent.script
+2024-06-07 13:58:09.532 -0400	EndTestCase		(Duration:"28.576", Errors:"0", Exceptions:"0", StartTime:"2024-06-07 13:57:40 -0400", Successes:"14", TestCase:"verifyAnimationMenu", Warnings:"0")	39	on_verifyanimationmenu	TestCases/Regular/verifyAnimationMenu.script
+2024-06-07 13:58:09.562 -0400	EndTestCase		(Duration:"28.661", Errors:"0", Exceptions:"0", StartTime:"2024-06-07 13:57:40 -0400", Successes:"14", TestCase:"TestCases/Regular/verifyAnimationMenu.script", Warnings:"0")	22	on_startregulartests	TestCases/Regular/testLauncher.script
+2024-06-07 13:58:09.625 -0400	SUCCESS		Execution Time 0:00:28 TestCases/Regular/verifyAnimationMenu.script	22	on_startregulartests	TestCases/Regular/testLauncher.script

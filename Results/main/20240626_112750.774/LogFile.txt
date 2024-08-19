@@ -1,0 +1,28 @@
+﻿2024-06-26 11:27:50.779 -0400	START		Running main.script
+2024-06-26 11:27:50.882 -0400	Log		Started the Execution of the EXataGUI Regression Scripts at 11:27 AM on 06/26/24	2	on_cmessage	Common/cLog.script
+2024-06-26 11:27:50.937 -0400	setoptions		ImageUpdate = Off	2	on_variabledata	HelperUtilities/variableData.script
+2024-06-26 11:27:50.939 -0400	setoptions		MouseMoveMode = 2	2	on_variabledata	HelperUtilities/variableData.script
+2024-06-26 11:27:50.941 -0400	setoptions		MouseMoveSpeed = 10	2	on_variabledata	HelperUtilities/variableData.script
+2024-06-26 11:27:50.944 -0400	setoptions		remoteWorkInterval = 1	2	on_variabledata	HelperUtilities/variableData.script
+2024-06-26 11:27:51.095 -0400	Log		Screen Width: 1920, Screen Height: 1080	6	function_checkscreenresolution	Common/check.script
+2024-06-26 11:27:51.339 -0400	Log		C:\Program Files\Scalable\exata\8.2.0.0	2	on_cmessage	Common/cLog.script
+2024-06-26 11:27:51.442 -0400	Log		C:\Users\pratdaga\Documents\UserScenarios	2	on_cmessage	Common/cLog.script
+2024-06-26 11:27:51.562 -0400	Log		generateReport: true	2	on_cmessage	Common/cLog.script
+2024-06-26 11:27:51.703 -0400	Log		The mode of the Execution of Test : full	2	on_cmessage	Common/cLog.script
+2024-06-26 11:27:53.826 -0400	BeginTestCase		hideTaskBar	3	on_hidetaskbar	OS/windows.script
+2024-06-26 11:27:53.875 -0400	LogError		 Error in running hideTaskBar testcase	2	on_cerror	Common/cLog.script
+2024-06-26 11:27:53.900 -0400	Throw		STUnknownMessage - ERROR: No Such Command: 'presswindowskey'	27	on_hidetaskbar	OS/windows.script
+2024-06-26 11:27:53.969 -0400	LogError		initTestCases failed: ERROR: No Such Command: 'presswindowskey'	2	on_cerror	Common/cLog.script
+2024-06-26 11:27:53.985 -0400	Throw		STUnknownMessage - ERROR: No Such Command: 'presswindowskey'	15	on_inittestcases	TestCases/launcher.script
+2024-06-26 11:27:54.040 -0400	LogError		main script failed:ERROR: No Such Command: 'presswindowskey'	2	on_cerror	Common/cLog.script
+2024-06-26 11:27:54.364 -0400	set		SEARCHRECTANGLE = [[0,0],[960,540]]	3	on_setsearchsection	Common/search.script
+2024-06-26 11:27:57.796 -0400	imagefound	(TEXT:"Results")	Unable to Find Image (TEXT:"Results"). Text not found.	9	function_isimagetextfound	Common/check.script
+2024-06-26 11:27:57.846 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-26 11:27:58.083 -0400	typetext		[windowsAltKey][F4]	3	on_entertext	Common/keyBoard.script
+2024-06-26 11:27:59.099 -0400	typetext		[returnKey]	3	on_entertext	Common/keyBoard.script
+2024-06-26 11:27:59.321 -0400	set		SEARCHRECTANGLE = [[480,270],[1440,810]]	3	on_setsearchsection	Common/search.script
+2024-06-26 11:28:04.622 -0400	imagefound	(TEXT:"Do you want to Save the Changes")	Unable to Find Image (TEXT:"Do you want to Save the Changes"). Text not found.	9	function_isimagetextfound	Common/check.script
+2024-06-26 11:28:04.758 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-26 11:28:04.913 -0400	EndTestCase		(Duration:"11.087", Errors:"3", Exceptions:"2", StartTime:"2024-06-26 11:27:53 -0400", Successes:"0", TestCase:"hideTaskBar", Warnings:"0")
+2024-06-26 11:28:04.917 -0400	EndTestCase		(Duration:"14.134", Errors:"3", Exceptions:"2", StartTime:"2024-06-26 11:27:50 -0400", Successes:"0", TestCase:"main.script", Warnings:"0")
+2024-06-26 11:28:05.064 -0400	FAILURE	Screen_Error.png	Script Error: Number of Errors logged: 3 -- Execution Time 0:00:14 main.script

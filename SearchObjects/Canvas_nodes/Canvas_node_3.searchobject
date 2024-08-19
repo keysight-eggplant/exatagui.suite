@@ -1,0 +1,41 @@
+{
+	"lastmodifieddate": 1708408114.1989999,
+	"ocrcapturestring": "[2]",
+	"originalcapturelocation": [
+		1141,
+		626,
+		36,
+		40
+	],
+	"createddate": 1708408114.1989999,
+	"testlocationdata": [
+		{
+				"connectionportnum": 3389,
+				"properties": {
+					"CropRectangle": "[0,0,0,0]",
+					"Rotate": 0,
+					"Tolerance": 60,
+					"HotSpot": "[5,27]",
+					"Scale": "    1",
+					"Discrepancy": "_0",
+					"SearchType": "Tolerant of Background"
+				},
+				"sutinfo": {
+					"type": "Unknown RDP"
+				},
+				"name": "Canvas_nodes/Canvas_node_2.png",
+				"connectionname": "windows",
+				"type": 1,
+				"connectionserverid": "192.168.2.120",
+				"capturerect": [
+					1141,
+					626,
+					36,
+					40
+				],
+				"connectiontype": "RDP",
+				"capturedocrtext": "[2]"
+			}
+	],
+	"name": "Canvas_nodes/Canvas_node_3"
+}

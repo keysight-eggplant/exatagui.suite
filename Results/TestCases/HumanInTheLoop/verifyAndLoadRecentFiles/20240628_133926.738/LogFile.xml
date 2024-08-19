@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+ <testsuite name="Testcases/HumanInTheLoop/verifyAndLoadRecentFiles_script" package="exatagui.suite" timestamp="2024-06-28 13:39:26.738 -0400"
+ tests="2"  failures="0" errors="0" time="138.388000">
+  <properties>
+   <property name="RunDate" value="2024-06-28 13:39:26.738 -0400"/>
+   <property name="Status" value="Aborted"/>
+  </properties>
+  <testcase name="verifyAndLoadRecentFiles" assertions="1" status="error"  time="122.388">
+    <error type="Exception" message="Searching For Image: OCR Error: Operation was aborted" />
+  </testcase>
+  <testcase name="Testcases/HumanInTheLoop/verifyAndLoadRecentFiles.script" assertions="1" status="error"  time="138.365">
+    <error type="Exception" message="Searching For Image: OCR Error: Operation was aborted" />
+  </testcase>
+ </testsuite>
+</testsuites>

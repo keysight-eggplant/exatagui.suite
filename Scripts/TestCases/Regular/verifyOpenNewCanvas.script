@@ -1,0 +1,30 @@
+﻿Try
+	BeginTestCase "verifyOpenNewCanvas"
+	
+	# initializing the scenario
+	"EXataGUI/scenario".initScenario
+	
+	# to open a new canvas using "New" File menu option
+	"EXataGUI/actions/menuBar".new
+	
+	#Click on Close Tab to close the Scenario
+	"EXataGUI/scenario".closeScenario "closetab"
+	
+	# to open a new canvas using a "Create A New Scenario" button
+	"EXataGUI/actions/menuBar".newUsingCreateANewScenario
+	
+	#Click on Close Tab to close the Scenario
+	"EXataGUI/scenario".closeScenario "closetab"
+	
+	# to open a new canvas using keyboard shortcut
+	"EXataGUI/actions/menuBar".newUsingKeyboardShortcut
+	
+	#Click on Close Tab to close the Scenario
+	"EXataGUI/scenario".closeScenario "closetab"
+	
+	EndTestCase "verifyOpenNewCanvas"
+	
+Catch theException
+	"Common/cLog".cError "Error in running verifyOpenNewCanvas TestCase"
+	throw theException 
+End try

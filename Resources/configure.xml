@@ -1,0 +1,37 @@
+﻿//home_directory to open exata path
+EXATA_HOME=C:\Program Files\Scalable\exata\8.2.0.0
+
+//Provide Your UserScenarios Path To Save Scenarios
+savelocation=C:\Users\Administrator\Documents\UserScenarios
+
+// to on or off the report generation
+Report_Generation=true
+
+// to run 'full' (all), 'custom', 'sanity' or 'regression' testcases
+Execution_Mode=full
+
+// if Execution_Mode is custom then pass testcases names
+TestCases=[enter the testcase name]
+
+
+
+<!-- Test Cases Names
+"basicEXataFunctionalityCheck",
+"basicScenarioCanvasCheck",
+"basicScenarioActivityRecordingCheck",
+"verifyOpenNewCanvas",
+"closeScenarioUsingCloseoption",
+"LoadScenarioUsingOpenExample",
+"VerifyPreviousAndNextButtons",
+"verifyFileMenu",
+"verifyEditMenu",
+"verifyViewMenu",
+"verifyToolsMenu",
+"verifyHelpMenu",
+"verifyAndLoadRecentFiles",
+"LoadScenarioUsingOpenFile",
+"verifyAnimationMenu",
+"closeUnsavedScenario",
+"verifySaveFunctionality"
+
+-->

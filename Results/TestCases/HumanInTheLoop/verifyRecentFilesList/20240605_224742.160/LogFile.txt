@@ -1,0 +1,62 @@
+﻿2024-06-05 22:47:42.167 -0400	START		Running TestCases/HumanInTheLoop/verifyRecentFilesList.script	22	on_startregulartests	TestCases/Regular/testLauncher.script
+2024-06-05 22:47:42.207 -0400	BeginTestCase		verifyRecentFilesList	2	on_verifyrecentfileslist	TestCases/HumanInTheLoop/verifyRecentFilesList.script
+2024-06-05 22:47:42.482 -0400	CompareScreen	[Baseline_Screens]/GUI_Canvas_Windows5 6 2024 _ 22 37 32.png	CompareScreen "GUI_Canvas_Windows5 6 2024 _ 22 37 32" -- No significant differences from baseline	3	on_compare_screen	Common/check.script
+2024-06-05 22:47:42.653 -0400	CompareScreen	[Baseline_Screens]/GUI_Canvas_Windows5 6 2024 _ 22 37 32.png	CompareScreen "GUI_Canvas_Windows5 6 2024 _ 22 37 32" -- No significant differences from baseline	3	function_compare_screen	Common/check.script
+2024-06-05 22:47:43.092 -0400	typetext		[controlKey]default	2	on_keyboardshortcut	Common/keyBoard.script
+2024-06-05 22:47:53.633 -0400	imagefound	(TEXT:"cancel")	found at (890, 528)	9	function_isimagetextfound	Common/check.script
+2024-06-05 22:47:57.456 -0400	moveto	(TEXT:"cancel")	at (890, 528)	10	function_isimagetextfound	Common/check.script
+2024-06-05 22:47:57.509 -0400	LogSuccess		cancel  is found in 	2	on_success	Common/cLog.script
+2024-06-05 22:47:57.585 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-05 22:47:58.750 -0400	typetext		default	3	on_entertext	Common/keyBoard.script
+2024-06-05 22:47:59.804 -0400	typetext		[returnKey]	3	on_entertext	Common/keyBoard.script
+2024-06-05 22:48:01.254 -0400	typetext		default.config	3	on_entertext	Common/keyBoard.script
+2024-06-05 22:48:02.293 -0400	typetext		[returnKey]	3	on_entertext	Common/keyBoard.script
+2024-06-05 22:48:02.400 -0400	LogSuccess		Open Example operation completed successfully.	2	on_success	Common/cLog.script
+2024-06-05 22:48:05.556 -0400	waitfor	(TEXT:"default")	found at (79, 266)	6	on_waitfortext	Common/waitForEvent.script
+2024-06-05 22:48:05.689 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-05 22:48:06.018 -0400	set		SEARCHRECTANGLE = [[0,0],[1920,540]]	3	on_setsearchsection	Common/search.script
+2024-06-05 22:48:07.171 -0400	imagefound	(TEXT:"default")	found at (79, 266)	9	function_isimagetextfound	Common/check.script
+2024-06-05 22:48:10.068 -0400	moveto	(TEXT:"default")	at (79, 266)	10	function_isimagetextfound	Common/check.script
+2024-06-05 22:48:10.137 -0400	LogSuccess		default  is found in TopHalf	2	on_success	Common/cLog.script
+2024-06-05 22:48:10.231 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-05 22:48:15.488 -0400	LogSuccess		Scenario Loaded successfully	2	on_success	Common/cLog.script
+2024-06-05 22:48:15.952 -0400	typetext		[controlKey]WiFiDemo	2	on_keyboardshortcut	Common/keyBoard.script
+2024-06-05 22:48:19.380 -0400	imagefound	(TEXT:"cancel")	found at (890, 528)	9	function_isimagetextfound	Common/check.script
+2024-06-05 22:48:24.722 -0400	moveto	(TEXT:"cancel")	at (890, 528)	10	function_isimagetextfound	Common/check.script
+2024-06-05 22:48:24.766 -0400	LogSuccess		cancel  is found in 	2	on_success	Common/cLog.script
+2024-06-05 22:48:24.849 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-05 22:48:26.181 -0400	typetext		demo\WiFiDemo	3	on_entertext	Common/keyBoard.script
+2024-06-05 22:48:27.229 -0400	typetext		[returnKey]	3	on_entertext	Common/keyBoard.script
+2024-06-05 22:48:28.760 -0400	typetext		WiFiDemo.config	3	on_entertext	Common/keyBoard.script
+2024-06-05 22:48:29.804 -0400	typetext		[returnKey]	3	on_entertext	Common/keyBoard.script
+2024-06-05 22:48:29.916 -0400	LogSuccess		Open Example operation completed successfully.	2	on_success	Common/cLog.script
+2024-06-05 22:48:33.848 -0400	waitfor	(TEXT:"WiFiDemo")	found at (790, 69)	6	on_waitfortext	Common/waitForEvent.script
+2024-06-05 22:48:33.989 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-05 22:48:34.484 -0400	set		SEARCHRECTANGLE = [[0,0],[1920,540]]	3	on_setsearchsection	Common/search.script
+2024-06-05 22:48:35.621 -0400	imagefound	(TEXT:"WiFiDemo")	found at (790, 69)	9	function_isimagetextfound	Common/check.script
+2024-06-05 22:48:37.586 -0400	moveto	(TEXT:"WiFiDemo")	at (790, 69)	10	function_isimagetextfound	Common/check.script
+2024-06-05 22:48:37.639 -0400	LogSuccess		WiFiDemo  is found in TopHalf	2	on_success	Common/cLog.script
+2024-06-05 22:48:37.743 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-05 22:48:43.112 -0400	LogSuccess		Scenario Loaded successfully	2	on_success	Common/cLog.script
+2024-06-05 22:48:43.704 -0400	typetext		[controlKey]MultiChannel	2	on_keyboardshortcut	Common/keyBoard.script
+2024-06-05 22:48:49.024 -0400	imagefound	(TEXT:"cancel")	found at (890, 528)	9	function_isimagetextfound	Common/check.script
+2024-06-05 22:48:55.263 -0400	moveto	(TEXT:"cancel")	at (890, 528)	10	function_isimagetextfound	Common/check.script
+2024-06-05 22:48:55.315 -0400	LogSuccess		cancel  is found in 	2	on_success	Common/cLog.script
+2024-06-05 22:48:55.413 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-05 22:48:56.816 -0400	typetext		demo\MultiChannel	3	on_entertext	Common/keyBoard.script
+2024-06-05 22:48:57.853 -0400	typetext		[returnKey]	3	on_entertext	Common/keyBoard.script
+2024-06-05 22:48:59.490 -0400	typetext		MultiChannel.config	3	on_entertext	Common/keyBoard.script
+2024-06-05 22:49:00.531 -0400	typetext		[returnKey]	3	on_entertext	Common/keyBoard.script
+2024-06-05 22:49:00.640 -0400	LogSuccess		Open Example operation completed successfully.	2	on_success	Common/cLog.script
+2024-06-05 22:50:20.439 -0400	Exception	(TEXT:"MultiChannel")	Unable To Find Any Image On Screen "(TEXT:"MultiChannel")" within 60.00 seconds. Text not found.	6	on_waitfortext	Common/waitForEvent.script
+2024-06-05 22:50:20.597 -0400	LogError		waitForTextAppearance Failed:waitfor Error - Unable To Find Any Image On Screen "(TEXT:"MultiChannel")" within 60.00 seconds. Text not found.	2	on_cerror	Common/cLog.script
+2024-06-05 22:50:20.658 -0400	Throw		Image Not Found - waitfor Error - Unable To Find Any Image On Screen "(TEXT:"MultiChannel")" within 60.00 seconds. Text not found.	10	on_waitfortext	Common/waitForEvent.script
+2024-06-05 22:50:20.736 -0400	LogError		validation of loaded scenario failed:waitfor Error - Unable To Find Any Image On Screen "(TEXT:"MultiChannel")" within 60.00 seconds. Text not found.	2	on_cerror	Common/cLog.script
+2024-06-05 22:50:20.794 -0400	Throw		Image Not Found - waitfor Error - Unable To Find Any Image On Screen "(TEXT:"MultiChannel")" within 60.00 seconds. Text not found.	18	on_loadedscenario	Common/check.script
+2024-06-05 22:50:20.864 -0400	LogError		loadScenario failed:waitfor Error - Unable To Find Any Image On Screen "(TEXT:"MultiChannel")" within 60.00 seconds. Text not found.	2	on_cerror	Common/cLog.script
+2024-06-05 22:50:20.927 -0400	Throw		Image Not Found - waitfor Error - Unable To Find Any Image On Screen "(TEXT:"MultiChannel")" within 60.00 seconds. Text not found.	25	on_loadscenario	EXataGUI/scenario.script
+2024-06-05 22:50:21.023 -0400	LogError		Error in running verifyRecentFilesList TestCase	2	on_cerror	Common/cLog.script
+2024-06-05 22:50:21.090 -0400	Throw		Image Not Found - waitfor Error - Unable To Find Any Image On Screen "(TEXT:"MultiChannel")" within 60.00 seconds. Text not found.	34	on_verifyrecentfileslist	TestCases/HumanInTheLoop/verifyRecentFilesList.script
+2024-06-05 22:50:21.099 -0400	EndTestCase		(Duration:"158.891", Errors:"5", Exceptions:"5", StartTime:"2024-06-05 22:47:42 -0400", Successes:"10", TestCase:"verifyRecentFilesList", Warnings:"0")	22	on_startregulartests	TestCases/Regular/testLauncher.script
+2024-06-05 22:50:21.119 -0400	EndTestCase		(Duration:"158.95", Errors:"5", Exceptions:"5", StartTime:"2024-06-05 22:47:42 -0400", Successes:"10", TestCase:"TestCases/HumanInTheLoop/verifyRecentFilesList.script", Warnings:"0")	22	on_startregulartests	TestCases/Regular/testLauncher.script
+2024-06-05 22:50:21.264 -0400	FAILURE	Screen_Error.png	Image Not Found: waitfor Error - Unable To Find Any Image On Screen "(TEXT:"MultiChannel")" within 60.00 seconds. Text not found. -- Execution Time 0:02:38 TestCases/HumanInTheLoop/verifyRecentFilesList.script	22	on_startregulartests	TestCases/Regular/testLauncher.script

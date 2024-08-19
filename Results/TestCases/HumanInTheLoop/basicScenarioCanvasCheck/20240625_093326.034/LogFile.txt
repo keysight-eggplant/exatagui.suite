@@ -1,0 +1,67 @@
+﻿2024-06-25 09:33:26.041 -0400	START		Running TestCases/HumanInTheLoop/basicScenarioCanvasCheck.script	22	on_starthitltests	Testcases/HumanInTheLoop/testLauncher.script
+2024-06-25 09:33:26.090 -0400	BeginTestCase		basicScenarioCanvasCheck	2	on_basicscenariocanvascheck	TestCases/HumanInTheLoop/basicScenarioCanvasCheck.script
+2024-06-25 09:33:26.316 -0400	CompareScreen	[Baseline_Screens]/GUI_Canvas_Windows25 6 2024 _ 9 12 2.png	CompareScreen "GUI_Canvas_Windows25 6 2024 _ 9 12 2" -- No significant differences from baseline	3	on_compare_screen	Common/check.script
+2024-06-25 09:33:26.443 -0400	CompareScreen	[Baseline_Screens]/GUI_Canvas_Windows25 6 2024 _ 9 12 2.png	CompareScreen "GUI_Canvas_Windows25 6 2024 _ 9 12 2" -- No significant differences from baseline	3	function_compare_screen	Common/check.script
+2024-06-25 09:33:26.784 -0400	set		SEARCHRECTANGLE = [[0,0],[249.6,151.2]]	3	on_setsearchsection	Common/search.script
+2024-06-25 09:33:29.429 -0400	click	(TEXT:"File")	at (14, 31)	6	on_leftevent	Common/clickEvent.script
+2024-06-25 09:33:29.726 -0400	imagefound	(TEXT:"New")	found at (44, 55)	9	function_isimagetextfound	Common/check.script
+2024-06-25 09:33:30.739 -0400	moveto	(TEXT:"New")	at (44, 55)	10	function_isimagetextfound	Common/check.script
+2024-06-25 09:33:30.797 -0400	LogSuccess		New  is found in 	2	on_success	Common/cLog.script
+2024-06-25 09:33:30.891 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-25 09:33:31.117 -0400	LogSuccess		File menu opened successfully	2	on_success	Common/cLog.script
+2024-06-25 09:33:31.270 -0400	capturescreen	verifyFileMenu.png	(0,2,808,810)	4	on_capturescreenshots	Common/captureScreenShots.script
+2024-06-25 09:33:31.509 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-25 09:33:31.771 -0400	set		SEARCHRECTANGLE = [[0,0],[249.6,151.2]]	3	on_setsearchsection	Common/search.script
+2024-06-25 09:33:32.420 -0400	click	(TEXT:"Open Example")	at (68, 99)	6	on_leftevent	Common/clickEvent.script
+2024-06-25 09:33:32.569 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-25 09:33:57.422 -0400	imagefound	(TEXT:"cancel")	found at (1381, 743)	9	function_isimagetextfound	Common/check.script
+2024-06-25 09:34:07.796 -0400	moveto	(TEXT:"cancel")	at (1381, 743)	10	function_isimagetextfound	Common/check.script
+2024-06-25 09:34:07.905 -0400	LogSuccess		cancel  is found in 	2	on_success	Common/cLog.script
+2024-06-25 09:34:08.071 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-25 09:34:08.284 -0400	LogSuccess		The Open File dialog box is successfully open after selecting the Open File option	2	on_success	Common/cLog.script
+2024-06-25 09:34:08.502 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-25 09:34:17.767 -0400	imagefound	(TEXT:"cancel")	found at (1381, 743)	9	function_isimagetextfound	Common/check.script
+2024-06-25 09:34:23.051 -0400	moveto	(TEXT:"cancel")	at (1381, 743)	10	function_isimagetextfound	Common/check.script
+2024-06-25 09:34:23.179 -0400	LogSuccess		cancel  is found in 	2	on_success	Common/cLog.script
+2024-06-25 09:34:23.272 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-25 09:34:24.332 -0400	typetext		default	3	on_entertext	Common/keyBoard.script
+2024-06-25 09:34:25.375 -0400	typetext		[returnKey]	3	on_entertext	Common/keyBoard.script
+2024-06-25 09:34:26.814 -0400	typetext		default.config	3	on_entertext	Common/keyBoard.script
+2024-06-25 09:34:27.853 -0400	typetext		[returnKey]	3	on_entertext	Common/keyBoard.script
+2024-06-25 09:34:33.144 -0400	waitfor	(TEXT:"default")	found at (1100, 284)	6	on_waitfortext	Common/waitForEvent.script
+2024-06-25 09:34:33.281 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-25 09:34:33.695 -0400	set		SEARCHRECTANGLE = [[0,0],[1920,540]]	3	on_setsearchsection	Common/search.script
+2024-06-25 09:34:36.454 -0400	imagefound	(TEXT:"default")	found at (314, 160)	9	function_isimagetextfound	Common/check.script
+2024-06-25 09:34:41.780 -0400	moveto	(TEXT:"default")	at (314, 160)	10	function_isimagetextfound	Common/check.script
+2024-06-25 09:34:41.835 -0400	LogSuccess		default  is found in TopHalf	2	on_success	Common/cLog.script
+2024-06-25 09:34:41.939 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-25 09:34:47.153 -0400	LogSuccess		Scenario Loaded successfully	2	on_success	Common/cLog.script
+2024-06-25 09:34:47.263 -0400	LogSuccess		Load scenario using Open Example operation completed successfully.	2	on_success	Common/cLog.script
+2024-06-25 09:34:47.441 -0400	capturescreen	basicScenarioCanvasCheck.png	(644,195,1522,1026)	4	on_capturescreenshots	Common/captureScreenShots.script
+2024-06-25 09:34:47.894 -0400	set		SEARCHRECTANGLE = [[0,0],[249.6,151.2]]	3	on_setsearchsection	Common/search.script
+2024-06-25 09:34:48.344 -0400	imagefound	(TEXT:"Architect")	found at (58, 59)	9	function_isimagetextfound	Common/check.script
+2024-06-25 09:34:49.323 -0400	moveto	(TEXT:"Architect")	at (58, 59)	10	function_isimagetextfound	Common/check.script
+2024-06-25 09:34:49.392 -0400	LogSuccess		Architect  is found in TopLeft	2	on_success	Common/cLog.script
+2024-06-25 09:34:49.474 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-25 09:34:49.851 -0400	set		SEARCHRECTANGLE = [[0,0],[249.6,151.2]]	3	on_setsearchsection	Common/search.script
+2024-06-25 09:34:50.369 -0400	imagefound	(TEXT:"Architect")	found at (58, 59)	7	on_onfoundimagelocation	Common/clickEvent.script
+2024-06-25 09:34:50.586 -0400	click		at (58, 59)	8	on_onfoundimagelocation	Common/clickEvent.script
+2024-06-25 09:34:50.636 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-25 09:34:50.945 -0400	set		SEARCHRECTANGLE = [[0,0],[249.6,151.2]]	3	on_setsearchsection	Common/search.script
+2024-06-25 09:34:52.180 -0400	click	(TEXT:"File")	at (14, 31)	6	on_leftevent	Common/clickEvent.script
+2024-06-25 09:34:53.469 -0400	imagefound	(TEXT:"New")	found at (44, 55)	9	function_isimagetextfound	Common/check.script
+2024-06-25 09:34:53.891 -0400	moveto	(TEXT:"New")	at (44, 55)	10	function_isimagetextfound	Common/check.script
+2024-06-25 09:34:53.956 -0400	LogSuccess		New  is found in 	2	on_success	Common/cLog.script
+2024-06-25 09:34:54.036 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-25 09:34:54.214 -0400	LogSuccess		File menu opened successfully	2	on_success	Common/cLog.script
+2024-06-25 09:34:54.379 -0400	capturescreen	verifyFileMenu.png	(0,2,808,810)	4	on_capturescreenshots	Common/captureScreenShots.script
+2024-06-25 09:34:54.596 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-25 09:34:54.897 -0400	set		SEARCHRECTANGLE = [[0,0],[480,270]]	3	on_setsearchsection	Common/search.script
+2024-06-25 09:34:55.931 -0400	click	(TEXT:"Close All")	at (53, 208)	6	on_leftevent	Common/clickEvent.script
+2024-06-25 09:34:56.022 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-25 09:34:56.961 -0400	CompareScreen	[Baseline_Screens]/GUI_Canvas_Windows25 6 2024 _ 9 12 2.png	CompareScreen "GUI_Canvas_Windows25 6 2024 _ 9 12 2" -- No significant differences from baseline	3	on_compare_screen	Common/check.script
+2024-06-25 09:34:57.133 -0400	CompareScreen	[Baseline_Screens]/GUI_Canvas_Windows25 6 2024 _ 9 12 2.png	CompareScreen "GUI_Canvas_Windows25 6 2024 _ 9 12 2" -- No significant differences from baseline	3	function_compare_screen	Common/check.script
+2024-06-25 09:34:59.449 -0400	click		at (960, 540)	3	on_clickscaled	Common/clickEvent.script
+2024-06-25 09:34:59.509 -0400	EndTestCase		(Duration:"93.418", Errors:"0", Exceptions:"0", StartTime:"2024-06-25 09:33:26 -0400", Successes:"11", TestCase:"basicScenarioCanvasCheck", Warnings:"0")	13	on_basicscenariocanvascheck	TestCases/HumanInTheLoop/basicScenarioCanvasCheck.script
+2024-06-25 09:34:59.537 -0400	EndTestCase		(Duration:"93.492", Errors:"0", Exceptions:"0", StartTime:"2024-06-25 09:33:26 -0400", Successes:"11", TestCase:"TestCases/HumanInTheLoop/basicScenarioCanvasCheck.script", Warnings:"0")	22	on_starthitltests	Testcases/HumanInTheLoop/testLauncher.script
+2024-06-25 09:34:59.601 -0400	SUCCESS		Execution Time 0:01:33 TestCases/HumanInTheLoop/basicScenarioCanvasCheck.script	22	on_starthitltests	Testcases/HumanInTheLoop/testLauncher.script

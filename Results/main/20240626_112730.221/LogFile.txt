@@ -1,0 +1,13 @@
+﻿2024-06-26 11:27:30.227 -0400	START		Running main.script
+2024-06-26 11:27:30.401 -0400	Log		Started the Execution of the EXataGUI Regression Scripts at 11:27 AM on 06/26/24	2	on_cmessage	Common/cLog.script
+2024-06-26 11:27:30.450 -0400	setoptions		ImageUpdate = Off	2	on_variabledata	HelperUtilities/variableData.script
+2024-06-26 11:27:30.452 -0400	setoptions		MouseMoveMode = 2	2	on_variabledata	HelperUtilities/variableData.script
+2024-06-26 11:27:30.454 -0400	setoptions		MouseMoveSpeed = 10	2	on_variabledata	HelperUtilities/variableData.script
+2024-06-26 11:27:30.456 -0400	setoptions		remoteWorkInterval = 1	2	on_variabledata	HelperUtilities/variableData.script
+2024-06-26 11:27:30.593 -0400	Log		Screen Width: 1920, Screen Height: 1080	6	function_checkscreenresolution	Common/check.script
+2024-06-26 11:27:30.836 -0400	Log		C:\Program Files\Scalable\exata\8.2.0.0	2	on_cmessage	Common/cLog.script
+2024-06-26 11:27:30.945 -0400	Log		C:\Users\pratdaga\Documents\UserScenarios	2	on_cmessage	Common/cLog.script
+2024-06-26 11:27:31.058 -0400	Log		generateReport: true	2	on_cmessage	Common/cLog.script
+2024-06-26 11:27:31.181 -0400	Log		The mode of the Execution of Test : full	2	on_cmessage	Common/cLog.script
+2024-06-26 11:27:31.572 -0400	EndTestCase		(Duration:"1.341", Errors:"1", Exceptions:"0", StartTime:"2024-06-26 11:27:30 -0400", Successes:"0", TestCase:"main.script", Warnings:"0")
+2024-06-26 11:27:31.582 -0400	ABORTED		Execution Time 0:00:01 main.script

@@ -1,0 +1,35 @@
+﻿Try
+	BeginTestCase "verifyAndLoadRecentFiles"
+	
+	# initializing the scenario
+	"EXataGUI/scenario".initScenario
+	
+	# load 5 sample scenarios on canvas	
+	#
+	# to load the default scenario
+	"EXataGUI/scenario".loadOpenExampleScenario "default", "", "", "default", true
+	
+	# to load the WiFiDemo sample scenario
+	"EXataGUI/scenario".loadOpenExampleScenario "demo\WiFiDemo", "WiFiDemo", "", "WiFiDemo", true
+	
+	# to load the MultiChannel sample scenario
+	"EXataGUI/scenario".loadOpenExampleScenario "demo\MultiChannel", "MultiChannel", "", "MultiChannel", true
+	
+	# to load the 5G handover sample scenario
+	"EXataGUI/scenario".loadOpenExampleScenario "5g\sa\handover", "handover", "", "handover", true
+	
+	# to load the dted terrain sample scenario
+	"EXataGUI/scenario".loadOpenExampleScenario "wireless\terrain-dted\dtedtest", "dtedtest", "", "dtedtest", true
+	
+	# verifies Recent Files list and then loads a scenario from recent files on canvas
+	"EXataGUI/actions/menuBar".verifyAndLoadRecentFiles
+	
+	"EXataGUI/actions/menuBar".openFile
+	"EXataGUI/actions/menuBar".closeAll
+	
+	EndTestCase "verifyAndLoadRecentFiles"
+	
+Catch theException
+	"Common/cLog".cError "Error in running verifyAndLoadRecentFiles TestCase"
+	throw theException 
+End try

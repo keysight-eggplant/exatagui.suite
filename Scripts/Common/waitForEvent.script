@@ -1,0 +1,24 @@
+﻿# This script is used for the wait operation over the application
+#
+
+# to wait for the text over the application
+#--------------------------------------------
+to waitForText targetText,portion,stopTime:60,caseSensitive:true,
+	Try
+		if portion is not empty then
+			"Common/search".setSearchSection(portion)
+		end if
+		waitFor stopTime,text:targetText,caseSensitive:caseSensitive
+		"Common/search".clearSearchSection
+	Catch theException
+		"Common/cLog".cError "waitForTextAppearance Failed:"&theException's reason
+		throw theException 
+	End try
+end waitForText
+
+# to hard wait over the application
+#------------------------------------
+to hardWait stopTime:60
+	wait stopTime
+end hardWait
+

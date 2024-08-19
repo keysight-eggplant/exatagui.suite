@@ -1,0 +1,26 @@
+﻿2024-06-28 13:36:55.643 -0400	START		Running Testcases/HumanInTheLoop/verifyAndLoadRecentFiles.script
+2024-06-28 13:36:55.744 -0400	BeginTestCase		verifyAndLoadRecentFiles	2	on_verifyandloadrecentfiles	Testcases/HumanInTheLoop/verifyAndLoadRecentFiles.script
+2024-06-28 13:36:56.036 -0400	set		DEFAULTTEXTPLATFORM = Generic OCR	2	on_validateemptycanvas	OS/windows.script
+2024-06-28 13:36:56.074 -0400	set		DEFAULTTEXTPLATFORM = Generic OCR	2	on_compare_screen	Common/check.script
+2024-06-28 13:36:56.121 -0400	CompareScreen	[Baseline_Screens]/GUI_Canvas_Windows.png	Captured initial baseline image "GUI_Canvas_Windows"	4	on_compare_screen	Common/check.script
+2024-06-28 13:36:56.157 -0400	set		DEFAULTTEXTPLATFORM = Generic OCR	2	function_compare_screen	Common/check.script
+2024-06-28 13:37:06.799 -0400	CompareScreen	[Baseline_Screens]/GUI_Canvas_Windows.png	CompareScreen "GUI_Canvas_Windows" -- No significant differences between current screen and baseline	4	function_compare_screen	Common/check.script
+2024-06-28 13:37:07.071 -0400	set		DEFAULTTEXTPLATFORM = Generic OCR	2	on_loadopenexamplescenario	EXataGUI/scenario.script
+2024-06-28 13:37:07.146 -0400	set		DEFAULTTEXTPLATFORM = Generic OCR	2	on_openfile	EXataGUI/actions/menuBar.script
+2024-06-28 13:37:07.217 -0400	set		SEARCHRECTANGLE = [[0,0],[249.6,151.2]]	3	on_setsearchsection	Common/search.script
+2024-06-28 13:37:09.617 -0400	click	(TEXT:"File")	at (14, 31)	6	on_leftevent	Common/clickEvent.script
+2024-06-28 13:37:09.687 -0400	set		DEFAULTTEXTPLATFORM = Generic OCR	2	function_isimagetextfound	Common/check.script
+2024-06-28 13:38:10.436 -0400	imagefound	(TEXT:"New")	Unable to Find Image (TEXT:"New"). Text not found.	10	function_isimagetextfound	Common/check.script
+2024-06-28 13:38:10.559 -0400	LogError		Image text not found: New	2	on_cerror	Common/cLog.script
+2024-06-28 13:38:10.567 -0400	Throw		ImageTextNotFoundException:  - New:not found	18	function_isimagetextfound	Common/check.script
+2024-06-28 13:38:10.607 -0400	LogError		isImageTextFound failed: New:not found	2	on_cerror	Common/cLog.script
+2024-06-28 13:38:10.646 -0400	Throw		ImageTextNotFoundException:  - New:not found	27	function_isimagetextfound	Common/check.script
+2024-06-28 13:38:10.740 -0400	LogError		Open File Menu Action failed:New:not found	2	on_cerror	Common/cLog.script
+2024-06-28 13:38:10.751 -0400	Throw		ImageTextNotFoundException:  - New:not found	15	on_openfile	EXataGUI/actions/menuBar.script
+2024-06-28 13:38:10.845 -0400	LogError		loadScenario failed:New:not found	2	on_cerror	Common/cLog.script
+2024-06-28 13:38:10.854 -0400	Throw		ImageTextNotFoundException:  - New:not found	35	on_loadopenexamplescenario	EXataGUI/scenario.script
+2024-06-28 13:38:10.955 -0400	LogError		Error in running verifyAndLoadRecentFiles TestCase	2	on_cerror	Common/cLog.script
+2024-06-28 13:38:10.966 -0400	Throw		ImageTextNotFoundException:  - New:not found	34	on_verifyandloadrecentfiles	Testcases/HumanInTheLoop/verifyAndLoadRecentFiles.script
+2024-06-28 13:38:11.065 -0400	EndTestCase		(Duration:"75.32", Errors:"6", Exceptions:"5", StartTime:"2024-06-28 13:36:55 -0400", Successes:"0", TestCase:"verifyAndLoadRecentFiles", Warnings:"0")
+2024-06-28 13:38:11.069 -0400	EndTestCase		(Duration:"75.417", Errors:"6", Exceptions:"5", StartTime:"2024-06-28 13:36:55 -0400", Successes:"0", TestCase:"Testcases/HumanInTheLoop/verifyAndLoadRecentFiles.script", Warnings:"0")
+2024-06-28 13:38:11.220 -0400	FAILURE	Screen_Error.png	ImageTextNotFoundException: : New:not found -- Execution Time 0:01:15 Testcases/HumanInTheLoop/verifyAndLoadRecentFiles.script

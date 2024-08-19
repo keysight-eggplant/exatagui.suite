@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+ <testsuite name="TestCases/Regular/verifySaveFunctionality_script" package="exatagui.suite" timestamp="2024-06-24 12:59:16.926 -0400"
+ tests="2"  failures="4" errors="4" time="417.380000">
+  <properties>
+   <property name="RunDate" value="2024-06-24 12:59:16.926 -0400"/>
+   <property name="Status" value="Failure"/>
+  </properties>
+  <testcase name="verifySaveFunctionality" assertions="33" status="error"  time="417.31">
+    <failure type="LogError" message="leftClick failed for: seconds" />
+    <failure type="LogError" message="editScenarioProperties failed:click Error - No Text Found On Screen: &quot;(TEXT:&quot;seconds&quot;)&quot;. Text not found.  Restricted Search Rectangle ((480,0),(1440,1080))\n" />
+    <failure type="LogError" message="Error in running verifySaveFunctionality testcase" />
+    <error type="Throw" message="Image Not Found - click Error - No Text Found On Screen: &quot;(TEXT:&quot;seconds&quot;)&quot;. Text not found.  Restricted Search Rectangle ((480,0),(1440,1080))\n" />
+  </testcase>
+  <testcase name="TestCases/Regular/verifySaveFunctionality.script" assertions="33" status="error"  time="417.395">
+    <failure type="LogError" message="leftClick failed for: seconds" />
+    <failure type="LogError" message="editScenarioProperties failed:click Error - No Text Found On Screen: &quot;(TEXT:&quot;seconds&quot;)&quot;. Text not found.  Restricted Search Rectangle ((480,0),(1440,1080))\n" />
+    <failure type="LogError" message="Error in running verifySaveFunctionality testcase" />
+    <failure type="FAILURE" message="Image Not Found: click Error - No Text Found On Screen: &quot;(TEXT:&quot;seconds&quot;)&quot;. Text not found.  Restricted Search Rectangle ((480,0),(1440,1080))\n -- Execution Time 0:06:57 TestCases/Regular/verifySaveFunctionality.script" />
+    <error type="Throw" message="Image Not Found - click Error - No Text Found On Screen: &quot;(TEXT:&quot;seconds&quot;)&quot;. Text not found.  Restricted Search Rectangle ((480,0),(1440,1080))\n" />
+  </testcase>
+ </testsuite>
+</testsuites>

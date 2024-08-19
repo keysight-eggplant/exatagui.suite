@@ -1,0 +1,9 @@
+﻿2024-06-11 10:05:12.223 -0400	START		Running main.script
+2024-06-11 10:05:33.543 -0400	Log		Started the Execution of the EXataGUI Regression Scripts at 10:05 AM on 06/11/24	2	on_cmessage	Common/cLog.script
+2024-06-11 10:06:02.075 -0400	setoptions		ImageUpdate = Off	2	on_variabledata	HelperUtilities/variableData.script
+2024-06-11 10:06:02.084 -0400	setoptions		MouseMoveMode = 2	2	on_variabledata	HelperUtilities/variableData.script
+2024-06-11 10:06:02.089 -0400	setoptions		MouseMoveSpeed = 10	2	on_variabledata	HelperUtilities/variableData.script
+2024-06-11 10:06:02.094 -0400	setoptions		remoteWorkInterval = 1	2	on_variabledata	HelperUtilities/variableData.script
+2024-06-11 10:06:57.887 -0400	Exception		Remote Connection Unavailable	3	function_checkscreenresolution	Common/check.script
+2024-06-11 10:07:02.194 -0400	EndTestCase		(Duration:"109.96", Errors:"1", Exceptions:"1", StartTime:"2024-06-11 10:05:12 -0400", Successes:"0", TestCase:"main.script", Warnings:"0")
+2024-06-11 10:07:02.214 -0400	ABORTED		Execution Time 0:01:49 main.script

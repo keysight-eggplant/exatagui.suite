@@ -1,0 +1,23 @@
+﻿Try
+	BeginTestCase "loadScenarioUsingOpenExample"
+	
+	# initializing the scenario
+	"EXataGUI/scenario".initScenario
+	
+	# to load the WiFiDemo sample scenario
+	"EXataGUI/scenario".loadOpenExampleScenario "demo\WiFiDemo", "WiFiDemo", "", "loadScenarioUsingOpenExample", true  //enter config name without .config extension
+	
+	#Click on Close Tab to close the Scenario
+	"EXataGUI/scenario".closeScenario "closetab"
+	
+	# to load the WiFiDemo sample scenario using a keyboard shortcut key
+	"EXataGUI/scenario".loadOpenExampleScenario "demo\WiFiDemo", "WiFiDemo", "e", "loadOpenExampleUsingKeyboardShortcut", true  //enter config name without .config extension
+	
+	#Click on Close Tab to close the Scenario
+	"EXataGUI/scenario".closeScenario "closetab"
+	
+	EndTestCase "loadScenarioUsingOpenExample" 
+Catch theException
+	"Common/cLog".cError "Error in running loadScenarioUsingOpenExample TestCase"
+	throw theException 
+End try

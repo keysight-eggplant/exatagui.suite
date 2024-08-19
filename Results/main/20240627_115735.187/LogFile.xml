@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+ <testsuite name="main_script" package="exatagui.suite" timestamp="2024-06-27 11:57:35.187 -0400"
+ tests="2"  failures="0" errors="0" time="728.929000">
+  <properties>
+   <property name="RunDate" value="2024-06-27 11:57:35.187 -0400"/>
+   <property name="Status" value="Aborted"/>
+  </properties>
+  <testcase name="hideTaskBar" assertions="2" status="success"  time="70.794">
+  </testcase>
+  <testcase name="main.script" assertions="153" status="error"  time="728.917">
+  </testcase>
+ </testsuite>
+</testsuites>

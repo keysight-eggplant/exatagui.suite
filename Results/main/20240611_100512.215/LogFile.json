@@ -1,0 +1,68 @@
+{
+	"entries": [
+		{
+				"message": "Running main.script",
+				"identifier": "START",
+				"timestamp": "2024-06-11 10:05:12.223 -0400"
+			},
+		{
+				"handlerName": "on_cmessage",
+				"timestamp": "2024-06-11 10:05:33.543 -0400",
+				"message": "Started the Execution of the EXataGUI Regression Scripts at 10:05 AM on 06/11/24",
+				"scriptName": "Common/cLog.script",
+				"handlerLine": 2,
+				"identifier": "Log"
+			},
+		{
+				"handlerName": "on_variabledata",
+				"timestamp": "2024-06-11 10:06:02.075 -0400",
+				"message": "ImageUpdate = Off",
+				"scriptName": "HelperUtilities/variableData.script",
+				"handlerLine": 2,
+				"identifier": "setoptions"
+			},
+		{
+				"handlerName": "on_variabledata",
+				"timestamp": "2024-06-11 10:06:02.084 -0400",
+				"message": "MouseMoveMode = 2",
+				"scriptName": "HelperUtilities/variableData.script",
+				"handlerLine": 2,
+				"identifier": "setoptions"
+			},
+		{
+				"handlerName": "on_variabledata",
+				"timestamp": "2024-06-11 10:06:02.089 -0400",
+				"message": "MouseMoveSpeed = 10",
+				"scriptName": "HelperUtilities/variableData.script",
+				"handlerLine": 2,
+				"identifier": "setoptions"
+			},
+		{
+				"handlerName": "on_variabledata",
+				"timestamp": "2024-06-11 10:06:02.094 -0400",
+				"message": "remoteWorkInterval = 1",
+				"scriptName": "HelperUtilities/variableData.script",
+				"handlerLine": 2,
+				"identifier": "setoptions"
+			},
+		{
+				"handlerName": "function_checkscreenresolution",
+				"timestamp": "2024-06-11 10:06:57.887 -0400",
+				"message": "Remote Connection Unavailable",
+				"scriptName": "Common/check.script",
+				"handlerLine": 3,
+				"identifier": "Exception"
+			},
+		{
+				"message": "(Duration:\"109.96\", Errors:\"1\", Exceptions:\"1\", StartTime:\"2024-06-11 10:05:12 -0400\", Successes:\"0\", TestCase:\"main.script\", Warnings:\"0\")",
+				"identifier": "EndTestCase",
+				"timestamp": "2024-06-11 10:07:02.194 -0400"
+			},
+		{
+				"message": "Execution Time 0:01:49 main.script",
+				"identifier": "ABORTED",
+				"timestamp": "2024-06-11 10:07:02.214 -0400"
+			}
+	],
+	"createdTimestamp": "2024-06-11 10:05:12.231 -0400"
+}

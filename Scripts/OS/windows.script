@@ -1,0 +1,91 @@
+﻿# to run windows command for running the exata gui
+to startEXataGUI
+	set the defaultTextPlatform.OCRStyles.Default.DPI to 144
+	Try
+		global changeDirectory, exataHome, bin, DateTime
+		"Common/keyboard".enterText windowsKey&"r"
+		"Common/waitForEvent".waitForText "Run"
+		"Common/keyBoard".enterText exataHome&"\"&bin&"\"&"EXataGUI.exe"
+		"Common/keyBoard".pressEnter
+		-- check if exe not exists
+		if "Common/check".isImageTextFound ("Windows cannot find","Centre",false,5.0) then
+			return "EXataGUI.exe not found"
+		end if
+		-- check for license
+		if not "Common/check".isImageTextFound ("EXata","TopHalf",false) then 
+			if "Common/check".isImageTextFound("Valid license not found","LicenseCheck",false) then
+				return "Valid License Not found"
+			end if
+			return "Unable to launch EXataGUI.exe"
+		end if
+		"Common/waitForEvent".waitForText "Scenario Properties","HalfOfTopLeftQuadrant"
+		"Common/search".clearSearchSection
+		//Capturing a Baseline Image
+		"Common/check".compare_screen GUI_Canvas_Windows & DateTime , [388,199,874,666]
+		return ""
+	Catch theException
+		"Common/cLog".cError "runExataGUI  failed:"&theException's reason
+		throw theException
+	End try
+end startEXataGUI
+
+# to run validation for windows
+to validateEmptyCanvas
+	set the defaultTextPlatform.OCRStyles.Default.DPI to 144
+	Try
+		global changeDirectory, exataHome, bin, osName, platfrm, ostype, DateTime
+		//Compares the screen with Baseline Image
+		"Common/check".compare_screen  GUI_Canvas_Windows & DateTime, [388,199,874,666]
+		
+		if "Common/check".compare_screen (GUI_Canvas_Windows & DateTime, [388,199,874,666]) isn't empty then
+			"Common/keyboard".enterText windowsKey,"r"
+			"Common/waitForEvent".waitForText "Run"
+			"Common/keyBoard".enterText "cmd"
+			"Common/keyBoard".pressEnter
+			"Common/keyBoard".enterText "taskkill /IM EXataGUI.exe /T /F"
+			"Common/keyBoard".pressEnter
+			"Common/keyBoard".enterText quote & exataHome & "\" & bin & "\" & "EXataGUI.exe" & quote
+			"Common/keyBoard".pressEnter
+			"Common/search".clearSearchSection
+		else
+			Exit handler
+		end if
+	Catch theException
+		"Common/cLog".cError "Gui Validation failed for windows:"&theException's reason
+		throw theException
+	End try
+end validateEmptyCanvas
+
+#To Hide the taskbar
+#
+to hideTaskBar
+	try
+		BeginTestCase "hideTaskBar"
+		
+		"Common/keyBoard".pressWindowsKey
+		"Common/keyBoard".enterText "taskbar settings"
+		"Common/keyBoard".pressEnter
+		"Common/waitForEvent".hardWait 1
+		"Common/keyBoard".enterText windowsKey&upArrow
+		if "Common/check".isImageTextFound ("hide the taskbar in desktop mode","HideTaskBar",false) then 
+			if "Common/check".isImageTextFound ("Off","HideTaskBar","false")then
+				"Common/cLog".cMessage "Taskbar is not hidden"
+				"Common/clickEvent".onFoundImageLocation "Off","TopLeftQuadrant"
+				
+			else
+				"Common/cLog".success "Taskbar is already hidden"
+			end if
+		else
+			"Common/cLog".cError "Text: 'hide the taskbar in desktop mode' did not found"
+			throw  "hidetaskbarexception:","Unable to hide the taskbar"
+			
+		end if
+		"Common/keyBoard".enterText AltKey&f4
+		EndTestCase "hideTaskBar"
+		
+	Catch theException
+		"Common/cLog".cError " Error in running hideTaskBar testcase"
+		throw theException 
+	End try
+	
+end hideTaskBar

@@ -1,0 +1,164 @@
+{
+	"entries": [
+		{
+				"message": "Running main.script",
+				"identifier": "START",
+				"timestamp": "2024-06-11 10:04:58.702 -0400"
+			},
+		{
+				"handlerName": "on_cmessage",
+				"timestamp": "2024-06-11 10:04:59.132 -0400",
+				"message": "Started the Execution of the EXataGUI Regression Scripts at 10:04 AM on 06/11/24",
+				"scriptName": "Common/cLog.script",
+				"handlerLine": 2,
+				"identifier": "Log"
+			},
+		{
+				"handlerName": "on_variabledata",
+				"timestamp": "2024-06-11 10:04:59.171 -0400",
+				"message": "ImageUpdate = Off",
+				"scriptName": "HelperUtilities/variableData.script",
+				"handlerLine": 2,
+				"identifier": "setoptions"
+			},
+		{
+				"handlerName": "on_variabledata",
+				"timestamp": "2024-06-11 10:04:59.177 -0400",
+				"message": "MouseMoveMode = 2",
+				"scriptName": "HelperUtilities/variableData.script",
+				"handlerLine": 2,
+				"identifier": "setoptions"
+			},
+		{
+				"handlerName": "on_variabledata",
+				"timestamp": "2024-06-11 10:04:59.184 -0400",
+				"message": "MouseMoveSpeed = 10",
+				"scriptName": "HelperUtilities/variableData.script",
+				"handlerLine": 2,
+				"identifier": "setoptions"
+			},
+		{
+				"handlerName": "on_variabledata",
+				"timestamp": "2024-06-11 10:04:59.191 -0400",
+				"message": "remoteWorkInterval = 1",
+				"scriptName": "HelperUtilities/variableData.script",
+				"handlerLine": 2,
+				"identifier": "setoptions"
+			},
+		{
+				"handlerName": "function_checkscreenresolution",
+				"timestamp": "2024-06-11 10:04:59.345 -0400",
+				"message": "Remote Connection Unavailable",
+				"scriptName": "Common/check.script",
+				"handlerLine": 3,
+				"identifier": "Exception"
+			},
+		{
+				"handlerName": "on_cerror",
+				"timestamp": "2024-06-11 10:04:59.363 -0400",
+				"message": "checkScreenResolution failed:remotescreensize Error - Remote Connection Unavailable",
+				"scriptName": "Common/cLog.script",
+				"handlerLine": 2,
+				"identifier": "LogError"
+			},
+		{
+				"handlerName": "function_checkscreenresolution",
+				"timestamp": "2024-06-11 10:04:59.386 -0400",
+				"message": "No Remote Connection - remotescreensize Error - Remote Connection Unavailable",
+				"scriptName": "Common/check.script",
+				"handlerLine": 14,
+				"identifier": "Throw"
+			},
+		{
+				"handlerName": "on_cerror",
+				"timestamp": "2024-06-11 10:04:59.479 -0400",
+				"message": "initTestCases failed: remotescreensize Error - Remote Connection Unavailable",
+				"scriptName": "Common/cLog.script",
+				"handlerLine": 2,
+				"identifier": "LogError"
+			},
+		{
+				"handlerName": "on_inittestcases",
+				"timestamp": "2024-06-11 10:04:59.491 -0400",
+				"message": "No Remote Connection - remotescreensize Error - Remote Connection Unavailable",
+				"scriptName": "TestCases/launcher.script",
+				"handlerLine": 15,
+				"identifier": "Throw"
+			},
+		{
+				"handlerName": "on_cerror",
+				"timestamp": "2024-06-11 10:04:59.566 -0400",
+				"message": "main script failed:remotescreensize Error - Remote Connection Unavailable",
+				"scriptName": "Common/cLog.script",
+				"handlerLine": 2,
+				"identifier": "LogError"
+			},
+		{
+				"handlerName": "on_setsearchsection",
+				"timestamp": "2024-06-11 10:04:59.768 -0400",
+				"message": "Remote Connection Unavailable",
+				"scriptName": "Common/search.script",
+				"handlerLine": 73,
+				"identifier": "Exception"
+			},
+		{
+				"handlerName": "on_cerror",
+				"timestamp": "2024-06-11 10:04:59.918 -0400",
+				"message": "SearchRectangle failed: screenpart Error - Remote Connection Unavailable",
+				"scriptName": "Common/cLog.script",
+				"handlerLine": 2,
+				"identifier": "LogError"
+			},
+		{
+				"handlerName": "on_setsearchsection",
+				"timestamp": "2024-06-11 10:04:59.956 -0400",
+				"message": "No Remote Connection - screenpart Error - Remote Connection Unavailable",
+				"scriptName": "Common/search.script",
+				"handlerLine": 6,
+				"identifier": "Throw"
+			},
+		{
+				"handlerName": "on_cerror",
+				"timestamp": "2024-06-11 10:05:00.042 -0400",
+				"message": "isImageTextFound failed: screenpart Error - Remote Connection Unavailable",
+				"scriptName": "Common/cLog.script",
+				"handlerLine": 2,
+				"identifier": "LogError"
+			},
+		{
+				"handlerName": "function_isimagetextfound",
+				"timestamp": "2024-06-11 10:05:00.068 -0400",
+				"message": "No Remote Connection - screenpart Error - Remote Connection Unavailable",
+				"scriptName": "Common/check.script",
+				"handlerLine": 26,
+				"identifier": "Throw"
+			},
+		{
+				"handlerName": "on_cerror",
+				"timestamp": "2024-06-11 10:05:00.146 -0400",
+				"message": "cleanUpTestCases failed: screenpart Error - Remote Connection Unavailable",
+				"scriptName": "Common/cLog.script",
+				"handlerLine": 2,
+				"identifier": "LogError"
+			},
+		{
+				"handlerName": "on_cleanuptestcases",
+				"timestamp": "2024-06-11 10:05:00.162 -0400",
+				"message": "No Remote Connection - screenpart Error - Remote Connection Unavailable",
+				"scriptName": "TestCases/launcher.script",
+				"handlerLine": 8,
+				"identifier": "Throw"
+			},
+		{
+				"message": "(Duration:\"1.598\", Errors:\"7\", Exceptions:\"7\", StartTime:\"2024-06-11 10:04:58 -0400\", Successes:\"0\", TestCase:\"main.script\", Warnings:\"0\")",
+				"identifier": "EndTestCase",
+				"timestamp": "2024-06-11 10:05:00.310 -0400"
+			},
+		{
+				"message": "No Remote Connection: screenpart Error - Remote Connection Unavailable -- Execution Time 0:00:01 main.script",
+				"identifier": "FAILURE",
+				"timestamp": "2024-06-11 10:05:00.370 -0400"
+			}
+	],
+	"createdTimestamp": "2024-06-11 10:04:58.708 -0400"
+}

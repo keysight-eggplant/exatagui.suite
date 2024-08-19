@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<runHistory script="TestCases/Regular/verifySaveFunctionality">
+ <run>
+  <RunDate>2024-06-24 12:59:16.926 -0400</RunDate>
+  <Status>Failure</Status>
+  <Duration>417.380000</Duration>
+  <Errors>4</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>4</Exceptions>
+  <Successes>29</Successes>
+  <LogFile>20240624_125916.926/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage>Image Not Found -- click Error - No Text Found On Screen: &quot;(TEXT:&quot;seconds&quot;)&quot;. Text not found.  Restricted Search Rectangle ((480,0),(1440,1080))
+</ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2024-06-24 14:16:41.171 -0400</RunDate>
+  <Status>Failure</Status>
+  <Duration>277.129000</Duration>
+  <Errors>4</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>4</Exceptions>
+  <Successes>31</Successes>
+  <LogFile>20240624_141641.171/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage>Image Not Found -- click Error - No Text Found On Screen: &quot;(TEXT:&quot;seconds&quot;)&quot;. Text not found.  Restricted Search Rectangle ((480,0),(1440,1080))
+</ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2024-06-24 18:03:08.131 -0400</RunDate>
+  <Status>Failure</Status>
+  <Duration>180.753000</Duration>
+  <Errors>3</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>2</Exceptions>
+  <Successes>20</Successes>
+  <LogFile>20240624_180308.131/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage>SenseTalk Compiler Exception -- in &lt;do&gt;:
+Syntax Error at line 1: can&#x27;t understand &quot;3&quot; at character 1</ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2024-06-24 18:13:34.385 -0400</RunDate>
+  <Status>Failure</Status>
+  <Duration>364.207000</Duration>
+  <Errors>4</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>4</Exceptions>
+  <Successes>31</Successes>
+  <LogFile>20240624_181334.385/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage>Image Not Found -- click Error - No Text Found On Screen: &quot;(TEXT:&quot;seconds&quot;)&quot;. Text not found.  Restricted Search Rectangle ((480,0),(1440,1080))
+</ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2024-06-25 08:10:45.074 -0400</RunDate>
+  <Status>Success</Status>
+  <Duration>405.093000</Duration>
+  <Errors>0</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>40</Successes>
+  <LogFile>20240625_081045.074/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage></ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2024-06-25 08:32:18.780 -0400</RunDate>
+  <Status>Success</Status>
+  <Duration>363.311000</Duration>
+  <Errors>0</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>40</Successes>
+  <LogFile>20240625_083218.780/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage></ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2024-06-25 09:27:08.345 -0400</RunDate>
+  <Status>Success</Status>
+  <Duration>376.288000</Duration>
+  <Errors>0</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>40</Successes>
+  <LogFile>20240625_092708.345/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage></ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2024-06-25 11:58:33.179 -0400</RunDate>
+  <Status>Success</Status>
+  <Duration>354.825000</Duration>
+  <Errors>0</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>40</Successes>
+  <LogFile>20240625_115833.179/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage></ErrorMessage>
+ </run>
+</runHistory>

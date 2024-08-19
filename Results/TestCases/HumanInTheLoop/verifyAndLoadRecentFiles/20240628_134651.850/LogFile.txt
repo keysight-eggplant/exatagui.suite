@@ -1,0 +1,18 @@
+﻿2024-06-28 13:46:51.857 -0400	START		Running TestCases/HumanInTheLoop/verifyAndLoadRecentFiles.script
+2024-06-28 13:46:51.990 -0400	BeginTestCase		verifyAndLoadRecentFiles	2	on_verifyandloadrecentfiles	TestCases/HumanInTheLoop/verifyAndLoadRecentFiles.script
+2024-06-28 13:46:52.317 -0400	set		DEFAULTTEXTPLATFORM = Generic OCR	2	on_validateemptycanvas	OS/windows.script
+2024-06-28 13:46:52.377 -0400	set		DEFAULTTEXTPLATFORM = Generic OCR	2	on_compare_screen	Common/check.script
+2024-06-28 13:46:52.384 -0400	Exception		Remote Connection Unavailable	4	on_compare_screen	Common/check.script
+2024-06-28 13:46:52.406 -0400	LogError		compare screen failed:CompareScreen Error - Remote Connection Unavailable	2	on_cerror	Common/cLog.script
+2024-06-28 13:46:52.415 -0400	Throw		No Remote Connection - CompareScreen Error - Remote Connection Unavailable	7	on_compare_screen	Common/check.script
+2024-06-28 13:46:52.483 -0400	LogError		Gui Validation failed for windows:CompareScreen Error - Remote Connection Unavailable	2	on_cerror	Common/cLog.script
+2024-06-28 13:46:52.493 -0400	Throw		No Remote Connection - CompareScreen Error - Remote Connection Unavailable	23	on_validateemptycanvas	OS/windows.script
+2024-06-28 13:46:52.614 -0400	LogError		Error in validating Canvas:CompareScreen Error - Remote Connection Unavailable	2	on_cerror	Common/cLog.script
+2024-06-28 13:46:52.670 -0400	Throw		No Remote Connection - CompareScreen Error - Remote Connection Unavailable	11	on_validateemptycanvas	OS/utility.script
+2024-06-28 13:46:52.762 -0400	LogError		initScenario failed:CompareScreen Error - Remote Connection Unavailable	2	on_cerror	Common/cLog.script
+2024-06-28 13:46:52.772 -0400	Throw		No Remote Connection - CompareScreen Error - Remote Connection Unavailable	13	on_initscenario	EXataGUI/scenario.script
+2024-06-28 13:46:52.854 -0400	LogError		Error in running verifyAndLoadRecentFiles TestCase	2	on_cerror	Common/cLog.script
+2024-06-28 13:46:52.886 -0400	Throw		No Remote Connection - CompareScreen Error - Remote Connection Unavailable	34	on_verifyandloadrecentfiles	TestCases/HumanInTheLoop/verifyAndLoadRecentFiles.script
+2024-06-28 13:46:52.962 -0400	EndTestCase		(Duration:"0.97", Errors:"6", Exceptions:"6", StartTime:"2024-06-28 13:46:51 -0400", Successes:"0", TestCase:"verifyAndLoadRecentFiles", Warnings:"0")
+2024-06-28 13:46:52.969 -0400	EndTestCase		(Duration:"1.087", Errors:"6", Exceptions:"6", StartTime:"2024-06-28 13:46:51 -0400", Successes:"0", TestCase:"TestCases/HumanInTheLoop/verifyAndLoadRecentFiles.script", Warnings:"0")
+2024-06-28 13:46:53.038 -0400	FAILURE		No Remote Connection: CompareScreen Error - Remote Connection Unavailable -- Execution Time 0:00:01 TestCases/HumanInTheLoop/verifyAndLoadRecentFiles.script

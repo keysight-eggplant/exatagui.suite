@@ -1,0 +1,94 @@
+﻿Try
+	BeginTestCase "verifyToolsMenu"
+	
+	# initializing the scenario
+	"EXataGUI/scenario".initScenario
+	
+	#Open Tools Menu 
+	"EXataGUI/actions/menuBar".openTools
+	
+	#Verify Tools Menu 
+	
+	#verify availability of Node Placement Option 
+	"Common/check".isImageTextFound "Node Placement", ToolsMenu
+	
+	# verify availability of Import Satellite and Orbits Option 
+	"Common/check".isImageTextFound "Import Satellites and Orbits", ToolsMenu
+	
+	# verify availability of Snapshots Option 
+	"Common/check".isImageTextFound "Snapshot", ToolsMenu
+	
+	# verify availability of View Scenario in File Editor 
+	"Common/check".isImageTextFound "View Scenario in File Editor", ToolsMenu
+	
+	# verify availability of Run Settings 
+	"Common/check".isImageTextFound "Run Settings", ToolsMenu
+	
+	# verify availability of Run Emulation 
+	"Common/check".isImageTextFound "Run Emulation", ToolsMenu
+	
+	# verify availability of Record Animation 
+	"Common/check".isImageTextFound "Record Animation", ToolsMenu
+	
+	# verify availability of Device Model Editor 
+	"Common/check".isImageTextFound "Device Model Editor", ToolsMenu
+	
+	# verify availability of Hierarchy Model Editor 
+	"Common/check".isImageTextFound "Hierarchy Model Editor", ToolsMenu 
+	
+	# verify availability of Toolset Editor 
+	"Common/check".isImageTextFound "Toolset Editor", ToolsMenu
+	
+	# verify availability of Multicast Group Editor 
+	"Common/check".isImageTextFound "Multicast Group Editor", ToolsMenu
+	
+	# verify availability of Antenna Model Editor 
+	"Common/check".isImageTextFound "Antenna Model Editor", ToolsMenu
+	
+	# verify availability of Visualize Heatmap 
+	"Common/check".isImageTextFound "Visualize Heatmap", ToolsMenu
+	
+	# verify availability of Attack Template Editor 
+	"Common/check".isImageTextFound "Attack Template Editor", ToolsMenu 
+	
+	# verify availability of Import Firewall Rules 
+	"Common/check".isImageTextFound "Import Firewall Rules", ToolsMenu
+	
+	# verify availability of PROPSIM Configuration Editor 
+	"Common/check".isImageTextFound "PROPSIM Configuration Editor", ToolsMenu
+	
+	# verify availability of Adptive Attack Flowchart Editor 
+	"Common/check".isImageTextFound "Adaptive Attack Flowchart Editor", ToolsMenu
+	
+	# verify availability of Modified Parameters 
+	"Common/check".isImageTextFound "Modified Parameters", ToolsMenu
+	
+	# verify availability of Weather Properties 
+	"Common/check".isImageTextFound "Weather Properties", ToolsMenu
+	
+	# verify availability of Propagation Zone Editor 
+	"Common/check".isImageTextFound "Propagation Zone Editor", ToolsMenu
+	
+	# verify availability of Override Configuration Editor 
+	"Common/check".isImageTextFound "Override Configuration Editor", ToolsMenu 
+	
+	# verify availability of satellite Viewer 
+	"Common/check".isImageTextFound "Satellite Viewer", ToolsMenu
+	
+	# verify availability of Scenario Properties 
+	"Common/check".isImageTextFound "Scenario Properties", ToolsMenu 
+	
+	# Closes the tools menu by clicking at the centre of the canvas
+	"Common/clickEvent".clickScaled "0.5"
+	
+	EndTestCase "verifyToolsMenu"
+	
+	
+Catch theException
+	"Common/cLog".cError "Error in running verifyToolsMenu TestCase"
+	throw theException 
+End try
+
+
+
+

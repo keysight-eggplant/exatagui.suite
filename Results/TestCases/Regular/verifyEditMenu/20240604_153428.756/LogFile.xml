@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+ <testsuite name="TestCases/Regular/verifyEditMenu_script" package="exatagui.suite" timestamp="2024-06-04 15:34:28.756 -0400"
+ tests="2"  failures="0" errors="0" time="35.525000">
+  <properties>
+   <property name="RunDate" value="2024-06-04 15:34:28.756 -0400"/>
+   <property name="Status" value="Success"/>
+  </properties>
+  <testcase name="verifyEditMenu" assertions="13" status="success"  time="35.463">
+  </testcase>
+  <testcase name="TestCases/Regular/verifyEditMenu.script" assertions="13" status="success"  time="35.508">
+  </testcase>
+ </testsuite>
+</testsuites>

@@ -1,0 +1,235 @@
+﻿
+# This script contains the test case details
+#
+
+# to filter the testCases based on executionMode
+#---------------------------------------------------------------
+to filterTestCases executionMode,customTestCases
+	Try
+		
+		
+		set testCasesInfo to getTestCasesInfo()
+		repeat with each testCaseDetails of testCasesInfo
+			-- Extract the test case type and name using the 's syntax
+			set testCaseType to testCaseDetails. testType
+			set testCaseName to testCaseDetails. testName
+			-- Filter tests based on execution mode
+			if executionMode is "full" then
+				insertTestcaseDetails testCaseDetails,testCaseType
+			else if executionMode is "custom" then
+				if customTestCases contains testCaseName then
+					insertTestcaseDetails testCaseDetails,testCaseType,
+				end if
+			else if executionMode is "sanity" then 
+				if testCaseDetails.mode is "sanity" then
+					insertTestcaseDetails testCaseDetails,testCaseType				
+				end if
+			else 
+				-- else block will check for regression mode
+				if testCaseDetails.mode is "regression" then
+					insertTestcaseDetails testCaseDetails,testCaseType				
+				end if
+			end if
+		end repeat
+	Catch theException
+		"Common/cLog".cError "filterTestCases failed"
+		throw theException -- re-throw the exception (if desired)
+	End try
+end filterTestCases
+
+# to insert testCases details
+#-----------------------------------
+to insertTestcaseDetails testCaseDetails , testCaseType 
+	global filteredHITLTests,filteredRegularTests
+	if number of items of filteredHITLTests is 0 then
+		set filteredHITLTests to []
+	end if 
+	if number of items of filteredRegularTests is 0 then
+		set filteredRegularTests to []
+	end if 
+	-- Add test case to the appropriate list based on test type
+	if testCaseType is "Regular" then
+		insert testCaseDetails into filteredRegularTests
+	else 
+		insert testCaseDetails into filteredHITLTests
+	end if
+end insertTestcaseDetails
+
+# to get the regular tests
+#-------------------------------
+to getRegularTests
+	global filteredRegularTests
+	put filteredRegularTests into regularTests
+	return regularTests
+	
+end getRegularTests
+
+# to get the human in the loop tests
+#-----------------------------------------------
+to getHITLTests
+	global filteredHITLTests
+	put filteredHITLTests into HumanInTheLoopTests
+	return HumanInTheLoopTests
+end getHITLTests
+
+#to get the testcases information
+#------------------------------------------
+
+to getTestCasesInfo 
+	return [
+		{
+			testName:"basicEXataFunctionalityCheck",
+			testCasePath:"TestCases/Regular/basicEXataFunctionalityCheck",
+			description: "The test aimed to validate EXata GUI's basic functionality. It involved creating a scenario, configuring traffic, and starting simulation. The outcome will be automatically recorded as Pass or Fail",
+			expected: "We should be able to get CBR server stats for Node 2 as below- Total Unicast Messages Received (messages) = 24",
+			media: "basicEXataFunctionalityCheck.png",  
+			testType:"Regular",
+			mode:"sanity"
+		},
+		{
+			testName:"basicScenarioCanvasCheck",
+			testCasePath:"TestCases/HumanInTheLoop/basicScenarioCanvasCheck",
+			description: "Test ensures default scenario accessibility in GUI by opening default.config and capturing a screenshot for QA validation",
+			expected: "defaultScenario.png",
+			media: "basicScenarioCanvasCheck.png",
+			testType:"HumanInTheLoop",  
+			mode:"regression"
+		},
+		{
+			testName:"basicScenarioActivityRecordingCheck",
+			testCasePath:"TestCases/HumanInTheLoop/basicScenarioActvityRecordingCheck",
+			description: "Test ensures WiFi demo scenario accessibility in GUI by opening wifidemo.config and recording the video for animation lines and node mobility",
+			expected: "defaultScenarioRecording.mp4",
+			media: "basicScenarioActivityRecordingCheck.mp4" , 
+			testType:"HumanInTheLoop",
+			mode:"regression"
+		},
+		{
+			testName:"verifyOpenNewCanvas",
+			testCasePath:"TestCases/Regular/verifyOpenNewCanvas",
+			description: "This test aimed to open a new canvas by opening a file menu and choosing the 'New' option, using a keyboard shortcut, and clicking the 'Create A New Scenario' button",
+			expected: "New canvas with tab name 'untitled_2' should get opened",
+			media: "NewCanvas.png",  
+			testType:"Regular",
+			mode:"sanity"
+		},
+		{
+			testName:"closeScenarioUsingCloseOption",
+			testCasePath:"TestCases/Regular/closeScenarioUsingCloseOption",
+			description: "The test aimed to close a opened scenario by using 'Close' option",
+			expected: "After closing a scenario in EXataGUI using the 'Close' option, a blank canvas is expected",
+			media: "",  
+			testType:"Regular",
+			mode:"sanity"
+		},
+		{
+			testName:"loadScenarioUsingOpenExample",
+			testCasePath:"TestCases/HumanInTheLoop/loadScenarioUsingOpenExample",
+			description: "This test aimed to load a sample scenario 'WiFiDemo' by opening a file menu and choosing the 'Open Example' option and by using a keyboard shortcut",
+			expected: "loadScenarioUsingOpenExample.png",
+			media: "loadScenarioUsingOpenExample.png",  
+			testType:"HumanInTheLoop",
+			mode:"regression"
+		},
+		{
+			testName:"verifyPreviousAndNextButtons",
+			testCasePath:"TestCases/HumanInTheLoop/verifyPreviousAndNextButtons",
+			description: "Test ensures availability of Previous and Next Buttons when scenario tabs increases",
+			expected: "verifyPreviousAndNextButtons.png",
+			media: "verifyPreviousAndNextButtons.png" , 
+			testType:"HumanInTheLoop",
+			mode:"sanity"
+		},
+		{
+			testName:"verifyFileMenu",
+			testCasePath:"TestCases/Regular/verifyFileMenu",
+			description: "To verify the availability of various options of File Menu",
+			expected: "File menu should be opened successfully and all sub menu options should be present",
+			media: "verifyFileMenu.png" , 
+			testType:"Regular",
+			mode:"sanity"
+		},
+		{
+			testName:"verifyEditMenu",
+			testCasePath:"TestCases/Regular/verifyEditMenu",
+			description: "To verify the availability of various options of Edit Menu",
+			expected: "Edit menu should be opened successfully and all sub menu options should be present",
+			media: "verifyEditMenu.png" , 
+			testType:"Regular",
+			mode:"sanity"
+		},		
+		{
+			testName:"verifyViewMenu",
+			testCasePath:"TestCases/Regular/verifyViewMenu",
+			description: "To verify the availability of various options of View Menu",
+			expected: "View menu should be opened successfully and all sub menu options should be present",
+			media: "verifyViewMenu.png" , 
+			testType:"Regular",
+			mode:"sanity"
+		},
+		{
+			testName:"verifyAndLoadRecentFiles",
+			testCasePath:"TestCases/HumanInTheLoop/verifyAndLoadRecentFiles",
+			description: "To verify the recent files list and loads scenario from recent files list on the canvas",
+			expected: "Recent Files list should have default.config, WiFiDemo.config, MultiChannel.config, handover.config and dtedtest.config scenarios. Scenario should get loaded successfully from recent files list on canvas",
+			media: "verifyRecentFiles.png" , 
+			testType:"HumanInTheLoop", 
+			mode:"sanity"
+		},
+		{
+			testName:"loadScenarioUsingOpenFile",
+			testCasePath:"TestCases/HumanInTheLoop/loadScenarioUsingOpenFile",
+			description: "This test aimed to load a sample scenario 'dtedtest' by opening a file menu and choosing the 'Open File' option and by using a keyboard shortcut",
+			expected: "loadScenarioUsingOpenFile.png",
+			media: "dted.png",  
+			testType:"HumanInTheLoop",
+			mode:"regression"
+		},
+		{
+			testName:"verifyToolsMenu",
+			testCasePath:"TestCases/Regular/verifyToolsMenu",
+			description: "To verify the availability of various options of Tools Menu",
+			expected: "Tools menu should be opened successfully and all sub menu options should be present",
+			media: "verifyToolsMenu.png",		
+			testType:"Regular",
+			mode:"sanity"
+		},
+		{
+			testName:"verifyHelpMenu",
+			testCasePath:"TestCases/Regular/verifyHelpMenu",
+			description: "To verify the availability of various options of Help Menu",
+			expected: "Help menu should be opened successfully and all sub menu options should be present",
+			media: "verifyHelpMenu.png",		
+			testType:"Regular",
+			mode:"sanity"
+		},
+		{
+			testName:"verifyAnimationMenu",
+			testCasePath:"TestCases/Regular/verifyAnimationMenu",
+			description: "To verify the availability of various options of Animation menu",
+			expected: "Animation menu should be opened successfully and all sub menu options should be present",
+			media: "verifyAnimationMenu.png",		
+			testType:"Regular",
+			mode:"sanity"
+		},
+		{
+			testName:"closeUnsavedScenario",
+			testCasePath:"TestCases/Regular/closeUnsavedScenario",
+			description: "The test aimed to verify closing a scenario which is in unsaved state using the close option in file menu and by clicking on the close tab option",
+			expected: "The unsaved scenario should be closed successfully without saving the scenario",
+			media: "Unsavedscenario.png",		
+			testType:"Regular",
+			mode:"sanity"
+		},
+		{
+			testName:"verifySaveFunctionality",
+			testCasePath:"TestCases/Regular/verifySaveFunctionality",
+			description: "The test aimed to verify save scenario with different save options available",
+			expected: "The created scenarios should get saved successfully",
+			media: "verifySaveFunctionality.png",		
+			testType:"Regular",
+			mode:"sanity"
+		}
+	]		
+end getTestCasesInfo
+	

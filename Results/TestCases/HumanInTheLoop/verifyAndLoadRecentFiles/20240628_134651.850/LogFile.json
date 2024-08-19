@@ -1,0 +1,137 @@
+{
+	"entries": [
+		{
+				"message": "Running TestCases/HumanInTheLoop/verifyAndLoadRecentFiles.script",
+				"identifier": "START",
+				"timestamp": "2024-06-28 13:46:51.857 -0400"
+			},
+		{
+				"handlerName": "on_verifyandloadrecentfiles",
+				"timestamp": "2024-06-28 13:46:51.990 -0400",
+				"message": "verifyAndLoadRecentFiles",
+				"scriptName": "TestCases/HumanInTheLoop/verifyAndLoadRecentFiles.script",
+				"handlerLine": 2,
+				"identifier": "BeginTestCase"
+			},
+		{
+				"handlerName": "on_validateemptycanvas",
+				"timestamp": "2024-06-28 13:46:52.317 -0400",
+				"message": "DEFAULTTEXTPLATFORM = Generic OCR",
+				"scriptName": "OS/windows.script",
+				"handlerLine": 2,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "on_compare_screen",
+				"timestamp": "2024-06-28 13:46:52.377 -0400",
+				"message": "DEFAULTTEXTPLATFORM = Generic OCR",
+				"scriptName": "Common/check.script",
+				"handlerLine": 2,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "on_compare_screen",
+				"timestamp": "2024-06-28 13:46:52.384 -0400",
+				"message": "Remote Connection Unavailable",
+				"scriptName": "Common/check.script",
+				"handlerLine": 4,
+				"identifier": "Exception"
+			},
+		{
+				"handlerName": "on_cerror",
+				"timestamp": "2024-06-28 13:46:52.406 -0400",
+				"message": "compare screen failed:CompareScreen Error - Remote Connection Unavailable",
+				"scriptName": "Common/cLog.script",
+				"handlerLine": 2,
+				"identifier": "LogError"
+			},
+		{
+				"handlerName": "on_compare_screen",
+				"timestamp": "2024-06-28 13:46:52.415 -0400",
+				"message": "No Remote Connection - CompareScreen Error - Remote Connection Unavailable",
+				"scriptName": "Common/check.script",
+				"handlerLine": 7,
+				"identifier": "Throw"
+			},
+		{
+				"handlerName": "on_cerror",
+				"timestamp": "2024-06-28 13:46:52.483 -0400",
+				"message": "Gui Validation failed for windows:CompareScreen Error - Remote Connection Unavailable",
+				"scriptName": "Common/cLog.script",
+				"handlerLine": 2,
+				"identifier": "LogError"
+			},
+		{
+				"handlerName": "on_validateemptycanvas",
+				"timestamp": "2024-06-28 13:46:52.493 -0400",
+				"message": "No Remote Connection - CompareScreen Error - Remote Connection Unavailable",
+				"scriptName": "OS/windows.script",
+				"handlerLine": 23,
+				"identifier": "Throw"
+			},
+		{
+				"handlerName": "on_cerror",
+				"timestamp": "2024-06-28 13:46:52.614 -0400",
+				"message": "Error in validating Canvas:CompareScreen Error - Remote Connection Unavailable",
+				"scriptName": "Common/cLog.script",
+				"handlerLine": 2,
+				"identifier": "LogError"
+			},
+		{
+				"handlerName": "on_validateemptycanvas",
+				"timestamp": "2024-06-28 13:46:52.670 -0400",
+				"message": "No Remote Connection - CompareScreen Error - Remote Connection Unavailable",
+				"scriptName": "OS/utility.script",
+				"handlerLine": 11,
+				"identifier": "Throw"
+			},
+		{
+				"handlerName": "on_cerror",
+				"timestamp": "2024-06-28 13:46:52.762 -0400",
+				"message": "initScenario failed:CompareScreen Error - Remote Connection Unavailable",
+				"scriptName": "Common/cLog.script",
+				"handlerLine": 2,
+				"identifier": "LogError"
+			},
+		{
+				"handlerName": "on_initscenario",
+				"timestamp": "2024-06-28 13:46:52.772 -0400",
+				"message": "No Remote Connection - CompareScreen Error - Remote Connection Unavailable",
+				"scriptName": "EXataGUI/scenario.script",
+				"handlerLine": 13,
+				"identifier": "Throw"
+			},
+		{
+				"handlerName": "on_cerror",
+				"timestamp": "2024-06-28 13:46:52.854 -0400",
+				"message": "Error in running verifyAndLoadRecentFiles TestCase",
+				"scriptName": "Common/cLog.script",
+				"handlerLine": 2,
+				"identifier": "LogError"
+			},
+		{
+				"handlerName": "on_verifyandloadrecentfiles",
+				"timestamp": "2024-06-28 13:46:52.886 -0400",
+				"message": "No Remote Connection - CompareScreen Error - Remote Connection Unavailable",
+				"scriptName": "TestCases/HumanInTheLoop/verifyAndLoadRecentFiles.script",
+				"handlerLine": 34,
+				"identifier": "Throw"
+			},
+		{
+				"message": "(Duration:\"0.97\", Errors:\"6\", Exceptions:\"6\", StartTime:\"2024-06-28 13:46:51 -0400\", Successes:\"0\", TestCase:\"verifyAndLoadRecentFiles\", Warnings:\"0\")",
+				"identifier": "EndTestCase",
+				"timestamp": "2024-06-28 13:46:52.962 -0400"
+			},
+		{
+				"message": "(Duration:\"1.087\", Errors:\"6\", Exceptions:\"6\", StartTime:\"2024-06-28 13:46:51 -0400\", Successes:\"0\", TestCase:\"TestCases/HumanInTheLoop/verifyAndLoadRecentFiles.script\", Warnings:\"0\")",
+				"identifier": "EndTestCase",
+				"timestamp": "2024-06-28 13:46:52.969 -0400"
+			},
+		{
+				"message": "No Remote Connection: CompareScreen Error - Remote Connection Unavailable -- Execution Time 0:00:01 TestCases/HumanInTheLoop/verifyAndLoadRecentFiles.script",
+				"identifier": "FAILURE",
+				"timestamp": "2024-06-28 13:46:53.038 -0400"
+			}
+	],
+	"createdTimestamp": "2024-06-28 13:46:51.879 -0400"
+}

@@ -1,0 +1,185 @@
+﻿# This file contains the custom functions used in the application
+#
+
+# to configure the configure.xml file 
+#-------------------------------------
+to configurexml
+	//Reading the input from the configure.xml file and storing it in a variable
+	global scriptList, currentscript, exatahome, savelocation, scenarios, default, changeDirectory, bin, demo, WiFiDemo, spath, DateTime,generateReport,customTestCases,executionMode
+	
+	//declaring a variableto store date and time 
+	put year() into currentyear
+	put month() into currentmonth
+	put day() into currentday
+	put hour() into currenthour
+	put minute() into currentminute
+	put second() into currentsecond
+	put currentday&&currentmonth&&currentyear&& "_" &&currenthour&&currentminute&&currentsecond into DateTime
+	
+	put "bin" into bin
+	put "scenarios" into scenarios
+	put "default" into default
+	put "demo" into demo
+	put "WiFiDemo" into WiFiDemo
+	put "cd" into changeDirectory
+	
+	//configure.xml file is located at "Eggplant suite directory/Resources"
+	put ResourcePath("configure.xml") into configure
+	
+	//Storing EXata Install_dir path into variable "exatahome"
+	open file configure for readWrite
+	set startingLine to 2
+	put lines startingLine to 2 of file ResourcePath("configure.xml") into exatapath
+	put exatapath split by "=" into epath
+	pop epath into ehome
+	put trim(ehome) into exatahome
+	if exataHome is empty then
+		return false
+	end if 
+	"Common/cLog".cMessage exatahome
+	
+	//Storing "UserScenarios" folder path into variable "spath"
+	set startingLine to 5
+	put lines startingLine to 5 of file ResourcePath("configure.xml") into savelocation
+	put savelocation split by "=" into spath
+	pop spath into shome
+	put trim(shome) into spath
+	if spath is empty then
+		return false
+	end if 
+	"Common/cLog".cMessage spath
+	
+	// Getting the ReportGeneration value
+	set startingLine to 8
+	put lines startingLine to 8 of file ResourcePath("configure.xml") into reportGeneration
+	put reportGeneration split by "=" into rptGen
+	pop rptGen into rptGenerate
+	if rptGenerate is empty then
+		return false
+	end if 
+	"Common/cLog".cMessage "generateReport:" && rptGenerate
+	// Convert the string value to boolean
+	if rptGenerate is "true" then
+		set generateReport to true
+	else if rptGenerate is "false" then
+		set generateReport to false
+	else
+		// Handle invalid value here (if needed)
+		set generateReport to false // Default value if the value is not "true" or "false"
+	end if
+	
+	// getting executionMode 
+	set startingLine to 11
+	put lines startingLine to 11 of file ResourcePath("configure.xml") into eMode
+	put eMode split by "=" into modeOfExecution
+	pop modeOfExecution into mode
+	put trim(mode) into executionMode
+	if executionMode is empty then return false
+	"Common/cLog".cMessage "The mode of the Execution of Test :" && executionMode
+	// if execution mode is custom then check for customTestCases array
+	if executionMode is custom then
+		set startingLine to 14
+		put lines startingLine to 14 of file ResourcePath("configure.xml") into cTestCases
+		put cTestCases split by "=" into testCasesNames
+		pop testCasesNames into testNames
+		put trim(testNames) into customTestCases
+		"Common/cLog".cMessage customTestCases
+	end if 
+	close file configure
+	wait 2
+	return true
+end configurexml
+
+to moveToMenu menu, successMsg, errorMsg
+	if file (suiteinfo().imagesFolder&"/"&menu&".png") exists then
+		MoveTo {image:menu}
+	else 
+		If Imagefound(text:menu,IgnoreNewlines:"Yes", IgnoreSpaces:"Yes", TrimWhitespace:"Yes") then 
+			MoveTo FoundImageLocation()
+			LogSuccess successMsg
+		else
+			LogError errorMsg
+		end if
+	end if
+end moveToMenu
+
+to clickEventValidate event, successMsg, errorMsg
+	if file (suiteinfo().imagesFolder&"/"&event&"/") exists then
+		Click {image:event}
+		LogSuccess successMsg
+	else if Imagefound(text:event, IgnoreNewlines:"Yes", IgnoreSpaces:"Yes", TrimWhitespace:"Yes") then 
+		Click FoundImageLocation()
+		LogSuccess successMsg
+	else
+		LogError errorMsg
+		throw errorMessage,"event not found:"&event
+	end if
+end clickEventValidate
+
+to clickRemoteScreen part
+	Click the RemoteScreenSize*part
+end clickRemoteScreen
+
+to captureScreenShot screenShotName
+	CaptureScreen name:screenShotName, increment:Yes
+end captureScreenShot
+
+to clickIfImageTextFound ImageText
+	if ImageFound(text:ImageText) then 
+		click FoundImageLocation()
+	else
+		LogError errorMessage
+		throw errorMessage,"Image text not found: "&ImageText 
+	end if
+end clickIfImageTextFound
+
+to logSuccessOrErrorIfImageTextFound imageText, successMessage, errorMessage
+	if ImageFound(text: imageText) then
+		LogSuccess successMessage
+	else
+		LogError errorMessage
+		throw errorMessage,"Image text not found: "&ImageText 
+	end if
+end logSuccessOrErrorIfImageTextFound
+
+to checkScreenResolution
+	put remoteScreenSize() into screenRect
+	put item 1 of screenRect into screenWidth
+	put item 2 of screenRect into screenHeight
+	log "Screen Width: " & screenWidth & ", Screen Height: " & screenHeight
+	if screenWidth = 1920 and screenHeight = 1080 then
+		return true
+	else
+		return false
+	end if
+end checkScreenResolution
+
+to checkExataGuiExe
+	TypeText windowsKey
+	TypeText "GUI"
+	if ImageFound(text:"GUI") then
+		return true
+	else 
+		return false
+	end if
+end checkExataGuiExe
+
+to handlePreCheckIssues
+	if  not checkScreenResolution() then
+		return ("Screen Resolution is not 1920x1080 !!!")
+	else if not checkExataGuiExe() then
+		return  ("EXataGUI.Exe not found !!!")
+	else 
+		return ""
+	end if
+end handlePreCheckIssues
+
+to handleException testName, desc, expected, screenshot, status, rootCall, location, reason,callStack,scriptError
+	"CommonUtilities/rptHtml".addReportLine testName, desc, expected, screenshot, status
+	-- End report table and file
+	"CommonUtilities/rptHtml".endReportTable
+	// Adding error message
+	"CommonUtilities/rptHtml".addErrorMsg rootCall, location, reason, callStack,scriptError
+	"CommonUtilities/rptHtml".endReportFile
+	-- Exit from the try block				
+end handleException

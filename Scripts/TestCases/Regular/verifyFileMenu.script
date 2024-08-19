@@ -1,0 +1,69 @@
+Try
+	BeginTestCase "verifyFileMenu"
+	
+	# initializing the scenario
+	"EXataGUI/scenario".initScenario
+	
+	# opens the file menu
+	"EXataGUI/actions/menuBar".openFile
+	
+	# verify the file menu
+	
+	# verify availability of New option
+	"Common/check".IsImageTextFound "New", FileMenu
+	
+	# verify availability of Open File option
+	"Common/check".IsImageTextFound "Open File", FileMenu
+	
+	# verify availability of Open Example
+	"Common/check".IsImageTextFound "Open Example", FileMenu
+	
+	# verify availability of Recent Files option
+	"Common/check".IsImageTextFound "Recent Files", FileMenu
+	
+	# verify availability of Import External Scenario option
+	"Common/check".IsImageTextFound "Import External Scenario", FileMenu
+	
+	# verify availability of Export Scenario option
+	"Common/check".IsImageTextFound "Export Scenario", FileMenu
+	
+	# verify availability of Close option
+	"Common/check".IsImageTextFound "Close", FileMenu
+	
+	# verify availability of Close All option
+	"Common/check".IsImageTextFound "Close All", FileMenu
+	
+	# verify availability of Save option
+	"Common/check".IsImageTextFound "Save", FileMenu
+	
+	# verify availability of Save As option
+	"Common/check".IsImageTextFound "Save As", FileMenu
+	
+	# verify availability of Save As Portable option
+	"Common/check".IsImageTextFound "Save As Portable", FileMenu
+	
+	# verify availability of Save As Signed option
+	"Common/check".IsImageTextFound "Save As Signed", FileMenu
+	
+	# verify availability of Save All option
+	"Common/check".IsImageTextFound "Save All", FileMenu
+	
+	# verify availability of Page Setup option
+	"Common/check".IsImageTextFound "Page Setup", FileMenu
+	
+	# verify availability of Print option
+	"Common/check".IsImageTextFound "Print", FileMenu
+	
+	# verify availability of Exit option
+	"Common/check".IsImageTextFound "Exit", FileMenu
+	
+	"Common/search".clearSearchSection
+	
+	# Closes the file menu by clicking at the centre of the canvas
+	"Common/clickEvent".clickScaled "0.5"
+	
+	EndTestCase "verifyFileMenu"
+Catch theException
+	"Common/cLog".cError "Error in running verifyFileMenu TestCase"
+	throw theException 
+End try

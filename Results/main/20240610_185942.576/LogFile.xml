@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+ <testsuite name="main_script" package="exatagui.suite" timestamp="2024-06-10 18:59:42.576 -0400"
+ tests="1"  failures="7" errors="7" time="0.876000">
+  <properties>
+   <property name="RunDate" value="2024-06-10 18:59:42.576 -0400"/>
+   <property name="Status" value="Failure"/>
+  </properties>
+  <testcase name="main.script" assertions="7" status="error"  time="0.868">
+    <failure type="LogError" message="checkScreenResolution failed:remotescreensize Error - Remote Connection Unavailable" />
+    <failure type="LogError" message="initTestCases failed: remotescreensize Error - Remote Connection Unavailable" />
+    <failure type="LogError" message="main script failed:remotescreensize Error - Remote Connection Unavailable" />
+    <failure type="LogError" message="SearchRectangle failed: screenpart Error - Remote Connection Unavailable" />
+    <failure type="LogError" message="isImageTextFound failed: screenpart Error - Remote Connection Unavailable" />
+    <failure type="LogError" message="cleanUpTestCases failed: screenpart Error - Remote Connection Unavailable" />
+    <failure type="FAILURE" message="No Remote Connection: screenpart Error - Remote Connection Unavailable -- Execution Time 0:00:00 main.script" />
+    <error type="Throw" message="No Remote Connection - screenpart Error - Remote Connection Unavailable" />
+  </testcase>
+ </testsuite>
+</testsuites>

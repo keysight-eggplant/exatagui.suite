@@ -1,0 +1,10 @@
+﻿Date Run,Status,Time,# of Errors,# of Warnings,# of Exceptions,Log File,Return Value,Error Message,# of Successes
+2024-06-25 08:45:58.570 -0400,"Failure",0:02:21,6,0,5,"20240625_084558.570/LogFile.txt","","ImageTextNotFoundException:  -- cancel:not found",10
+2024-06-25 08:50:13.997 -0400,"Success",0:10:37,0,0,0,"20240625_085013.997/LogFile.txt","","",55
+2024-06-25 09:01:54.201 -0400,"Success",0:07:30,0,0,0,"20240625_090154.201/LogFile.txt","","",55
+2024-06-25 09:41:33.144 -0400,"Success",0:08:11,0,0,0,"20240625_094133.144/LogFile.txt","","",55
+2024-06-25 12:11:38.658 -0400,"Failure",0:02:22,6,0,5,"20240625_121138.658/LogFile.txt","","ImageTextNotFoundException:  -- cancel:not found",10
+2024-06-28 13:36:55.627 -0400,"Failure",0:01:15,6,0,5,"20240628_133655.627/LogFile.txt","","ImageTextNotFoundException:  -- New:not found",0
+2024-06-28 13:39:26.738 -0400,"Aborted",0:02:18,1,0,1,"20240628_133926.738/LogFile.txt","","",0
+2024-06-28 13:43:23.129 -0400,"Aborted",0:02:06,1,0,0,"20240628_134323.129/LogFile.txt","","",0
+2024-06-28 13:46:51.850 -0400,"Failure",0:00:01,6,0,6,"20240628_134651.850/LogFile.txt","","No Remote Connection -- CompareScreen Error - Remote Connection Unavailable",0

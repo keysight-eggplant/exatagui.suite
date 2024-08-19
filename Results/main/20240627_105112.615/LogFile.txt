@@ -1,0 +1,20 @@
+﻿2024-06-27 10:51:12.619 -0400	START		Running main.script
+2024-06-27 10:51:12.713 -0400	Log		Started the Execution of the EXataGUI Regression Scripts at 10:51 AM on 06/27/24	2	on_cmessage	Common/cLog.script
+2024-06-27 10:51:12.768 -0400	setoptions		ImageUpdate = Off	2	on_variabledata	HelperUtilities/variableData.script
+2024-06-27 10:51:12.771 -0400	setoptions		MouseMoveMode = 2	2	on_variabledata	HelperUtilities/variableData.script
+2024-06-27 10:51:12.774 -0400	setoptions		MouseMoveSpeed = 10	2	on_variabledata	HelperUtilities/variableData.script
+2024-06-27 10:51:12.776 -0400	setoptions		remoteWorkInterval = 1	2	on_variabledata	HelperUtilities/variableData.script
+2024-06-27 10:51:12.953 -0400	Log		Screen Width: 1920, Screen Height: 1080	6	function_checkscreenresolution	Common/check.script
+2024-06-27 10:51:13.238 -0400	Log		C:\Program Files\Scalable\exata\8.2.0.0	2	on_cmessage	Common/cLog.script
+2024-06-27 10:51:13.362 -0400	Log		C:\Users\Administrator\Documents\UserScenarios	2	on_cmessage	Common/cLog.script
+2024-06-27 10:51:13.476 -0400	Log		generateReport: true	2	on_cmessage	Common/cLog.script
+2024-06-27 10:51:13.624 -0400	Log		The mode of the Execution of Test : full	2	on_cmessage	Common/cLog.script
+2024-06-27 10:51:15.733 -0400	BeginTestCase		hideTaskBar	3	on_hidetaskbar	OS/windows.script
+2024-06-27 10:51:15.894 -0400	typetext		[windowsKey]	3	on_entertext	Common/keyBoard.script
+2024-06-27 10:51:17.113 -0400	typetext		taskbar settings	3	on_entertext	Common/keyBoard.script
+2024-06-27 10:51:20.639 -0400	typetext		[returnKey]	3	on_entertext	Common/keyBoard.script
+2024-06-27 10:51:21.842 -0400	set		SEARCHRECTANGLE = [[251.52,49.68],[741.12,317.52]]	3	on_setsearchsection	Common/search.script
+2024-06-27 10:52:22.042 -0400	imagefound	(TEXT:"hide the taskbar in desktop mode")	Unable to Find Image (TEXT:"hide the taskbar in desktop mode"). Text not found.	9	function_isimagetextfound	Common/check.script
+2024-06-27 10:52:23.916 -0400	EndTestCase		(Duration:"68.182", Errors:"1", Exceptions:"0", StartTime:"2024-06-27 10:51:15 -0400", Successes:"0", TestCase:"hideTaskBar", Warnings:"0")
+2024-06-27 10:52:23.920 -0400	EndTestCase		(Duration:"71.297", Errors:"1", Exceptions:"0", StartTime:"2024-06-27 10:51:12 -0400", Successes:"0", TestCase:"main.script", Warnings:"0")
+2024-06-27 10:52:23.931 -0400	ABORTED		Execution Time 0:01:11 main.script

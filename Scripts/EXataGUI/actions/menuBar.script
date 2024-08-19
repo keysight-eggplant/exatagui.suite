@@ -1,0 +1,489 @@
+﻿# EXataGUI Actions Script
+# This script contains all the actions related to GUI automation for the EXata application
+
+# Common Functions
+# ----------------
+
+# Enter file name to be saved
+to enterFileName configName
+	Try
+		"Common/keyBoard".enterText configName
+	Catch theException
+		"Common/cLog".cError "enterFileName failed:" & theException's reason
+		throw theException
+	End try
+end enterFileName
+
+
+# Edit Menu Actions
+# -----------------
+
+# Open Edit menu
+to openEdit
+	set the defaultTextPlatform.OCRStyles.Default.DPI to 144
+	Try
+		"Common/search".setSearchSection("EditMenu")
+		"Common/clickEvent".leftEvent "Edit"
+		if not "Common/check".isImageTextFound("Cut", "", true) then
+			"Common/cLog".cError "Edit menu failed to open"
+			throw "openEditMenuException:", "Edit menu failed to open"
+		end if
+		"Common/cLog".success "Edit menu opened successfully"
+		"Common/captureScreenShots".captureScreenshots "verifyEditMenu.png", [0, 2, 808, 810]
+		"Common/search".clearSearchSection
+	Catch theException
+		"Common/cLog".cError "Open Edit Menu Action failed:" & theException's reason
+		throw theException
+	End try
+end openEdit
+
+# Close Edit menu
+to closeEdit
+	set the defaultTextPlatform.OCRStyles.Default.DPI to 144
+	Try
+		"Common/search".setSearchSection("EditMenu")
+		"Common/clickEvent".onFoundImageLocation "Edit"
+		if not "Common/check".isImageTextFound("Architect", "", true) then
+			"Common/cLog".cError "Edit menu failed to close"
+			throw "closeEditMenuException:", "Edit menu failed to close"
+		end if
+		"Common/cLog".success "Edit menu closed successfully"
+		"Common/search".clearSearchSection
+	Catch theException
+		"Common/cLog".cError "Close Edit Menu Action failed:" & theException's reason
+		throw theException
+	End try
+end closeEdit
+
+# File Menu Actions
+# -----------------
+
+# Open File menu
+to openFile
+	set the defaultTextPlatform.OCRStyles.Default.DPI to 144
+	Try
+		"Common/search".setSearchSection("TopLeft")
+		"Common/clickEvent".leftEvent "File"
+		if not "Common/check".isImageTextFound("New", "", true) then
+			"Common/cLog".cError "File menu failed to open"
+			throw "openFileMenuException:", "File menu failed to open"
+		end if
+		"Common/cLog".success "File menu opened successfully"
+		"Common/captureScreenShots".captureScreenshots "verifyFileMenu.png", [0, 2, 808, 810]
+		"Common/search".clearSearchSection
+	Catch theException
+		"Common/cLog".cError "Open File Menu Action failed:" & theException's reason
+		throw theException
+	End try
+end openFile
+
+# Close File menu
+to closeFile
+	set the defaultTextPlatform.OCRStyles.Default.DPI to 144
+	Try
+		"Common/search".setSearchSection("FileMenu")
+		"Common/clickEvent".onFoundImageLocation "File"
+		if not "Common/check".isImageTextFound("Architect", "", true) then
+			"Common/cLog".cError "File menu failed to close"
+			throw "closeFileMenuException:", "File menu failed to close"
+		end if
+		"Common/cLog".success "File menu closed successfully"
+		"Common/search".clearSearchSection
+	Catch theException
+		"Common/cLog".cError "Close File Menu Action failed:" & theException's reason
+		throw theException
+	End try
+end closeFile
+
+# Open New canvas using keyboard shortcut
+to newUsingKeyboardShortcut
+	set the defaultTextPlatform.OCRStyles.Default.DPI to 144
+	Try
+		"Common/keyBoard".keyboardShortcut n
+		"Common/waitForEvent".waitForText "2", "ScenarioTabView"
+		"Common/cLog".success "The New Canvas is successfully opened by keyboard shortcut"
+		"Common/captureScreenShots".captureScreenshots "openNewCanvasUsingKeyboardShortcut.png", [6, 8, 1158, 634]
+	Catch theException
+		"Common/cLog".cError "Open New Canvas Using Keyboard Shortcut failed:" & theException's reason
+		throw theException
+	End try
+end newUsingKeyboardShortcut
+
+# Open New canvas using 'Create A New Scenario' button
+to newUsingCreateANewScenario
+	set the defaultTextPlatform.OCRStyles.Default.DPI to 144
+	Try
+		"Common/search".setSearchSection("TopLeft")
+		"Common/clickEvent".leftEvent "createANewScenario"
+		"Common/search".clearSearchSection
+		if not "Common/check".isImageTextFound("2", "ScenarioTabView", true) then
+			"Common/cLog".cError "New Canvas is failed to open"
+			throw "clickNewException:", "New Canvas is failed to open"
+		end if
+		"Common/cLog".success "The New Canvas is successfully opened on clicking 'Create A New Scenario' button"
+		"Common/captureScreenShots".captureScreenshots "openCanvasUsingCreateANewScenario.png", [6, 8, 1158, 634]
+	Catch theException
+		"Common/cLog".cError "Open New Canvas by clicking the 'Create A New Scenario' button failed:" & theException's reason
+		throw theException
+	End try
+end newUsingCreateANewScenario
+
+# Open New option of File menu
+to new
+	set the defaultTextPlatform.OCRStyles.Default.DPI to 144
+	Try
+		"Common/search".setSearchSection("TopLeft")
+		openFile
+		"Common/search".setSearchSection("TopLeft")
+		"Common/clickEvent".leftEvent "New"
+		"Common/search".clearSearchSection
+		"Common/waitForEvent".waitForText "2","ScenarioTabView"
+		"Common/cLog".success "The New Canvas is successfully opened after selecting the New option"
+		"Common/captureScreenShots".captureScreenshots "NewCanvas.png", [6, 8, 1158, 634]
+		"Common/search".clearSearchSection
+	Catch theException
+		"Common/cLog".cError "Open New Canvas using New option failed:" & theException's reason
+		throw theException
+	End try
+end new
+
+# Select Open File
+to selectOpenFile configFolder, configName:"", IsExample:false, 
+	set the defaultTextPlatform.OCRStyles.Default.DPI to 144
+	Try
+		"Common/search".setSearchSection("TopLeft")
+		if IsExample is true
+			"Common/clickEvent".leftEvent "Open Example"
+		else
+			"Common/clickEvent".leftEvent "Open File"
+		end if
+		"Common/search".clearSearchSection
+		if not "Common/check".isImageTextFound("cancel", "", true) then
+			"Common/cLog".cError "Open File dialog box failed to open"
+			throw "clickOpenExampleException:", "Open File dialog box failed to open"
+		end if
+		"Common/cLog".success "The Open File dialog box is successfully open after selecting the Open File option"
+		"Common/search".clearSearchSection
+	Catch theException
+		"Common/cLog".cError "open File file menu failed:" & theException's reason
+		throw theException
+	End try
+end selectOpenFile
+
+# Select Save As
+to selectSaveAs
+	#set the defaultTextPlatform.OCRStyles.Default.DPI to 144
+	Try
+		"Common/search".setSearchSection("HalfofTopLeftQuadrant")
+		"Common/clickEvent".leftEvent "Save As"
+		"Common/search".clearSearchSection
+		if not "Common/check".isImageTextFound("cancel", "", true) then
+			"Common/cLog".cError "Save As dialog box failed to open"
+			throw "clickSaveAsException:", "Save As dialog box failed to open"
+		end if
+		"Common/cLog".success "Save as dialog box opened successfully"
+		"Common/search".clearSearchSection
+	Catch theException
+		"Common/cLog".cError "Save As file menu failed:" & theException's reason
+		throw theException
+	End try
+end selectSaveAs
+
+# Save file using Save As
+to saveAs configName
+	set the defaultTextPlatform.OCRStyles.Default.DPI to 144
+	Try
+		selectSaveAs
+		if "Common/check".isImageTextFound("cancel", "", true) then
+			enterFileName configName & ".config"
+			"Common/keyBoard".pressEnter
+			if "Common/check".isImageTextFound("Save Scenario", "Centre", false)
+				"Common/keyBoard".pressEnter
+			end if
+			"EXataGUI/scenario".copyScenarioFiles
+		else
+			"Common/cLog".cError "text not found", "cancel text is missing"
+			throw "openSaveAsException:", "Save as failed"
+		end if
+		"Common/cLog".success "Save As Operation completed successfully."
+	Catch theException
+		"Common/cLog".cError "Save As failed: " & theException's reason
+		throw theException
+	End try
+end saveAs
+
+# Close scenario using Close option
+to close
+	set the defaultTextPlatform.OCRStyles.Default.DPI to 144
+	Try
+		"Common/search".setSearchSection("TopLeft")
+		openFile
+		"Common/waitForEvent".waitForText "Close"
+		"Common/clickEvent".leftEvent "Close"
+		"Common/cLog".success "Close Scenario operation completed successfully."
+		"Common/search".clearSearchSection
+	Catch theException
+		"Common/cLog".cError "Close failed:" & theException's reason
+		throw theException
+	End try
+end close
+
+# Close scenario using Close All option
+to closeAll
+	set the defaultTextPlatform.OCRStyles.Default.DPI to 144
+	Try
+		"Common/search".setSearchSection("HalfofTopLeftQuadrant")
+		"Common/clickEvent".leftEvent "Close All"
+		"Common/search".clearSearchSection
+		"OS/utility".validateEmptyCanvas
+	Catch theException
+		"Common/cLog".cError "Close All file menu failed:" & theException's reason
+		throw theException
+	End try
+end closeAll
+
+# Verifies the recent files list and loads scenario from the recent files on canvas
+to verifyAndLoadRecentFiles
+	set the defaultTextPlatform.OCRStyles.Default.DPI to 144
+	Try
+		-- verifies the recent files 
+		openFile
+		if not "Common/check".IsImageTextFound("Recent Files", "TopLeftQuadrant") then
+			"Common/cLog".cError "recent files list is failed to open"
+			throw "verifyRecentFilesListException:", "recent files list is failed to open"
+		else
+			"Common/cLog".success "Recent Files List is opened successfully"
+			"Common/waitForEvent".hardWait 20
+			"Common/captureScreenShots".captureScreenshots "verifyRecentFiles.png", [3, 2, 812, 589]
+			"Common/cLog".success "Recent Files List is opened successfully"
+			put the mouselocation into recentFiles
+			put recentFiles + [350, 0] into loadrecent
+			"Common/clickEvent".clickScaled "0.5"
+		End If
+		-- closes all the scenarios opened on canvas 
+		openFile
+		CloseAll
+		-- loads the scenario from the recent files list
+		openFile
+		if not "Common/check".IsImageTextFound("Recent Files", "TopLeftQuadrant") then
+			"Common/cLog".cError "recent files list is failed to open"
+			throw "verifyRecentFilesListException:", "recent files list is failed to open"
+		else
+			MoveTo loadrecent
+			Click loadrecent
+			"Common/waitForEvent".hardWait 30			
+			if "Common/check".IsImageTextFound("dtedtest", "TopHalf") then	
+				"Common/cLog".success "Scenario from Recent Files List is loaded successfully on canvas"
+			else
+				"Common/cLog".cError "scenario from recent files list is failed to open"
+				throw "verifyRecentFilesListException:", "scenario from recent files list is failed to open"
+			End If
+			"Common/search".clearSearchSection 
+		End If
+		
+	Catch theException		
+		"Common/cLog".cError "verify and load of scenario from recent files list action failed:" & theException's reason
+		throw theException
+	End try
+end verifyAndLoadRecentFiles
+
+# View Menu Actions
+# -----------------
+
+# Open View menu
+to openView
+	set the defaultTextPlatform.OCRStyles.Default.DPI to 144
+	Try
+		"Common/search".setSearchSection("ViewMenu")
+		"Common/clickEvent".leftEvent "View"
+		if not "Common/check".isImageTextFound("Standard Toolbar", "", true) then
+			"Common/cLog".cError "View menu failed to open"
+			throw "openViewMenuException:", "View menu failed to open"
+		end if
+		"Common/cLog".success "View menu opened successfully"
+		"Common/captureScreenShots".captureScreenshots "verifyViewMenu.png", [2, 6, 787, 513]
+	Catch theException
+		"Common/cLog".cError "Open View Menu Action failed:" & theException's reason
+		throw theException
+	End try
+end openView
+
+# Close View menu
+to closeView
+	set the defaultTextPlatform.OCRStyles.Default.DPI to 144
+	Try
+		"Common/search".setSearchSection("ViewMenu")
+		"Common/clickEvent".onFoundImageLocation "View"
+		if not "Common/check".isImageTextFound("Architect", "", true) then
+			"Common/cLog".cError "View menu failed to close"
+			throw "closeViewMenuException:", "View menu failed to close"
+		end if
+		"Common/cLog".success "View menu closed successfully"
+		"Common/search".clearSearchSection
+	Catch theException
+		"Common/cLog".cError "Close View Menu Action failed:" & theException's reason
+		throw theException
+	End try
+end closeView
+
+# Tools Menu Actions
+# -----------------
+
+# Open Tools menu
+to openTools
+	set the defaultTextPlatform.OCRStyles.Default.DPI to 144
+	Try
+		"Common/search".setSearchSection("ToolsMenu") 
+		"Common/clickEvent".leftEvent "Tools"
+		if not "Common/check".isImageTextFound("Node Placement","",true) then
+			"Common/cLog".cError "Tools menu failed to open"
+			throw "openToolsMenuException:","Tools menu failed to open"	
+		end if
+		"Common/cLog".success "Tools menu opened successfully"
+		"Common/captureScreenShots".captureScreenshots "verifyToolsMenu.png",[0,2,792,735]
+	Catch theException
+		"Common/cLog".cError "Open Tools Menu Action failed:"&theException's reason
+		throw theException 
+	End try
+end openTools
+
+# Close Tools menu
+to closeTools
+	set the defaultTextPlatform.OCRStyles.Default.DPI to 144
+	Try
+		"Common/search".setSearchSection("ToolsMenu") 
+		"Common/clickEvent".leftEvent "Tools"
+		if not "Common/check".isImageTextFound("Analyzer","",true) then
+			"Common/cLog".cError "Tools menu failed to Close"
+			throw "CloseToolsMenuException:","Tools menu failed to Close"	
+		end if
+		"Common/cLog".success "Tools menu closed successfully"
+		"Common/search".clearSearchSection
+	Catch theException
+		"Common/cLog".cError "Close Tools Menu Action failed:"&theException's reason
+		throw theException 
+	End try
+end closeTools
+
+# Help Menu Actions
+# -----------------
+
+#Open Help menu 
+to openHelp
+	set the defaultTextPlatform.OCRStyles.Default.DPI to 144
+	Try
+		"Common/search".setSearchSection("HelpMenu") 
+		"Common/clickEvent".leftEvent "Help"
+		if not "Common/check".isImageTextFound("Keyboard Shortcuts","",true) then
+			"Common/cLog".cError "Help menu failed to open"
+			throw "openHelpMenuException:","Help menu failed to open"	
+		end if
+		"Common/cLog".success "Help menu opened successfully"
+		"Common/captureScreenShots".captureScreenshots "verifyHelpMenu.png",[2,6,787,513]
+		
+	Catch theException
+		"Common/cLog".cError "Open Help Menu Action failed:"&theException's reason
+		throw theException 
+	End try
+end openHelp
+
+(*#Close Help Menu
+to closeHelp
+	Try
+		"Common/search".setSearchSection("HelpMenu") 
+		"Common/clickEvent".leftEvent "Help"
+		if not "Common/check".isImageTextFound("Packet Tracer","",true) then
+			"Common/cLog".cError "Help menu failed to Close"
+			throw "CloseHelpMenuException:","Help menu failed to Close"	
+		end if
+		"Common/cLog".success "Help menu closed successfully"
+		"Common/search".clearSearchSection
+	Catch theException
+		"Common/cLog".cError "Close Help Menu Action failed:"&theException's reason
+		throw theException 
+	End try
+	
+end closeHelp*)
+
+# Animation Menu Actions
+# -----------------
+
+#Open Animation menu 
+to openAnimation
+	set the defaultTextPlatform.OCRStyles.Default.DPI to 144
+	Try
+		"Common/search".setSearchSection("AnimationMenu") 
+		"Common/clickEvent".leftEvent "Animation"
+		if not "Common/check".isImageTextFound("Animation Colors","",true) then
+			"Common/cLog".cError "Animation menu failed to open"
+			throw "openAnimation:","Animation menu failed to open"	
+		end if
+		"Common/cLog".success "Animation menu opened successfully"
+		"Common/captureScreenShots".captureScreenshots "verifyAnimationMenu.png",[2,6,787,513]
+		
+	Catch theException
+		"Common/cLog".cError "Open animation menu action failed:"&theException's reason
+		throw theException 
+	End try
+end openAnimation
+
+#Close Animation
+to closeAnimation
+	set the defaultTextPlatform.OCRStyles.Default.DPI to 144
+	Try
+		"Common/search".setSearchSection("AnimationMenu") 
+		"Common/clickEvent".leftEvent "Animation"
+		if not "Common/check".isImageTextFound("Packet Tracer","",true) then
+			"Common/cLog".cError "Animation menu failed to close"
+			throw "CloseAnimationMenuException:","Animation menu failed to close"	
+		end if
+		"Common/cLog".success "Animation menu closed successfully"
+		"Common/search".clearSearchSection
+	Catch theException
+		"Common/cLog".cError "Close animation menu action failed:"&theException's reason
+		throw theException 
+	End try
+	
+end closeAnimation
+
+#Save file using save
+to save configName:"",key 
+	set the defaultTextPlatform.OCRStyles.Default.DPI to 144
+	try
+		global savelocation 
+		
+		If key is not empty then 
+			"Common/keyboard".keyboardShortcut key
+		else
+			openFile
+			"Common/search".setSearchSection("FileMenu")
+			"Common/clickEvent".leftEvent "Save"
+			"Common/search".clearSearchSection 
+			if "Common/check".isImageTextFound("EXata","Centre", false)then
+				"Common/keyBoard".pressEnter
+			end if 
+			
+		end if
+		
+		
+		if "Common/check".isImageTextFound("cancel", "", true) then
+			enterFileName configName & ".config"
+			"Common/keyBoard".pressEnter
+			if "Common/check".isImageTextFound("Do you want to replace it", "Centre", false)
+				"Common/keyBoard".pressEnter
+			end if
+			"EXataGUI/scenario".copyScenarioFiles
+		else
+			"Common/cLog".cError "text not found", "cancel text is missing"
+			throw "openSaveException:", "Save failed"
+		end if
+		"Common/cLog".success "Save  Operation completed successfully."
+		
+		#Capture Screen to confirm Scenario is closed
+		"Common/captureScreenShots".captureScreenshots "verifySaveFunctionality.png",[636,199,1558,1026]
+
+	Catch theException
+		"Common/cLog".cError "Save failed: " & theException's reason
+		throw theException
+	End try	
+end save

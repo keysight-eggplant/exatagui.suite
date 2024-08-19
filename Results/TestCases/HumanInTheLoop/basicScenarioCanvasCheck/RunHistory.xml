@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<runHistory script="TestCases/HumanInTheLoop/basicScenarioCanvasCheck">
+ <run>
+  <RunDate>2024-06-25 08:38:23.837 -0400</RunDate>
+  <Status>Success</Status>
+  <Duration>64.607000</Duration>
+  <Errors>0</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>11</Successes>
+  <LogFile>20240625_083823.837/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage></ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2024-06-25 09:33:26.034 -0400</RunDate>
+  <Status>Success</Status>
+  <Duration>93.501000</Duration>
+  <Errors>0</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>11</Successes>
+  <LogFile>20240625_093326.034/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage></ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2024-06-25 12:04:29.630 -0400</RunDate>
+  <Status>Success</Status>
+  <Duration>70.930000</Duration>
+  <Errors>0</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>11</Successes>
+  <LogFile>20240625_120429.630/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage></ErrorMessage>
+ </run>
+</runHistory>

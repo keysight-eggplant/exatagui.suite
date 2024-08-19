@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+ <testsuite name="TestCases/Regular/closeUnsavedScenario_script" package="exatagui.suite" timestamp="2024-06-05 19:08:44.460 -0400"
+ tests="2"  failures="6" errors="5" time="139.364000">
+  <properties>
+   <property name="RunDate" value="2024-06-05 19:08:44.460 -0400"/>
+   <property name="Status" value="Failure"/>
+  </properties>
+  <testcase name="closeUnsavedScenario" assertions="7" status="error"  time="139.327">
+    <failure type="LogError" message="Image text not found: 1" />
+    <failure type="LogError" message="isImageTextFound failed: 1:not found" />
+    <failure type="LogError" message="validation of Node Placement failed:1:not found" />
+    <failure type="LogError" message="addNodes failed: 1:not found" />
+    <failure type="LogError" message=" Error in Running closeUnsavedScenario TestCase" />
+    <error type="Throw" message="ImageTextNotFoundException:  - 1:not found" />
+  </testcase>
+  <testcase name="TestCases/Regular/closeUnsavedScenario.script" assertions="7" status="error"  time="139.36">
+    <failure type="LogError" message="Image text not found: 1" />
+    <failure type="LogError" message="isImageTextFound failed: 1:not found" />
+    <failure type="LogError" message="validation of Node Placement failed:1:not found" />
+    <failure type="LogError" message="addNodes failed: 1:not found" />
+    <failure type="LogError" message=" Error in Running closeUnsavedScenario TestCase" />
+    <failure type="FAILURE" message="ImageTextNotFoundException: : 1:not found -- Execution Time 0:02:19 TestCases/Regular/closeUnsavedScenario.script" />
+    <error type="Throw" message="ImageTextNotFoundException:  - 1:not found" />
+  </testcase>
+ </testsuite>
+</testsuites>

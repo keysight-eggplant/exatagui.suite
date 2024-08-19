@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+ <testsuite name="TestCases/Regular/basicExataFunctionalityCheck_script" package="exatagui.suite" timestamp="2024-06-28 10:47:58.996 -0400"
+ tests="2"  failures="6" errors="5" time="310.165000">
+  <properties>
+   <property name="RunDate" value="2024-06-28 10:47:58.996 -0400"/>
+   <property name="Status" value="Failure"/>
+  </properties>
+  <testcase name="basicEXataFunctionalityCheck" assertions="21" status="error"  time="310.096">
+    <failure type="LogError" message="Image text not found: sample" />
+    <failure type="LogError" message="isImageTextFound failed: sample:not found" />
+    <failure type="LogError" message="validation of saved scenario failed:sample:not found" />
+    <failure type="LogError" message="saveTheScenario failed: sample" />
+    <failure type="LogError" message="Error in running basicEXataFunctionalityCheck TestCase" />
+    <error type="Throw" message="ImageTextNotFoundException:  - sample:not found" />
+  </testcase>
+  <testcase name="TestCases/Regular/basicExataFunctionalityCheck.script" assertions="21" status="error"  time="310.154">
+    <failure type="LogError" message="Image text not found: sample" />
+    <failure type="LogError" message="isImageTextFound failed: sample:not found" />
+    <failure type="LogError" message="validation of saved scenario failed:sample:not found" />
+    <failure type="LogError" message="saveTheScenario failed: sample" />
+    <failure type="LogError" message="Error in running basicEXataFunctionalityCheck TestCase" />
+    <failure type="FAILURE" message="ImageTextNotFoundException: : sample:not found -- Execution Time 0:05:10 TestCases/Regular/basicExataFunctionalityCheck.script" />
+    <error type="Throw" message="ImageTextNotFoundException:  - sample:not found" />
+  </testcase>
+ </testsuite>
+</testsuites>

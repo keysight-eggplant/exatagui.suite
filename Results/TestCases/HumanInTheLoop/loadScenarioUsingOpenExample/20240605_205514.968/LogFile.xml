@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+ <testsuite name="TestCases/HumanInTheLoop/loadScenarioUsingOpenExample_script" package="exatagui.suite" timestamp="2024-06-05 20:55:14.968 -0400"
+ tests="2"  failures="0" errors="0" time="57.982000">
+  <properties>
+   <property name="RunDate" value="2024-06-05 20:55:14.968 -0400"/>
+   <property name="Status" value="Success"/>
+  </properties>
+  <testcase name="loadScenarioUsingOpenExample" assertions="11" status="success"  time="57.916">
+  </testcase>
+  <testcase name="TestCases/HumanInTheLoop/loadScenarioUsingOpenExample.script" assertions="11" status="success"  time="57.974">
+  </testcase>
+ </testsuite>
+</testsuites>

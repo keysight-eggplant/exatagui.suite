@@ -1,0 +1,20 @@
+﻿# This script is used for logging a success,error or plain messages
+#
+
+# to log success message
+#--------------------------------
+to success targetText
+	LogSuccess targetText
+end success
+
+# to log error message
+#----------------------------
+to cError targetText
+	LogError targetText
+end cError
+
+# to log message
+#---------------------
+to cMessage targetText
+	log targetText
+end cMessage

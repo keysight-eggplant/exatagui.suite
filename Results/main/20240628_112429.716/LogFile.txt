@@ -1,0 +1,66 @@
+﻿2024-06-28 11:24:29.728 -0400	START		Running main.script
+2024-06-28 11:24:29.954 -0400	Log		Started the Execution of the EXataGUI Regression Scripts at 11:24 AM on 06/28/24	2	on_cmessage	Common/cLog.script
+2024-06-28 11:24:30.023 -0400	setoptions		ImageUpdate = Off	2	on_variabledata	HelperUtilities/variableData.script
+2024-06-28 11:24:30.026 -0400	setoptions		MouseMoveMode = 2	2	on_variabledata	HelperUtilities/variableData.script
+2024-06-28 11:24:30.029 -0400	setoptions		MouseMoveSpeed = 10	2	on_variabledata	HelperUtilities/variableData.script
+2024-06-28 11:24:30.032 -0400	setoptions		remoteWorkInterval = 1	2	on_variabledata	HelperUtilities/variableData.script
+2024-06-28 11:24:30.230 -0400	Log		Screen Width: 1920, Screen Height: 1080	6	function_checkscreenresolution	Common/check.script
+2024-06-28 11:24:30.579 -0400	Log		C:\Program Files\Scalable\exata\8.2.0.0	2	on_cmessage	Common/cLog.script
+2024-06-28 11:24:30.738 -0400	Log		C:\Users\Administrator\Documents\UserScenarios	2	on_cmessage	Common/cLog.script
+2024-06-28 11:24:30.892 -0400	Log		generateReport: true	2	on_cmessage	Common/cLog.script
+2024-06-28 11:24:31.093 -0400	Log		The mode of the Execution of Test : full	2	on_cmessage	Common/cLog.script
+2024-06-28 11:24:33.253 -0400	BeginTestCase		hideTaskBar	3	on_hidetaskbar	OS/windows.script
+2024-06-28 11:24:33.513 -0400	typetext		[windowsKey]	3	on_entertext	Common/keyBoard.script
+2024-06-28 11:24:35.024 -0400	typetext		taskbar settings	3	on_entertext	Common/keyBoard.script
+2024-06-28 11:24:36.062 -0400	typetext		[returnKey]	3	on_entertext	Common/keyBoard.script
+2024-06-28 11:24:38.411 -0400	typetext		[windowsKey][upArrow]	3	on_entertext	Common/keyBoard.script
+2024-06-28 11:24:39.089 -0400	set		DEFAULTTEXTPLATFORM = Generic OCR	2	function_isimagetextfound	Common/check.script
+2024-06-28 11:24:39.416 -0400	set		SEARCHRECTANGLE = [[251.52,49.68],[741.12,317.52]]	3	on_setsearchsection	Common/search.script
+2024-06-28 11:24:39.856 -0400	imagefound	(TEXT:"hide the taskbar in desktop mode")	found at (535, 227)	10	function_isimagetextfound	Common/check.script
+2024-06-28 11:24:42.743 -0400	moveto	(TEXT:"hide the taskbar in desktop mode")	at (535, 227)	11	function_isimagetextfound	Common/check.script
+2024-06-28 11:24:42.790 -0400	LogSuccess		hide the taskbar in desktop mode  is found in HideTaskBar	2	on_success	Common/cLog.script
+2024-06-28 11:24:42.906 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-28 11:24:43.313 -0400	set		DEFAULTTEXTPLATFORM = Generic OCR	2	function_isimagetextfound	Common/check.script
+2024-06-28 11:24:43.699 -0400	set		SEARCHRECTANGLE = [[251.52,49.68],[741.12,317.52]]	3	on_setsearchsection	Common/search.script
+2024-06-28 11:25:44.419 -0400	imagefound	(TEXT:"Off")	Unable to Find Image (TEXT:"Off"). Text not found.	10	function_isimagetextfound	Common/check.script
+2024-06-28 11:25:44.599 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-28 11:25:44.975 -0400	LogSuccess		Taskbar is already hidden	2	on_success	Common/cLog.script
+2024-06-28 11:25:45.387 -0400	typetext		[windowsAltKey][F4]	3	on_entertext	Common/keyBoard.script
+2024-06-28 11:25:45.438 -0400	EndTestCase		(Duration:"72.185", Errors:"0", Exceptions:"0", StartTime:"2024-06-28 11:24:33 -0400", Successes:"2", TestCase:"hideTaskBar", Warnings:"0")	24	on_hidetaskbar	OS/windows.script
+2024-06-28 11:25:47.798 -0400	set		DEFAULTTEXTPLATFORM = Generic OCR	2	function_startexatagui	OS/windows.script
+2024-06-28 11:25:48.001 -0400	typetext		[windowsKey]r	3	on_entertext	Common/keyBoard.script
+2024-06-28 11:25:49.412 -0400	waitfor	(TEXT:"Run")	found at (54, 854)	6	on_waitfortext	Common/waitForEvent.script
+2024-06-28 11:25:49.546 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-28 11:25:51.633 -0400	typetext		C:\Program Files\Scalable\exata\8.2.0.0\bin\EXataGUI.exe	3	on_entertext	Common/keyBoard.script
+2024-06-28 11:25:52.669 -0400	typetext		[returnKey]	3	on_entertext	Common/keyBoard.script
+2024-06-28 11:25:52.764 -0400	set		DEFAULTTEXTPLATFORM = Generic OCR	2	function_isimagetextfound	Common/check.script
+2024-06-28 11:25:53.002 -0400	set		SEARCHRECTANGLE = [[480,270],[1440,810]]	3	on_setsearchsection	Common/search.script
+2024-06-28 11:25:59.766 -0400	imagefound	(TEXT:"Windows cannot find")	Unable to Find Image (TEXT:"Windows cannot find"). Text not found.	10	function_isimagetextfound	Common/check.script
+2024-06-28 11:26:00.311 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-28 11:26:00.957 -0400	set		DEFAULTTEXTPLATFORM = Generic OCR	2	function_isimagetextfound	Common/check.script
+2024-06-28 11:26:01.364 -0400	set		SEARCHRECTANGLE = [[0,0],[1920,540]]	3	on_setsearchsection	Common/search.script
+2024-06-28 11:26:04.276 -0400	imagefound	(TEXT:"EXata")	found at (36, 10)	10	function_isimagetextfound	Common/check.script
+2024-06-28 11:26:08.437 -0400	moveto	(TEXT:"EXata")	at (36, 10)	11	function_isimagetextfound	Common/check.script
+2024-06-28 11:26:08.569 -0400	LogSuccess		EXata  is found in TopHalf	2	on_success	Common/cLog.script
+2024-06-28 11:26:08.672 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-28 11:26:09.337 -0400	set		SEARCHRECTANGLE = [[0,0],[480,270]]	3	on_setsearchsection	Common/search.script
+2024-06-28 11:26:10.493 -0400	waitfor	(TEXT:"Scenario Properties")	found at (124, 162)	6	on_waitfortext	Common/waitForEvent.script
+2024-06-28 11:26:10.754 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-28 11:26:11.085 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-28 11:26:11.245 -0400	set		DEFAULTTEXTPLATFORM = Generic OCR	2	on_compare_screen	Common/check.script
+2024-06-28 11:26:11.340 -0400	CompareScreen	[Baseline_Screens]/GUI_Canvas_Windows28 6 2024 _ 11 24 30.png	Captured initial baseline image "GUI_Canvas_Windows28 6 2024 _ 11 24 30"	4	on_compare_screen	Common/check.script
+2024-06-28 11:26:11.974 -0400	Log		main	9	on_startreportfile	HelperUtilities/rptHtml.script
+2024-06-28 11:26:12.137 -0400	Log		C:/Users/pratdaga/Desktop/eggplant_automation/exatagui.suite/Results/main/20240628_112429.716/	13	on_startreportfile	HelperUtilities/rptHtml.script
+2024-06-28 11:26:21.496 -0400	runwithnewresults		basicExataFunctionalityCheck.script (C:/Users/pratdaga/Desktop/eggplant_automation/exatagui.suite/Results/TestCases/Regular/basicExataFunctionalityCheck/20240628_112621.485/LogFile.txt)	22	on_startregulartests	TestCases/Regular/testLauncher.script
+2024-06-28 11:31:54.490 -0400	LogError		TestCases/Regular/basicEXataFunctionalityCheck FAIL	2	on_cerror	Common/cLog.script
+2024-06-28 11:31:55.088 -0400	Throw		basicEXataFunctionalityCheck - ImageTextNotFoundException:  -- sample:not found	30	on_startregulartests	TestCases/Regular/testLauncher.script
+2024-06-28 11:31:55.972 -0400	capturescreen	Screen_Capture_0001.png		37	on_addreportline	HelperUtilities/rptHtml.script
+2024-06-28 11:31:56.426 -0400	LogWarning		step step failed	69	on_addreportline	HelperUtilities/rptHtml.script
+2024-06-28 11:31:58.127 -0400	Throw		basicEXataFunctionalityCheck - ImageTextNotFoundException:  -- sample:not found	49	on_startregulartests	TestCases/Regular/testLauncher.script
+2024-06-28 11:31:58.336 -0400	LogError		main script failed:ImageTextNotFoundException:  -- sample:not found	2	on_cerror	Common/cLog.script
+2024-06-28 11:31:58.810 -0400	set		DEFAULTTEXTPLATFORM = Generic OCR	2	on_closeexatagui	OS/utility.script
+2024-06-28 11:31:59.092 -0400	set		DEFAULTTEXTPLATFORM = Generic OCR	2	function_isimagetextfound	Common/check.script
+2024-06-28 11:31:59.616 -0400	set		SEARCHRECTANGLE = [[0,0],[960,540]]	3	on_setsearchsection	Common/search.script
+2024-06-28 11:32:15.083 -0400	Exception		Searching For Image: OCR Error: Operation was aborted	10	function_isimagetextfound	Common/check.script
+2024-06-28 11:32:15.489 -0400	EndTestCase		(Duration:"465.755", Errors:"9", Exceptions:"8", StartTime:"2024-06-28 11:24:29 -0400", Successes:"18", TestCase:"main.script", Warnings:"1")
+2024-06-28 11:32:15.511 -0400	ABORTED		Execution Time 0:07:45 main.script

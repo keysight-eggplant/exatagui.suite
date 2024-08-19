@@ -1,0 +1,85 @@
+﻿# This script contains the record SUT screen related operations
+#
+
+# to record a SUT screen
+#--------------------------------
+to recordScreen pathOfFunctionToBeCalled, functionName, path,scriptName
+	Try
+		global videoLocations
+		-- Start recording the movie and save the movie file in the specified path
+		StartMovie "/"&path
+		
+		-- Construct the function call string
+		put quote & pathOfFunctionToBeCalled & quote & "." & functionName  into functionCallString
+		
+		-- Execute the function call string using the do command
+		do functionCallString
+		
+		-- Stop the movie recording
+		StopMovie
+		
+		-- construct the savedVideo location
+		put the logFile of the last item of scriptResults(scriptName) into filePath
+		-- Split the path string at each path separator ('/' or '\')
+		put filePath split by "/" into pathParts
+		
+		-- Initialize an empty string to accumulate the desired path
+		put "" into desiredPath
+		
+		-- Initialize a counter to keep track of the current part index
+		put 1 into index
+		
+		-- Loop through each part of the path until the desired part is reached
+		repeat for each part in pathParts
+			-- Append the current part to the accumulated path
+			put part & "/" after desiredPath
+			
+			-- Increment the index counter
+			add 1 to index
+		end repeat
+		
+		delete "logFile.txt" from  desiredPath
+		delete "//" from desiredPath
+		put desiredpath&"/"&path into savedVideoLocation
+		"Common/cLog".success "Saved video:" && savedVideoLocation
+		
+		-- videolocations is already populated then we need to append 
+		if number of items of videoLocations > 0 then
+			set existingVideoLocations to JSONValue(videoLocations)
+			put {key: path, value: savedVideoLocation} into newVideoLocation
+			set mergedVideoLocations to union of existingVideoLocations and newVideoLocation
+			set videoLocations to JSONFormat(mergedVideoLocations)
+		else
+			-- otherwise push into videoLocations
+			put {key: path, value:savedVideoLocation } into newVideoLocations
+			set videoLocations to JSONFormat(newVideoLocations)
+		end if
+		
+	Catch theException
+		"Common/cLog".cError "recordScreen failed: " && theException's reason
+		throw theException
+	End try
+end recordScreen
+
+# to get the video location
+#----------------------------------
+to getVideoLocation videoName
+	Try
+		global videoLocations
+		put videoLocations into jsonData
+		-- Parse JSON data into SenseTalk property list
+		set parsedData to JSONValue(jsonData)
+		-- Search for the specified key and return its value
+		repeat with each item pair in parsedData
+			
+			if pair's key = videoName then
+				return pair's value
+			end if
+		end repeat
+		--if no key found then return from the handler
+		return
+	Catch theException
+		"Common/cLog".cError "recordScreen failed: " && theException's reason
+		throw theException 
+	End try
+end getVideoLocation

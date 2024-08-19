@@ -1,0 +1,21 @@
+﻿2024-06-10 18:59:42.582 -0400	START		Running main.script
+2024-06-10 18:59:42.716 -0400	Log		Started the Execution of the EXataGUI Regression Scripts at 06:59 PM on 06/10/24	2	on_cmessage	Common/cLog.script
+2024-06-10 18:59:42.765 -0400	setoptions		ImageUpdate = Off	2	on_variabledata	HelperUtilities/variableData.script
+2024-06-10 18:59:42.767 -0400	setoptions		MouseMoveMode = 2	2	on_variabledata	HelperUtilities/variableData.script
+2024-06-10 18:59:42.769 -0400	setoptions		MouseMoveSpeed = 10	2	on_variabledata	HelperUtilities/variableData.script
+2024-06-10 18:59:42.771 -0400	setoptions		remoteWorkInterval = 1	2	on_variabledata	HelperUtilities/variableData.script
+2024-06-10 18:59:42.885 -0400	Exception		Remote Connection Unavailable	3	function_checkscreenresolution	Common/check.script
+2024-06-10 18:59:42.904 -0400	LogError		checkScreenResolution failed:remotescreensize Error - Remote Connection Unavailable	2	on_cerror	Common/cLog.script
+2024-06-10 18:59:42.919 -0400	Throw		No Remote Connection - remotescreensize Error - Remote Connection Unavailable	14	function_checkscreenresolution	Common/check.script
+2024-06-10 18:59:42.954 -0400	LogError		initTestCases failed: remotescreensize Error - Remote Connection Unavailable	2	on_cerror	Common/cLog.script
+2024-06-10 18:59:42.969 -0400	Throw		No Remote Connection - remotescreensize Error - Remote Connection Unavailable	15	on_inittestcases	TestCases/launcher.script
+2024-06-10 18:59:42.995 -0400	LogError		main script failed:remotescreensize Error - Remote Connection Unavailable	2	on_cerror	Common/cLog.script
+2024-06-10 18:59:43.278 -0400	Exception		Remote Connection Unavailable	73	on_setsearchsection	Common/search.script
+2024-06-10 18:59:43.309 -0400	LogError		SearchRectangle failed: screenpart Error - Remote Connection Unavailable	2	on_cerror	Common/cLog.script
+2024-06-10 18:59:43.323 -0400	Throw		No Remote Connection - screenpart Error - Remote Connection Unavailable	6	on_setsearchsection	Common/search.script
+2024-06-10 18:59:43.357 -0400	LogError		isImageTextFound failed: screenpart Error - Remote Connection Unavailable	2	on_cerror	Common/cLog.script
+2024-06-10 18:59:43.377 -0400	Throw		No Remote Connection - screenpart Error - Remote Connection Unavailable	26	function_isimagetextfound	Common/check.script
+2024-06-10 18:59:43.412 -0400	LogError		cleanUpTestCases failed: screenpart Error - Remote Connection Unavailable	2	on_cerror	Common/cLog.script
+2024-06-10 18:59:43.428 -0400	Throw		No Remote Connection - screenpart Error - Remote Connection Unavailable	8	on_cleanuptestcases	TestCases/launcher.script
+2024-06-10 18:59:43.453 -0400	EndTestCase		(Duration:"0.868", Errors:"7", Exceptions:"7", StartTime:"2024-06-10 18:59:42 -0400", Successes:"0", TestCase:"main.script", Warnings:"0")
+2024-06-10 18:59:43.475 -0400	FAILURE		No Remote Connection: screenpart Error - Remote Connection Unavailable -- Execution Time 0:00:00 main.script

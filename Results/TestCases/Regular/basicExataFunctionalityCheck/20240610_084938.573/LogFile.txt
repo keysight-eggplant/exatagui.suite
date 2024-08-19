@@ -1,0 +1,291 @@
+﻿2024-06-10 08:49:38.583 -0400	START		Running TestCases/Regular/basicExataFunctionalityCheck.script	22	on_startregulartests	TestCases/Regular/testLauncher.script
+2024-06-10 08:49:38.607 -0400	BeginTestCase		basicEXataFunctionalityCheck	2	on_basicexatafunctionalitycheck	TestCases/Regular/basicExataFunctionalityCheck.script
+2024-06-10 08:49:38.910 -0400	CompareScreen	[Baseline_Screens]/GUI_Canvas_Windows10 6 2024 _ 8 48 35.png	CompareScreen "GUI_Canvas_Windows10 6 2024 _ 8 48 35" -- No significant differences from baseline	3	on_compare_screen	Common/check.script
+2024-06-10 08:49:39.087 -0400	CompareScreen	[Baseline_Screens]/GUI_Canvas_Windows10 6 2024 _ 8 48 35.png	CompareScreen "GUI_Canvas_Windows10 6 2024 _ 8 48 35" -- No significant differences from baseline	3	function_compare_screen	Common/check.script
+2024-06-10 08:49:39.905 -0400	click	Select_tool	at (130, 92)	4	on_validate	Common/clickEvent.script
+2024-06-10 08:49:39.932 -0400	LogSuccess		Select tool is present in Navigation Toolbar	2	on_success	Common/cLog.script
+2024-06-10 08:49:41.405 -0400	click	node_device	at (51, 222)	4	on_leftevent	Common/clickEvent.script
+2024-06-10 08:49:44.178 -0400	click		at (917, 429)	3	on_clickscaled	Common/clickEvent.script
+2024-06-10 08:49:46.353 -0400	click		at (1253, 770)	3	on_clickscaled	Common/clickEvent.script
+2024-06-10 08:49:46.432 -0400	Log		Global Click Coordinates: [{key:1, value:"0.4775-0.3975"},{key:2, value:"0.6525-0.7125"}]	2	on_cmessage	Common/cLog.script
+2024-06-10 08:49:50.312 -0400	click	Select_Tool	at (130, 92)	4	on_leftevent	Common/clickEvent.script
+2024-06-10 08:49:50.710 -0400	set		SEARCHRECTANGLE = [[211.2,993.6],[288,1026]]	3	on_setsearchsection	Common/search.script
+2024-06-10 08:49:50.868 -0400	imagefound	(TEXT:"Table View")	found at (253, 1008)	7	on_onfoundimagelocation	Common/clickEvent.script
+2024-06-10 08:49:53.091 -0400	click		at (253, 1008)	8	on_onfoundimagelocation	Common/clickEvent.script
+2024-06-10 08:49:53.117 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-10 08:49:53.542 -0400	set		SEARCHRECTANGLE = [[230.4,723.6],[268.8,766.8]]	3	on_setsearchsection	Common/search.script
+2024-06-10 08:49:53.702 -0400	imagefound	(TEXT:"Nodes")	found at (244, 743)	7	on_onfoundimagelocation	Common/clickEvent.script
+2024-06-10 08:49:54.628 -0400	click		at (244, 743)	8	on_onfoundimagelocation	Common/clickEvent.script
+2024-06-10 08:49:54.665 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-10 08:49:55.166 -0400	set		SEARCHRECTANGLE = [[230.4,766.8],[307.2,993.6]]	3	on_setsearchsection	Common/search.script
+2024-06-10 08:49:55.338 -0400	imagefound	(TEXT:"2")	found at (241, 834)	9	function_isimagetextfound	Common/check.script
+2024-06-10 08:49:55.853 -0400	moveto	(TEXT:"2")	at (241, 834)	10	function_isimagetextfound	Common/check.script
+2024-06-10 08:49:55.908 -0400	LogSuccess		2  is found in NodeIdView	2	on_success	Common/cLog.script
+2024-06-10 08:49:55.982 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-10 08:49:56.120 -0400	LogSuccess		node placement validated successfully	2	on_success	Common/cLog.script
+2024-06-10 08:49:56.459 -0400	set		SEARCHRECTANGLE = [[211.2,993.6],[288,1026]]	3	on_setsearchsection	Common/search.script
+2024-06-10 08:49:56.714 -0400	imagefound	(TEXT:"Table_View")	found at (253, 1008)	7	on_onfoundimagelocation	Common/clickEvent.script
+2024-06-10 08:49:57.267 -0400	click		at (253, 1008)	8	on_onfoundimagelocation	Common/clickEvent.script
+2024-06-10 08:49:57.310 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-10 08:49:57.488 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-10 08:49:58.995 -0400	click	links	at (52, 853)	4	on_validate	Common/clickEvent.script
+2024-06-10 08:49:59.027 -0400	LogSuccess		Links is present in Links toolbar	2	on_success	Common/cLog.script
+2024-06-10 08:50:00.141 -0400	click	links	at (53, 854)	4	on_leftevent	Common/clickEvent.script
+2024-06-10 08:50:03.203 -0400	moveto		at (917, 429)	4	on_draganddropitem	EXataGUI/actions/canvas.script
+2024-06-10 08:50:04.210 -0400	mousebuttondown		Button:1	6	on_draganddropitem	EXataGUI/actions/canvas.script
+2024-06-10 08:50:06.283 -0400	moveto		at (1253, 770)	8	on_draganddropitem	EXataGUI/actions/canvas.script
+2024-06-10 08:50:07.290 -0400	mousebuttonup		Button:1	10	on_draganddropitem	EXataGUI/actions/canvas.script
+2024-06-10 08:50:07.665 -0400	set		SEARCHRECTANGLE = [[211.2,993.6],[288,1026]]	3	on_setsearchsection	Common/search.script
+2024-06-10 08:50:07.829 -0400	imagefound	(TEXT:"Table View")	found at (253, 1008)	7	on_onfoundimagelocation	Common/clickEvent.script
+2024-06-10 08:50:10.315 -0400	click		at (253, 1008)	8	on_onfoundimagelocation	Common/clickEvent.script
+2024-06-10 08:50:10.341 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-10 08:50:10.725 -0400	set		SEARCHRECTANGLE = [[403.2,723.6],[480,756]]	3	on_setsearchsection	Common/search.script
+2024-06-10 08:50:10.913 -0400	imagefound	(TEXT:"Networks")	found at (438, 744)	7	on_onfoundimagelocation	Common/clickEvent.script
+2024-06-10 08:50:12.133 -0400	click		at (438, 744)	8	on_onfoundimagelocation	Common/clickEvent.script
+2024-06-10 08:50:12.222 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-10 08:50:12.641 -0400	set		SEARCHRECTANGLE = [[1497.6,766.8],[1651.2,982.8]]	3	on_setsearchsection	Common/search.script
+2024-06-10 08:50:12.862 -0400	imagefound	(TEXT:"LINK1")	found at (1518, 805)	9	function_isimagetextfound	Common/check.script
+2024-06-10 08:50:14.985 -0400	moveto	(TEXT:"LINK1")	at (1518, 805)	10	function_isimagetextfound	Common/check.script
+2024-06-10 08:50:15.030 -0400	LogSuccess		LINK1  is found in LinkUuidView	2	on_success	Common/cLog.script
+2024-06-10 08:50:15.089 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-10 08:50:15.242 -0400	LogSuccess		link between nodes validated successfully	2	on_success	Common/cLog.script
+2024-06-10 08:50:15.564 -0400	set		SEARCHRECTANGLE = [[211.2,993.6],[288,1026]]	3	on_setsearchsection	Common/search.script
+2024-06-10 08:50:15.746 -0400	imagefound	(TEXT:"Table_View")	found at (253, 1008)	7	on_onfoundimagelocation	Common/clickEvent.script
+2024-06-10 08:50:18.386 -0400	click		at (253, 1008)	8	on_onfoundimagelocation	Common/clickEvent.script
+2024-06-10 08:50:18.420 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-10 08:50:18.579 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-10 08:50:19.785 -0400	click	Select_Application	at (165, 933)	4	on_validate	Common/clickEvent.script
+2024-06-10 08:50:19.818 -0400	LogSuccess		CBR is present in Applications toolbar	2	on_success	Common/cLog.script
+2024-06-10 08:50:20.936 -0400	click	Select_Application	at (166, 934)	4	on_leftevent	Common/clickEvent.script
+2024-06-10 08:50:23.929 -0400	moveto		at (917, 429)	4	on_draganddropitem	EXataGUI/actions/canvas.script
+2024-06-10 08:50:24.939 -0400	mousebuttondown		Button:1	6	on_draganddropitem	EXataGUI/actions/canvas.script
+2024-06-10 08:50:27.008 -0400	moveto		at (1253, 770)	8	on_draganddropitem	EXataGUI/actions/canvas.script
+2024-06-10 08:50:28.015 -0400	mousebuttonup		Button:1	10	on_draganddropitem	EXataGUI/actions/canvas.script
+2024-06-10 08:50:28.373 -0400	set		SEARCHRECTANGLE = [[211.2,993.6],[288,1026]]	3	on_setsearchsection	Common/search.script
+2024-06-10 08:50:28.544 -0400	imagefound	(TEXT:"Table View")	found at (253, 1008)	7	on_onfoundimagelocation	Common/clickEvent.script
+2024-06-10 08:50:31.042 -0400	click		at (253, 1008)	8	on_onfoundimagelocation	Common/clickEvent.script
+2024-06-10 08:50:31.073 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-10 08:50:31.539 -0400	set		SEARCHRECTANGLE = [[480,734.4],[537.6,766.8]]	3	on_setsearchsection	Common/search.script
+2024-06-10 08:50:31.702 -0400	imagefound	(TEXT:"Application")	found at (510, 745)	7	on_onfoundimagelocation	Common/clickEvent.script
+2024-06-10 08:50:33.008 -0400	click		at (510, 745)	8	on_onfoundimagelocation	Common/clickEvent.script
+2024-06-10 08:50:33.051 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-10 08:50:33.447 -0400	set		SEARCHRECTANGLE = [[556.8,766.8],[902.4,993.6]]	3	on_setsearchsection	Common/search.script
+2024-06-10 08:50:33.618 -0400	imagefound	(TEXT:"1")	found at (579, 805)	9	function_isimagetextfound	Common/check.script
+2024-06-10 08:50:34.259 -0400	moveto	(TEXT:"1")	at (579, 805)	10	function_isimagetextfound	Common/check.script
+2024-06-10 08:50:34.299 -0400	LogSuccess		1  is found in SourceView	2	on_success	Common/cLog.script
+2024-06-10 08:50:34.356 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-10 08:50:34.495 -0400	LogSuccess		Traffic between nodes validated successfully	2	on_success	Common/cLog.script
+2024-06-10 08:50:34.786 -0400	set		SEARCHRECTANGLE = [[211.2,993.6],[288,1026]]	3	on_setsearchsection	Common/search.script
+2024-06-10 08:50:35.023 -0400	imagefound	(TEXT:"Table_View")	found at (253, 1008)	7	on_onfoundimagelocation	Common/clickEvent.script
+2024-06-10 08:50:36.198 -0400	click		at (253, 1008)	8	on_onfoundimagelocation	Common/clickEvent.script
+2024-06-10 08:50:36.336 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-10 08:50:36.461 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-10 08:50:36.788 -0400	set		SEARCHRECTANGLE = [[0,0],[249.6,151.2]]	3	on_setsearchsection	Common/search.script
+2024-06-10 08:50:39.516 -0400	click	(TEXT:"File")	at (14, 31)	6	on_leftevent	Common/clickEvent.script
+2024-06-10 08:50:40.887 -0400	imagefound	(TEXT:"New")	found at (44, 55)	9	function_isimagetextfound	Common/check.script
+2024-06-10 08:50:41.270 -0400	moveto	(TEXT:"New")	at (44, 55)	10	function_isimagetextfound	Common/check.script
+2024-06-10 08:50:41.303 -0400	LogSuccess		New  is found in 	2	on_success	Common/cLog.script
+2024-06-10 08:50:41.363 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-10 08:50:41.492 -0400	LogSuccess		File menu opened successfully	2	on_success	Common/cLog.script
+2024-06-10 08:50:41.636 -0400	capturescreen	verifyFileMenu.png	(0,2,808,810)	4	on_capturescreenshots	Common/captureScreenShots.script
+2024-06-10 08:50:41.797 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-10 08:50:42.227 -0400	set		SEARCHRECTANGLE = [[0,0],[480,270]]	3	on_setsearchsection	Common/search.script
+2024-06-10 08:50:43.519 -0400	click	(TEXT:"Save As")	at (53, 262)	6	on_leftevent	Common/clickEvent.script
+2024-06-10 08:50:43.589 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-10 08:50:53.827 -0400	imagefound	(TEXT:"cancel")	found at (890, 528)	9	function_isimagetextfound	Common/check.script
+2024-06-10 08:50:59.007 -0400	moveto	(TEXT:"cancel")	at (890, 528)	10	function_isimagetextfound	Common/check.script
+2024-06-10 08:50:59.061 -0400	LogSuccess		cancel  is found in 	2	on_success	Common/cLog.script
+2024-06-10 08:50:59.113 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-10 08:50:59.199 -0400	LogSuccess		Save as dialog box opened successfully	2	on_success	Common/cLog.script
+2024-06-10 08:50:59.249 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-10 08:51:02.911 -0400	imagefound	(TEXT:"cancel")	found at (890, 528)	9	function_isimagetextfound	Common/check.script
+2024-06-10 08:51:05.987 -0400	moveto	(TEXT:"cancel")	at (890, 528)	10	function_isimagetextfound	Common/check.script
+2024-06-10 08:51:06.052 -0400	LogSuccess		cancel  is found in 	2	on_success	Common/cLog.script
+2024-06-10 08:51:06.116 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-10 08:51:07.427 -0400	typetext		sample.config	3	on_entertext	Common/keyBoard.script
+2024-06-10 08:51:08.479 -0400	typetext		[returnKey]	3	on_entertext	Common/keyBoard.script
+2024-06-10 08:51:08.913 -0400	set		SEARCHRECTANGLE = [[710.4,442.8],[1209.6,594]]	3	on_setsearchsection	Common/search.script
+2024-06-10 08:51:09.169 -0400	imagefound	(TEXT:"Save Scenario")	found at (767, 468)	9	function_isimagetextfound	Common/check.script
+2024-06-10 08:51:09.916 -0400	moveto	(TEXT:"Save Scenario")	at (767, 468)	10	function_isimagetextfound	Common/check.script
+2024-06-10 08:51:09.967 -0400	LogSuccess		Save Scenario  is found in ReplaceSaveScenarioView	2	on_success	Common/cLog.script
+2024-06-10 08:51:10.034 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-10 08:51:10.961 -0400	typetext		[returnKey]	3	on_entertext	Common/keyBoard.script
+2024-06-10 08:51:11.386 -0400	set		SEARCHRECTANGLE = [[480,0],[1440,1080]]	3	on_setsearchsection	Common/search.script
+2024-06-10 08:51:15.756 -0400	imagefound	(TEXT:"Copy Scenario Files")	found at (818, 366)	9	function_isimagetextfound	Common/check.script
+2024-06-10 08:51:17.735 -0400	moveto	(TEXT:"Copy Scenario Files")	at (818, 366)	10	function_isimagetextfound	Common/check.script
+2024-06-10 08:51:17.784 -0400	LogSuccess		Copy Scenario Files  is found in VerticalMiddle	2	on_success	Common/cLog.script
+2024-06-10 08:51:17.859 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-10 08:51:18.267 -0400	set		SEARCHRECTANGLE = [[480,0],[1440,1080]]	3	on_setsearchsection	Common/search.script
+2024-06-10 08:51:20.017 -0400	imagefound	(TEXT:"Select All")	found at (809, 431)	7	on_onfoundimagelocation	Common/clickEvent.script
+2024-06-10 08:51:20.312 -0400	click		at (809, 431)	8	on_onfoundimagelocation	Common/clickEvent.script
+2024-06-10 08:51:20.360 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-10 08:51:20.811 -0400	set		SEARCHRECTANGLE = [[1075.2,637.2],[1152,680.4]]	3	on_setsearchsection	Common/search.script
+2024-06-10 08:51:20.972 -0400	imagefound	(TEXT:"Copy")	found at (1110, 659)	7	on_onfoundimagelocation	Common/clickEvent.script
+2024-06-10 08:51:22.298 -0400	click		at (1110, 659)	8	on_onfoundimagelocation	Common/clickEvent.script
+2024-06-10 08:51:22.336 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-10 08:51:22.575 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-10 08:51:22.652 -0400	LogSuccess		Save As Operation completed successfully.	2	on_success	Common/cLog.script
+2024-06-10 08:51:23.069 -0400	set		SEARCHRECTANGLE = [[211.2,140.4],[633.6,183.6]]	3	on_setsearchsection	Common/search.script
+2024-06-10 08:51:23.234 -0400	imagefound	(TEXT:"sample")	found at (243, 159)	9	function_isimagetextfound	Common/check.script
+2024-06-10 08:51:25.508 -0400	moveto	(TEXT:"sample")	at (243, 159)	10	function_isimagetextfound	Common/check.script
+2024-06-10 08:51:25.544 -0400	LogSuccess		sample  is found in ScenarioNameView	2	on_success	Common/cLog.script
+2024-06-10 08:51:25.595 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-10 08:51:25.760 -0400	LogSuccess		Saved Scenario validated successfully	2	on_success	Common/cLog.script
+2024-06-10 08:51:26.232 -0400	set		SEARCHRECTANGLE = [[0,0],[480,270]]	3	on_setsearchsection	Common/search.script
+2024-06-10 08:51:26.762 -0400	imagefound	(TEXT:"Emulation")	found at (319, 126)	9	function_isimagetextfound	Common/check.script
+2024-06-10 08:51:27.464 -0400	moveto	(TEXT:"Emulation")	at (319, 126)	10	function_isimagetextfound	Common/check.script
+2024-06-10 08:51:27.505 -0400	LogSuccess		Emulation  is found in HalfOfTopLeftQuadrant	2	on_success	Common/cLog.script
+2024-06-10 08:51:27.577 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-10 08:51:28.089 -0400	set		SEARCHRECTANGLE = [[0,0],[480,270]]	3	on_setsearchsection	Common/search.script
+2024-06-10 08:51:28.755 -0400	imagefound	(TEXT:"Emulation")	found at (319, 126)	7	on_onfoundimagelocation	Common/clickEvent.script
+2024-06-10 08:51:28.987 -0400	click		at (319, 126)	8	on_onfoundimagelocation	Common/clickEvent.script
+2024-06-10 08:51:29.017 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-10 08:51:29.478 -0400	set		SEARCHRECTANGLE = [[0,0],[480,270]]	3	on_setsearchsection	Common/search.script
+2024-06-10 08:51:30.428 -0400	imagefound	(TEXT:"Simulation")	found at (322, 161)	7	on_onfoundimagelocation	Common/clickEvent.script
+2024-06-10 08:51:30.698 -0400	click		at (322, 161)	8	on_onfoundimagelocation	Common/clickEvent.script
+2024-06-10 08:51:30.742 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-10 08:51:32.841 -0400	click	run_simulation	at (87, 123)	4	on_leftevent	Common/clickEvent.script
+2024-06-10 08:51:33.245 -0400	set		SEARCHRECTANGLE = [[960,561.6],[1075.2,583.2]]	3	on_setsearchsection	Common/search.script
+2024-06-10 08:51:35.476 -0400	imagefound	(TEXT:"Select Another Port...")	Unable to Find Image (TEXT:"Select Another Port..."). Text not found.	9	function_isimagetextfound	Common/check.script
+2024-06-10 08:51:35.510 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-10 08:51:35.967 -0400	set		SEARCHRECTANGLE = [[1036.8,972],[1094.4,982.8]]	3	on_setsearchsection	Common/search.script
+2024-06-10 08:51:47.662 -0400	waitfor	(TEXT:"0%")	found at (1066, 977)	6	on_waitfortext	Common/waitForEvent.script
+2024-06-10 08:51:47.769 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-10 08:51:47.932 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-10 08:51:48.033 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-10 08:51:51.073 -0400	click	play_btn	at (1077, 937)	4	on_validate	Common/clickEvent.script
+2024-06-10 08:51:51.104 -0400	LogSuccess		Play Button exists in the Animation Control Bar	2	on_success	Common/cLog.script
+2024-06-10 08:51:51.562 -0400	set		SEARCHRECTANGLE = [[1036.8,972],[1094.4,982.8]]	3	on_setsearchsection	Common/search.script
+2024-06-10 08:51:51.776 -0400	imagefound	(TEXT:"100%")	found at (1066, 977)	9	function_isimagetextfound	Common/check.script
+2024-06-10 08:51:52.225 -0400	moveto	(TEXT:"100%")	at (1066, 977)	10	function_isimagetextfound	Common/check.script
+2024-06-10 08:51:52.250 -0400	LogSuccess		100%  is found in SimulationView	2	on_success	Common/cLog.script
+2024-06-10 08:51:52.315 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-10 08:51:52.480 -0400	LogSuccess		Simulation validated successfully	2	on_success	Common/cLog.script
+2024-06-10 08:51:52.907 -0400	set		SEARCHRECTANGLE = [[288,43.2],[364.8,75.6]]	3	on_setsearchsection	Common/search.script
+2024-06-10 08:51:53.181 -0400	imagefound	(TEXT:"File Editor")	found at (332, 58)	9	function_isimagetextfound	Common/check.script
+2024-06-10 08:51:56.072 -0400	moveto	(TEXT:"File Editor")	at (332, 58)	10	function_isimagetextfound	Common/check.script
+2024-06-10 08:51:56.113 -0400	LogSuccess		File Editor  is found in fileEditorButton	2	on_success	Common/cLog.script
+2024-06-10 08:51:56.182 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-10 08:51:59.328 -0400	imagefound	(TEXT:"File Editor")	found at (332, 58)	7	on_onfoundimagelocation	Common/clickEvent.script
+2024-06-10 08:51:59.548 -0400	click		at (332, 58)	8	on_onfoundimagelocation	Common/clickEvent.script
+2024-06-10 08:51:59.576 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-10 08:51:59.664 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-10 08:52:00.602 -0400	typetext		[windowsKey]r	3	on_entertext	Common/keyBoard.script
+2024-06-10 08:52:00.996 -0400	set		SEARCHRECTANGLE = [[19.2,820.8],[76.8,853.2]]	3	on_setsearchsection	Common/search.script
+2024-06-10 08:52:01.194 -0400	waitfor	(TEXT:"Run")	found at (54, 837)	6	on_waitfortext	Common/waitForEvent.script
+2024-06-10 08:52:01.340 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-10 08:52:01.924 -0400	typetext		powershell	3	on_entertext	Common/keyBoard.script
+2024-06-10 08:52:02.967 -0400	typetext		[returnKey]	3	on_entertext	Common/keyBoard.script
+2024-06-10 08:52:03.382 -0400	set		SEARCHRECTANGLE = [[672,421.2],[1228.8,540]]	3	on_setsearchsection	Common/search.script
+2024-06-10 08:52:08.601 -0400	imagefound	(TEXT:"Windows cannot find")	Unable to Find Image (TEXT:"Windows cannot find"). Text not found.	9	function_isimagetextfound	Common/check.script
+2024-06-10 08:52:08.647 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-10 08:52:09.037 -0400	typetext		[windowsKey][upArrow]	3	on_entertext	Common/keyBoard.script
+2024-06-10 08:52:11.933 -0400	typetext		$path="C:\Users\pratdaga\Documents\UserScenarios\sample"	3	on_entertext	Common/keyBoard.script
+2024-06-10 08:52:12.982 -0400	typetext		[returnKey]	3	on_entertext	Common/keyBoard.script
+2024-06-10 08:52:14.145 -0400	typetext		clear	3	on_entertext	Common/keyBoard.script
+2024-06-10 08:52:15.194 -0400	typetext		[returnKey]	3	on_entertext	Common/keyBoard.script
+2024-06-10 08:52:17.438 -0400	typetext		$exist="The path exists in the system"	3	on_entertext	Common/keyBoard.script
+2024-06-10 08:52:18.477 -0400	typetext		[returnKey]	3	on_entertext	Common/keyBoard.script
+2024-06-10 08:52:19.638 -0400	typetext		clear	3	on_entertext	Common/keyBoard.script
+2024-06-10 08:52:20.681 -0400	typetext		[returnKey]	3	on_entertext	Common/keyBoard.script
+2024-06-10 08:52:23.355 -0400	typetext		$not_exist="The path does not exists in the system"	3	on_entertext	Common/keyBoard.script
+2024-06-10 08:52:24.398 -0400	typetext		[returnKey]	3	on_entertext	Common/keyBoard.script
+2024-06-10 08:52:25.575 -0400	typetext		clear	3	on_entertext	Common/keyBoard.script
+2024-06-10 08:52:26.617 -0400	typetext		[returnKey]	3	on_entertext	Common/keyBoard.script
+2024-06-10 08:52:30.317 -0400	typetext		if(Test-Path -Path $path) { Write-Host $exist } else { Write-Host $not_exist }	3	on_entertext	Common/keyBoard.script
+2024-06-10 08:52:31.360 -0400	typetext		[returnKey]	3	on_entertext	Common/keyBoard.script
+2024-06-10 08:52:37.920 -0400	imagefound	(TEXT:"The Path does not exists in the system")	Unable to Find Image (TEXT:"The Path does not exists in the system"). Text not found.	9	function_isimagetextfound	Common/check.script
+2024-06-10 08:52:37.960 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-10 08:52:39.818 -0400	typetext		cd C:\Users\pratdaga\Documents\UserScenarios\sample	3	on_entertext	Common/keyBoard.script
+2024-06-10 08:52:40.874 -0400	typetext		[returnKey]	3	on_entertext	Common/keyBoard.script
+2024-06-10 08:52:44.963 -0400	typetext		$firstFile = Get-ChildItem | Sort-Object LastWriteTime -Descending | Select-Object -First 1	3	on_entertext	Common/keyBoard.script
+2024-06-10 08:52:46.013 -0400	typetext		[returnKey]	3	on_entertext	Common/keyBoard.script
+2024-06-10 08:52:49.033 -0400	typetext		Rename-Item -Path $firstFile.FullName -NewName "sample.stat"	3	on_entertext	Common/keyBoard.script
+2024-06-10 08:52:50.071 -0400	typetext		[returnKey]	3	on_entertext	Common/keyBoard.script
+2024-06-10 08:52:51.208 -0400	typetext		exit	3	on_entertext	Common/keyBoard.script
+2024-06-10 08:52:52.248 -0400	typetext		[returnKey]	3	on_entertext	Common/keyBoard.script
+2024-06-10 08:52:53.302 -0400	typetext		[controlKey]o	3	on_entertext	Common/keyBoard.script
+2024-06-10 08:53:00.872 -0400	imagefound	(TEXT:"cancel")	found at (890, 528)	9	function_isimagetextfound	Common/check.script
+2024-06-10 08:53:07.802 -0400	moveto	(TEXT:"cancel")	at (890, 528)	10	function_isimagetextfound	Common/check.script
+2024-06-10 08:53:07.848 -0400	LogSuccess		cancel  is found in 	2	on_success	Common/cLog.script
+2024-06-10 08:53:07.917 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-10 08:53:08.995 -0400	typetext		sample	3	on_entertext	Common/keyBoard.script
+2024-06-10 08:53:10.034 -0400	typetext		[returnKey]	3	on_entertext	Common/keyBoard.script
+2024-06-10 08:53:10.400 -0400	set		SEARCHRECTANGLE = [[384,216],[460.8,248.4]]	3	on_setsearchsection	Common/search.script
+2024-06-10 08:53:13.593 -0400	imagefound	(TEXT:"Results")	Unable to Find Image (TEXT:"Results"). Text not found.	9	function_isimagetextfound	Common/check.script
+2024-06-10 08:53:13.642 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-10 08:53:14.147 -0400	typetext		sample.stat	3	on_entertext	Common/keyBoard.script
+2024-06-10 08:53:15.197 -0400	typetext		[returnKey]	3	on_entertext	Common/keyBoard.script
+2024-06-10 08:53:16.253 -0400	typetext		[windowsKey]r	3	on_entertext	Common/keyBoard.script
+2024-06-10 08:53:16.669 -0400	set		SEARCHRECTANGLE = [[19.2,820.8],[76.8,853.2]]	3	on_setsearchsection	Common/search.script
+2024-06-10 08:53:16.877 -0400	waitfor	(TEXT:"Run")	found at (54, 837)	6	on_waitfortext	Common/waitForEvent.script
+2024-06-10 08:53:16.986 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-10 08:53:19.603 -0400	typetext		notepad "C:\Users\pratdaga\Documents\UserScenarios\sample\sample.stat"	3	on_entertext	Common/keyBoard.script
+2024-06-10 08:53:20.648 -0400	typetext		[returnKey]	3	on_entertext	Common/keyBoard.script
+2024-06-10 08:53:21.703 -0400	typetext		[windowsKey][upArrow]	3	on_entertext	Common/keyBoard.script
+2024-06-10 08:53:22.760 -0400	typetext		[controlKey]a	3	on_entertext	Common/keyBoard.script
+2024-06-10 08:53:23.818 -0400	typetext		[controlKey]c	3	on_entertext	Common/keyBoard.script
+2024-06-10 08:53:30.003 -0400	Log		Line 484  is having the "2,               ,[1024], Application,  CBR Server,Total Unicast Messages Received (messages) = 24"	2	on_cmessage	Common/cLog.script
+2024-06-10 08:53:30.287 -0400	typetext		[windowsAltKey][F4]	3	on_entertext	Common/keyBoard.script
+2024-06-10 08:53:31.345 -0400	typetext		[controlKey]f	3	on_entertext	Common/keyBoard.script
+2024-06-10 08:53:35.639 -0400	typetext		2,               ,[1024], Application,  CBR Server,Total Unicast Messages Received (messages) = 24	3	on_entertext	Common/keyBoard.script
+2024-06-10 08:53:36.886 -0400	click		at (960, 540)	3	on_clickscaled	Common/clickEvent.script
+2024-06-10 08:53:37.298 -0400	set		SEARCHRECTANGLE = [[38.4,820.8],[556.8,993.6]]	3	on_setsearchsection	Common/search.script
+2024-06-10 08:53:37.709 -0400	imagefound	(TEXT:"Total Unicast Messages Received (messages) = 24")	found at (387, 980)	9	function_isimagetextfound	Common/check.script
+2024-06-10 08:53:39.915 -0400	moveto	(TEXT:"Total Unicast Messages Received (messages) = 24")	at (387, 980)	10	function_isimagetextfound	Common/check.script
+2024-06-10 08:53:39.974 -0400	LogSuccess		Total Unicast Messages Received (messages) = 24  is found in StatDbData	2	on_success	Common/cLog.script
+2024-06-10 08:53:40.075 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-10 08:53:40.219 -0400	LogSuccess		The statistics have been successfully verified.	2	on_success	Common/cLog.script
+2024-06-10 08:53:40.347 -0400	capturescreen	basicEXataFunctionalityCheck.png	(34,851,558,986)	4	on_capturescreenshots	Common/captureScreenShots.script
+2024-06-10 08:53:40.972 -0400	typetext		[windowsKey]r	3	on_entertext	Common/keyBoard.script
+2024-06-10 08:53:41.444 -0400	set		SEARCHRECTANGLE = [[19.2,820.8],[76.8,853.2]]	3	on_setsearchsection	Common/search.script
+2024-06-10 08:53:41.703 -0400	waitfor	(TEXT:"Run")	found at (54, 837)	6	on_waitfortext	Common/waitForEvent.script
+2024-06-10 08:53:41.806 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-10 08:53:42.302 -0400	typetext		powershell	3	on_entertext	Common/keyBoard.script
+2024-06-10 08:53:43.342 -0400	typetext		[returnKey]	3	on_entertext	Common/keyBoard.script
+2024-06-10 08:53:44.399 -0400	typetext		[windowsKey][upArrow]	3	on_entertext	Common/keyBoard.script
+2024-06-10 08:53:47.087 -0400	typetext		cd C:\Users\pratdaga\Documents\UserScenarios\sample	3	on_entertext	Common/keyBoard.script
+2024-06-10 08:53:48.132 -0400	typetext		[returnKey]	3	on_entertext	Common/keyBoard.script
+2024-06-10 08:53:50.187 -0400	typetext		Remove-Item -Path "sample.stat"	3	on_entertext	Common/keyBoard.script
+2024-06-10 08:53:51.226 -0400	typetext		[returnKey]	3	on_entertext	Common/keyBoard.script
+2024-06-10 08:53:52.364 -0400	typetext		exit	3	on_entertext	Common/keyBoard.script
+2024-06-10 08:53:53.409 -0400	typetext		[returnKey]	3	on_entertext	Common/keyBoard.script
+2024-06-10 08:53:53.823 -0400	set		SEARCHRECTANGLE = [[710.4,453.6],[748.8,475.2]]	3	on_setsearchsection	Common/search.script
+2024-06-10 08:53:53.985 -0400	imagefound	(TEXT:"EXata")	found at (731, 462)	9	function_isimagetextfound	Common/check.script
+2024-06-10 08:53:55.800 -0400	moveto	(TEXT:"EXata")	at (731, 462)	10	function_isimagetextfound	Common/check.script
+2024-06-10 08:53:55.842 -0400	LogSuccess		EXata  is found in ApplicationUpdatePopUp	2	on_success	Common/cLog.script
+2024-06-10 08:53:55.895 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-10 08:53:56.842 -0400	typetext		[returnKey]	3	on_entertext	Common/keyBoard.script
+2024-06-10 08:53:57.353 -0400	set		SEARCHRECTANGLE = [[710.4,442.8],[748.8,464.4]]	3	on_setsearchsection	Common/search.script
+2024-06-10 08:53:57.567 -0400	imagefound	(TEXT:"EXata")	found at (731, 449)	9	function_isimagetextfound	Common/check.script
+2024-06-10 08:53:57.929 -0400	moveto	(TEXT:"EXata")	at (731, 449)	10	function_isimagetextfound	Common/check.script
+2024-06-10 08:53:58.026 -0400	LogSuccess		EXata  is found in FileClosurePopUp	2	on_success	Common/cLog.script
+2024-06-10 08:53:58.094 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-10 08:53:58.975 -0400	typetext		[returnKey]	3	on_entertext	Common/keyBoard.script
+2024-06-10 08:53:59.601 -0400	set		SEARCHRECTANGLE = [[0,43.2],[96,86.4]]	3	on_setsearchsection	Common/search.script
+2024-06-10 08:53:59.789 -0400	imagefound	(TEXT:"Architect")	found at (57, 58)	9	function_isimagetextfound	Common/check.script
+2024-06-10 08:54:01.722 -0400	moveto	(TEXT:"Architect")	at (57, 58)	10	function_isimagetextfound	Common/check.script
+2024-06-10 08:54:01.768 -0400	LogSuccess		Architect  is found in ArchitectButton	2	on_success	Common/cLog.script
+2024-06-10 08:54:01.839 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-10 08:54:02.304 -0400	set		SEARCHRECTANGLE = [[0,43.2],[96,86.4]]	3	on_setsearchsection	Common/search.script
+2024-06-10 08:54:02.531 -0400	imagefound	(TEXT:"Architect")	found at (57, 58)	7	on_onfoundimagelocation	Common/clickEvent.script
+2024-06-10 08:54:02.860 -0400	click		at (57, 58)	8	on_onfoundimagelocation	Common/clickEvent.script
+2024-06-10 08:54:02.897 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-10 08:54:03.396 -0400	set		SEARCHRECTANGLE = [[0,0],[249.6,151.2]]	3	on_setsearchsection	Common/search.script
+2024-06-10 08:54:04.347 -0400	click	(TEXT:"File")	at (14, 31)	6	on_leftevent	Common/clickEvent.script
+2024-06-10 08:54:05.815 -0400	imagefound	(TEXT:"New")	found at (44, 55)	9	function_isimagetextfound	Common/check.script
+2024-06-10 08:54:06.155 -0400	moveto	(TEXT:"New")	at (44, 55)	10	function_isimagetextfound	Common/check.script
+2024-06-10 08:54:06.183 -0400	LogSuccess		New  is found in 	2	on_success	Common/cLog.script
+2024-06-10 08:54:06.243 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-10 08:54:06.401 -0400	LogSuccess		File menu opened successfully	2	on_success	Common/cLog.script
+2024-06-10 08:54:06.516 -0400	capturescreen	verifyFileMenu.png	(0,2,808,810)	4	on_capturescreenshots	Common/captureScreenShots.script
+2024-06-10 08:54:06.724 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-10 08:54:07.176 -0400	set		SEARCHRECTANGLE = [[0,0],[480,270]]	3	on_setsearchsection	Common/search.script
+2024-06-10 08:54:08.273 -0400	click	(TEXT:"Close All")	at (53, 208)	6	on_leftevent	Common/clickEvent.script
+2024-06-10 08:54:08.357 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-10 08:54:09.307 -0400	CompareScreen	[Baseline_Screens]/GUI_Canvas_Windows10 6 2024 _ 8 48 35.png	CompareScreen "GUI_Canvas_Windows10 6 2024 _ 8 48 35" -- No significant differences from baseline	3	on_compare_screen	Common/check.script
+2024-06-10 08:54:09.460 -0400	CompareScreen	[Baseline_Screens]/GUI_Canvas_Windows10 6 2024 _ 8 48 35.png	CompareScreen "GUI_Canvas_Windows10 6 2024 _ 8 48 35" -- No significant differences from baseline	3	function_compare_screen	Common/check.script
+2024-06-10 08:54:11.823 -0400	click		at (960, 540)	3	on_clickscaled	Common/clickEvent.script
+2024-06-10 08:54:11.877 -0400	EndTestCase		(Duration:"273.27", Errors:"0", Exceptions:"0", StartTime:"2024-06-10 08:49:38 -0400", Successes:"32", TestCase:"basicEXataFunctionalityCheck", Warnings:"0")	31	on_basicexatafunctionalitycheck	TestCases/Regular/basicExataFunctionalityCheck.script
+2024-06-10 08:54:11.894 -0400	EndTestCase		(Duration:"273.306", Errors:"0", Exceptions:"0", StartTime:"2024-06-10 08:49:38 -0400", Successes:"32", TestCase:"TestCases/Regular/basicExataFunctionalityCheck.script", Warnings:"0")	22	on_startregulartests	TestCases/Regular/testLauncher.script
+2024-06-10 08:54:11.933 -0400	SUCCESS		Execution Time 0:04:33 TestCases/Regular/basicExataFunctionalityCheck.script	22	on_startregulartests	TestCases/Regular/testLauncher.script

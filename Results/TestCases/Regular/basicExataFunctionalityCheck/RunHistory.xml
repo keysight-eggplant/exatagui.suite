@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<runHistory script="TestCases/Regular/basicExataFunctionalityCheck">
+ <run>
+  <RunDate>2024-06-24 12:44:19.818 -0400</RunDate>
+  <Status>Success</Status>
+  <Duration>273.192000</Duration>
+  <Errors>0</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>32</Successes>
+  <LogFile>20240624_124419.818/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage></ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2024-06-24 14:02:34.378 -0400</RunDate>
+  <Status>Success</Status>
+  <Duration>251.578000</Duration>
+  <Errors>0</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>32</Successes>
+  <LogFile>20240624_140234.378/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage></ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2024-06-25 08:18:30.784 -0400</RunDate>
+  <Status>Success</Status>
+  <Duration>255.209000</Duration>
+  <Errors>0</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>32</Successes>
+  <LogFile>20240625_081830.784/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage></ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2024-06-25 09:12:23.174 -0400</RunDate>
+  <Status>Success</Status>
+  <Duration>268.749000</Duration>
+  <Errors>0</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>32</Successes>
+  <LogFile>20240625_091223.174/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage></ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2024-06-25 11:45:39.694 -0400</RunDate>
+  <Status>Success</Status>
+  <Duration>228.522000</Duration>
+  <Errors>0</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>32</Successes>
+  <LogFile>20240625_114539.694/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage></ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2024-06-26 11:30:10.534 -0400</RunDate>
+  <Status>Failure</Status>
+  <Duration>115.910000</Duration>
+  <Errors>6</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>5</Exceptions>
+  <Successes>7</Successes>
+  <LogFile>20240626_113010.534/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage>ImageTextNotFoundException:  -- 2:not found</ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2024-06-26 11:33:53.501 -0400</RunDate>
+  <Status>Failure</Status>
+  <Duration>162.184000</Duration>
+  <Errors>4</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>3</Exceptions>
+  <Successes>25</Successes>
+  <LogFile>20240626_113353.501/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage>verifyApplicationStatsException -- C:\Users\pratdaga\Documents\UserScenarios not exist in the system</ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2024-06-26 11:38:27.492 -0400</RunDate>
+  <Status>Failure</Status>
+  <Duration>164.033000</Duration>
+  <Errors>4</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>3</Exceptions>
+  <Successes>25</Successes>
+  <LogFile>20240626_113827.492/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage>verifyApplicationStatsException -- C:\Users\pratdaga\Documents\UserScenarios not exist in the system</ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2024-06-27 09:53:02.378 -0400</RunDate>
+  <Status>Failure</Status>
+  <Duration>116.394000</Duration>
+  <Errors>6</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>5</Exceptions>
+  <Successes>7</Successes>
+  <LogFile>20240627_095302.378/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage>ImageTextNotFoundException:  -- 2:not found</ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2024-06-27 09:55:42.355 -0400</RunDate>
+  <Status>Failure</Status>
+  <Duration>104.360000</Duration>
+  <Errors>5</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>5</Exceptions>
+  <Successes>14</Successes>
+  <LogFile>20240627_095542.355/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage>Image Not Found -- moveto Error - No Text Found On Screen: &quot;(TEXT:&quot;Save Scenario&quot;)&quot;. Text not found.  Restricted Search Rectangle ((480,270),(1440,810))
+</ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2024-06-27 11:59:09.722 -0400</RunDate>
+  <Status>Success</Status>
+  <Duration>284.181000</Duration>
+  <Errors>0</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>32</Successes>
+  <LogFile>20240627_115909.722/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage></ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2024-06-28 10:47:58.996 -0400</RunDate>
+  <Status>Failure</Status>
+  <Duration>310.165000</Duration>
+  <Errors>6</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>5</Exceptions>
+  <Successes>15</Successes>
+  <LogFile>20240628_104758.996/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage>ImageTextNotFoundException:  -- sample:not found</ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2024-06-28 10:56:23.922 -0400</RunDate>
+  <Status>Failure</Status>
+  <Duration>306.964000</Duration>
+  <Errors>6</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>5</Exceptions>
+  <Successes>15</Successes>
+  <LogFile>20240628_105623.922/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage>ImageTextNotFoundException:  -- sample:not found</ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2024-06-28 11:26:21.485 -0400</RunDate>
+  <Status>Failure</Status>
+  <Duration>331.924000</Duration>
+  <Errors>6</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>5</Exceptions>
+  <Successes>15</Successes>
+  <LogFile>20240628_112621.485/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage>ImageTextNotFoundException:  -- sample:not found</ErrorMessage>
+ </run>
+</runHistory>

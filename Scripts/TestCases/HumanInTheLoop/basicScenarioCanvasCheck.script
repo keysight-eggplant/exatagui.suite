@@ -1,0 +1,17 @@
+﻿Try
+	BeginTestCase "basicScenarioCanvasCheck"
+	
+	# initializing the scenario
+	"EXataGUI/scenario".initScenario
+	
+	# to load the default scenario
+	"EXataGUI/scenario".loadOpenExampleScenario "default","", "", "basicScenarioCanvasCheck", true
+	
+	#Click on Close Tab to close the Scenario
+	"EXataGUI/scenario".closeScenario "closetab"
+	
+	EndTestCase "basicScenarioCanvasCheck"
+Catch theException
+	"Common/cLog".cError "Error in running basicScenarioCanvasCheck TestCase"
+	throw theException 
+End try

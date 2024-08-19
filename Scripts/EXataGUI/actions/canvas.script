@@ -1,0 +1,268 @@
+﻿# This script is containing all the canvas related actions
+#
+
+# to drag and drop over the application
+#----------------------------------------------------
+to dragAndDropItem startLocation,endLocation
+	Try
+		-- Move the mouse cursor to the starting location
+		MoveTo startLocation
+		-- Hold down the left mouse button
+		MouseButtonDown 1
+		-- Move the mouse cursor to the ending location, dragging the item along
+		MoveTo endLocation
+		-- Release the left mouse button
+		MouseButtonUp 1
+		
+	Catch theException
+		"Common/cLog".cError "dragAndDropItem operation failed:"&theException's reason
+		throw theException 
+	End try
+end dragAndDropItem
+
+# to repeat the keyboard shortcut task 'n' times
+#--------------------------------------------------------------
+to repeatN n, key
+	repeat n times
+		"Common/keyBoard".keyboardShortcut key		
+	End repeat
+end repeatN
+
+
+# to add the nodes on the basis of node count in a scenario
+#-------------------------------------------------------------------------------
+to addNodes nodeCount
+	try
+		global nodeCoordinates
+		global totalNodeCount
+		set clickedNodeCoordinates to []
+		-- Update the total nodes added
+		set totalNodeCount to totalNodeCount+nodeCount
+		-- Define the boundary coordinates; these are fixed
+		set boundaryX1 to 0.39
+		set boundaryY1 to 0.24
+		set boundaryX2 to 0.74
+		set boundaryY2 to 0.87
+		
+		-- Calculate the width and height of each part
+		set partWidth to (boundaryX2 - boundaryX1) / totalNodeCount
+		set partHeight to (boundaryY2 - boundaryY1) / totalNodeCount
+		
+		-- Validate the presence of the select tool
+		"Common/clickEvent".validate "selectTool", "Select tool is present in Navigation Toolbar", "Select tool is not present in Navigation Toolbar"
+		
+		-- Click on the node device
+		"Common/clickEvent".leftEvent "nodeDevice"
+		
+		-- Perform the clicks within the boundary
+		repeat with i from (totalNodeCount - nodeCount + 1) to totalNodeCount
+			-- Calculate the midpoint of the current part
+			set midX to boundaryX1 + (i - 0.5) * partWidth
+			set midY to boundaryY1 + (i - 0.5) * partHeight
+			
+			-- Calculate the coordinates to be clicked 
+			set clickX to midX 
+			set clickY to midY 
+			
+			-- Build key-value pairs
+			set key to i
+			set value to clickX & "-" & clickY
+			
+			-- Append to globalClickCoordinates
+			push {key: key, value: value} into clickedNodeCoordinates
+			-- Perform a click at the calculated coordinates
+			"Common/clickEvent".clickScaled [clickX, clickY]
+		end repeat
+		
+		-- Log the list of key-value pairs
+		"Common/cLog".cMessage "Global Click Coordinates: " & clickedNodeCoordinates
+		-- Determine whether to create the file or append to it
+		if totalNodeCount = nodeCount then
+			set nodeCoordinates to JSONFormat(clickedNodeCoordinates)
+		else
+			--append with the existing ones
+			set existingNodeCoordinates to JSONValue(nodeCoordinates)
+			put the union of existingNodeCoordinates and clickedNodeCoordinates into mergedNodeCoordinates
+			set nodeCoordinates to JSONFormat(mergedNodeCoordinates)
+		end if
+		-- Click on "Select Tool" after placing all nodes
+		"Common/clickEvent".leftEvent("selectTool")
+		
+		-- Validate Node Placement
+		"Common/check".nodesPlacement nodeCount
+	catch theException
+		-- Log any errors that occur during the process
+		"Common/cLog".cError("addNodes failed: " & theException's reason)
+		throw theException
+	end try
+end addNodes
+
+# to add p2p link betweent the nodes in a scenario
+#-------------------------------------------------------------------
+to createLink nodeId1, nodeId2, LinkIdToCheck
+	set the defaultTextPlatform.OCRStyles.Default.DPI to 144
+	Try
+		-- Validate the presence of the links
+		"Common/clickEvent".validate "links", "Links is present in Links toolbar", "Links is not present in links toolbar"
+		
+		-- click on the links
+		"Common/clickEvent".leftEvent "links"
+		--getting the position for dragLocation
+		put getLocation (nodeId1) into startLocation
+		--getting the position for dropLocation
+		put getLocation (nodeId2) into endLocation
+		-- perform drag and drop
+		"EXataGUI/actions/canvas".dragAndDropItem startLocation,endLocation
+		-- validate link added between nodes
+		"Common/check".linkAdded LinkIdToCheck
+		
+	Catch theException
+		"Common/cLog".cError "Adding link to the nodes failed:"&theException's reason
+		throw theException 
+	End try	
+end createLink
+
+# to add CBR taffic betweent the nodes in a scenario
+#---------------------------------------------------------------------
+to createTraffic nodeId1, nodeId2 , sourceIdToCheck
+	set the defaultTextPlatform.OCRStyles.Default.DPI to 144
+	Try
+		-- Validate the presence of the Select_Application
+		"Common/clickEvent".validate "CBR", "CBR is present in Applications toolbar", "CBR is not present in Applications toolbar"
+		
+		-- Add the CBR between the nodes on the GUI canvas
+		"Common/clickEvent".leftEvent "CBR"
+		
+		--getting the position for dragLocation
+		put getLocation (nodeId1) into startLocation
+		--getting the position for dropLocation
+		put getLocation (nodeId2) into endLocation
+		-- perform drag and drop
+		"EXataGUI/actions/canvas".dragAndDropItem startLocation,endLocation
+		-- validate traffic added between nodes
+		"Common/check".trafficAdded sourceIdToCheck
+		
+	Catch theException
+		"Common/cLog".cError "Adding traffic to the nodes failed:"&theException's reason
+		throw theException 
+	End try
+end createTraffic
+
+# to add node at a particular place in a scenario
+#---------------------------------------------------------------
+-- it will be use in the future where we are placing wireless nodes configuration
+to addNodeAt position
+	global totalNodeCount
+	global nodeCoordinates
+	set clickedNodeCoordinates to []
+
+	Try
+		"Common/clickEvent".validate "selectTool", "Select tool is present in Navigation Toolbar", "Select tool is not present in Navigation Toolbar"
+		"Common/clickEvent".leftEvent "nodeDevice"
+		"Common/clickEvent".clickScaled position
+		set key to "node_" & totalNodeCount
+		set value to clickX & "-" & clickY
+		push {key: key, value: value} into clickedNodeCoordinates
+		if totalNodeCount is 0 then
+			set nodeCoordinates to JSONFormat(clickedNodeCoordinates)
+		else
+			--append with the existing ones
+			set existingNodeCoordinates to JSONValue(nodeCoordinates)
+			log existingNodeCoordinates
+			put the union of existingNodeCoordinates and clickedNodeCoordinates into mergedNodeCoordinates
+			set nodeCoordinates to JSONFormat(mergedNodeCoordinates)
+		end if
+		"Common/clickEvent".leftEvent "selectTool"
+	Catch theException
+		"Common/cLog".cError "addNodeAt failed:" & theException's reason
+		throw theException 
+	End try
+end addNodeAt
+
+
+# to get the position for nodes 
+#------------------------------
+to getLocation nodeId
+	global nodeCoordinates
+	try
+		put nodeCoordinates into jsonData
+		-- Parse JSON data into SenseTalk property
+		set parsedData to JSONValue(jsonData)
+		-- Search for the specified key and return its value
+		repeat with each item pair in parsedData
+			if pair's key = nodeId then
+				set value to pair's value
+				-- Split the value into x and y coordinates
+				set {xCoordinate, yCoordinate} to split(value, "-")
+				-- Convert coordinates to scaled coordinates
+				-- Return the scaled coordinates
+				return RemoteScreenSize() *[xCoordinate,yCoordinate]
+			end if
+		end repeat
+		-- If the key is not found, return an error message
+		throw "missingkeyErrorException" , nodeId&": key not found"
+	catch theException
+		"Common/cLog".error "getLocation failed:" &  theException's reason
+		throw theException -- re-throw the exception (if desired)
+	end try
+end getLocation
+
+to verifyPreviousAndNext mediaName
+	set the defaultTextPlatform.OCRStyles.Default.DPI to 144
+	Try
+		# verify the availability of previous and next buttons
+		"EXataGUI/actions/canvas".repeatN "25", "n"
+		"Common/search".setSearchSection("TopRightQuadrant")
+		-- validate the presence of the previous button
+		"Common/clickEvent".validate "previousButton", "Previous button is present in GUI", "Previous button is not present in GUI"
+		"Common/clickEvent".clickScaled "0.5"
+		-- validate the presence of the next button
+		"Common/clickEvent".validate "nextButton", "Next button is present in GUI", "Next button is not present in GUI"
+		"Common/captureScreenShots".captureScreenshots mediaName & ".png" ,[2,5,1909,977]
+		"Common/search".clearSearchSection
+		
+	catch theException
+		"Common/cLog".error "verifyPreviousAndNext failed:" &  theException's reason
+		throw theException -- re-throw the exception (if desired)
+	End try
+end verifyPreviousAndNext
+
+
+#To Check and bypass the  the unsaved scenario popup window
+to bypassUnsavedScenarioPopup
+	set the defaultTextPlatform.OCRStyles.Default.DPI to 144
+	Try
+		
+		--setting the search area to center 
+		"Common/search".setSearchSection "Centre"
+		
+		--Reading the Text from the Popup 
+		if not "Common/check".isImageTextFound("Do you want to save","","true")then
+			"Common/cLog".cError "Text 'Do you want to save' not found"
+			throw  "bypassUnsavedScenarioPopup:","Unsaved scenario popup window failed to close"
+			"Common/cLog".cError "Unsaved scenario popup window did not found"
+			
+		else
+			--closing the Popup Window
+			"Common/keyBoard".pressTab
+			"Common/keyBoard".pressEnter
+			"Common/waitForEvent".hardWait 1
+			"Common/search".setSearchSection "Centre"
+			if not "Common/check".isImageTextFound("Do you want to save","","false")then 
+				"Common/cLog".success "Unsaved scenario popup window closed"
+			else
+				
+				"Common/cLog".cError "Unsaved scenario popup window did not closed"
+			end if
+			
+			#Capture Screen to confirm Scenario is closed
+			"Common/captureScreenShots".captureScreenshots "CloseUnsavedScenario.png",[630,199,1497,1017]
+			"Common/search".clearSearchSection
+		end if
+	catch theException
+		"Common/cLog".cError "checkUnsavedPopup failed:"&theException's reason  
+		throw theException 
+	End try
+	
+end bypassUnsavedScenarioPopup
+

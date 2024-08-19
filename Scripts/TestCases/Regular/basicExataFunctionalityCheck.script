@@ -1,0 +1,37 @@
+﻿Try
+	BeginTestCase "basicEXataFunctionalityCheck"
+	
+	# initializing the scenario
+	"EXataGUI/scenario".initScenario
+	
+	# Places node devices on canvas
+	"EXataGUI/actions/canvas".addNodes 2
+	
+	# Adding the link between the nodes 1 and 2
+	"EXataGUI/actions/canvas".createLink 1,2 , "LINK1"
+	
+	# Adding the CBR Traffic between the nodes 1 and 2
+	"EXataGUI/actions/canvas".createTraffic 1,2, 2
+	
+	# Saving the scenario  with configName
+	"EXataGUI/scenario".saveTheScenario "sample"
+	
+	# Running the simulation of savedScenario
+	"EXataGUI/scenario".runSimulation "Simulation"
+	
+	# playing the simulation
+	"EXataGUI/scenario".playSimulation
+	
+	# to verify stat db results
+	"EXataGUI/statistics".verifyApplicationStats 2,1024,"CBR Server","Total Unicast Messages Received (messages) = 24","BottomLeftQuadrant","sample"
+	
+	# to clean up the scenario
+	"EXataGUI/scenario".cleanUpScenario
+	
+	EndTestCase "basicEXataFunctionalityCheck"
+Catch theException
+	"Common/cLog".cError "Error in running basicEXataFunctionalityCheck TestCase"
+	throw theException 
+End try
+
+

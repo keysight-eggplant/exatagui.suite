@@ -1,0 +1,54 @@
+﻿2024-06-06 10:38:45.918 -0400	START		Running TestCases/Regular/basicExataFunctionalityCheck.script	22	on_startregulartests	TestCases/Regular/testLauncher.script
+2024-06-06 10:38:45.955 -0400	BeginTestCase		basicEXataFunctionalityCheck	2	on_basicexatafunctionalitycheck	TestCases/Regular/basicExataFunctionalityCheck.script
+2024-06-06 10:38:46.386 -0400	CompareScreen	[Baseline_Screens]/GUI_Canvas_Windows6 6 2024 _ 10 37 55.png	CompareScreen "GUI_Canvas_Windows6 6 2024 _ 10 37 55" -- No significant differences from baseline	3	on_compare_screen	Common/check.script
+2024-06-06 10:38:46.566 -0400	CompareScreen	[Baseline_Screens]/GUI_Canvas_Windows6 6 2024 _ 10 37 55.png	CompareScreen "GUI_Canvas_Windows6 6 2024 _ 10 37 55" -- No significant differences from baseline	3	function_compare_screen	Common/check.script
+2024-06-06 10:38:47.318 -0400	click	Select_tool	at (130, 92)	4	on_validate	Common/clickEvent.script
+2024-06-06 10:38:47.412 -0400	LogSuccess		Select tool is present in Navigation Toolbar	2	on_success	Common/cLog.script
+2024-06-06 10:38:48.690 -0400	click	node_device	at (51, 222)	4	on_leftevent	Common/clickEvent.script
+2024-06-06 10:38:50.942 -0400	click		at (917, 429)	3	on_clickscaled	Common/clickEvent.script
+2024-06-06 10:38:52.769 -0400	click		at (1253, 770)	3	on_clickscaled	Common/clickEvent.script
+2024-06-06 10:38:52.908 -0400	Log		Global Click Coordinates: [{key:1, value:"0.4775-0.3975"},{key:2, value:"0.6525-0.7125"}]	2	on_cmessage	Common/cLog.script
+2024-06-06 10:38:55.935 -0400	click	Select_Tool	at (130, 92)	4	on_leftevent	Common/clickEvent.script
+2024-06-06 10:38:56.450 -0400	set		SEARCHRECTANGLE = [[211.2,993.6],[288,1026]]	3	on_setsearchsection	Common/search.script
+2024-06-06 10:38:56.632 -0400	imagefound	(TEXT:"Table View")	found at (253, 1008)	7	on_onfoundimagelocation	Common/clickEvent.script
+2024-06-06 10:38:58.187 -0400	click		at (253, 1008)	8	on_onfoundimagelocation	Common/clickEvent.script
+2024-06-06 10:38:58.255 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-06 10:38:58.791 -0400	set		SEARCHRECTANGLE = [[230.4,723.6],[268.8,766.8]]	3	on_setsearchsection	Common/search.script
+2024-06-06 10:38:58.961 -0400	imagefound	(TEXT:"Nodes")	found at (244, 743)	7	on_onfoundimagelocation	Common/clickEvent.script
+2024-06-06 10:38:59.565 -0400	click		at (244, 743)	8	on_onfoundimagelocation	Common/clickEvent.script
+2024-06-06 10:38:59.615 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-06 10:39:00.100 -0400	set		SEARCHRECTANGLE = [[230.4,766.8],[307.2,993.6]]	3	on_setsearchsection	Common/search.script
+2024-06-06 10:39:00.385 -0400	imagefound	(TEXT:"2")	found at (241, 834)	9	function_isimagetextfound	Common/check.script
+2024-06-06 10:39:00.709 -0400	moveto	(TEXT:"2")	at (241, 834)	10	function_isimagetextfound	Common/check.script
+2024-06-06 10:39:00.757 -0400	LogSuccess		2  is found in NodeIdView	2	on_success	Common/cLog.script
+2024-06-06 10:39:00.833 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-06 10:39:01.026 -0400	LogSuccess		node placement validated successfully	2	on_success	Common/cLog.script
+2024-06-06 10:39:01.397 -0400	set		SEARCHRECTANGLE = [[211.2,993.6],[288,1026]]	3	on_setsearchsection	Common/search.script
+2024-06-06 10:39:01.557 -0400	imagefound	(TEXT:"Table_View")	found at (253, 1008)	7	on_onfoundimagelocation	Common/clickEvent.script
+2024-06-06 10:39:02.032 -0400	click		at (253, 1008)	8	on_onfoundimagelocation	Common/clickEvent.script
+2024-06-06 10:39:02.084 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-06 10:39:02.309 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-06 10:39:03.539 -0400	click	links	at (52, 853)	4	on_validate	Common/clickEvent.script
+2024-06-06 10:39:03.589 -0400	LogSuccess		Links is present in Links toolbar	2	on_success	Common/cLog.script
+2024-06-06 10:39:04.644 -0400	click	links	at (53, 854)	4	on_leftevent	Common/clickEvent.script
+2024-06-06 10:39:07.124 -0400	moveto		at (917, 429)	4	on_draganddropitem	EXataGUI/actions/canvas.script
+2024-06-06 10:39:08.124 -0400	mousebuttondown		Button:1	6	on_draganddropitem	EXataGUI/actions/canvas.script
+2024-06-06 10:39:09.877 -0400	moveto		at (1253, 770)	8	on_draganddropitem	EXataGUI/actions/canvas.script
+2024-06-06 10:39:10.877 -0400	mousebuttonup		Button:1	10	on_draganddropitem	EXataGUI/actions/canvas.script
+2024-06-06 10:39:11.304 -0400	set		SEARCHRECTANGLE = [[211.2,993.6],[288,1026]]	3	on_setsearchsection	Common/search.script
+2024-06-06 10:39:11.464 -0400	imagefound	(TEXT:"Table View")	found at (253, 1008)	7	on_onfoundimagelocation	Common/clickEvent.script
+2024-06-06 10:39:13.307 -0400	click		at (253, 1008)	8	on_onfoundimagelocation	Common/clickEvent.script
+2024-06-06 10:40:13.300 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-06 10:40:18.261 -0400	set		SEARCHRECTANGLE = [[403.2,723.6],[480,756]]	3	on_setsearchsection	Common/search.script
+2024-06-06 10:40:18.670 -0400	imagefound	(TEXT:"Networks")	found at (438, 744)	7	on_onfoundimagelocation	Common/clickEvent.script
+2024-06-06 10:40:19.698 -0400	click		at (438, 744)	8	on_onfoundimagelocation	Common/clickEvent.script
+2024-06-06 10:40:20.636 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-06 10:40:23.934 -0400	set		SEARCHRECTANGLE = [[1497.6,766.8],[1651.2,982.8]]	3	on_setsearchsection	Common/search.script
+2024-06-06 10:40:30.167 -0400	imagefound	(TEXT:"LINK1")	found at (1518, 805)	9	function_isimagetextfound	Common/check.script
+2024-06-06 10:40:31.616 -0400	moveto	(TEXT:"LINK1")	at (1518, 805)	10	function_isimagetextfound	Common/check.script
+2024-06-06 10:40:47.036 -0400	LogSuccess		LINK1  is found in LinkUuidView	2	on_success	Common/cLog.script
+2024-06-06 10:40:47.685 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-06 10:40:48.620 -0400	LogSuccess		link between nodes validated successfully	2	on_success	Common/cLog.script
+2024-06-06 10:42:11.833 -0400	EndTestCase		(Duration:"205.877", Errors:"1", Exceptions:"0", StartTime:"2024-06-06 10:38:45 -0400", Successes:"6", TestCase:"basicEXataFunctionalityCheck", Warnings:"0")	22	on_startregulartests	TestCases/Regular/testLauncher.script
+2024-06-06 10:42:11.837 -0400	EndTestCase		(Duration:"205.915", Errors:"1", Exceptions:"0", StartTime:"2024-06-06 10:38:45 -0400", Successes:"6", TestCase:"TestCases/Regular/basicExataFunctionalityCheck.script", Warnings:"0")	22	on_startregulartests	TestCases/Regular/testLauncher.script
+2024-06-06 10:42:11.847 -0400	ABORTED		Execution Time 0:03:25 TestCases/Regular/basicExataFunctionalityCheck.script	22	on_startregulartests	TestCases/Regular/testLauncher.script

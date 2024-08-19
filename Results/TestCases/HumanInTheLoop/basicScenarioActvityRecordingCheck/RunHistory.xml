@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<runHistory script="TestCases/HumanInTheLoop/basicScenarioActvityRecordingCheck">
+ <run>
+  <RunDate>2024-06-25 08:39:29.875 -0400</RunDate>
+  <Status>Success</Status>
+  <Duration>211.217000</Duration>
+  <Errors>0</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>25</Successes>
+  <LogFile>20240625_083929.875/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage></ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2024-06-25 09:35:01.116 -0400</RunDate>
+  <Status>Success</Status>
+  <Duration>218.849000</Duration>
+  <Errors>0</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>25</Successes>
+  <LogFile>20240625_093501.116/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage></ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2024-06-25 12:05:41.758 -0400</RunDate>
+  <Status>Success</Status>
+  <Duration>199.914000</Duration>
+  <Errors>0</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>25</Successes>
+  <LogFile>20240625_120541.758/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage></ErrorMessage>
+ </run>
+</runHistory>

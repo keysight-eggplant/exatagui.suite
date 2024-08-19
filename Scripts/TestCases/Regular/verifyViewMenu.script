@@ -1,0 +1,61 @@
+﻿Try
+	BeginTestCase "verifyViewMenu"
+	
+	# initializing the scenario
+	"EXataGUI/scenario".initScenario
+	
+	# opens the view menu
+	"EXataGUI/actions/menuBar".openView
+	
+	# verify the view menu
+	
+	# verify availability of Standard Toolbar
+	"Common/check".IsImageTextFound "Standard Toolbar", ViewMenu
+		
+	# verify availability of Navigation Toolbar
+	"Common/check".IsImageTextFound "Navigation Toolbar", ViewMenu
+		
+	# verify availability of 3D Navigation Toolbar
+	"Common/check".IsImageTextFound "3D Navigation Toolbar", ViewMenu
+		
+	# verify availability of Coordinates Toolbar
+	"Common/check".IsImageTextFound "Coordinates Toolbar", ViewMenu
+		
+	# verify availability of View Toolbar
+	"Common/check".IsImageTextFound "View Toolbar", ViewMenu
+		
+	# verify availability of Run Toolbar
+	"Common/check".IsImageTextFound "Run Toolbar", ViewMenu
+		
+	# verify availability of Emulation Toolbar
+	"Common/check".IsImageTextFound "Emulation Toolbar", ViewMenu
+		
+	# verify availability of HITL Toolbar
+	"Common/check".IsImageTextFound "HITL Toolbar", ViewMenu
+		
+	# verify availability of Heatmap Toolbar
+	"Common/check".IsImageTextFound "Heatmap Toolbar", ViewMenu
+		
+	# verify availability of Zoom In option
+	"Common/check".IsImageTextFound "Zoom In", ViewMenu
+		
+	# verify availability of Zoom Out option
+	"Common/check".IsImageTextFound "Zoom Out", ViewMenu
+		
+	# verify availability of Display Settings
+	"Common/check".IsImageTextFound "Display Settings", ViewMenu
+		
+	# verify availability of Camera Settings
+	"Common/check".IsImageTextFound "Camera Settings", ViewMenu
+	
+	"Common/search".clearSearchSection	
+	
+	# Closes the view menu by clicking at the centre of the canvas
+	"Common/clickEvent".clickScaled "0.5"
+	
+	EndTestCase "verifyViewMenu"
+	
+Catch theException
+	"Common/cLog".cError "Error in running verifyViewMenu TestCase"
+	throw theException 
+End try

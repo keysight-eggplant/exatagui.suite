@@ -1,0 +1,47 @@
+
+﻿# This script is containing all the keyboard related operations
+#
+
+# to type the Text over the application
+#---------------------------------------------------
+to enterText targetText
+	Try
+		TypeText targetText
+	Catch theException
+		"Common/cLog".cError "typeText Failed: "&theException's reason
+		throw theException 
+	End try    
+end enterText
+
+# to press keyboard shortcut key over the application
+#-----------------------------------------------------
+to keyboardShortcut key
+	Try
+		TypeText controlKey, key
+	Catch theException
+		"Common/cLog".cError "Keyboard shortcut Failed: "&theException's reason
+		throw theException 
+	End try 
+end keyboardShortcut
+
+# to press enter key over the application
+#-----------------------------------------
+to pressEnter
+	enterText returnKey
+end pressEnter
+
+# to press upArrow key over the application
+#-------------------------------------------
+to pressUpArrow
+	enterText UpArrow
+end pressUpArrow
+
+#to press tab key over the application 
+to pressTab
+	enterText tabKey
+end pressTab
+
+#to press windows key over the application 
+to pressWindowsKey
+	enterText windowsKey
+end pressWindowsKey

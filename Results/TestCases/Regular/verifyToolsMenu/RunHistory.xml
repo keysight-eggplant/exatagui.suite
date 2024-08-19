@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<runHistory script="TestCases/Regular/verifyToolsMenu">
+ <run>
+  <RunDate>2024-06-24 12:53:20.576 -0400</RunDate>
+  <Status>Success</Status>
+  <Duration>60.305000</Duration>
+  <Errors>0</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>30</Successes>
+  <LogFile>20240624_125320.576/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage></ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2024-06-24 14:10:59.832 -0400</RunDate>
+  <Status>Success</Status>
+  <Duration>56.947000</Duration>
+  <Errors>0</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>30</Successes>
+  <LogFile>20240624_141059.832/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage></ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2024-06-25 08:26:46.623 -0400</RunDate>
+  <Status>Success</Status>
+  <Duration>55.259000</Duration>
+  <Errors>0</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>30</Successes>
+  <LogFile>20240625_082646.623/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage></ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2024-06-25 09:21:26.537 -0400</RunDate>
+  <Status>Success</Status>
+  <Duration>56.605000</Duration>
+  <Errors>0</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>30</Successes>
+  <LogFile>20240625_092126.537/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage></ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2024-06-25 11:53:18.644 -0400</RunDate>
+  <Status>Success</Status>
+  <Duration>54.547000</Duration>
+  <Errors>0</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>30</Successes>
+  <LogFile>20240625_115318.644/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage></ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2024-06-27 12:08:49.625 -0400</RunDate>
+  <Status>Aborted</Status>
+  <Duration>54.335000</Duration>
+  <Errors>1</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>1</Exceptions>
+  <Successes>25</Successes>
+  <LogFile>20240627_120849.625/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage></ErrorMessage>
+ </run>
+</runHistory>

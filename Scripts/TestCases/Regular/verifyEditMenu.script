@@ -1,0 +1,39 @@
+﻿Try
+	BeginTestCase "verifyEditMenu"
+	
+	# initializing the scenario
+	"EXataGUI/scenario".initScenario
+	
+	# verify the edit menu options
+	
+	# opens the edit menu
+	"EXataGUI/actions/menuBar".openEdit
+	
+	# verify availability of Cut option
+	"Common/check".IsImageTextFound "Cut", EditMenu
+	
+	# verify availability of Copy option
+	"Common/check".IsImageTextFound "Copy", EditMenu
+	
+	# verify availability of Paste option
+	"Common/check".IsImageTextFound "Paste", EditMenu
+	
+	# verify availability of Delete option
+	"Common/check".IsImageTextFound "Delete", EditMenu
+	
+	# verify availability of Select All option
+	"Common/check".IsImageTextFound "Select All", EditMenu
+	
+	# verify availability of Preferences option
+	"Common/check".IsImageTextFound "Preferences", EditMenu
+	
+	"Common/search".clearSearchSection
+	
+	# Closes the edit menu by clicking at the centre of the canvas
+	"Common/clickEvent".clickScaled "0.5"
+	
+	EndTestCase "verifyEditMenu"
+Catch theException
+	"Common/cLog".cError "Error in running verifyEditMenu TestCase"
+	throw theException 
+End try

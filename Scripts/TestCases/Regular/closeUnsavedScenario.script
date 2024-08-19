@@ -1,0 +1,36 @@
+﻿Try
+	
+	BeginTestCase "closeUnsavedScenario"
+	
+	#Initialize Scenario 
+	"EXataGUI/scenario".initScenario
+	
+	#Closing the unsaved scenario using file close option
+	#
+	#Add 2 Nodes on the Canvas 
+	"EXataGUI/actions/canvas".addNodes 2
+	
+	#Close Scenario
+	"EXataGUI/scenario".closeScenario
+	
+	#Bypassing the Unsaved Scenario Pop Message 
+	"EXataGUI/actions/canvas".bypassUnsavedScenarioPopup
+	
+	#Closing the unsaved scenario using close tab option
+	#
+	#Add 2 Nodes on the Canvas 
+	"EXataGUI/actions/canvas".addNodes 2
+	
+	#Click on Close Tab to close the Scenario
+	"EXataGUI/scenario".closeScenario "closetab"
+	
+	#Bypassing the Unsaved Scenario Pop Message 
+	"EXataGUI/actions/canvas".bypassUnsavedScenarioPopup
+	
+	EndTestCase "closeUnsavedScenario"
+	
+Catch theException
+	"Common/cLog".cError " Error in Running closeUnsavedScenario TestCase"
+	throw theException 
+End try
+

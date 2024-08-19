@@ -1,0 +1,45 @@
+﻿2024-06-05 19:23:06.740 -0400	START		Running main.script
+2024-06-05 19:23:06.925 -0400	Log		Started the Execution of the EXataGUI Regression Scripts at 07:23 PM on 06/05/24	2	on_cmessage	Common/cLog.script
+2024-06-05 19:23:06.971 -0400	setoptions		ImageUpdate = Off	2	on_variabledata	HelperUtilities/variableData.script
+2024-06-05 19:23:06.973 -0400	setoptions		MouseMoveMode = 2	2	on_variabledata	HelperUtilities/variableData.script
+2024-06-05 19:23:06.975 -0400	setoptions		MouseMoveSpeed = 10	2	on_variabledata	HelperUtilities/variableData.script
+2024-06-05 19:23:06.977 -0400	setoptions		remoteWorkInterval = 1	2	on_variabledata	HelperUtilities/variableData.script
+2024-06-05 19:23:07.113 -0400	Log		Screen Width: 1920, Screen Height: 1080	6	function_checkscreenresolution	Common/check.script
+2024-06-05 19:23:07.358 -0400	Log		C:\Program Files\Scalable\exata\8.2.0.0	2	on_cmessage	Common/cLog.script
+2024-06-05 19:23:07.471 -0400	Log		C:\Users\pratdaga\Documents\UserScenarios	2	on_cmessage	Common/cLog.script
+2024-06-05 19:23:07.577 -0400	Log		generateReport: true	2	on_cmessage	Common/cLog.script
+2024-06-05 19:23:07.708 -0400	Log		The mode of the Execution of Test : custom	2	on_cmessage	Common/cLog.script
+2024-06-05 19:23:07.830 -0400	Log		[verifyRecentFilesList]	2	on_cmessage	Common/cLog.script
+2024-06-05 19:23:10.433 -0400	typetext		[windowsKey]r	3	on_entertext	Common/keyboard.script
+2024-06-05 19:23:12.531 -0400	waitfor	(TEXT:"Run")	found at (54, 837)	6	on_waitfortext	Common/waitForEvent.script
+2024-06-05 19:23:12.628 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-05 19:23:14.627 -0400	typetext		C:\Program Files\Scalable\exata\8.2.0.0\bin\EXataGUI.exe	3	on_entertext	Common/keyBoard.script
+2024-06-05 19:23:15.664 -0400	typetext		[returnKey]	3	on_entertext	Common/keyBoard.script
+2024-06-05 19:23:15.929 -0400	set		SEARCHRECTANGLE = [[672,421.2],[1228.8,540]]	3	on_setsearchsection	Common/search.script
+2024-06-05 19:23:21.162 -0400	imagefound	(TEXT:"Windows cannot find")	Unable to Find Image (TEXT:"Windows cannot find"). Text not found.	9	function_isimagetextfound	Common/check.script
+2024-06-05 19:23:21.213 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-05 19:23:21.520 -0400	set		SEARCHRECTANGLE = [[0,0],[76.8,32.4]]	3	on_setsearchsection	Common/search.script
+2024-06-05 19:23:56.516 -0400	imagefound	(TEXT:"EXata")	found at (36, 10)	9	function_isimagetextfound	Common/check.script
+2024-06-05 19:23:59.270 -0400	moveto	(TEXT:"EXata")	at (36, 10)	10	function_isimagetextfound	Common/check.script
+2024-06-05 19:23:59.288 -0400	LogSuccess		EXata  is found in EXataGUITitleBar	2	on_success	Common/cLog.script
+2024-06-05 19:23:59.324 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-05 19:23:59.618 -0400	set		SEARCHRECTANGLE = [[0,0],[480,270]]	3	on_setsearchsection	Common/search.script
+2024-06-05 19:24:00.003 -0400	waitfor	(TEXT:"Scenario Properties")	found at (124, 162)	6	on_waitfortext	Common/waitForEvent.script
+2024-06-05 19:24:00.097 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-05 19:24:00.222 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-05 19:24:00.308 -0400	CompareScreen	[Baseline_Screens]/GUI_Canvas_Windows5 6 2024 _ 19 23 7.png	Captured initial baseline image "GUI_Canvas_Windows5 6 2024 _ 19 23 7"	3	on_compare_screen	Common/check.script
+2024-06-05 19:24:00.430 -0400	Log		main	9	on_startreportfile	HelperUtilities/rptHtml.script
+2024-06-05 19:24:00.603 -0400	Log		C:/Users/pratdaga/Desktop/eggplant_automation/exatagui.suite/Results/main/20240605_192306.735/	13	on_startreportfile	HelperUtilities/rptHtml.script
+2024-06-05 19:24:01.520 -0400	runwithnewresults		verifyRecentFilesList.script (C:/Users/pratdaga/Desktop/eggplant_automation/exatagui.suite/Results/TestCases/HumanInTheLoop/verifyRecentFilesList/20240605_192401.518/LogFile.txt)	22	on_startregulartests	TestCases/Regular/testLauncher.script
+2024-06-05 19:28:39.096 -0400	LogSuccess		verifyRecentFilesList SUCCESS	2	on_success	Common/cLog.script
+2024-06-05 19:28:40.054 -0400	set		SEARCHRECTANGLE = [[384,216],[460.8,248.4]]	3	on_setsearchsection	Common/search.script
+2024-06-05 19:28:43.225 -0400	imagefound	(TEXT:"Results")	Unable to Find Image (TEXT:"Results"). Text not found.	9	function_isimagetextfound	Common/check.script
+2024-06-05 19:28:43.253 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-05 19:28:43.530 -0400	typetext		[windowsAltKey][F4]	3	on_entertext	Common/keyBoard.script
+2024-06-05 19:28:44.569 -0400	typetext		[returnKey]	3	on_entertext	Common/keyBoard.script
+2024-06-05 19:28:44.863 -0400	set		SEARCHRECTANGLE = [[710.4,453.6],[1209.6,572.4]]	3	on_setsearchsection	Common/search.script
+2024-06-05 19:28:50.050 -0400	imagefound	(TEXT:"Do you want to Save the Changes")	Unable to Find Image (TEXT:"Do you want to Save the Changes"). Text not found.	9	function_isimagetextfound	Common/check.script
+2024-06-05 19:28:50.115 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-05 19:28:50.266 -0400	Log		The execution of EXataGUI Regression Script took 343.298 seconds to complete.	2	on_cmessage	Common/cLog.script
+2024-06-05 19:28:50.304 -0400	EndTestCase		(Duration:"343.56", Errors:"0", Exceptions:"0", StartTime:"2024-06-05 19:23:06 -0400", Successes:"49", TestCase:"main.script", Warnings:"0")
+2024-06-05 19:28:50.322 -0400	SUCCESS		Execution Time 0:05:43 main.script

@@ -1,0 +1,33 @@
+﻿2024-06-05 19:08:44.466 -0400	START		Running TestCases/Regular/closeUnsavedScenario.script	22	on_startregulartests	TestCases/Regular/testLauncher.script
+2024-06-05 19:08:44.498 -0400	BeginTestCase		closeUnsavedScenario	3	on_closeunsavedscenario	TestCases/Regular/closeUnsavedScenario.script
+2024-06-05 19:08:44.864 -0400	CompareScreen	[Baseline_Screens]/GUI_Canvas_Windows5 6 2024 _ 19 7 43.png	CompareScreen "GUI_Canvas_Windows5 6 2024 _ 19 7 43" -- No significant differences from baseline	3	on_compare_screen	Common/check.script
+2024-06-05 19:08:45.028 -0400	CompareScreen	[Baseline_Screens]/GUI_Canvas_Windows5 6 2024 _ 19 7 43.png	CompareScreen "GUI_Canvas_Windows5 6 2024 _ 19 7 43" -- No significant differences from baseline	3	function_compare_screen	Common/check.script
+2024-06-05 19:08:45.764 -0400	click	Select_tool	at (130, 92)	4	on_validate	Common/clickEvent.script
+2024-06-05 19:08:45.800 -0400	LogSuccess		Select tool is present in Navigation Toolbar	2	on_success	Common/cLog.script
+2024-06-05 19:08:47.269 -0400	click	node_device	at (51, 222)	4	on_leftevent	Common/clickEvent.script
+2024-06-05 19:09:12.269 -0400	click		at (1085, 599)	3	on_clickscaled	Common/clickEvent.script
+2024-06-05 19:09:16.518 -0400	Log		Global Click Coordinates: [{key:1, value:"0.565-0.555"}]	2	on_cmessage	Common/cLog.script
+2024-06-05 19:09:23.434 -0400	click	Select_Tool	at (130, 92)	4	on_leftevent	Common/clickEvent.script
+2024-06-05 19:09:33.239 -0400	set		SEARCHRECTANGLE = [[211.2,993.6],[288,1026]]	3	on_setsearchsection	Common/search.script
+2024-06-05 19:09:34.616 -0400	imagefound	(TEXT:"Table View")	found at (253, 1008)	7	on_onfoundimagelocation	Common/clickEvent.script
+2024-06-05 19:09:37.012 -0400	click		at (253, 1008)	8	on_onfoundimagelocation	Common/clickEvent.script
+2024-06-05 19:09:39.118 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-05 19:09:47.727 -0400	set		SEARCHRECTANGLE = [[230.4,723.6],[268.8,766.8]]	3	on_setsearchsection	Common/search.script
+2024-06-05 19:09:48.662 -0400	imagefound	(TEXT:"Nodes")	found at (244, 743)	7	on_onfoundimagelocation	Common/clickEvent.script
+2024-06-05 19:09:49.607 -0400	click		at (244, 743)	8	on_onfoundimagelocation	Common/clickEvent.script
+2024-06-05 19:09:51.198 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-05 19:09:57.927 -0400	set		SEARCHRECTANGLE = [[230.4,766.8],[307.2,993.6]]	3	on_setsearchsection	Common/search.script
+2024-06-05 19:10:38.942 -0400	imagefound	(TEXT:"1")	Unable to Find Image (TEXT:"1"). Text not found.	9	function_isimagetextfound	Common/check.script
+2024-06-05 19:10:44.754 -0400	LogError		Image text not found: 1	2	on_cerror	Common/cLog.script
+2024-06-05 19:10:49.457 -0400	Throw		ImageTextNotFoundException:  - 1:not found	17	function_isimagetextfound	Common/check.script
+2024-06-05 19:10:52.250 -0400	LogError		isImageTextFound failed: 1:not found	2	on_cerror	Common/cLog.script
+2024-06-05 19:10:53.466 -0400	Throw		ImageTextNotFoundException:  - 1:not found	26	function_isimagetextfound	Common/check.script
+2024-06-05 19:10:56.520 -0400	LogError		validation of Node Placement failed:1:not found	2	on_cerror	Common/cLog.script
+2024-06-05 19:10:57.633 -0400	Throw		ImageTextNotFoundException:  - 1:not found	15	on_nodesplacement	Common/check.script
+2024-06-05 19:10:59.656 -0400	LogError		addNodes failed: 1:not found	2	on_cerror	Common/cLog.script
+2024-06-05 19:11:00.801 -0400	Throw		ImageTextNotFoundException:  - 1:not found	63	on_addnodes	EXataGUI/actions/canvas.script
+2024-06-05 19:11:02.785 -0400	LogError		 Error in Running closeUnsavedScenario TestCase	2	on_cerror	Common/cLog.script
+2024-06-05 19:11:03.818 -0400	Throw		ImageTextNotFoundException:  - 1:not found	25	on_closeunsavedscenario	TestCases/Regular/closeUnsavedScenario.script
+2024-06-05 19:11:03.825 -0400	EndTestCase		(Duration:"139.327", Errors:"6", Exceptions:"5", StartTime:"2024-06-05 19:08:44 -0400", Successes:"1", TestCase:"closeUnsavedScenario", Warnings:"0")	22	on_startregulartests	TestCases/Regular/testLauncher.script
+2024-06-05 19:11:03.830 -0400	EndTestCase		(Duration:"139.36", Errors:"6", Exceptions:"5", StartTime:"2024-06-05 19:08:44 -0400", Successes:"1", TestCase:"TestCases/Regular/closeUnsavedScenario.script", Warnings:"0")	22	on_startregulartests	TestCases/Regular/testLauncher.script
+2024-06-05 19:11:03.982 -0400	FAILURE	Screen_Error.png	ImageTextNotFoundException: : 1:not found -- Execution Time 0:02:19 TestCases/Regular/closeUnsavedScenario.script	22	on_startregulartests	TestCases/Regular/testLauncher.script

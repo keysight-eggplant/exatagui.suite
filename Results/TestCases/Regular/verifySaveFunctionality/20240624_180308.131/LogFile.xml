@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+ <testsuite name="TestCases/Regular/verifySaveFunctionality_script" package="exatagui.suite" timestamp="2024-06-24 18:03:08.131 -0400"
+ tests="2"  failures="3" errors="2" time="180.753000">
+  <properties>
+   <property name="RunDate" value="2024-06-24 18:03:08.131 -0400"/>
+   <property name="Status" value="Failure"/>
+  </properties>
+  <testcase name="verifySaveFunctionality" assertions="23" status="error"  time="180.718">
+    <failure type="LogError" message="cleanUpScenario failed:in &lt;do&gt;:\nSyntax Error at line 1: can&apos;t understand &quot;3&quot; at character 1" />
+    <failure type="LogError" message="Error in running verifySaveFunctionality testcase" />
+    <error type="Throw" message="SenseTalk Compiler Exception - in &lt;do&gt;:\nSyntax Error at line 1: can&apos;t understand &quot;3&quot; at character 1" />
+  </testcase>
+  <testcase name="TestCases/Regular/verifySaveFunctionality.script" assertions="23" status="error"  time="180.747">
+    <failure type="LogError" message="cleanUpScenario failed:in &lt;do&gt;:\nSyntax Error at line 1: can&apos;t understand &quot;3&quot; at character 1" />
+    <failure type="LogError" message="Error in running verifySaveFunctionality testcase" />
+    <failure type="FAILURE" message="SenseTalk Compiler Exception: in &lt;do&gt;:\nSyntax Error at line 1: can&apos;t understand &quot;3&quot; at character 1 -- Execution Time 0:03:00 TestCases/Regular/verifySaveFunctionality.script" />
+    <error type="Throw" message="SenseTalk Compiler Exception - in &lt;do&gt;:\nSyntax Error at line 1: can&apos;t understand &quot;3&quot; at character 1" />
+  </testcase>
+ </testsuite>
+</testsuites>

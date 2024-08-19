@@ -1,0 +1,225 @@
+﻿# This script is containing all the checkers and validation
+#
+
+# to check if imageText is Found
+#---------------------------------
+to isImageTextFound imageText, portion, shouldLogError:true,stopTime:60,neglectSpaces:"No",contrast: "ON"
+	set the defaultTextPlatform.OCRStyles.Default.DPI to 144
+	Try
+		-- Limit the search area to the specified portion
+		if portion is not empty then
+			"Common/search".setSearchSection(portion)
+		end if
+		
+		-- Check if the image text is found within the specified duration
+		if ImageFound(text:imageText, waitFor:stopTime,IgnoreSpaces:neglectSpaces) then
+			MoveTo text:ImageText	
+			"Common/cLog".success ImageText & " " & " " & "is found in" & " " & portion
+			"Common/search".clearSearchSection
+			return true
+		else
+			if shouldLogError then
+				"Common/cLog".cError "Image text not found: " & imageText
+				throw "ImageTextNotFoundException: " , imageText& ":not found"
+			else
+				"Common/search".clearSearchSection
+				return false
+			end if
+		end if
+		"Common/search".clearSearchSection
+	Catch theException
+		"Common/cLog".cError "isImageTextFound failed: " & theException's reason
+		throw theException -- re-throw the exception (if desired)		
+	End try
+end isImageTextFound
+
+# for nodes placement validation
+#--------------------------------
+to nodesPlacement nodesCount
+	set the defaultTextPlatform.OCRStyles.Default.DPI to 144
+	Try
+		"Common/clickEvent".onFoundImageLocation "Table View","BottomCollapsiblePane"
+		"Common/clickEvent".onFoundImageLocation "Nodes","BottomCollapsiblePane"
+		if not "Common/check".isImageTextFound (nodesCount,"NodesIdView",true) then
+			"Common/cLog".cError "validation of Node Placement failed:"
+			throw "validationOfNodePlacementException:",nodesCount && "Image Not Found"
+			
+		end if
+		"Common/cLog".success "node placement validated successfully"
+		"Common/clickEvent".onFoundImageLocation "Table View","BottomCollapsiblePane"
+		"Common/search".clearSearchSection
+	Catch theException
+		"Common/cLog".cError "validation of Node Placement failed:"&theException's reason
+		throw theException 
+		
+	End try
+end nodesPlacement
+
+# for link  validation
+#----------------------
+to linkAdded linkId
+	set the defaultTextPlatform.OCRStyles.Default.DPI to 144
+	Try
+		"Common/clickEvent".onFoundImageLocation "Table View","BottomCollapsiblePane"
+		"Common/clickEvent".onFoundImageLocation "Networks","BottomCollapsiblePane"
+		if not "Common/check".isImageTextFound (linkId,"LinkUuidView",true) then
+			"Common/cLog".cError "validation of link between nodes failed"
+			throw "validationOfLinkBetweenNodesException:",linkId && "Image Not Found"
+		end if
+		"Common/cLog".success "link between nodes validated successfully"
+		"Common/clickEvent".onFoundImageLocation "Table View","BottomCollapsiblePane"
+		"Common/search".clearSearchSection
+	Catch theException
+		"Common/cLog".cError "validation of link added between the nodes failed:"&theException's reason
+		throw theException
+	End try
+end linkAdded
+
+#for traffic validation
+#------------------------
+to trafficAdded sourceId
+	set the defaultTextPlatform.OCRStyles.Default.DPI to 144
+	Try
+		"Common/clickEvent".onFoundImageLocation "Table View","BottomCollapsiblePane"
+		"Common/clickEvent".onFoundImageLocation "Application","BottomCollapsiblePane"
+		if not "Common/check".isImageTextFound (sourceId,"DestinationIdView",true) then
+			"Common/cLog".cError "validation of link between nodes failed"
+			throw "validationOfTrafficBetweenNodesException:",sourceId && "Image Not Found"
+		end if
+		"Common/cLog".success "Traffic between nodes validated successfully"
+		"Common/clickEvent".onFoundImageLocation "Table View","BottomCollapsiblePane"
+		"Common/search".clearSearchSection
+	Catch theException
+		"Common/cLog".cError "validation of Traffic between nodes failed:"&theException's reason
+		throw theException
+	End try
+end trafficAdded
+
+# for saved scenario validation
+#-------------------------------
+to savedScenario configName
+	set the defaultTextPlatform.OCRStyles.Default.DPI to 144
+	Try
+		if not "Common/check".isImageTextFound (configName,"ScenarioTabView",true) then
+			"Common/cLog".cError "validation of saved scenario  failed"
+			throw "validationOfSavedScenarioException :",configName && "Image Not Found"
+		end if
+		"Common/cLog".success "Saved Scenario validated successfully"
+	Catch theException
+		"Common/cLog".cError "validation of saved scenario failed:"&theException's reason
+		throw theException -- re-throw the exception (if desired)
+	End try	
+end savedScenario
+
+# for simulation completion validation
+#-------------------------------------
+to simulationCompletion 
+	set the defaultTextPlatform.OCRStyles.Default.DPI to 144
+	Try
+		if not "Common/check".isImageTextFound ("100%","SimulationProgressView",true,60) then
+			"Common/cLog".cError "validation of simulation completion  failed"
+			throw "validationOfSimulationCompletionException:", "100%: Image Not Found"
+		end if
+		"Common/cLog".success "Simulation validated successfully"
+	Catch theException
+		"Common/cLog".cError "validation of simulation completion failed:"&theException's reason
+		throw theException -- re-throw the exception (if desired)
+	End try	
+end simulationCompletion
+
+# for loaded scenario validation
+#--------------------------------
+to loadedScenario configName,mediaName
+	set the defaultTextPlatform.OCRStyles.Default.DPI to 144
+	Try
+		"Common/waitForEvent".waitForText configName
+		if not "Common/check".isImageTextFound(configName,"TopHalf",false,10) then 
+			"Common/captureScreenShots".captureScreenShots mediaName & ".png" 
+			"Common/cLog".success "Scenario Loaded successfully"			
+			-- putting hardwait becuase eggplant is taking picture immediately due to which loading screen appears
+			"Common/waitForEvent".hardWait 1.0	
+			
+		else 
+			-- adding hardwait because eggplant is not able to find the image correctly on some machines"
+			"Common/waitForEvent".hardWait 5.0	
+			"Common/cLog".success "Scenario Loaded successfully"
+		end if
+		
+	Catch theException
+		"Common/cLog".cError "validation of loaded scenario failed:"&theException's reason
+		throw theException -- re-throw the exception (if desired)
+	End try
+end loadedScenario
+
+# to compare the screen
+#----------------------
+to compare_Screen imageName,targetRectangle
+	set the defaultTextPlatform.OCRStyles.Default.DPI to 144
+	Try
+		CompareScreen {name:imageName ,rectangle:targetRectangle}
+	Catch theException
+		"Common/cLog".cError "compare screen failed:"&theException's reason
+		throw theException 
+	End try
+end compare_screen
+
+# pre-checks before starting EXataGUI
+#------------------------------------
+to preCheckIssues
+	put "OS/OSType".getOsType() into OS
+	if os is "Linux"
+		return ("Reporting Not works for Linux for Now !!!")
+	else if  not checkScreenResolution() then
+		return ("Screen Resolution is not 1920x1080 !!!")
+	else if not checkConfigureXmlContents() then
+		return ("configureXml file contents are missing - Either reportGeneration or savelocation or EXATA_HOME is missing from the file !!!")
+	else 
+		"OS/windows".hideTaskBar
+		put  checkEXataGuiExe() into checkEXataGuiExeResult
+		if checkExataGuiExeResult is not empty then
+			return checkEXataGuiExeResult
+		end if
+	end if
+end preCheckIssues
+
+# checks the screen resolution of SUT
+#------------------------------------
+to checkScreenResolution
+	Try
+		put remoteScreenSize() into screenRect
+		put item 1 of screenRect into screenWidth
+		put item 2 of screenRect into screenHeight
+		log "Screen Width: " & screenWidth & ", Screen Height: " & screenHeight
+		if screenWidth = 1920 and screenHeight = 1080 then
+			return true
+		else
+			return false
+		end if
+	Catch theException
+		"Common/cLog".cError "checkScreenResolution failed:"&theException's reason
+		throw theException -- re-throw the exception (if desired)
+	End try
+end checkScreenResolution
+
+# checks for the presence of EXataGUI exe
+#-----------------------------------------
+to checkEXataGuiExe	
+	Try		
+		return "OS/utility".launchEXataGUI
+	Catch theException
+		"Common/cLog".cError "checkEXataGuiExe failed:"&theException's reason
+		throw theException -- re-throw the exception (if desired)
+	End try
+end checkEXataGuiExe
+
+# checks for the presence of configure.xml file
+#-----------------------------------------------
+to checkConfigureXmlContents
+	Try
+		return "HelperUtilities/Custom".configureXml
+	Catch theException
+		"Common/cLog".cError "checkConfigureXmlContents failed:"&theException's reason
+		throw theException -- re-throw the exception (if desired)
+	End try	
+end checkConfigureXmlContents
+

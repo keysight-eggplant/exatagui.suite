@@ -1,0 +1,54 @@
+﻿# This scipt contains the Eggplant Automated Pass and Fail Tests Scripts
+to startRegularTests
+	try
+		// getting the regular Tests
+		set GUITestCases to "ExataGUI/Constants/testCasesDetails".getRegularTests()
+		if number of items of GUITestCases is 0 then
+			return
+		end if
+		// Starting report Table for regular tests
+		"HelperUtilities/rptHtml".startReportTable "Regular Tests"
+		
+		
+		
+		// Loop through each test case
+		repeat with each testCaseDetails of GUITestCases
+			set testCase to testCaseDetails.testCasePath
+			set testName to testCaseDetails.testName
+			set desc to testCaseDetails.description
+			set expected to testCaseDetails.expected
+			set mediaName to testCaseDetails.media
+			
+			// Execute the test case
+			RunWithNewResults testCase
+			
+			// Check the status of the test case
+			if the status of the last item of ScriptResults(testCase) is "FAILURE" then
+				
+				// Log test case failure
+				"Common/cLog".cError testCase && "FAIL"
+				put the ErrorMessage of the last item of scriptResults(testCase) into myErrorMessage
+				throw testName,myErrorMessage
+			else
+				// Log test case success
+				"Common/cLog".success testName && "SUCCESS"
+				
+				// Add success report line
+				"HelperUtilities/rptHtml".addReportLine testName, desc, expected, mediaName,true
+			end if
+		end repeat
+		
+		// End report table
+		"HelperUtilities/rptHtml".endReportTable 
+	catch theException
+		"HelperUtilities/rptHtml".addReportLine testName, desc,expected, "", false
+		// End report table
+		"HelperUtilities/rptHtml".endReportTable 
+		"HelperUtilities/rptHtml".addErrorMsg  testName && ":" & testCase && "failed",theException's reason,theException's location ,theException's callStack, theException's scriptError
+		// End the report file
+		"HelperUtilities/rptHtml".endReportFile
+		throw theException
+	end try
+end startRegularTests
+
+

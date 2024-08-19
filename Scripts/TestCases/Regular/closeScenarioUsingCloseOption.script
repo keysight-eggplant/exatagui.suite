@@ -1,0 +1,17 @@
+﻿Try
+	BeginTestCase "closeScenarioUsingCloseOption"
+	
+	# initializing the scenario
+	"EXataGUI/scenario".initScenario
+	
+	# to load the default scenario
+	"EXataGUI/scenario".loadOpenExampleScenario "default","", "", false
+	
+	# to close the scenario using Close option
+	"EXataGUI/scenario".closeScenario
+	
+	EndTestCase "closeScenarioUsingCloseOption"
+Catch theException
+	"Common/cLog".cError "Error in running closeScenarioUsingCloseoption TestCase"
+	throw theException 
+End try

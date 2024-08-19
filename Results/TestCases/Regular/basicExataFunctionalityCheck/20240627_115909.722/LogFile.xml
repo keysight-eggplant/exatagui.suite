@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+ <testsuite name="TestCases/Regular/basicExataFunctionalityCheck_script" package="exatagui.suite" timestamp="2024-06-27 11:59:09.722 -0400"
+ tests="2"  failures="0" errors="0" time="284.181000">
+  <properties>
+   <property name="RunDate" value="2024-06-27 11:59:09.722 -0400"/>
+   <property name="Status" value="Success"/>
+  </properties>
+  <testcase name="basicEXataFunctionalityCheck" assertions="32" status="success"  time="284.134">
+  </testcase>
+  <testcase name="TestCases/Regular/basicExataFunctionalityCheck.script" assertions="32" status="success"  time="284.169">
+  </testcase>
+ </testsuite>
+</testsuites>

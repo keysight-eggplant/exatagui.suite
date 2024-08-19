@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+ <testsuite name="main_script" package="exatagui.suite" timestamp="2024-06-25 09:12:02.220 -0400"
+ tests="1"  failures="0" errors="0" time="2570.798000">
+  <properties>
+   <property name="RunDate" value="2024-06-25 09:12:02.220 -0400"/>
+   <property name="Status" value="Success"/>
+  </properties>
+  <testcase name="main.script" assertions="399" status="success"  time="2570.79">
+  </testcase>
+ </testsuite>
+</testsuites>

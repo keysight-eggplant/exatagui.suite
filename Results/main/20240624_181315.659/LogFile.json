@@ -1,0 +1,120 @@
+{
+	"entries": [
+		{
+				"handlerName": "on_cerror",
+				"timestamp": "2024-06-24 18:19:38.873 -0400",
+				"message": "TestCases/Regular/verifySaveFunctionality FAIL",
+				"scriptName": "Common/cLog.script",
+				"handlerLine": 2,
+				"identifier": "LogError"
+			},
+		{
+				"handlerName": "on_startregulartests",
+				"timestamp": "2024-06-24 18:19:38.950 -0400",
+				"message": "verifySaveFunctionality - Image Not Found -- click Error - No Text Found On Screen: \"(TEXT:\"seconds\")\". Text not found.  Restricted Search Rectangle ((480,0),(1440,1080))\\n",
+				"scriptName": "TestCases/Regular/testLauncher.script",
+				"handlerLine": 30,
+				"identifier": "Throw"
+			},
+		{
+				"handlerName": "on_addreportline",
+				"timestamp": "2024-06-24 18:19:39.179 -0400",
+				"scriptName": "HelperUtilities/rptHtml.script",
+				"image": "Screen_Capture_0001.png",
+				"handlerLine": 37,
+				"identifier": "capturescreen"
+			},
+		{
+				"handlerName": "on_addreportline",
+				"timestamp": "2024-06-24 18:19:39.321 -0400",
+				"message": "step step failed",
+				"scriptName": "HelperUtilities/rptHtml.script",
+				"handlerLine": 69,
+				"identifier": "LogWarning"
+			},
+		{
+				"handlerName": "on_startregulartests",
+				"timestamp": "2024-06-24 18:19:39.845 -0400",
+				"message": "verifySaveFunctionality - Image Not Found -- click Error - No Text Found On Screen: \"(TEXT:\"seconds\")\". Text not found.  Restricted Search Rectangle ((480,0),(1440,1080))\\n",
+				"scriptName": "TestCases/Regular/testLauncher.script",
+				"handlerLine": 49,
+				"identifier": "Throw"
+			},
+		{
+				"handlerName": "on_cerror",
+				"timestamp": "2024-06-24 18:19:39.906 -0400",
+				"message": "main script failed:Image Not Found -- click Error - No Text Found On Screen: \"(TEXT:\"seconds\")\". Text not found.  Restricted Search Rectangle ((480,0),(1440,1080))\\n",
+				"scriptName": "Common/cLog.script",
+				"handlerLine": 2,
+				"identifier": "LogError"
+			},
+		{
+				"handlerName": "on_setsearchsection",
+				"timestamp": "2024-06-24 18:19:40.265 -0400",
+				"message": "SEARCHRECTANGLE = [[0,0],[960,540]]",
+				"scriptName": "Common/search.script",
+				"handlerLine": 3,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "function_isimagetextfound",
+				"timestamp": "2024-06-24 18:19:46.392 -0400",
+				"scriptName": "Common/check.script",
+				"message": "Unable to Find Image (TEXT:\"Results\"). Text not found.",
+				"image": "(TEXT:\"Results\")",
+				"handlerLine": 9,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "on_clearsearchsection",
+				"timestamp": "2024-06-24 18:19:46.443 -0400",
+				"message": "SEARCHRECTANGLE = ",
+				"scriptName": "Common/search.script",
+				"handlerLine": 2,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "on_entertext",
+				"timestamp": "2024-06-24 18:19:46.736 -0400",
+				"message": "[windowsAltKey][F4]",
+				"scriptName": "Common/keyBoard.script",
+				"handlerLine": 3,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_entertext",
+				"timestamp": "2024-06-24 18:19:47.752 -0400",
+				"message": "[returnKey]",
+				"scriptName": "Common/keyBoard.script",
+				"handlerLine": 3,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_setsearchsection",
+				"timestamp": "2024-06-24 18:19:48.005 -0400",
+				"message": "SEARCHRECTANGLE = [[480,270],[1440,810]]",
+				"scriptName": "Common/search.script",
+				"handlerLine": 3,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "function_isimagetextfound",
+				"timestamp": "2024-06-24 18:19:49.438 -0400",
+				"message": "Searching For Image: OCR Error: Operation was aborted",
+				"scriptName": "Common/check.script",
+				"handlerLine": 9,
+				"identifier": "Exception"
+			},
+		{
+				"message": "(Duration:\"393.841\", Errors:\"7\", Exceptions:\"7\", StartTime:\"2024-06-24 18:13:15 -0400\", Successes:\"32\", TestCase:\"main.script\", Warnings:\"1\")",
+				"identifier": "EndTestCase",
+				"timestamp": "2024-06-24 18:19:49.509 -0400"
+			},
+		{
+				"message": "Execution Time 0:06:33 main.script",
+				"identifier": "ABORTED",
+				"timestamp": "2024-06-24 18:19:49.516 -0400"
+			}
+	],
+	"createdTimestamp": "2024-06-24 18:19:38.876 -0400"
+}

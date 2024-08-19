@@ -1,0 +1,34 @@
+{
+	"lastmodifieddate": 1708091784.5369999,
+	"ocrcapturestring": "r",
+	"originalcapturelocation": [
+		1141,
+		626,
+		36,
+		40
+	],
+	"createddate": 1708091784.5369999,
+	"testlocationdata": [
+		{
+				"capturedocrtext": "r",
+				"properties": {
+					"CropRectangle": "[0,0,0,0]",
+					"Rotate": 0,
+					"Tolerance": "_45",
+					"HotSpot": "[5,27]",
+					"Scale": "    1",
+					"Discrepancy": "_0",
+					"SearchType": "Tolerant of Background"
+				},
+				"type": 1,
+				"capturerect": [
+					1141,
+					626,
+					36,
+					40
+				],
+				"name": "Canvas_nodes/Canvas_node_2.png"
+			}
+	],
+	"name": "Canvas_nodes/Canvas_node_2"
+}

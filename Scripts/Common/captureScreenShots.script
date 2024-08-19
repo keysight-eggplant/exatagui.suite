@@ -1,0 +1,55 @@
+﻿# This script contains the capture screenshot related operations
+#
+
+# to capture ScreenShot
+#-------------------------------
+-- this function takes the path and rectangle coordinates
+to captureScreenShots path, ssCoordinates
+	Try
+		global ssLocations
+		captureScreen path, ssCoordinates, false
+		put the result into ssLocation
+		put ssLocation split by ("/") into pathName
+		pop pathName into testCaseName
+		
+		-- sslocations is already populated then we need to append 
+		if number of items of ssLocations > 0 then
+			set existingSSLocations to JSONValue(ssLocations)
+			put {key: testCaseName, value: ssLocation} into newSSLocation
+			set mergedSSLocations to union of existingSSLocations and newSSLocation
+			set ssLocations to JSONFormat(mergedSSLocations)
+		else
+			-- otherwise push into ssLocations
+			put {key: testCaseName, value: ssLocation} into newSSLocations
+			set ssLocations to JSONFormat(newSSLocations)
+		end if
+		
+	Catch theException
+		"Common/cLog".cError "captureScreenShots failed: " && theException's reason
+		throw theException -- re-throw the exception (if desired)
+	End try
+end captureScreenShots
+
+# to get ScreenShot location
+#-------------------------------------
+-- this function takes key which is testcase name and then fetches the value which is the location of the screenshot
+to getScreenShotLocation screenshotName
+	global ssLocations
+	try
+		put ssLocations into jsonData
+		-- Parse JSON data into SenseTalk property list
+		set parsedData to JSONValue(jsonData)
+		-- Search for the specified key and return its value
+		repeat with each item pair in parsedData
+			
+			if pair's key = screenShotName then
+				return pair's value
+			end if
+		end repeat
+		--if no key found then return from the handler
+		return
+	catch theException
+		"Common/cLog".cError "getScreenshotLocation failed:" & theException's reason
+		throw theException -- re-throw the exception (if desired)
+	end try
+end getScreenShotLocation

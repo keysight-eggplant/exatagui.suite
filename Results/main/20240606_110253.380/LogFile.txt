@@ -1,0 +1,19 @@
+﻿2024-06-06 11:02:53.385 -0400	START		Running main.script
+2024-06-06 11:02:53.519 -0400	Log		Started the Execution of the EXataGUI Regression Scripts at 11:02 AM on 06/06/24	2	on_cmessage	Common/cLog.script
+2024-06-06 11:02:53.580 -0400	setoptions		ImageUpdate = Off	2	on_variabledata	HelperUtilities/variableData.script
+2024-06-06 11:02:53.582 -0400	setoptions		MouseMoveMode = 2	2	on_variabledata	HelperUtilities/variableData.script
+2024-06-06 11:02:53.585 -0400	setoptions		MouseMoveSpeed = 10	2	on_variabledata	HelperUtilities/variableData.script
+2024-06-06 11:02:53.587 -0400	setoptions		remoteWorkInterval = 1	2	on_variabledata	HelperUtilities/variableData.script
+2024-06-06 11:02:53.753 -0400	Log		Screen Width: 1920, Screen Height: 1080	6	function_checkscreenresolution	Common/check.script
+2024-06-06 11:02:54.031 -0400	Log		C:\Program Files\Scalable\exata\8.2.0.0	2	on_cmessage	Common/cLog.script
+2024-06-06 11:02:54.157 -0400	Log		C:\Users\pratdaga\Documents\UserScenarios	2	on_cmessage	Common/cLog.script
+2024-06-06 11:02:54.287 -0400	Log		generateReport: true	2	on_cmessage	Common/cLog.script
+2024-06-06 11:02:54.429 -0400	Log		The mode of the Execution of Test : custom	2	on_cmessage	Common/cLog.script
+2024-06-06 11:02:54.569 -0400	Log		[closeUnsavedScenario]	2	on_cmessage	Common/cLog.script
+2024-06-06 11:02:57.858 -0400	typetext		[windowsKey]r	3	on_entertext	Common/keyboard.script
+2024-06-06 11:03:00.046 -0400	waitfor	(TEXT:"Run")	found at (12, 524)	6	on_waitfortext	Common/waitForEvent.script
+2024-06-06 11:03:00.184 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-06 11:03:00.991 -0400	typetext		C:\Program Files\Scalable\exata\8.2.0.0\bin\EXataGUI.exe	3	on_entertext	Common/keyBoard.script
+2024-06-06 11:03:02.007 -0400	typetext		[returnKey]	3	on_entertext	Common/keyBoard.script
+2024-06-06 11:03:27.956 -0400	EndTestCase		(Duration:"34.568", Errors:"1", Exceptions:"0", StartTime:"2024-06-06 11:02:53 -0400", Successes:"0", TestCase:"main.script", Warnings:"0")
+2024-06-06 11:03:27.963 -0400	ABORTED		Execution Time 0:00:34 main.script

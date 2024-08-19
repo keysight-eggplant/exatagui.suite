@@ -1,0 +1,35 @@
+﻿2024-06-06 10:37:54.763 -0400	START		Running main.script
+2024-06-06 10:37:55.007 -0400	Log		Started the Execution of the EXataGUI Regression Scripts at 10:37 AM on 06/06/24	2	on_cmessage	Common/cLog.script
+2024-06-06 10:37:55.114 -0400	setoptions		ImageUpdate = Off	2	on_variabledata	HelperUtilities/variableData.script
+2024-06-06 10:37:55.117 -0400	setoptions		MouseMoveMode = 2	2	on_variabledata	HelperUtilities/variableData.script
+2024-06-06 10:37:55.119 -0400	setoptions		MouseMoveSpeed = 10	2	on_variabledata	HelperUtilities/variableData.script
+2024-06-06 10:37:55.123 -0400	setoptions		remoteWorkInterval = 1	2	on_variabledata	HelperUtilities/variableData.script
+2024-06-06 10:37:55.410 -0400	Log		Screen Width: 1920, Screen Height: 1080	6	function_checkscreenresolution	Common/check.script
+2024-06-06 10:37:55.820 -0400	Log		C:\Program Files\Scalable\exata\8.2.0.0	2	on_cmessage	Common/cLog.script
+2024-06-06 10:37:56.013 -0400	Log		C:\Users\pratdaga\Documents\UserScenarios	2	on_cmessage	Common/cLog.script
+2024-06-06 10:37:56.198 -0400	Log		generateReport: true	2	on_cmessage	Common/cLog.script
+2024-06-06 10:37:56.454 -0400	Log		The mode of the Execution of Test : custom	2	on_cmessage	Common/cLog.script
+2024-06-06 10:37:56.646 -0400	Log		[basicEXataFunctionalityCheck]	2	on_cmessage	Common/cLog.script
+2024-06-06 10:37:59.013 -0400	typetext		[windowsKey]r	3	on_entertext	Common/keyboard.script
+2024-06-06 10:38:00.984 -0400	waitfor	(TEXT:"Run")	found at (54, 837)	6	on_waitfortext	Common/waitForEvent.script
+2024-06-06 10:38:01.084 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-06 10:38:02.016 -0400	typetext		C:\Program Files\Scalable\exata\8.2.0.0\bin\EXataGUI.exe	3	on_entertext	Common/keyBoard.script
+2024-06-06 10:38:03.033 -0400	typetext		[returnKey]	3	on_entertext	Common/keyBoard.script
+2024-06-06 10:38:03.386 -0400	set		SEARCHRECTANGLE = [[672,421.2],[1228.8,540]]	3	on_setsearchsection	Common/search.script
+2024-06-06 10:38:08.607 -0400	imagefound	(TEXT:"Windows cannot find")	Unable to Find Image (TEXT:"Windows cannot find"). Text not found.	9	function_isimagetextfound	Common/check.script
+2024-06-06 10:38:08.649 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-06 10:38:09.054 -0400	set		SEARCHRECTANGLE = [[0,0],[76.8,32.4]]	3	on_setsearchsection	Common/search.script
+2024-06-06 10:38:39.663 -0400	imagefound	(TEXT:"EXata")	found at (36, 10)	9	function_isimagetextfound	Common/check.script
+2024-06-06 10:38:41.891 -0400	moveto	(TEXT:"EXata")	at (36, 10)	10	function_isimagetextfound	Common/check.script
+2024-06-06 10:38:41.956 -0400	LogSuccess		EXata  is found in EXataGUITitleBar	2	on_success	Common/cLog.script
+2024-06-06 10:38:42.040 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-06 10:38:42.516 -0400	set		SEARCHRECTANGLE = [[0,0],[480,270]]	3	on_setsearchsection	Common/search.script
+2024-06-06 10:38:42.936 -0400	waitfor	(TEXT:"Scenario Properties")	found at (124, 162)	6	on_waitfortext	Common/waitForEvent.script
+2024-06-06 10:38:43.055 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-06 10:38:43.234 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-06 10:38:43.336 -0400	CompareScreen	[Baseline_Screens]/GUI_Canvas_Windows6 6 2024 _ 10 37 55.png	Captured initial baseline image "GUI_Canvas_Windows6 6 2024 _ 10 37 55"	3	on_compare_screen	Common/check.script
+2024-06-06 10:38:43.624 -0400	Log		main	9	on_startreportfile	HelperUtilities/rptHtml.script
+2024-06-06 10:38:43.851 -0400	Log		C:/Users/pratdaga/Desktop/eggplant_automation/exatagui.suite/Results/main/20240606_103754.752/	13	on_startreportfile	HelperUtilities/rptHtml.script
+2024-06-06 10:38:45.915 -0400	runwithnewresults		basicExataFunctionalityCheck.script (C:/Users/pratdaga/Desktop/eggplant_automation/exatagui.suite/Results/TestCases/Regular/basicExataFunctionalityCheck/20240606_103845.911/LogFile.txt)	22	on_startregulartests	TestCases/Regular/testLauncher.script
+2024-06-06 10:42:11.952 -0400	EndTestCase		(Duration:"257.184", Errors:"2", Exceptions:"0", StartTime:"2024-06-06 10:37:54 -0400", Successes:"7", TestCase:"main.script", Warnings:"0")
+2024-06-06 10:42:11.964 -0400	ABORTED		Execution Time 0:04:17 main.script

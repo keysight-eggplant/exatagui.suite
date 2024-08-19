@@ -1,0 +1,208 @@
+{
+	"entries": [
+		{
+				"message": "Running main.script",
+				"identifier": "START",
+				"timestamp": "2024-06-11 10:07:25.707 -0400"
+			},
+		{
+				"handlerName": "on_cmessage",
+				"timestamp": "2024-06-11 10:07:25.951 -0400",
+				"message": "Started the Execution of the EXataGUI Regression Scripts at 10:07 AM on 06/11/24",
+				"scriptName": "Common/cLog.script",
+				"handlerLine": 2,
+				"identifier": "Log"
+			},
+		{
+				"handlerName": "on_variabledata",
+				"timestamp": "2024-06-11 10:07:25.989 -0400",
+				"message": "ImageUpdate = Off",
+				"scriptName": "HelperUtilities/variableData.script",
+				"handlerLine": 2,
+				"identifier": "setoptions"
+			},
+		{
+				"handlerName": "on_variabledata",
+				"timestamp": "2024-06-11 10:07:25.997 -0400",
+				"message": "MouseMoveMode = 2",
+				"scriptName": "HelperUtilities/variableData.script",
+				"handlerLine": 2,
+				"identifier": "setoptions"
+			},
+		{
+				"handlerName": "on_variabledata",
+				"timestamp": "2024-06-11 10:07:26.006 -0400",
+				"message": "MouseMoveSpeed = 10",
+				"scriptName": "HelperUtilities/variableData.script",
+				"handlerLine": 2,
+				"identifier": "setoptions"
+			},
+		{
+				"handlerName": "on_variabledata",
+				"timestamp": "2024-06-11 10:07:26.010 -0400",
+				"message": "remoteWorkInterval = 1",
+				"scriptName": "HelperUtilities/variableData.script",
+				"handlerLine": 2,
+				"identifier": "setoptions"
+			},
+		{
+				"handlerName": "function_checkscreenresolution",
+				"timestamp": "2024-06-11 10:07:26.134 -0400",
+				"message": "Screen Width: 1920, Screen Height: 1080",
+				"scriptName": "Common/check.script",
+				"handlerLine": 6,
+				"identifier": "Log"
+			},
+		{
+				"handlerName": "on_cmessage",
+				"timestamp": "2024-06-11 10:07:26.180 -0400",
+				"message": "C:\\Program Files\\Scalable\\exata\\8.2.0.0",
+				"scriptName": "Common/cLog.script",
+				"handlerLine": 2,
+				"identifier": "Log"
+			},
+		{
+				"handlerName": "on_cmessage",
+				"timestamp": "2024-06-11 10:07:26.203 -0400",
+				"message": "C:\\Users\\pratdaga\\Documents\\UserScenarios",
+				"scriptName": "Common/cLog.script",
+				"handlerLine": 2,
+				"identifier": "Log"
+			},
+		{
+				"handlerName": "on_cmessage",
+				"timestamp": "2024-06-11 10:07:26.232 -0400",
+				"message": "generateReport: true",
+				"scriptName": "Common/cLog.script",
+				"handlerLine": 2,
+				"identifier": "Log"
+			},
+		{
+				"handlerName": "on_cmessage",
+				"timestamp": "2024-06-11 10:07:26.264 -0400",
+				"message": "The mode of the Execution of Test : full",
+				"scriptName": "Common/cLog.script",
+				"handlerLine": 2,
+				"identifier": "Log"
+			},
+		{
+				"handlerName": "on_entertext",
+				"timestamp": "2024-06-11 10:07:28.391 -0400",
+				"message": "[windowsKey]r",
+				"scriptName": "Common/keyboard.script",
+				"handlerLine": 3,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_waitfortext",
+				"timestamp": "2024-06-11 10:07:38.570 -0400",
+				"scriptName": "Common/waitForEvent.script",
+				"message": "found at (54, 837)",
+				"image": "(TEXT:\"Run\")",
+				"handlerLine": 6,
+				"identifier": "waitfor"
+			},
+		{
+				"handlerName": "on_clearsearchsection",
+				"timestamp": "2024-06-11 10:07:38.672 -0400",
+				"message": "SEARCHRECTANGLE = ",
+				"scriptName": "Common/search.script",
+				"handlerLine": 2,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "on_entertext",
+				"timestamp": "2024-06-11 10:07:41.671 -0400",
+				"message": "C:\\Program Files\\Scalable\\exata\\8.2.0.0\\bin\\EXataGUI.exe",
+				"scriptName": "Common/keyBoard.script",
+				"handlerLine": 3,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_entertext",
+				"timestamp": "2024-06-11 10:07:43.076 -0400",
+				"message": "[returnKey]",
+				"scriptName": "Common/keyBoard.script",
+				"handlerLine": 3,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_setsearchsection",
+				"timestamp": "2024-06-11 10:07:43.174 -0400",
+				"message": "SEARCHRECTANGLE = [[672,421.2],[1228.8,540]]",
+				"scriptName": "Common/search.script",
+				"handlerLine": 3,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "function_isimagetextfound",
+				"timestamp": "2024-06-11 10:07:43.448 -0400",
+				"scriptName": "Common/check.script",
+				"message": "found at (783, 471)",
+				"image": "(TEXT:\"Windows cannot find\")",
+				"handlerLine": 9,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "function_isimagetextfound",
+				"timestamp": "2024-06-11 10:07:45.445 -0400",
+				"scriptName": "Common/check.script",
+				"message": "at (781, 471)",
+				"image": "(TEXT:\"Windows cannot find\")",
+				"handlerLine": 10,
+				"identifier": "moveto"
+			},
+		{
+				"handlerName": "on_success",
+				"timestamp": "2024-06-11 10:07:45.501 -0400",
+				"message": "Windows cannot find  is found in EXataGUIError",
+				"scriptName": "Common/cLog.script",
+				"handlerLine": 2,
+				"identifier": "LogSuccess"
+			},
+		{
+				"handlerName": "on_clearsearchsection",
+				"timestamp": "2024-06-11 10:07:45.519 -0400",
+				"message": "SEARCHRECTANGLE = ",
+				"scriptName": "Common/search.script",
+				"handlerLine": 2,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "on_startreportfile",
+				"timestamp": "2024-06-11 10:07:45.643 -0400",
+				"message": "main",
+				"scriptName": "HelperUtilities/rptHtml.script",
+				"handlerLine": 9,
+				"identifier": "Log"
+			},
+		{
+				"handlerName": "on_startreportfile",
+				"timestamp": "2024-06-11 10:07:46.093 -0400",
+				"message": "C:/ScriptRepositories/exatagui.suite/Results/main/20240611_100725.691/",
+				"scriptName": "HelperUtilities/rptHtml.script",
+				"handlerLine": 13,
+				"identifier": "Log"
+			},
+		{
+				"handlerName": "on_startreportfile",
+				"timestamp": "2024-06-11 10:07:46.108 -0400",
+				"message": "Pre Check Issue: EXataGUI.exe not found",
+				"scriptName": "HelperUtilities/rptHtml.script",
+				"handlerLine": 34,
+				"identifier": "LogError"
+			},
+		{
+				"message": "(Duration:\"20.423\", Errors:\"1\", Exceptions:\"0\", StartTime:\"2024-06-11 10:07:25 -0400\", Successes:\"1\", TestCase:\"main.script\", Warnings:\"0\")",
+				"identifier": "EndTestCase",
+				"timestamp": "2024-06-11 10:07:46.142 -0400"
+			},
+		{
+				"image": "Screen_Error.png",
+				"message": "Script Error: Number of Errors logged: 1 -- Execution Time 0:00:20 main.script",
+				"identifier": "FAILURE",
+				"timestamp": "2024-06-11 10:07:46.291 -0400"
+			}
+	],
+	"createdTimestamp": "2024-06-11 10:07:25.717 -0400"
+}

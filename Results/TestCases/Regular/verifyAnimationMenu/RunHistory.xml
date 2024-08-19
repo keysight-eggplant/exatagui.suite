@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<runHistory script="TestCases/Regular/verifyAnimationMenu">
+ <run>
+  <RunDate>2024-06-24 12:54:52.116 -0400</RunDate>
+  <Status>Success</Status>
+  <Duration>27.740000</Duration>
+  <Errors>0</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>13</Successes>
+  <LogFile>20240624_125452.116/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage></ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2024-06-24 14:12:26.634 -0400</RunDate>
+  <Status>Success</Status>
+  <Duration>26.027000</Duration>
+  <Errors>0</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>13</Successes>
+  <LogFile>20240624_141226.634/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage></ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2024-06-25 08:28:10.239 -0400</RunDate>
+  <Status>Success</Status>
+  <Duration>25.392000</Duration>
+  <Errors>0</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>13</Successes>
+  <LogFile>20240625_082810.239/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage></ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2024-06-25 09:22:53.092 -0400</RunDate>
+  <Status>Success</Status>
+  <Duration>29.736000</Duration>
+  <Errors>0</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>13</Successes>
+  <LogFile>20240625_092253.092/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage></ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2024-06-25 11:54:38.970 -0400</RunDate>
+  <Status>Success</Status>
+  <Duration>23.967000</Duration>
+  <Errors>0</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>13</Successes>
+  <LogFile>20240625_115438.970/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage></ErrorMessage>
+ </run>
+</runHistory>

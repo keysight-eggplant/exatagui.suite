@@ -1,0 +1,57 @@
+﻿2024-06-07 10:41:32.436 -0400	START		Running TestCases/HumanInTheLoop/verifyPreviousAndNextButtons.script	22	on_starthitltests	Testcases/HumanInTheLoop/testLauncher.script
+2024-06-07 10:41:32.484 -0400	BeginTestCase		verifyPreviousAndNextButtons	2	on_verifypreviousandnextbuttons	TestCases/HumanInTheLoop/verifyPreviousAndNextButtons.script
+2024-06-07 10:41:32.716 -0400	CompareScreen	[Baseline_Screens]/GUI_Canvas_Windows7 6 2024 _ 10 19 11.png	CompareScreen "GUI_Canvas_Windows7 6 2024 _ 10 19 11" -- No significant differences from baseline	3	on_compare_screen	Common/check.script
+2024-06-07 10:41:32.856 -0400	CompareScreen	[Baseline_Screens]/GUI_Canvas_Windows7 6 2024 _ 10 19 11.png	CompareScreen "GUI_Canvas_Windows7 6 2024 _ 10 19 11" -- No significant differences from baseline	3	function_compare_screen	Common/check.script
+2024-06-07 10:41:33.119 -0400	typetext		[controlKey]n	3	on_keyboardshortcut	Common/keyBoard.script
+2024-06-07 10:41:34.177 -0400	typetext		[controlKey]n	3	on_keyboardshortcut	Common/keyBoard.script
+2024-06-07 10:41:35.234 -0400	typetext		[controlKey]n	3	on_keyboardshortcut	Common/keyBoard.script
+2024-06-07 10:41:36.286 -0400	typetext		[controlKey]n	3	on_keyboardshortcut	Common/keyBoard.script
+2024-06-07 10:41:37.359 -0400	typetext		[controlKey]n	3	on_keyboardshortcut	Common/keyBoard.script
+2024-06-07 10:41:38.415 -0400	typetext		[controlKey]n	3	on_keyboardshortcut	Common/keyBoard.script
+2024-06-07 10:41:39.475 -0400	typetext		[controlKey]n	3	on_keyboardshortcut	Common/keyBoard.script
+2024-06-07 10:41:40.532 -0400	typetext		[controlKey]n	3	on_keyboardshortcut	Common/keyBoard.script
+2024-06-07 10:41:41.591 -0400	typetext		[controlKey]n	3	on_keyboardshortcut	Common/keyBoard.script
+2024-06-07 10:41:42.650 -0400	typetext		[controlKey]n	3	on_keyboardshortcut	Common/keyBoard.script
+2024-06-07 10:41:43.705 -0400	typetext		[controlKey]n	3	on_keyboardshortcut	Common/keyBoard.script
+2024-06-07 10:41:44.764 -0400	typetext		[controlKey]n	3	on_keyboardshortcut	Common/keyBoard.script
+2024-06-07 10:41:45.823 -0400	typetext		[controlKey]n	3	on_keyboardshortcut	Common/keyBoard.script
+2024-06-07 10:41:46.891 -0400	typetext		[controlKey]n	3	on_keyboardshortcut	Common/keyBoard.script
+2024-06-07 10:41:47.942 -0400	typetext		[controlKey]n	3	on_keyboardshortcut	Common/keyBoard.script
+2024-06-07 10:41:48.997 -0400	typetext		[controlKey]n	3	on_keyboardshortcut	Common/keyBoard.script
+2024-06-07 10:41:50.056 -0400	typetext		[controlKey]n	3	on_keyboardshortcut	Common/keyBoard.script
+2024-06-07 10:41:51.112 -0400	typetext		[controlKey]n	3	on_keyboardshortcut	Common/keyBoard.script
+2024-06-07 10:41:52.169 -0400	typetext		[controlKey]n	3	on_keyboardshortcut	Common/keyBoard.script
+2024-06-07 10:41:53.224 -0400	typetext		[controlKey]n	3	on_keyboardshortcut	Common/keyBoard.script
+2024-06-07 10:41:54.279 -0400	typetext		[controlKey]n	3	on_keyboardshortcut	Common/keyBoard.script
+2024-06-07 10:41:55.338 -0400	typetext		[controlKey]n	3	on_keyboardshortcut	Common/keyBoard.script
+2024-06-07 10:41:56.395 -0400	typetext		[controlKey]n	3	on_keyboardshortcut	Common/keyBoard.script
+2024-06-07 10:41:57.455 -0400	typetext		[controlKey]n	3	on_keyboardshortcut	Common/keyBoard.script
+2024-06-07 10:41:58.521 -0400	typetext		[controlKey]n	3	on_keyboardshortcut	Common/keyBoard.script
+2024-06-07 10:41:58.724 -0400	capturescreen	verifyPreviousAndNextButtons.png	(2,5,1909,977)	4	on_capturescreenshots	Common/captureScreenShots.script
+2024-06-07 10:41:59.207 -0400	set		SEARCHRECTANGLE = [[0,43.2],[96,86.4]]	3	on_setsearchsection	Common/search.script
+2024-06-07 10:41:59.403 -0400	imagefound	(TEXT:"Architect")	found at (58, 59)	9	function_isimagetextfound	Common/check.script
+2024-06-07 10:42:01.818 -0400	moveto	(TEXT:"Architect")	at (58, 59)	10	function_isimagetextfound	Common/check.script
+2024-06-07 10:42:01.875 -0400	LogSuccess		Architect  is found in ArchitectButton	2	on_success	Common/cLog.script
+2024-06-07 10:42:01.934 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-07 10:42:02.304 -0400	set		SEARCHRECTANGLE = [[0,43.2],[96,86.4]]	3	on_setsearchsection	Common/search.script
+2024-06-07 10:42:02.532 -0400	imagefound	(TEXT:"Architect")	found at (58, 59)	7	on_onfoundimagelocation	Common/clickEvent.script
+2024-06-07 10:42:02.954 -0400	click		at (58, 59)	8	on_onfoundimagelocation	Common/clickEvent.script
+2024-06-07 10:42:03.012 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-07 10:42:03.389 -0400	set		SEARCHRECTANGLE = [[0,0],[249.6,151.2]]	3	on_setsearchsection	Common/search.script
+2024-06-07 10:42:04.341 -0400	click	(TEXT:"File")	at (14, 31)	6	on_leftevent	Common/clickEvent.script
+2024-06-07 10:42:04.608 -0400	imagefound	(TEXT:"New")	found at (44, 55)	9	function_isimagetextfound	Common/check.script
+2024-06-07 10:42:05.631 -0400	moveto	(TEXT:"New")	at (44, 55)	10	function_isimagetextfound	Common/check.script
+2024-06-07 10:42:05.698 -0400	LogSuccess		New  is found in 	2	on_success	Common/cLog.script
+2024-06-07 10:42:05.763 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-07 10:42:05.968 -0400	LogSuccess		File menu opened successfully	2	on_success	Common/cLog.script
+2024-06-07 10:42:06.113 -0400	capturescreen	verifyFileMenu.png	(0,2,808,810)	4	on_capturescreenshots	Common/captureScreenShots.script
+2024-06-07 10:42:06.303 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-07 10:42:06.599 -0400	set		SEARCHRECTANGLE = [[0,0],[480,270]]	3	on_setsearchsection	Common/search.script
+2024-06-07 10:42:07.664 -0400	click	(TEXT:"Close All")	at (53, 208)	6	on_leftevent	Common/clickEvent.script
+2024-06-07 10:42:07.741 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-07 10:42:08.701 -0400	CompareScreen	[Baseline_Screens]/GUI_Canvas_Windows7 6 2024 _ 10 19 11.png	CompareScreen "GUI_Canvas_Windows7 6 2024 _ 10 19 11" -- No significant differences from baseline	3	on_compare_screen	Common/check.script
+2024-06-07 10:42:08.850 -0400	CompareScreen	[Baseline_Screens]/GUI_Canvas_Windows7 6 2024 _ 10 19 11.png	CompareScreen "GUI_Canvas_Windows7 6 2024 _ 10 19 11" -- No significant differences from baseline	3	function_compare_screen	Common/check.script
+2024-06-07 10:42:11.137 -0400	click		at (960, 540)	3	on_clickscaled	Common/clickEvent.script
+2024-06-07 10:42:11.196 -0400	EndTestCase		(Duration:"38.712", Errors:"0", Exceptions:"0", StartTime:"2024-06-07 10:41:32 -0400", Successes:"3", TestCase:"verifyPreviousAndNextButtons", Warnings:"0")	13	on_verifypreviousandnextbuttons	TestCases/HumanInTheLoop/verifyPreviousAndNextButtons.script
+2024-06-07 10:42:11.227 -0400	EndTestCase		(Duration:"38.787", Errors:"0", Exceptions:"0", StartTime:"2024-06-07 10:41:32 -0400", Successes:"3", TestCase:"TestCases/HumanInTheLoop/verifyPreviousAndNextButtons.script", Warnings:"0")	22	on_starthitltests	Testcases/HumanInTheLoop/testLauncher.script
+2024-06-07 10:42:11.283 -0400	SUCCESS		Execution Time 0:00:38 TestCases/HumanInTheLoop/verifyPreviousAndNextButtons.script	22	on_starthitltests	Testcases/HumanInTheLoop/testLauncher.script

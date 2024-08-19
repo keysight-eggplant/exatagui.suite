@@ -1,0 +1,14 @@
+﻿# to get connection Name of the SUT
+to getName
+	Try
+		if connectionInfo().Status is "Connected" then
+			put ConnectionInfo().Name into ConnectionName
+		end if
+		return ConnectionName
+	Catch theException
+		"Common/cLog".cError "getName failed:"&theException's reason
+		throw theException 
+	End try
+end getName
+
+

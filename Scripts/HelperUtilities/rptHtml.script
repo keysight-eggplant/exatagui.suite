@@ -1,0 +1,185 @@
+﻿// start html file
+to startReportFile rptName, scriptName, precheckIssues
+	// get  report generation configuration from configure.xml" 
+	global generateReport
+	put generateReport into rptGen
+	if rptGen is false then
+		return
+	end if
+	// get current results folder
+	log scriptName
+	put the logFile of the last item of scriptResults(scriptname) into myLogFile
+	put the folder of myLogFile into global myResultsFolder
+	//put "C:\Users\lindromi\OneDrive - Keysight Technologies\Documents\exatagui.suite\Results\" into global myResultsFolder
+	log global myResultsFolder
+	
+	// set report file name
+	put global myResultsFolder&rptName into Global reportHtmlName
+	
+	set htext to "<html><head><style>table, th, td {} </style></head><body style='background-color:WhiteSmoke;font-family: Arial, sans-serif;'>"
+	set logo to "<center><img src='file:///"&ResourcePath("headerLogo.png")&"' alt='eggplant_logo' style='width:200px;height:100px;'>"
+	set htext1 to "<h3> EXataGUI Test Automation Report</h3><hr style='width:200px''></center>"
+	
+	// Setting htext2 based on the number of precheckIssues
+	put "" into htext2 // Initialize htext2
+	if number of items of precheckIssues > 0 then
+		repeat with each item of precheckIssues
+			put "<font color='red'>" & it & "</font><br>" after htext2
+		end repeat
+		put "<h3>PreCheck Issues</h3>" before htext2
+		set header to htext&&logo&&htext1&&htext2&&"<br>"
+		put header into file (global reportHtmlName&".html") 
+		set global rowCount to 1
+		// Ending the report if there are any precheck issues
+		endReportFile()
+		LogError "Pre Check Issue: "&precheckIssues
+		Exit all
+	end if
+	set header to htext&&logo&&htext1&&htext2&&"<br>"
+	put header into file (global reportHtmlName&".html") 
+	
+	set global rowCount to 1
+end startReportFile
+
+// end html file
+to endReportFile 
+	global generateReport
+	put generateReport into rptGen
+	if rptGen is false then
+		return
+	end if
+	put "</body></html>" & return after file (global reportHtmlName&".html") 
+end endReportFile
+
+// start table
+to startReportTable name, showResult:true
+	global generateReport, reportHtmlName
+	
+	if generateReport is false then
+		return
+	end if
+	
+	set header to "<h3>" & name & "</h3>" & return
+	set startTable to "<table style='width:100%'>" & return
+	set tableHeader to "<tr><th style='border: 1px solid black; padding: 8px;'>Test Name</th><th style='border: 1px solid black; padding: 8px;'>Description</th><th style='border: 1px solid black; padding: 8px;'>Expected</th><th style='border: 1px solid black; padding: 8px;'>" & (if showResult then "Screen shot" else "Actual") & "</th>" & (if showResult then "<th style='border: 1px solid black; padding: 8px;'>Result</th>" else "") & "</tr>"
+	
+	put header & startTable & tableHeader & return after file (reportHtmlName & ".html")
+end startReportTable
+
+
+// end table with a summary of the TestCase
+to endReportTable 
+	global generateReport
+	put generateReport into rptGen
+	if rptGen is false then
+		return
+	end if
+	put "</table>" & return after file (global reportHtmlName&".html")
+end endReportTable
+
+// add a line to the table
+to addReportLine testName, desc, expected, mediaName, status
+	global generateReport
+	put generateReport into rptGen
+	if rptGen is false then
+		return
+	end if
+	if mediaName is not Empty then 
+		if mediaName contains ".png" then 
+			put "Common/captureScreenShots".getScreenShotLocation (mediaName) into screenShotFilePath
+			if screenShotFilePath is not empty then
+				put screenShotFilePath into ssFilePath
+			else
+				CaptureScreen increment:Yes
+				put the result into ssFilePath 
+			end if 
+			put the lastPathComponent of ssFilePath into ssFileName
+			// display the image at 50%
+			set media to "<a href='file:///" & ssFilePath & "' target='_blank'><img src='file:///" & ssFilePath & "' alt='" & ssFileName & "' style='width:400px;height:250px;'></a>"
+		else 
+			put "Common/recordScreen".getVideoLocation (mediaName) into videoFilePath
+			if videoFilePath is not empty then
+				put videoFilePath into vFilePath
+				set media to "<a href='file:///" & vFilePath & "' target='_blank'>" & \
+						"<video width='400' height='250' controls poster='file:///" & vFilePath & ".png'>" & \
+						"<source src='file:///" & vFilePath & "' type='video/mp4'>" & \
+						"Your browser does not support the video tag." & \
+						"</video></a>"
+			else
+				CaptureScreen increment:Yes
+				put the result into ssFilePath 
+				put the lastPathComponent of ssFilePath into ssFileName
+				// display the image at 50%
+				set media to "<a href='file:///" & ssFilePath & "' target='_blank'><img src='file:///" & ssFilePath & "' alt='" & ssFileName & "' style='width:400px;height:250px;'></a>"
+			end if
+		end if 
+	else
+		CaptureScreen increment:Yes
+		put the result into ssFilePath 
+		set media to "<a href='file:///" & ssFilePath & "' target='_blank'><img src='file:///" & ssFilePath & "' alt='" & ssFileName & "' style='width:400px;height:250px;'></a>"
+	end if 	
+	
+	if expected is not empty then
+		// Check if the expected content is a video file (e.g., .mp4)
+		if expected contains ".mp4" then
+			// Render the video as a thumbnail with a clickable link to play in a new tab
+			set expectedVideo to "<a href='file:///" & ResourcePath(expected) & "' target='_blank'>" & \
+					"<video width='400' height='250' controls poster='file:///" & ResourcePath(expected) & ".png'>" & \
+					"<source src='file:///" & ResourcePath(expected) & "' type='video/mp4'>" & \
+					"Your browser does not support the video tag." & \
+					"</video></a>"
+			set expectedMedia to expectedVideo
+			// Otherwise, check if the expected content is an image file
+		else if expected contains ".png" then
+			set expectedMedia to "<a href= 'file:///" & ResourcePath(expected) & "' target='_blank'><img src= 'file:///" & ResourcePath(expected) & "'  alt='" & expected & "' style='width:400px;height:250px;'></a>"
+		else
+			set expectedMedia to expected
+		end if
+	else
+		set expectedMedia to " "
+	end if
+	
+	if status is not empty then 
+		if status then
+			// green text P
+			set stat to "<th style='color:green;width:10%;border:1px solid black'>Passed"
+		else
+			// red text F
+			set stat to "<th style='color:red;width:10%;border:1px solid black'>Script Failed"
+			LogWarning "step "&step&" failed"		
+		end if
+	else
+		set stat to ""
+		
+	end if
+	
+	if global rowCount is an odd number
+		set trRow to "<tr style='background-color:Gainsboro'>"
+	else
+		set trRow to "<tr style='background-color:White'>"
+	end if
+	
+	set rptRow to trRow & "<td style='border:1px solid black'>" & testName & "</td><td style='border:1px solid black;width:400px'>" & desc & "</td><th style='border:1px solid black'>" & expectedMedia & "</th><th style='border:1px solid black'>" & media & "</th>" & stat & "</th></tr>"
+	put rptRow & return after file (global reportHtmlName&".html") 
+	
+	add 1 to global rowCount
+end addReportLine
+
+to addErrorMsg item1, item2, item3, item4, item5
+	global generateReport
+	put generateReport into rptGen
+	if rptGen is false then
+		return
+	end if
+	set icon to "<img src='file:///" & ResourcePath("errorIcon.png") & "' alt='error_icon' style='width:40px;height:32px;'>" & return
+	set msg1 to "<span style='color:red'><b>Script Error Message</b></span>" & return
+	set msg2 to "<p style='color:#0053B5'>&emsp;&emsp;" & item1 & "</p>"
+	set msg3 to "<div style='color:black; padding-left: 2em; overflow-y: auto; max-height: 100px'>" & item2 & "</div>"
+	set msg4 to "<p style='color:red'>&emsp;&emsp;" & item3 & "</p>"
+	set msg5 to "<div style='color:green; padding-left: 2em; overflow-y: auto; max-height: 100px'>" & item4 & "</div>"
+	set msg6 to "<p style='color:red'>&emsp;&emsp;" & item5 & "</p>"
+	
+	put icon && msg1 && msg2 && msg3 && msg4 && msg5 && msg6 after file (global reportHtmlName & ".html") 
+end addErrorMsg
+
+

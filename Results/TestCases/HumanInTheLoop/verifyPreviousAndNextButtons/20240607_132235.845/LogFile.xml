@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+ <testsuite name="TestCases/HumanInTheLoop/verifyPreviousAndNextButtons_script" package="exatagui.suite" timestamp="2024-06-07 13:22:35.845 -0400"
+ tests="2"  failures="0" errors="0" time="38.577000">
+  <properties>
+   <property name="RunDate" value="2024-06-07 13:22:35.845 -0400"/>
+   <property name="Status" value="Success"/>
+  </properties>
+  <testcase name="verifyPreviousAndNextButtons" assertions="3" status="success"  time="38.486">
+  </testcase>
+  <testcase name="TestCases/HumanInTheLoop/verifyPreviousAndNextButtons.script" assertions="3" status="success"  time="38.565">
+  </testcase>
+ </testsuite>
+</testsuites>

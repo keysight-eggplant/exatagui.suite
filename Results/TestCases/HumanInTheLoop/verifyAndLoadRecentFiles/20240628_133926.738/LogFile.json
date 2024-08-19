@@ -1,0 +1,124 @@
+{
+	"entries": [
+		{
+				"message": "Running Testcases/HumanInTheLoop/verifyAndLoadRecentFiles.script",
+				"identifier": "START",
+				"timestamp": "2024-06-28 13:39:26.760 -0400"
+			},
+		{
+				"handlerName": "on_verifyandloadrecentfiles",
+				"timestamp": "2024-06-28 13:39:42.741 -0400",
+				"message": "verifyAndLoadRecentFiles",
+				"scriptName": "Testcases/HumanInTheLoop/verifyAndLoadRecentFiles.script",
+				"handlerLine": 2,
+				"identifier": "BeginTestCase"
+			},
+		{
+				"handlerName": "on_validateemptycanvas",
+				"timestamp": "2024-06-28 13:40:31.734 -0400",
+				"message": "DEFAULTTEXTPLATFORM = Generic OCR",
+				"scriptName": "OS/windows.script",
+				"handlerLine": 2,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "on_compare_screen",
+				"timestamp": "2024-06-28 13:40:48.516 -0400",
+				"message": "DEFAULTTEXTPLATFORM = Generic OCR",
+				"scriptName": "Common/check.script",
+				"handlerLine": 2,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "on_compare_screen",
+				"timestamp": "2024-06-28 13:41:01.138 -0400",
+				"scriptName": "Common/check.script",
+				"message": "CompareScreen \"GUI_Canvas_Windows\" -- No significant differences between current screen and baseline",
+				"image": "[Baseline_Screens]/GUI_Canvas_Windows.png",
+				"handlerLine": 4,
+				"identifier": "CompareScreen"
+			},
+		{
+				"handlerName": "function_compare_screen",
+				"timestamp": "2024-06-28 13:41:01.291 -0400",
+				"message": "DEFAULTTEXTPLATFORM = Generic OCR",
+				"scriptName": "Common/check.script",
+				"handlerLine": 2,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "function_compare_screen",
+				"timestamp": "2024-06-28 13:41:05.428 -0400",
+				"scriptName": "Common/check.script",
+				"message": "CompareScreen \"GUI_Canvas_Windows\" -- No significant differences between current screen and baseline",
+				"image": "[Baseline_Screens]/GUI_Canvas_Windows.png",
+				"handlerLine": 4,
+				"identifier": "CompareScreen"
+			},
+		{
+				"handlerName": "on_loadopenexamplescenario",
+				"timestamp": "2024-06-28 13:41:05.727 -0400",
+				"message": "DEFAULTTEXTPLATFORM = Generic OCR",
+				"scriptName": "EXataGUI/scenario.script",
+				"handlerLine": 2,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "on_openfile",
+				"timestamp": "2024-06-28 13:41:05.807 -0400",
+				"message": "DEFAULTTEXTPLATFORM = Generic OCR",
+				"scriptName": "EXataGUI/actions/menuBar.script",
+				"handlerLine": 2,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "on_setsearchsection",
+				"timestamp": "2024-06-28 13:41:05.881 -0400",
+				"message": "SEARCHRECTANGLE = [[0,0],[249.6,151.2]]",
+				"scriptName": "Common/search.script",
+				"handlerLine": 3,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "on_leftevent",
+				"timestamp": "2024-06-28 13:41:06.471 -0400",
+				"scriptName": "Common/clickEvent.script",
+				"message": "at (14, 31)",
+				"image": "(TEXT:\"File\")",
+				"handlerLine": 6,
+				"identifier": "click"
+			},
+		{
+				"handlerName": "function_isimagetextfound",
+				"timestamp": "2024-06-28 13:41:06.541 -0400",
+				"message": "DEFAULTTEXTPLATFORM = Generic OCR",
+				"scriptName": "Common/check.script",
+				"handlerLine": 2,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "function_isimagetextfound",
+				"timestamp": "2024-06-28 13:41:44.844 -0400",
+				"message": "Searching For Image: OCR Error: Operation was aborted",
+				"scriptName": "Common/check.script",
+				"handlerLine": 10,
+				"identifier": "Exception"
+			},
+		{
+				"message": "(Duration:\"122.388\", Errors:\"1\", Exceptions:\"1\", StartTime:\"2024-06-28 13:39:42 -0400\", Successes:\"0\", TestCase:\"verifyAndLoadRecentFiles\", Warnings:\"0\")",
+				"identifier": "EndTestCase",
+				"timestamp": "2024-06-28 13:41:45.130 -0400"
+			},
+		{
+				"message": "(Duration:\"138.365\", Errors:\"1\", Exceptions:\"1\", StartTime:\"2024-06-28 13:39:26 -0400\", Successes:\"0\", TestCase:\"Testcases/HumanInTheLoop/verifyAndLoadRecentFiles.script\", Warnings:\"0\")",
+				"identifier": "EndTestCase",
+				"timestamp": "2024-06-28 13:41:45.138 -0400"
+			},
+		{
+				"message": "Execution Time 0:02:18 Testcases/HumanInTheLoop/verifyAndLoadRecentFiles.script",
+				"identifier": "ABORTED",
+				"timestamp": "2024-06-28 13:41:45.161 -0400"
+			}
+	],
+	"createdTimestamp": "2024-06-28 13:39:26.771 -0400"
+}

@@ -1,0 +1,276 @@
+(**  
+Common - Handlers for the Common Functions used in test
+@Version 1.1 05/06//2023 
+@ChangeReason Updates to handlers
+
+"This software is copyright Keysight TechnoLogies, Inc. and licensed under the terms of Keysight’s End User License Agreement. Terms of Keysight’s EULA may be found here:?www.keysight.com/find/sweula?By using this Software, you agree to the terms of the Keysight EULA."
+**) 
+
+
+# to set the searchrectangle over the appliation
+function ScreenPart Portion
+	set screenPortions to {
+		TopHalf: [[0,0],[1,0.5]],
+		BottomHalf: [[0,.5],[1,1]],
+		TopLeft: [[0,0],[0.13,0.14]],
+		TopLeftQuadrant:[[0,0],[.5,.5]],
+		TopRightQuadrant: [[0.5,0],[1,.5]],
+		HalfOfTopLeftQuadrant: [[0,0],[0.25,0.25]],
+		BottomLeftQuadrant:[[0,.5],[0.5,1]],
+		BottomRightQuadrant:[[0.5,0.5],[1,1]],
+		Centre: [[0.25,0.25],[0.75,0.75]],
+		VerticalMiddle: [[0.25,0],[0.75,1]],
+		BottomCollapsiblePane:[[0.101,0.684],[0.539,0.996]],
+		LinkUuidView:[[0.526,0.662],[0.993,0.984]],
+		DestinationIdView: [[0.64, 0.76], [0.448, 0.950]],
+		NodesIdView:[[0.107, 0.702], [0.215, 0.958]],
+		ScenarioTabView:[[0.092,0.118],[0.98,0.18]],
+		SimulationProgressView: [[0.507,0.926],[0.608,0.991]],
+		FileMenu: [[0,0.021],[0.145,0.435]],
+		EditMenu: [[0.01,0.018],[0.119,0.23]],
+		ViewMenu: [[0.029,0.01],[0.169,0.373]],
+		ToolsMenu: [[0.048,0.012],[0.221,0.624]],
+		AnimationMenu: [[0.072,0.001],[0.192,0.227]],
+		HelpMenu: [[0.102,0.005],[0.221,0.262]],
+           HideTaskBar:[[0.131,0.046],[0.386,0.294]],
+	}
+	set multiplier to screenPortions.(Portion)		
+	if multiplier is empty then 
+		throw "parameterErrorException", Portion && "is not a recognized screen portion"		
+	end if
+	return [the remoteScreenSize,the remotescreenSize] * multiplier
+end ScreenPart
+
+
+# to get connection Name of the SUT
+to getConnectionName
+	if connectionInfo().Status is "Connected" then
+		put ConnectionInfo().Name into ConnectionName
+	end if
+	return ConnectionName
+end getConnectionName
+
+
+# to launch enterprise application by passing required application path
+to launchApp path,app:global browser,varLogos
+	set global browser to app
+	TypeText windowskey,"r"
+	TypeText path,returnkey
+	if file (suiteinfo().imagesFolder&"/"&varLogos&".png") exists then wait 2, image:varLogos else wait 2, text:varLogos
+	TypeText windowskey, upArrow // maximize window on windows
+end launchApp
+
+
+# to close the enterprise application 
+to closeApp
+	//TypeText controlKey,shiftKey,"w"
+	TypeText altKey, f4
+	wait 2
+end closeApp
+
+
+# to perform kill operation over application
+to killApplicationOnSUT application
+	TypeText windowsKey,"r"
+	TypeText "taskkill /im"&&application&&"/t /f",return
+end killApplicationOnSUT
+
+# to perform click operation over application
+to left myObject,expOutcome
+	if file (suiteinfo().imagesFolder&"/"&myObject&"/") exists then
+		Click {image:myObject,}
+	else
+		Click {text:myObject, IgnoreNewlines:"Yes", IgnoreSpaces:"Yes", TrimWhitespace:"Yes",caseSensitive:true}
+	end if
+	if (expOutcome is not empty) then
+		if file (suiteinfo().imagesFolder&"/"&expOutcome&".png") exists then
+			Wait 1, {image:expOutcome}
+		else
+			Wait 1, {text:expOutcome, IgnoreNewlines:"Yes", IgnoreSpaces:"Yes", TrimWhitespace:"Yes"}
+		end if
+	end if
+end left
+
+
+# to perform click operation over application with hotspot in a field
+to clickEventOffset myObject, offset, expOutcome
+	if file (suiteinfo().imagesFolder&"/"&myObject&".png") exists then
+		Click {image:myObject, hotspot: offset}
+	else
+		Click {text:myObject, hotspot: offset, IgnoreNewlines:"Yes", IgnoreSpaces:"Yes", TrimWhitespace:"Yes",caseSensitive:true}
+	end if
+	if (expOutcome is not empty) then
+		if file (suiteinfo().imagesFolder&"/"&expOutcome&".png") exists then
+			Wait 1, {image:expOutcome}
+		else
+			Wait 1, {text:expOutcome, IgnoreNewlines:"Yes", IgnoreSpaces:"Yes", TrimWhitespace:"Yes"}
+		end if
+	end if
+end clickEventOffset
+
+
+# to perform right click operation over application
+to rightClickEvent myObject,expOutcome
+	if file (suiteinfo().imagesFolder&"/"&myObject&".png") exists then
+		RightClick {image:myObject}
+	else
+		RightClick {text:myObject, IgnoreNewlines:"Yes", IgnoreSpaces:"Yes", TrimWhitespace:"Yes",caseSensitive:true}
+	end if
+	if (expOutcome is not empty) then
+		if file (suiteinfo().imagesFolder&"/"&expOutcome&".png") exists then
+			Wait 1, {image:expOutcome}
+		else
+			Wait 1, {text:expOutcome, IgnoreNewlines:"Yes", IgnoreSpaces:"Yes", TrimWhitespace:"Yes"}
+		end if
+	end if
+end rightClickEvent
+
+
+# to perform right click operation over application with hotspot in a field
+to rightClickEventOffset myObject, offset, expOutcome
+	if file (suiteinfo().imagesFolder&"/"&myObject&".png") exists then
+		RightClick {image:myObject, hotspot: offset}
+	else
+		RightClick {text:myObject, hotspot: offset, IgnoreNewlines:"Yes", IgnoreSpaces:"Yes", TrimWhitespace:"Yes",caseSensitive:true}
+	end if
+	if (expOutcome is not empty) then
+		if file (suiteinfo().imagesFolder&"/"&expOutcome&".png") exists then
+			Wait 1, {image:expOutcome}
+		else
+			Wait 1, {text:expOutcome, IgnoreNewlines:"Yes", IgnoreSpaces:"Yes", TrimWhitespace:"Yes"}
+		end if
+	end if
+end rightClickEventOffset
+
+
+# to perform type operation over application
+to textEntry myObject
+	TypeText controlKey,"a"
+	TypeText myObject
+end textEntry
+
+
+# to perform type operation over application with hotspot in a field
+to textEntryOffset label, input, offset
+	click text: label, hotspot: offset
+	wait 0.5
+	TypeText controlkey, "a"
+	TypeText input
+	wait 0.3
+end textEntryOffset
+
+
+# to perform DoubleClick action over an element
+to doubleClickTextEntry label,input, SR, offset
+	DoubleClick CenterLeft of scrollTo(label, SR) + offset
+	wait 0.5
+	TypeText input
+	wait 0.3
+end doubleClickTextEntry
+
+
+#to scroll to an element using image/text
+to scrollTo toFind, SR
+	--Images 
+	if file (suiteinfo().imagesFolder&"/"&toFind&".png") exists then
+		repeat until imagefound(0, image:toFind, searchRectangle:ScreenPart(SR))
+			ScrollWheelDown 5
+			wait 1
+			if (repeatindex() > 10) then 
+				LogError "Cannot find"&&toFind
+				Exit repeat
+			end if
+		end repeat
+	else
+		--OCR
+		repeat until imagefound(text:toFind, searchRectangle:ScreenPart(SR), ignoreNewlines:on, ignorespaces:on)
+			ScrollWheelDown 5
+			wait 1
+			if (repeatindex() > 10) then 
+				LogError "Cannot find"&&toFind
+				Exit repeat
+			end if
+		end repeat
+	end if
+	return foundimageinfo().imageRectangle 
+end scrollTo
+
+
+# to perform click action and vadidate something over the screen
+to navigateTo action, SR, SR2, expectation
+	// do something
+	if (action is not empty) then
+		click the center of common.scrollTo(action, SR)
+		wait 1
+	end if 
+	// check something
+	if (expectation is not empty) then
+		if file (suiteinfo().imagesFolder&"/"&expectation&".png") exists then
+			wait 1, image:expectation, searchRectangle:ScreenPart(SR2)
+		else
+			wait 1, image:expectation, text:expectation, searchRectangle:ScreenPart(SR2)
+		end if 
+		MoveTo (bottomCenter of the RemoteScreenRectangle- [0,300])
+	end if 
+	wait 1
+end navigateTo
+
+
+# to select or unselect a checkbox
+to checkBox label, SR, offset
+	click the CenterLeft of scrollTo(label, SR) + offset
+	wait 0.5
+end checkBox
+
+
+# to select a value from dropdown list
+to dropdown label,offset,input
+	put ImageLocation(text:label) into labelLocation
+	click labelLocation + offset
+	wait 0.5
+	typetext input,return
+end dropdown
+
+
+# to perform search operation over application
+to searchTextEntry label,input, SR, offset
+	click CenterLeft of scrollTo(label, SR) + offset
+	wait 0.5
+	TypeText controlKey,"a"
+	TypeText input
+	wait 0.3
+end searchTextEntry
+
+
+# to select subMenu item
+to subMenuSelect subMenu, selection, SR, SR2, SR3, expectation
+	navigateTo subMenu, SR, SR2
+	wait 0.3
+	navigateTo selection, SR2, SR3, expectation
+end subMenuSelect
+
+
+# to perform move operation over application
+to moveToEvent myObject
+	if file (suiteinfo().imagesFolder&"/"&myObject&".png") exists then
+		MoveTo {image:myObject}
+	else
+		MoveTo {text:myObject}
+	end if
+end moveToEvent
+
+
+# to perform verify operation over application
+to verifyEvent verifyObject,successMsg,errorMsg	
+	if file (suiteinfo().imagesFolder&"/"&verifyObject&".png") exists then
+		if ImageFound(image:verifyObject) then Log successMsg else LogError errorMsg
+	else
+		if ImageFound(text:verifyObject) then Log successMsg else LogError errorMsg
+	end if
+end verifyEvent
+
+# to perform Drag And Drop over the application
+to dragAndDrop fromObject, toObject
+	drag fromObject
+	drop toObject
+end dragAndDrop

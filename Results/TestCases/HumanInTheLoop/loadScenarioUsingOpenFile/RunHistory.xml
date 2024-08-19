@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<runHistory script="TestCases/HumanInTheLoop/loadScenarioUsingOpenFile">
+ <run>
+  <RunDate>2024-06-25 09:49:46.231 -0400</RunDate>
+  <Status>Success</Status>
+  <Duration>283.798000</Duration>
+  <Errors>0</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>32</Successes>
+  <LogFile>20240625_094946.231/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage></ErrorMessage>
+ </run>
+</runHistory>

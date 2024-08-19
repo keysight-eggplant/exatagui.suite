@@ -1,0 +1,115 @@
+﻿2024-06-06 10:33:33.324 -0400	START		Running TestCases/Regular/verifyViewMenu.script	22	on_startregulartests	TestCases/Regular/testLauncher.script
+2024-06-06 10:33:33.389 -0400	BeginTestCase		verifyViewMenu	2	on_verifyviewmenu	TestCases/Regular/verifyViewMenu.script
+2024-06-06 10:33:33.608 -0400	CompareScreen	[Baseline_Screens]/GUI_Canvas_Windows6 6 2024 _ 10 25 17.png	CompareScreen "GUI_Canvas_Windows6 6 2024 _ 10 25 17" -- No significant differences from baseline	3	on_compare_screen	Common/check.script
+2024-06-06 10:33:33.762 -0400	CompareScreen	[Baseline_Screens]/GUI_Canvas_Windows6 6 2024 _ 10 25 17.png	CompareScreen "GUI_Canvas_Windows6 6 2024 _ 10 25 17" -- No significant differences from baseline	3	function_compare_screen	Common/check.script
+2024-06-06 10:33:34.176 -0400	set		SEARCHRECTANGLE = [[21.12,20.52],[295.68,363.96]]	3	on_setsearchsection	Common/search.script
+2024-06-06 10:33:36.323 -0400	click	(TEXT:"View")	at (83, 32)	6	on_leftevent	Common/clickEvent.script
+2024-06-06 10:33:37.111 -0400	imagefound	(TEXT:"Standard Toolbar")	found at (141, 54)	9	function_isimagetextfound	Common/check.script
+2024-06-06 10:33:37.868 -0400	moveto	(TEXT:"Standard Toolbar")	at (141, 54)	10	function_isimagetextfound	Common/check.script
+2024-06-06 10:33:37.918 -0400	LogSuccess		Standard Toolbar  is found in 	2	on_success	Common/cLog.script
+2024-06-06 10:33:37.989 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-06 10:33:38.152 -0400	LogSuccess		View menu opened successfully	2	on_success	Common/cLog.script
+2024-06-06 10:33:38.265 -0400	capturescreen	verifyViewMenu.png	(2,6,787,513)	4	on_capturescreenshots	Common/captureScreenShots.script
+2024-06-06 10:33:38.803 -0400	set		SEARCHRECTANGLE = [[21.12,20.52],[295.68,363.96]]	3	on_setsearchsection	Common/search.script
+2024-06-06 10:33:39.510 -0400	imagefound	(TEXT:"Standard Toolbar")	found at (141, 54)	9	on_isimagetextfound	Common/check.script
+2024-06-06 10:33:40.107 -0400	moveto	(TEXT:"Standard Toolbar")	at (141, 54)	10	on_isimagetextfound	Common/check.script
+2024-06-06 10:33:40.228 -0400	LogSuccess		Standard Toolbar  is found in ViewMenu	2	on_success	Common/cLog.script
+2024-06-06 10:33:40.284 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-06 10:33:40.688 -0400	set		SEARCHRECTANGLE = [[21.12,20.52],[295.68,363.96]]	3	on_setsearchsection	Common/search.script
+2024-06-06 10:33:41.143 -0400	imagefound	(TEXT:"Navigation Toolbar")	found at (160, 99)	9	on_isimagetextfound	Common/check.script
+2024-06-06 10:33:41.593 -0400	moveto	(TEXT:"Navigation Toolbar")	at (160, 99)	10	on_isimagetextfound	Common/check.script
+2024-06-06 10:33:41.636 -0400	LogSuccess		Navigation Toolbar  is found in ViewMenu	2	on_success	Common/cLog.script
+2024-06-06 10:33:41.708 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-06 10:33:42.132 -0400	set		SEARCHRECTANGLE = [[21.12,20.52],[295.68,363.96]]	3	on_setsearchsection	Common/search.script
+2024-06-06 10:33:42.554 -0400	imagefound	(TEXT:"3D Navigation Toolbar")	found at (152, 99)	9	on_isimagetextfound	Common/check.script
+2024-06-06 10:33:42.959 -0400	moveto	(TEXT:"3D Navigation Toolbar")	at (152, 99)	10	on_isimagetextfound	Common/check.script
+2024-06-06 10:33:43.059 -0400	LogSuccess		3D Navigation Toolbar  is found in ViewMenu	2	on_success	Common/cLog.script
+2024-06-06 10:33:43.119 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-06 10:33:43.518 -0400	set		SEARCHRECTANGLE = [[21.12,20.52],[295.68,363.96]]	3	on_setsearchsection	Common/search.script
+2024-06-06 10:33:44.013 -0400	imagefound	(TEXT:"Coordinates Toolbar")	found at (148, 120)	9	on_isimagetextfound	Common/check.script
+2024-06-06 10:33:44.581 -0400	moveto	(TEXT:"Coordinates Toolbar")	at (148, 120)	10	on_isimagetextfound	Common/check.script
+2024-06-06 10:33:44.627 -0400	LogSuccess		Coordinates Toolbar  is found in ViewMenu	2	on_success	Common/cLog.script
+2024-06-06 10:33:44.688 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-06 10:33:45.099 -0400	set		SEARCHRECTANGLE = [[21.12,20.52],[295.68,363.96]]	3	on_setsearchsection	Common/search.script
+2024-06-06 10:33:45.550 -0400	imagefound	(TEXT:"View Toolbar")	found at (130, 142)	9	on_isimagetextfound	Common/check.script
+2024-06-06 10:33:46.037 -0400	moveto	(TEXT:"View Toolbar")	at (130, 142)	10	on_isimagetextfound	Common/check.script
+2024-06-06 10:33:46.088 -0400	LogSuccess		View Toolbar  is found in ViewMenu	2	on_success	Common/cLog.script
+2024-06-06 10:33:46.146 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-06 10:33:46.585 -0400	set		SEARCHRECTANGLE = [[21.12,20.52],[295.68,363.96]]	3	on_setsearchsection	Common/search.script
+2024-06-06 10:33:47.146 -0400	imagefound	(TEXT:"Run Toolbar")	found at (128, 164)	9	on_isimagetextfound	Common/check.script
+2024-06-06 10:33:47.675 -0400	moveto	(TEXT:"Run Toolbar")	at (128, 164)	10	on_isimagetextfound	Common/check.script
+2024-06-06 10:33:47.718 -0400	LogSuccess		Run Toolbar  is found in ViewMenu	2	on_success	Common/cLog.script
+2024-06-06 10:33:47.788 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-06 10:33:48.241 -0400	set		SEARCHRECTANGLE = [[21.12,20.52],[295.68,363.96]]	3	on_setsearchsection	Common/search.script
+2024-06-06 10:33:48.821 -0400	imagefound	(TEXT:"Emulation Toolbar")	found at (142, 186)	9	on_isimagetextfound	Common/check.script
+2024-06-06 10:33:49.421 -0400	moveto	(TEXT:"Emulation Toolbar")	at (142, 186)	10	on_isimagetextfound	Common/check.script
+2024-06-06 10:33:49.516 -0400	LogSuccess		Emulation Toolbar  is found in ViewMenu	2	on_success	Common/cLog.script
+2024-06-06 10:33:49.598 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-06 10:33:50.141 -0400	set		SEARCHRECTANGLE = [[21.12,20.52],[295.68,363.96]]	3	on_setsearchsection	Common/search.script
+2024-06-06 10:33:50.768 -0400	imagefound	(TEXT:"HITL Toolbar")	found at (130, 208)	9	on_isimagetextfound	Common/check.script
+2024-06-06 10:33:51.424 -0400	moveto	(TEXT:"HITL Toolbar")	at (130, 208)	10	on_isimagetextfound	Common/check.script
+2024-06-06 10:33:51.509 -0400	LogSuccess		HITL Toolbar  is found in ViewMenu	2	on_success	Common/cLog.script
+2024-06-06 10:33:51.576 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-06 10:33:52.119 -0400	set		SEARCHRECTANGLE = [[21.12,20.52],[295.68,363.96]]	3	on_setsearchsection	Common/search.script
+2024-06-06 10:33:52.633 -0400	imagefound	(TEXT:"Heatmap Toolbar")	found at (140, 231)	9	on_isimagetextfound	Common/check.script
+2024-06-06 10:33:53.264 -0400	moveto	(TEXT:"Heatmap Toolbar")	at (140, 231)	10	on_isimagetextfound	Common/check.script
+2024-06-06 10:33:53.317 -0400	LogSuccess		Heatmap Toolbar  is found in ViewMenu	2	on_success	Common/cLog.script
+2024-06-06 10:33:53.381 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-06 10:33:53.802 -0400	set		SEARCHRECTANGLE = [[21.12,20.52],[295.68,363.96]]	3	on_setsearchsection	Common/search.script
+2024-06-06 10:33:54.329 -0400	imagefound	(TEXT:"Zoom In")	found at (119, 262)	9	on_isimagetextfound	Common/check.script
+2024-06-06 10:33:55.029 -0400	moveto	(TEXT:"Zoom In")	at (119, 262)	10	on_isimagetextfound	Common/check.script
+2024-06-06 10:33:55.074 -0400	LogSuccess		Zoom In  is found in ViewMenu	2	on_success	Common/cLog.script
+2024-06-06 10:33:55.140 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-06 10:33:55.655 -0400	set		SEARCHRECTANGLE = [[21.12,20.52],[295.68,363.96]]	3	on_setsearchsection	Common/search.script
+2024-06-06 10:33:56.200 -0400	imagefound	(TEXT:"Zoom Out")	found at (123, 284)	9	on_isimagetextfound	Common/check.script
+2024-06-06 10:33:56.820 -0400	moveto	(TEXT:"Zoom Out")	at (123, 284)	10	on_isimagetextfound	Common/check.script
+2024-06-06 10:33:56.864 -0400	LogSuccess		Zoom Out  is found in ViewMenu	2	on_success	Common/cLog.script
+2024-06-06 10:33:56.928 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-06 10:33:57.343 -0400	set		SEARCHRECTANGLE = [[21.12,20.52],[295.68,363.96]]	3	on_setsearchsection	Common/search.script
+2024-06-06 10:33:58.048 -0400	imagefound	(TEXT:"Display Settings")	found at (137, 315)	9	on_isimagetextfound	Common/check.script
+2024-06-06 10:33:58.704 -0400	moveto	(TEXT:"Display Settings")	at (137, 315)	10	on_isimagetextfound	Common/check.script
+2024-06-06 10:33:58.753 -0400	LogSuccess		Display Settings  is found in ViewMenu	2	on_success	Common/cLog.script
+2024-06-06 10:33:58.837 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-06 10:33:59.245 -0400	set		SEARCHRECTANGLE = [[21.12,20.52],[295.68,363.96]]	3	on_setsearchsection	Common/search.script
+2024-06-06 10:34:00.043 -0400	imagefound	(TEXT:"Camera Settings")	found at (139, 338)	9	on_isimagetextfound	Common/check.script
+2024-06-06 10:34:00.697 -0400	moveto	(TEXT:"Camera Settings")	at (139, 338)	10	on_isimagetextfound	Common/check.script
+2024-06-06 10:34:00.799 -0400	LogSuccess		Camera Settings  is found in ViewMenu	2	on_success	Common/cLog.script
+2024-06-06 10:34:00.869 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-06 10:34:01.050 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-06 10:34:01.443 -0400	set		SEARCHRECTANGLE = [[21.12,20.52],[295.68,363.96]]	3	on_setsearchsection	Common/search.script
+2024-06-06 10:34:01.918 -0400	imagefound	(TEXT:"View")	found at (110, 143)	7	on_onfoundimagelocation	Common/clickEvent.script
+2024-06-06 10:34:02.356 -0400	click		at (110, 143)	8	on_onfoundimagelocation	Common/clickEvent.script
+2024-06-06 10:34:02.418 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-06 10:34:04.964 -0400	imagefound	(TEXT:"Architect")	found at (58, 59)	9	function_isimagetextfound	Common/check.script
+2024-06-06 10:34:07.749 -0400	moveto	(TEXT:"Architect")	at (58, 59)	10	function_isimagetextfound	Common/check.script
+2024-06-06 10:34:07.792 -0400	LogSuccess		Architect  is found in 	2	on_success	Common/cLog.script
+2024-06-06 10:34:07.855 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-06 10:34:07.931 -0400	LogSuccess		View menu closed successfully	2	on_success	Common/cLog.script
+2024-06-06 10:34:07.986 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-06 10:34:08.375 -0400	set		SEARCHRECTANGLE = [[0,43.2],[96,86.4]]	3	on_setsearchsection	Common/search.script
+2024-06-06 10:34:08.645 -0400	imagefound	(TEXT:"Architect")	found at (58, 59)	9	function_isimagetextfound	Common/check.script
+2024-06-06 10:34:08.973 -0400	moveto	(TEXT:"Architect")	at (58, 59)	10	function_isimagetextfound	Common/check.script
+2024-06-06 10:34:09.083 -0400	LogSuccess		Architect  is found in ArchitectButton	2	on_success	Common/cLog.script
+2024-06-06 10:34:09.147 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-06 10:34:09.613 -0400	set		SEARCHRECTANGLE = [[0,43.2],[96,86.4]]	3	on_setsearchsection	Common/search.script
+2024-06-06 10:34:09.892 -0400	imagefound	(TEXT:"Architect")	found at (58, 59)	7	on_onfoundimagelocation	Common/clickEvent.script
+2024-06-06 10:34:10.067 -0400	click		at (58, 59)	8	on_onfoundimagelocation	Common/clickEvent.script
+2024-06-06 10:34:10.121 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-06 10:34:10.620 -0400	set		SEARCHRECTANGLE = [[0,0],[249.6,151.2]]	3	on_setsearchsection	Common/search.script
+2024-06-06 10:34:11.412 -0400	click	(TEXT:"File")	at (14, 31)	6	on_leftevent	Common/clickEvent.script
+2024-06-06 10:34:12.834 -0400	imagefound	(TEXT:"New")	found at (44, 55)	9	function_isimagetextfound	Common/check.script
+2024-06-06 10:34:13.167 -0400	moveto	(TEXT:"New")	at (44, 55)	10	function_isimagetextfound	Common/check.script
+2024-06-06 10:34:13.251 -0400	LogSuccess		New  is found in 	2	on_success	Common/cLog.script
+2024-06-06 10:34:13.322 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-06 10:34:13.489 -0400	LogSuccess		File menu opened successfully	2	on_success	Common/cLog.script
+2024-06-06 10:34:13.616 -0400	capturescreen	verifyFileMenu.png	(0,2,808,810)	4	on_capturescreenshots	Common/captureScreenShots.script
+2024-06-06 10:34:13.819 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-06 10:34:14.241 -0400	set		SEARCHRECTANGLE = [[0,0],[480,270]]	3	on_setsearchsection	Common/search.script
+2024-06-06 10:34:15.361 -0400	click	(TEXT:"Close All")	at (53, 208)	6	on_leftevent	Common/clickEvent.script
+2024-06-06 10:34:15.430 -0400	set		SEARCHRECTANGLE = 	2	on_clearsearchsection	Common/search.script
+2024-06-06 10:34:16.366 -0400	CompareScreen	[Baseline_Screens]/GUI_Canvas_Windows6 6 2024 _ 10 25 17.png	CompareScreen "GUI_Canvas_Windows6 6 2024 _ 10 25 17" -- No significant differences from baseline	3	on_compare_screen	Common/check.script
+2024-06-06 10:34:16.550 -0400	CompareScreen	[Baseline_Screens]/GUI_Canvas_Windows6 6 2024 _ 10 25 17.png	CompareScreen "GUI_Canvas_Windows6 6 2024 _ 10 25 17" -- No significant differences from baseline	3	function_compare_screen	Common/check.script
+2024-06-06 10:34:18.172 -0400	click		at (960, 540)	3	on_clickscaled	Common/clickEvent.script
+2024-06-06 10:34:18.271 -0400	EndTestCase		(Duration:"44.882", Errors:"0", Exceptions:"0", StartTime:"2024-06-06 10:33:33 -0400", Successes:"20", TestCase:"verifyViewMenu", Warnings:"0")	59	on_verifyviewmenu	TestCases/Regular/verifyViewMenu.script
+2024-06-06 10:34:18.291 -0400	EndTestCase		(Duration:"44.962", Errors:"0", Exceptions:"0", StartTime:"2024-06-06 10:33:33 -0400", Successes:"20", TestCase:"TestCases/Regular/verifyViewMenu.script", Warnings:"0")	22	on_startregulartests	TestCases/Regular/testLauncher.script
+2024-06-06 10:34:18.355 -0400	SUCCESS		Execution Time 0:00:44 TestCases/Regular/verifyViewMenu.script	22	on_startregulartests	TestCases/Regular/testLauncher.script

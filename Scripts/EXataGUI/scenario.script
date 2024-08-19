@@ -1,0 +1,291 @@
+﻿# it is a stateful script which stores nodeCoordinates and totalNodeCount empty for nodeCoordinates and totalNodeCount as 0
+#
+# to initilize the scenario
+#--------------------------------
+to initScenario 
+	global nodeCoordinates
+	global totalNodeCount
+	try	
+		--setting the nodeCoordinates as empty
+		set nodeCoordinates to []
+		--setting the totalNodeCount as empty
+		set totalNodeCount to 0
+		# validating if canvas is empty or not
+		"OS/utility".validateEmptyCanvas
+	catch theException
+		"Common/cLog".cError "initScenario failed:" &theException's reason
+		throw theException 
+	end try
+end initScenario
+
+# to load a scenario using Open Example option
+#----------------------------------------------------------------
+to loadOpenExampleScenario configFolder,configName:"",key,mediaName,takeScreenShot:false
+	set the defaultTextPlatform.OCRStyles.Default.DPI to 144
+	Try
+		If key is not empty then 
+			"Common/keyboard".keyboardShortcut key
+		else
+			--open the file menu and click on Open Example option
+			"EXataGUI/actions/menuBar".openFile
+			"EXataGUI/actions/menuBar".selectOpenFile configFolder,configName, true
+		End If
+		if "Common/check".isImageTextFound("cancel") then
+			"EXataGUI/actions/menuBar".enterFileName configFolder
+			"Common/keyBoard".pressEnter
+			if configName is not empty then
+				"EXataGUI/actions/menuBar".enterFileName configName & ".config"
+				"Common/keyBoard".pressEnter
+				"Common/check".loadedScenario configName 
+			else
+				"EXataGUI/actions/menuBar".enterFileName configFolder & ".config"
+				"Common/keyBoard".pressEnter
+				"Common/check".loadedScenario configFolder
+			end if
+		else
+			"Common/cLog".cError "text not found", "cancel text is missing"
+			throw "loadopenExampleScenarioException:", "load scenario using Open Example failed"
+		end if
+		"Common/cLog".success "Load scenario using Open Example operation completed successfully."
+		if takeScreenShot is true then 
+			--taking the screenShot 
+			"Common/captureScreenShots".captureScreenshots mediaName & ".png" ,[644,195,1522,1026]
+		end if
+		
+	Catch theException
+		"Common/cLog".cError "loadScenario failed:" &theException's reason
+		throw theException -- re-throw the exception (if desired)
+	End try
+end loadOpenExampleScenario
+
+# to load a scenario using Open File option or using keyboard shortcut or by using 'Open Scenario Configuration or Animation File' button
+#------------------------------------------------------------------------------------------------------------------------------------------
+to loadOpenFileScenario configFolder,configName:"",key, myObject,mediaName,takeScreenShot:false
+	set the defaultTextPlatform.OCRStyles.Default.DPI to 144
+	Try
+		If key is not empty then 
+			"Common/keyboard".keyboardShortcut key
+		else
+			if file (suiteinfo().imagesFolder&"/"&myObject&"/") exists then
+				Click {image:myObject,}
+			else
+				--open the file menu and click on Open File option
+				"EXataGUI/actions/menuBar".openFile
+				"EXataGUI/actions/menuBar".selectOpenFile configFolder,configName
+			end if
+		end if
+		
+		if "Common/check".isImageTextFound("cancel") then
+			"EXataGUI/actions/menuBar".enterFileName configFolder
+			"Common/keyBoard".pressEnter
+			if configName is not empty then
+				"EXataGUI/actions/menuBar".enterFileName configName & ".config"
+				"Common/keyBoard".pressEnter
+				"Common/check".loadedScenario configName 
+			else
+				"EXataGUI/actions/menuBar".enterFileName configFolder & ".config"
+				"Common/keyBoard".pressEnter
+				"Common/check".loadedScenario configFolder
+			end if
+		else
+			"Common/cLog".cError "text not found", "cancel text is missing"
+			throw "loadopenExampleScenarioException:", "load scenario using Open Example failed"
+		end if
+		"Common/cLog".success "Load scenario using Open Example operation completed successfully."
+		
+		if takeScreenShot is true then 
+			--taking the screenShot 
+			"Common/captureScreenShots".captureScreenshots mediaName & ".png" ,[873,194,1286,1021]
+		end if
+		
+	Catch theException 
+		"Common/cLog".cError "loadScenario failed:" &theException's reason
+		throw theException -- re-throw the exception (if desired)
+	End try
+end loadOpenFileScenario
+
+# Copy scenario files
+to copyScenarioFiles
+	set the defaultTextPlatform.OCRStyles.Default.DPI to 144
+	Try
+		if "Common/check".isImageTextFound("Copy Scenario Files", "Centre", false) then
+			"Common/clickEvent".onFoundImageLocation "Select All", "Centre"
+			"Common/clickEvent".onFoundImageLocation "Copy", "BottomRightQuadrant"
+		end if
+		"Common/search".clearSearchSection
+	Catch theException
+		"Common/cLog".cError "copyScenarioFiles failed:" & theException's reason
+		throw theException
+	End try
+end copyScenarioFiles
+
+
+# to cleanup the scenario
+#---------------------------------
+to cleanUpScenario
+	Try
+		-- coming back to scenario if other editor is opened in the testcase
+		if  "Common/check".isImageTextFound("Architect","TopLeft",false) then
+			"Common/clickEvent".onFoundImageLocation "Architect","TopLeft"
+		end if
+		--Closing all the scenarios
+		"EXataGUI/actions/menuBar".openFile
+		"EXataGUI/actions/menuBar".closeAll
+		"Common/clickEvent". clickScaled "0.5"
+	Catch theException
+		"Common/cLog".cError "cleanUpScenario failed:" &theException's reason
+		throw theException
+	End try
+end cleanUpScenario
+
+
+# to save the scenario
+#-----------------------------
+to saveTheScenario configName
+	Try
+		-- open file Menu
+		"EXataGUI/actions/menuBar".openFile
+		-- selecting save as option from file menu
+		"EXataGUI/actions/menuBar".saveAs configName
+		--validating saveScenario
+		"Common/check".savedScenario configName
+	Catch theException
+		"Common/cLog".cError "saveTheScenario failed: "& configName, theException's reason
+		throw theException 
+	End try
+end saveTheScenario
+
+# to close the scenario
+#-----------------------------
+to closeScenario option 
+	set the defaultTextPlatform.OCRStyles.Default.DPI to 144
+	Try
+		-- coming back to scenario if other editor is opened in the testcase
+		if  "Common/check".isImageTextFound("Architect","TopLeft",false) then
+			"Common/clickEvent".onFoundImageLocation "Architect","TopLeft"
+		end if
+		if option is not empty then 
+			"Common/clickEvent".validate "closeTab", "CloseTab is present", "CloseTab is not present"
+			"Common/cLog".success "Close tab button is clicked to close the scenario"
+		else
+			
+			"EXataGUI/actions/menuBar".close
+			"Common/cLog".success "Close option of File menu is clicked to close the scenario"
+			
+		end if
+		
+	Catch theException
+		"Common/cLog".cError "closeScenario operation failed:" &theException's reason
+		throw theException
+	End try
+end closeScenario
+
+# to run simulation
+#------------------------
+to runSimulation mode
+	set the defaultTextPlatform.OCRStyles.Default.DPI to 144
+	Try
+		set portNumber to 4001
+		setSimulationMode mode
+		"Common/clickEvent".leftEvent "runSimulation"
+		--reducing default search time from 40 to 5 seconds as this is a quicker action not need 40 seconds to search it
+		if "Common/check".isImageTextFound("Select Another Port...","Centre",false,2.0) then
+			openPort portNumber 
+			-- After setting the port running simulation again
+			"Common/clickEvent".leftEvent "runSimulation"
+		end if
+		"Common/waitForEvent".waitForText "0%","SimulationProgressView",90
+		"Common/search".clearSearchSection
+	Catch theException
+		"Common/cLog".cError "runSimulation failed:"& theException's reason
+		throw theException -- re-throw the exception (if desired)
+	End try
+end runSimulation
+
+# to set simulation mode
+#-------------------------------
+to setSimulationMode mode
+	set the defaultTextPlatform.OCRStyles.Default.DPI to 144
+	Try
+		if "Common/check".isImageTextFound("Emulation","HalfOfTopLeftQuadrant",false) then 
+			"Common/clickEvent".onFoundImageLocation "Emulation","HalfOfTopLeftQuadrant"
+			"Common/clickEvent".onFoundImageLocation mode,"HalfOfTopLeftQuadrant"
+		else
+			"Common/clickEvent".onFoundImageLocation mode,"HalfOfTopLeftQuadrant"
+		end if
+		
+	Catch theException
+		"Common/cLog".cError "setSimulationMode failed:"& theException's reason
+		throw theException 
+	End try
+end setSimulationMode
+
+# to open another port if the existing port is busy
+#-----------------------------------------------------------------
+to openPort portNumber
+	set the defaultTextPlatform.OCRStyles.Default.DPI to 144
+	Try
+		repeat until not "Common/check".isImageTextFound ("Select Another Port...","Centre",false,2.0)
+			// Check if the port was successfully opened
+			if not "Common/check".isImageTextFound("Select Another Port...","Centre",false,2.0) then
+				Exit handler // Exit the handler when the port is successfully opened
+			end if
+			
+			// If unable to open, try the next port
+			"Common/clickEvent".onFoundImageLocation "Select Another Port...","Centre"
+			if "Common/check".isImageTextFound ("TCP Port for Use with Simulator","Centre",false,2.0) then
+				"Common/clickEvent".onFoundImageLocation "TCP Port for Use with Simulator","Centre"
+				repeat 2 times
+					"Common/keyBoard".pressUpArrow
+				end repeat
+				"Common/keyBoard".enterText portNumber
+				"Common/keyBoard".pressEnter
+			end if
+			// Increment port number for next iteration
+			add 1 to portNumber
+		end repeat
+		"Common/search".clearSearchSection
+		Catch theException
+		"Common/cLog".cError "openPort failed:"& theException's reason
+		throw theException -- re-throw the exception (if desired)
+	End try
+end openPort
+
+# to play simulation
+#-------------------------
+to playSimulation
+	set the defaultTextPlatform.OCRStyles.Default.DPI to 144
+	Try
+		"Common/search".clearSearchSection
+		"Common/clickEvent".validate "playButton" ,"Play Button exists in the Animation Control Bar","Play Button does not exists in the Animation Control Bar"
+		--check for simulation completion
+		"Common/check".simulationCompletion
+	Catch theException
+		"Common/cLog".cError "playSimulation failed:"& theException's reason
+		throw theException -- re-throw the exception (if desired)
+	End try
+end playSimulation
+
+#Make changes in scenario properties 
+#
+to editScenarioProperties
+	set the defaultTextPlatform.OCRStyles.Default.DPI to 144
+	try
+		if "Common/check".isImageTextFound("Scenario Properties","TopLeftQuadrant","false")then
+			"Common/clickEvent".leftEvent "Scenario Properties"
+			"Common/search".setSearchSection "VerticalMiddle"
+			"Common/clickEvent".leftEvent "320"
+			"Common/keyBoard". keyboardShortcut "a"
+			"Common/keyBoard".entertext "300"
+			"Common/clickEvent".leftEvent "OK"
+		else
+			"Common/cLog".cError "Scenario properties option didnot found"
+			throw "openSaveAsException:", "editScenarioProperties failed"
+		end if
+		"Common/search".clearSearchSection
+	catch theException
+		"Common/cLog".cError "editScenarioProperties failed:" & theexception's reason
+		throw theException -- re-throw the exception (if desired)
+	end try
+	
+end editScenarioProperties

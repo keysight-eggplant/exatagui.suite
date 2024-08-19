@@ -1,0 +1,26 @@
+﻿Try
+	BeginTestCase "basicScenarioActivityRecordingCheck"
+	
+	# initializing the scenario
+	"EXataGUI/scenario".initScenario
+	
+	# to load the WiFiDemo sample scenario
+	"EXataGUI/scenario".loadOpenExampleScenario "demo\WiFiDemo","WiFiDemo", "", true
+	
+	# Saving the scenario  with configName
+	"EXataGUI/scenario".saveTheScenario "WiFiDemo"
+	
+	# Running the simulation of savedScenario
+	"EXataGUI/scenario".runSimulation "Simulation"
+	
+	# Recording the activity
+	"Common/recordScreen".recordScreen "EXataGUI/scenario",playSimulation,"basicScenarioActivityRecordingCheck.mp4","TestCases/HumanInTheLoop/basicScenarioActvityRecordingCheck"
+	
+	#Click on Close Tab to close the Scenario
+	"EXataGUI/scenario".closeScenario "closetab"
+	
+	EndTestCase "basicScenarioActivityRecordingCheck"
+Catch theException
+	"Common/cLog".cError "Error in running basicScenarioActivityRecordingCheck TestCase"
+	throw theException -- re-throw the exception (if desired)
+End try

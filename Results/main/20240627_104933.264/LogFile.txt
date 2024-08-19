@@ -1,0 +1,19 @@
+﻿2024-06-27 10:49:33.270 -0400	START		Running main.script
+2024-06-27 10:49:33.481 -0400	Log		Started the Execution of the EXataGUI Regression Scripts at 10:49 AM on 06/27/24	2	on_cmessage	Common/cLog.script
+2024-06-27 10:49:33.533 -0400	setoptions		ImageUpdate = Off	2	on_variabledata	HelperUtilities/variableData.script
+2024-06-27 10:49:33.536 -0400	setoptions		MouseMoveMode = 2	2	on_variabledata	HelperUtilities/variableData.script
+2024-06-27 10:49:33.539 -0400	setoptions		MouseMoveSpeed = 10	2	on_variabledata	HelperUtilities/variableData.script
+2024-06-27 10:49:33.541 -0400	setoptions		remoteWorkInterval = 1	2	on_variabledata	HelperUtilities/variableData.script
+2024-06-27 10:49:33.736 -0400	Log		Screen Width: 1920, Screen Height: 1080	6	function_checkscreenresolution	Common/check.script
+2024-06-27 10:49:33.997 -0400	Log		C:\Program Files\Scalable\exata\8.2.0.0	2	on_cmessage	Common/cLog.script
+2024-06-27 10:49:34.116 -0400	Log		C:\Users\Administrator\Documents\UserScenarios	2	on_cmessage	Common/cLog.script
+2024-06-27 10:49:34.237 -0400	Log		generateReport: true	2	on_cmessage	Common/cLog.script
+2024-06-27 10:49:34.467 -0400	Log		The mode of the Execution of Test : full	2	on_cmessage	Common/cLog.script
+2024-06-27 10:49:36.748 -0400	BeginTestCase		hideTaskBar	3	on_hidetaskbar	OS/windows.script
+2024-06-27 10:49:40.551 -0400	typetext		[windowsKey]	3	on_entertext	Common/keyBoard.script
+2024-06-27 10:49:41.908 -0400	typetext		taskbar settings	3	on_entertext	Common/keyBoard.script
+2024-06-27 10:49:42.924 -0400	typetext		[returnKey]	3	on_entertext	Common/keyBoard.script
+2024-06-27 10:49:46.360 -0400	set		SEARCHRECTANGLE = [[251.52,49.68],[741.12,317.52]]	3	on_setsearchsection	Common/search.script
+2024-06-27 10:49:58.746 -0400	EndTestCase		(Duration:"21.998", Errors:"1", Exceptions:"0", StartTime:"2024-06-27 10:49:36 -0400", Successes:"0", TestCase:"hideTaskBar", Warnings:"0")
+2024-06-27 10:49:58.750 -0400	EndTestCase		(Duration:"25.473", Errors:"1", Exceptions:"0", StartTime:"2024-06-27 10:49:33 -0400", Successes:"0", TestCase:"main.script", Warnings:"0")
+2024-06-27 10:49:58.761 -0400	ABORTED		Execution Time 0:00:25 main.script

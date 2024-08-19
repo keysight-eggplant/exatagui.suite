@@ -1,0 +1,94 @@
+{
+	"originalcapturelocation": [
+		950,
+		519,
+		34,
+		40
+	],
+	"lastmodifieddate": 1708334371.9559999,
+	"createddate": 1708091998.704,
+	"name": "Canvas_nodes/Canvas_node_1",
+	"lastfounddate": 1708339866.8629999,
+	"ocrcapturestring": "[1]",
+	"lastfoundlocation": [
+		950,
+		519,
+		34,
+		40
+	],
+	"testlocationdata": [
+		{
+				"capturedocrtext": "[1]",
+				"properties": {
+					"CropRectangle": "[0,0,0,0]",
+					"Rotate": 0,
+					"Scale": "    1",
+					"HotSpot": "[16,20]",
+					"Tolerance": "_45",
+					"Discrepancy": "_0",
+					"SearchType": "Tolerant of Background"
+				},
+				"type": 1,
+				"capturerect": [
+					950,
+					519,
+					34,
+					40
+				],
+				"name": "Canvas_nodes/Canvas_node_1/Canvas_node_1.png"
+			},
+		{
+				"connectionportnum": 3389,
+				"properties": {
+					"CropRectangle": "[0,0,0,0]",
+					"Rotate": 0,
+					"Scale": "    1",
+					"HotSpot": "[16,20]",
+					"Tolerance": "_45",
+					"Discrepancy": "_0",
+					"SearchType": "Tolerant of Background"
+				},
+				"sutinfo": {
+					"type": "Unknown RDP"
+				},
+				"name": "Canvas_nodes/Canvas_node_1_Cbr.png",
+				"connectionname": "windows",
+				"type": 1,
+				"capturerect": [
+					950,
+					519,
+					34,
+					40
+				],
+				"connectiontype": "RDP",
+				"connectionserverid": "192.168.2.120"
+			},
+		{
+				"connectionportnum": 3389,
+				"properties": {
+					"CropRectangle": "[0,0,0,0]",
+					"Rotate": 0,
+					"Scale": "    1",
+					"HotSpot": "[16,20]",
+					"Tolerance": "_30",
+					"Discrepancy": "_0",
+					"SearchType": "Adaptive to Image"
+				},
+				"sutinfo": {
+					"type": "Unknown RDP"
+				},
+				"name": "Canvas_nodes/Canvas_node_1/Canvas_node_1.png",
+				"connectionname": "windows",
+				"type": 1,
+				"connectionserverid": "192.168.2.120",
+				"capturerect": [
+					950,
+					519,
+					34,
+					40
+				],
+				"connectiontype": "RDP",
+				"capturedocrtext": "[1]"
+			}
+	]
+}

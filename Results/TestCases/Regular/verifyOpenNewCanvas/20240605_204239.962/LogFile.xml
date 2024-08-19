@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+ <testsuite name="TestCases/Regular/verifyOpenNewCanvas_script" package="exatagui.suite" timestamp="2024-06-05 20:42:39.962 -0400"
+ tests="2"  failures="0" errors="0" time="48.318000">
+  <properties>
+   <property name="RunDate" value="2024-06-05 20:42:39.962 -0400"/>
+   <property name="Status" value="Success"/>
+  </properties>
+  <testcase name="verifyOpenNewCanvas" assertions="15" status="success"  time="48.277">
+  </testcase>
+  <testcase name="TestCases/Regular/verifyOpenNewCanvas.script" assertions="15" status="success"  time="48.309">
+  </testcase>
+ </testsuite>
+</testsuites>

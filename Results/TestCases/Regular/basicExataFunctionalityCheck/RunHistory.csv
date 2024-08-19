@@ -1,0 +1,15 @@
+﻿Date Run,Status,Time,# of Errors,# of Warnings,# of Exceptions,Log File,Return Value,Error Message,# of Successes
+2024-06-24 12:44:19.818 -0400,"Success",0:04:33,0,0,0,"20240624_124419.818/LogFile.txt","","",32
+2024-06-24 14:02:34.378 -0400,"Success",0:04:11,0,0,0,"20240624_140234.378/LogFile.txt","","",32
+2024-06-25 08:18:30.784 -0400,"Success",0:04:15,0,0,0,"20240625_081830.784/LogFile.txt","","",32
+2024-06-25 09:12:23.174 -0400,"Success",0:04:28,0,0,0,"20240625_091223.174/LogFile.txt","","",32
+2024-06-25 11:45:39.694 -0400,"Success",0:03:48,0,0,0,"20240625_114539.694/LogFile.txt","","",32
+2024-06-26 11:30:10.534 -0400,"Failure",0:01:55,6,0,5,"20240626_113010.534/LogFile.txt","","ImageTextNotFoundException:  -- 2:not found",7
+2024-06-26 11:33:53.501 -0400,"Failure",0:02:42,4,0,3,"20240626_113353.501/LogFile.txt","","verifyApplicationStatsException -- C:\\Users\\pratdaga\\Documents\\UserScenarios not exist in the system",25
+2024-06-26 11:38:27.492 -0400,"Failure",0:02:44,4,0,3,"20240626_113827.492/LogFile.txt","","verifyApplicationStatsException -- C:\\Users\\pratdaga\\Documents\\UserScenarios not exist in the system",25
+2024-06-27 09:53:02.378 -0400,"Failure",0:01:56,6,0,5,"20240627_095302.378/LogFile.txt","","ImageTextNotFoundException:  -- 2:not found",7
+2024-06-27 09:55:42.355 -0400,"Failure",0:01:44,5,0,5,"20240627_095542.355/LogFile.txt","","Image Not Found -- moveto Error - No Text Found On Screen: ""(TEXT:""Save Scenario"")"". Text not found.  Restricted Search Rectangle ((480,270),(1440,810))\n",14
+2024-06-27 11:59:09.722 -0400,"Success",0:04:44,0,0,0,"20240627_115909.722/LogFile.txt","","",32
+2024-06-28 10:47:58.996 -0400,"Failure",0:05:10,6,0,5,"20240628_104758.996/LogFile.txt","","ImageTextNotFoundException:  -- sample:not found",15
+2024-06-28 10:56:23.922 -0400,"Failure",0:05:06,6,0,5,"20240628_105623.922/LogFile.txt","","ImageTextNotFoundException:  -- sample:not found",15
+2024-06-28 11:26:21.485 -0400,"Failure",0:05:31,6,0,5,"20240628_112621.485/LogFile.txt","","ImageTextNotFoundException:  -- sample:not found",15

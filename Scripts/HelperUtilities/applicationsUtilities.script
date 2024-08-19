@@ -1,0 +1,449 @@
+﻿to openNewCanvasUsingNew
+	//Set the Search Rectangle to "HalfOfTopLeftQuadrant" of the SUT screen.
+	set the SearchRectangle to "CommonUtilities/Core".ScreenPart("HalfOfTopLeftQuadrant")
+	
+	//Open New canvas
+	"CommonUtilities/Core".clickEvent "File"
+	"CommonUtilities/Core".clickEvent "New"
+	
+	//Clears the selected Search Rectangle 
+	set the SearchRectangle to empty
+End openNewCanvasUsingNew
+
+to openNewCanvasUsingKeyboardShortcut
+	//Opens new canvas using keyboard shortcut
+	TypeText controlKey, "n"
+End openNewCanvasUsingKeyboardShortcut	
+
+to openFileCanvasUsingOpenFile
+	//Set the Search Rectangle to "HalfOfTopLeftQuadrant" of the SUT screen.
+	set the SearchRectangle to "CommonUtilities/Core".ScreenPart("HalfOfTopLeftQuadrant")
+	
+	//Opens "Open File" window
+	"CommonUtilities/Core".clickEvent "File"
+	"CommonUtilities/Core".clickEvent "Open File"
+	
+	//Clears the selected Search Rectangle 
+	set the SearchRectangle to empty
+End openFileCanvasUsingOpenFile
+
+to openConfigFileUsingKeyboardShortcut
+	//Opens new canvas using keyboard shortcut
+	TypeText controlKey, "o"
+end openConfigFileUsingKeyboardShortcut
+
+to openFileCanvasUsingOpenExample
+	//Set the Search Rectangle to "HalfOfTopLeftQuadrant" of the SUT screen.
+	set the SearchRectangle to "CommonUtilities/Core".ScreenPart("HalfOfTopLeftQuadrant")
+	
+	//Opens "Open File" window
+	"CommonUtilities/Core".clickEvent "File"
+	"CommonUtilities/Core".clickEvent "Open Example"
+	
+	//Clears the selected Search Rectangle 
+	set the SearchRectangle to empty
+End openFileCanvasUsingOpenExample
+
+to openExampleUsingKeyboardShortcut
+	//Opens new example using keyboard shortcut
+	TypeText controlKey, "e"
+End openExampleUsingKeyboardShortcut
+
+
+to LoadDefaultScenario
+	//Loads default sample scenario on canvas
+	global exatahome, scenarios, default
+	wait 2
+	TypeText controlKey, "A"
+	Typetext exatahome , returnKey
+	Typetext scenarios, returnKey
+	Typetext default, returnKey
+	Typetext "default.config", returnKey
+End LoadDefaultScenario
+
+to LoadWiFiDemoScenario
+	//Loads WiFiDemo sample scenario on canvas
+	global exataHome, scenarios, demo, WiFiDemo
+	wait 2
+	TypeText controlKey, "A"
+	TypeText exataHome, returnKey
+	Typetext scenarios, returnKey
+	Typetext demo, returnKey
+	Typetext WiFiDemo, returnKey	
+	Typetext "WiFiDemo.config", returnKey
+End LoadWiFiDemoScenario
+
+to repeatUntilCloseOptionIsPresent
+	//Repeat until close option is present in File menu
+	Repeat until "CommonUtilities/applicationsUtilities".CloseScn
+		set the SearchRectangle to "CommonUtilities/Core".ScreenPart("HorizontalMiddle")
+		If ImageFound(text:"No", dpi:"144", caseSensitive:"Yes") then
+			Click FoundImageLocation()
+			LogSuccess "Scenario is successfully closed"
+		else
+			Log "All scenarios are closed successfully"
+			Exit handler
+		End If	
+	End repeat
+end repeatUntilCloseOptionIsPresent
+
+to verifyStatDbResults userName
+	Try
+		set the SearchRectangle to "CommonUtilities/Core".ScreenPart("HalfOfTopLeftQuadrant")
+		"CommonUtilities/Core".clickEvent "selectAnalyzer"
+		set the SearchRectangle to "CommonUtilities/Core".ScreenPart("BottomLeftQuadrant")
+		"CommonUtilities/Custom".clickIfImageTextFound "Statistics File"
+		"CommonUtilities/Custom".clickIfImageTextFound "C:/Users/"&userName&"/Documents/UserScenario"
+		repeat 26 times
+			TypeText pageDown
+		end repeat
+		"CommonUtilities/custom".logSuccessOrErrorIfImageTextFound "Total Unicast Messages Received (messages) = 24", "verified Stat Db Results", "Error in verifying Stat Db results"
+		// Adding report line 
+		"CommonUtilities/rptHtml".addReportLine "Basic_Exata_Functionality_Check","The test aimed to validate EXata GUI's basic functionality.. It involved creating a scenario, configuring traffic, and starting simulation. The outcome will be automatically recorded as Pass or No Pass.","We should be able to get CBR server stats for Node 2 as below- Total Unicast Messages Received (messages) = 24",(223,737,742,1047),true,"Basic_Exata_Functionality_Check"
+		"CommonUtilities/Custom".clickIfImageTextFound "Statistics File"
+		set the SearchRectangle to "CommonUtilities/Core".ScreenPart("HalfOfTopLeftQuadrant")
+		"CommonUtilities/Custom".clickIfImageTextFound "Architect"
+		set the searchRectangle to "CommonUtilities/Core".screenPart("QuarterOfTopHalf")
+		"CommonUtilities/Core".clickEvent "File"
+		set the SearchRectangle to "CommonUtilities/Core".ScreenPart("HalfOfTopLeftQuadrant")
+		"CommonUtilities/Core".clickEvent "Close All"
+		set  the SearchRectangle to empty
+	catch theException
+		LogError theException's reason
+		// handling Exception
+		"CommonUtilities/Custom".handleException "Basic_Exata_Functionality_Check","The test aimed to validate EXata GUI's basic functionality.. It involved creating a scenario, configuring traffic, and starting simulation. The outcome will be automatically recorded as Pass or No Pass.","We should be able to get CBR server stats for Node 2 as below- Total Unicast Messages Received (messages) = 24","",false,"main()", "Exception location: "&theException's location, "Exception reason: "&theException's reason,"Exception callStack: "&theException's callStack, "Exception ScriptError: "&theException's scriptError			
+	End try
+end verifyStatDbResults
+
+to LaunchEXataGUI
+	global changeDirectory, exataHome, bin, DateTime
+	
+	//Put SUT Display Name into local variable osName
+	put "CommonUtilities/Core".getConnectionName into osName
+	
+	//"platfrm" variable now contains a list after spliting the osName by "-"
+	put osName split by "-" into platfrm 
+	//Last item from the variable "platfrm is retrieved 
+	pop platfrm into ostype 
+	
+	//Check the ostype and launches the EXataGUI on SUT
+	If ostype is "Linux" then
+		TypeText altKey, f2
+		waitfor 60, text:"command", caseSensitive:false
+		TypeText "gnome-terminal", enter
+		Typetext enter
+		waitfor 90, text:"Terminal",caseSensitive:false
+		TypeText  changeDirectory && exataHome & "/" & bin, enterKey
+		TypeText "./EXataGUI", enterKey
+		set the SearchRectangle to "CommonUtilities/Core".ScreenPart("VerticalMiddle")
+		If ImageFound(text: "OK") then	TypeText returnKey
+		waitfor 20, text:"Scenario Properties"
+		click [510,43]
+		click [1021,347]
+		//Capturing a Baseline Image
+		CompareScreen name: GUI_Canvas_Linux & DateTime, rectangle :[465,254,927,702]
+	else
+		
+		TypeText windowsKey, "r"
+		waitfor 20, text:"Run"
+		Typetext  exataHome & "\" & bin & "\" & "EXataGUI.exe", return
+		set the SearchRectangle to "CommonUtilities/Core".ScreenPart("VerticalMiddle")
+		If ImageFound(text: "OK") then TypeText returnKey
+		set the SearchRectangle to "CommonUtilities/Core".ScreenPart("HalfOfTopLeftQuadrant")
+		waitfor 20, text:"Scenario Properties"
+		set the SearchRectangle to empty
+		//Capturing a Baseline Image
+		CompareScreen name: GUI_Canvas_Windows & DateTime , rectangle :[388,199,874,666]
+	End If
+end LaunchEXataGUI
+
+to addNodeDevicesOnGUIcanvas 
+	set the defaultTextPlatform.OCRStyles.Default.DPI to 144
+	Try
+		"CommonUtilities/Custom".clickEventValidate "Select_tool", "Select tool is present in Navigation Toolbar", "Select tool is not present in Navigation Toolbar"
+		
+		//Places default node devices on the GUI canvas.
+		"CommonUtilities/Core".clickEvent "node_device"
+		"CommonUtilities/Custom".clickRemoteScreen ".5"
+		"CommonUtilities/Custom".clickRemoteScreen ".6"
+		"CommonUtilities/Core".clickEvent "Select_Tool"
+		
+		// Validate Node Placement
+		"CommonUtilities/GUI_Validations".validateNodePlacement "2"
+	Catch theException
+		LogError theException's reason
+		// handling Exception
+		"CommonUtilities/Custom".handleException "Basic_Exata_Functionality_Check","The test aimed to validate EXata GUI's basic functionality.. It involved creating a scenario, configuring traffic, and starting simulation. The outcome will be automatically recorded as Pass or No Pass.","We should be able to get CBR server stats for Node 2 as below- Total Unicast Messages Received (messages) = 24","",false,"main()", "Exception location: "&theException's location, "Exception reason: "&theException's reason,"Exception callStack: "&theException's callStack, "Exception ScriptError: "&theException's scriptError		
+	End try
+end addNodeDevicesOnGUIcanvas
+
+to addP2PLinksBetweeenNodesOnGUICanvas
+	set the defaultTextPlatform.OCRStyles.Default.DPI to 144
+	Try
+		// Add the links between the nodes on the GUI canvas
+		"CommonUtilities/Core".clickEvent "links"
+		
+		// perform drag and drop
+		"CommonUtilities/Core".dragAndDrop "Canvas_nodes/Canvas_node_1","Canvas_nodes/Canvas_node_2"
+		
+		// Validate Link Added betweent the nodes
+		"CommonUtilities/GUI_Validations".validateLinkBetweenNodes "LINK1"
+	Catch theException
+		LogError theException's reason
+		// handling Exception
+		"CommonUtilities/Custom".handleException "Basic_Exata_Functionality_Check","The test aimed to validate EXata GUI's basic functionality.. It involved creating a scenario, configuring traffic, and starting simulation. The outcome will be automatically recorded as Pass or No Pass.","We should be able to get CBR server stats for Node 2 as below- Total Unicast Messages Received (messages) = 24","",false,"main()", "Exception location: "&theException's location, "Exception reason: "&theException's reason,"Exception callStack: "&theException's callStack, "Exception ScriptError: "&theException's scriptError							
+	End try
+end addP2PLinksBetweeenNodesOnGUICanvas
+
+to addCBRTrafficBetweenNodesOnGUICanvas
+	Try
+		// Add the CBR between the nodes on the GUI canvas
+		"CommonUtilities/core".clickEvent "Select_Application"
+		
+		// perform drag and drop
+		"CommonUtilities/core".dragAndDrop "Canvas_cbr/Canvas_cbr_1","Canvas_cbr/Canvas_cbr_4"
+		
+		// Validate Traffic Added
+		"CommonUtilities/GUI_Validations".validateTrafficBetweenNodes "1"
+	Catch theException
+		LogError theException's reason
+		// handling Exception
+		"CommonUtilities/Custom".handleException "Basic_Exata_Functionality_Check","The test aimed to validate EXata GUI's basic functionality.. It involved creating a scenario, configuring traffic, and starting simulation. The outcome will be automatically recorded as Pass or No Pass.","We should be able to get CBR server stats for Node 2 as below- Total Unicast Messages Received (messages) = 24","",false,"main()", "Exception location: "&theException's location, "Exception reason: "&theException's reason,"Exception callStack: "&theException's callStack, "Exception ScriptError: "&theException's scriptError										
+	End try
+end addCBRTrafficBetweenNodesOnGUICanvas
+
+to runSimulation
+	Try
+		set the SearchRectangle to "CommonUtilities/Core".ScreenPart("HalfOfTopLeftQuadrant")
+		"CommonUtilities/Custom".clickIfImageTextFound("Emulation")
+		"CommonUtilities/Custom".clickIfImageTextFound("Simulation")
+		"CommonUtilities/core".clickEvent "run_simulation"
+		set the SearchRectangle to "CommonUtilities/Core".ScreenPart("VerticalMiddle")
+		if ImageFound(text:"Unable to Open Port") then
+			"CommonUtilities/Custom".clickIfImageTextFound "Select Another Port "
+			if ImageFound (text:"TCP Port for Use with Simulator") then 
+				TypeText 4001
+				if ImageFound(text:"OK") then TypeText returnKey			
+			end if
+			set the SearchRectangle to "CommonUtilities/Core".ScreenPart("HalfOfTopLeftQuadrant")
+			"CommonUtilities/core".clickEvent "run_simulation"
+		end if
+		playSimulation
+		// Validate run simulation
+		// validateExecutionFinished
+		"CommonUtilities/GUI_Validations".validateRunSimulation
+		set the SearchRectangle to empty
+	Catch theException
+		LogError theException's reason
+		// handling Exception
+		"CommonUtilities/Custom".handleException "Basic_Exata_Functionality_Check","The test aimed to validate EXata GUI's basic functionality.. It involved creating a scenario, configuring traffic, and starting simulation. The outcome will be automatically recorded as Pass or No Pass.","We should be able to get CBR server stats for Node 2 as below- Total Unicast Messages Received (messages) = 24","",false,"main()", "Exception location: "&theException's location, "Exception reason: "&theException's reason,"Exception callStack: "&theException's callStack, "Exception ScriptError: "&theException's scriptError			
+	End try	
+end runSimulation
+
+to playSimulation
+	set the SearchRectangle to "CommonUtilities/Core".ScreenPart("BottomHalf")
+	waitfor 5.0,text:"0%"
+	"CommonUtilities/core".clickEvent "play_btn"
+	set the SearchRectangle to empty
+end playSimulation
+
+to addTemplate templateName
+	"CommonUtilities/Core".clickEvent "Add_Button"
+	set the SearchRectangle to "CommonUtilities/Core".ScreenPart("RightHalf")
+	"CommonUtilities/Core".clickEvent "Template_"
+	"CommonUtilities/Core".textEntry templateName
+	"CommonUtilities/Core".clickEvent "DOS Attack"
+	set the SearchRectangle to []
+end addTemplate
+
+to applySignature signatureName
+	"CommonUtilities/Core".moveToEvent "Signature"
+	"CommonUtilities/Core".clickEventOffset "Signature",[160,0]
+	"CommonUtilities/Core".textEntry signatureName
+	"CommonUtilities/Core".clickEvent "Apply"
+end applySignature
+
+to applyTemplate templateName, signatureName
+	enterTemplate templateName, signatureName
+	"CommonUtilities/Core".clickEvent "Apply"
+end applyTemplate
+
+to enterTemplate templateName, signatureName
+	"CommonUtilities/Core".moveToEvent templateName
+	"CommonUtilities/Core".clickEventOffset templateName,[160,0]
+	"CommonUtilities/Core".textEntry signatureName
+	"CommonUtilities/Core".clickEvent "Apply"
+end enterTemplate
+
+
+to saveFile configFileName
+	TypeText configFileName & ".config"
+	if imageFound(text:"Cancel") then 
+		TypeText returnKey
+		handleCopyScenarioFiles()
+	else
+		LogError "Cancel Button Not found"
+	end if
+end saveFile
+
+to handleCopyScenarioFiles
+	set the searchRectangle to "CommonUtilities/Core".screenPart("VerticalMiddle")
+	if imageFound(text:"Copy Scenario Files") then
+		"CommonUtilities/Custom".clickIfImageTextFound "Select All"
+		"CommonUtilities/Custom".clickIfImageTextFound "Copy"
+	else
+		set the searchRectangle to empty
+	end if
+end handleCopyScenarioFiles
+
+to handleDoYouWantToReplace
+	if imageFound(text:"Do You Want To Replace") then
+		TypeText returnKey
+		handleCopyScenarioFiles()
+	end if
+end handleDoYouWantToReplace
+
+to handle toSaveConfigFile configFileName
+	Try
+		// Set the Search Rectangle to Half Of Top Left Quadrant to Save the Config file 
+		set the searchRectangle to "CommonUtilities/Core".screenPart("HalfOfTopLeftQuadrant")
+		
+		// Open the File Menu to Click On Save As Option to Save The Config File 
+		"CommonUtilities/Core".clickEvent "File"
+		"CommonUtilities/Core".clickEvent "Save As"
+		
+		// Clear the Above Selected Search Rectangle 
+		set the searchRectangle to empty
+		
+		if imageFound(text:"File name") then 
+			saveFile configFileName
+			LogSuccess "Scenario " & configFileName & " Saved Successfully"
+			handleDoYouWantToReplace
+		else
+			LogError "Unable to Save Scenario"
+		end if
+		// Validate saved Scenario
+		"CommonUtilities/GUI_Validations".validateSavedScenario configFileName
+	Catch theException
+		LogError theException's reason
+		// handling Exception
+		"CommonUtilities/Custom".handleException "Basic_Exata_Functionality_Check","The test aimed to validate EXata GUI's basic functionality.. It involved creating a scenario, configuring traffic, and starting simulation. The outcome will be automatically recorded as Pass or No Pass.","We should be able to get CBR server stats for Node 2 as below- Total Unicast Messages Received (messages) = 24","",false,"main()", "Exception location: "&theException's location, "Exception reason: "&theException's reason,"Exception callStack: "&theException's callStack, "Exception ScriptError: "&theException's scriptError			
+	End try
+end toSaveConfigFile
+
+to handle toVerifyRecentlyOpenedFiles recentOpenedFile
+	"CommonUtilities/Core".clickEvent "Recent Files"
+	//Setting The Search Area To Top Half Quadrant To Find The Config Files
+	repeat the number of items of Global configList
+		"CommonUtilities/Core".verifyEvent recentOpenedFile, "Scenario"&&quote&item repeatIndex() of global configList&quote&&"Available in Recent Files List", "Scenario"&&quote&item repeatIndex() of global configList&quote&&"Not found in Recent List"
+	end repeat
+end toVerifyRecentlyOpenedFiles
+
+to createNewCanvasUsingShortcut
+	TypeText controlKey, "n"
+	//Capture the screenshot of the SUT screen to verify the opened scenario on canvas
+	"CommonUtilities/Custom".captureScreenShot "ScreenCapture_Open_NewCanvas_Using_KeyboardShortcut"
+end createNewCanvasUsingShortcut
+
+to CloseScn
+	set the SearchRectangle to "CommonUtilities/Core".ScreenPart("HalfOfTopLeftQuadrant")
+	"CommonUtilities/Core".clickEvent "File"
+	set the SearchRectangle to empty
+	wait 2
+	set the SearchRectangle to "CommonUtilities/Core".ScreenPart("LeftHalfOfTopLeftQuadrant")
+	If ImageFound(text:"Close") then 
+		Click FoundImageLocation()
+		LogSuccess "Scenarios are successfully closed"
+	else 
+		Log "No scenario is left to close"
+	end if 
+	set the SearchRectangle to empty
+	"CommonUtilities/Custom".clickRemoteScreen ".5"
+End CloseScn
+
+to CloseGUIUsingExit
+	"CommonUtilities/Core".clickEvent "File"
+	set the SearchRectangle to empty
+	If ImageFound(text:"Exit") then
+		Click FoundImageLocation()
+		set the SearchRectangle to "CommonUtilities/Core".ScreenPart("VerticalMiddle")
+		If ImageFound (text:"Are you sure you want to exit?") then
+			"CommonUtilities/Custom".moveToMenu "Are you sure you want to exit?"
+			Log "GUI exit confirmation message displayed"
+			TypeText returnKey
+			LogSuccess "GUI is closed successfully"
+		else
+			Log "No GUI exit confirmation message appears"
+		end if
+	else
+		LogError "Exit option does not exist in File menu"
+	End If
+	Typetext exit, returnKey
+	
+	set the SearchRectangle to empty
+end CloseGUIUsingExit
+
+to verifygeneraltaboptions inputtext
+	if ImageFound(text:inputtext, IgnoreNewlines:"Yes", IgnoreSpaces:"Yes", TrimWhitespace:"Yes",caseSensitive:true)Then 
+		LogSuccess inputtext&&"Option Is present in General Display Settings"
+	else
+		LogError inputtext&&"Option is Not Available in General Display Settings"
+	end if
+end verifygeneraltaboptions
+
+to nodeInSplitScreenView axisType 
+	//Read the Z coordinate from the Coordinates Toolbar and store its value in variable
+	"CommonUtilities/Core".clickEvent axisType
+	Put ImageLocation(text:axisType) into axis01
+	"CommonUtilities/Core".clickEventOffset axisType,[30,0]
+	Put the MouseLocation into axis02
+	put ReadText (axis02) into axis03
+	delete ":" from axisType
+	insert {(axisType):axis03} into Global Canvas3Dview
+end nodeInSplitScreenView
+
+to placeNodeOnView axisType,axisView, remoteScreen
+	Global zero
+	//Place a node on X-Z view of the canvas and store its location in a variable XZ2
+	"CommonUtilities/Core".clickEvent "Select_Tool"
+	"CommonUtilities/Core".clickEvent "node_device"
+	"CommonUtilities/Custom".clickRemoteScreen remoteScreen
+	
+	//Read the Y coordinate from the Coordinates Toolbar and store its value in variable Yaxis2
+	"CommonUtilities/Core".clickEvent axisType
+	"CommonUtilities/Core".clickEventOffset axisType,[30,0]
+
+	put ReadText (the MouseLocation) into axisValue
+	Log "The value of "&axisType&" coordinate when node is placed in "&axisView&" canvas view is: " && axisValue
+	
+	//If the value of the variable Yaxis2 = 0.00 then node is placed in X-Z view of the canvas 
+	If (axisValue is zero) then LogSuccess "Node is placed in "&axisView&" view of the canvas" else LogError "Node is not placed in "&axisView&" view of the canvas"
+end placeNodeOnView
+
+to checkChanges value
+	//Click On The Reset View Button To Reset The Canvas View 
+	"CommonUtilities/Custom".clickEventValidate "Reset_Current_View", "Reset Image is Found", "Reset Image Not Found"
+	
+	//Capturing and Comparing the Final Image for Comaparison
+	CompareScreen {name :"Switch_Between_Views_lessthen_9", rectangle:[495,307,970,643]}
+
+	//Using the Shortcut key "9" To Change The Canvas View To 9th Saved View
+	TypeText value
+	wait 2 
+	
+	//Capturing and Comparing the Final Image for Comaparison
+	CompareScreen {name :"Switch_Between_Views_lessthen_9", rectangle:[495,307,970,643]}
+
+	if CompareScreen (name :"Switch_Between_Views_lessthen_9",rectangle:[495,307,970,643] )isn't empty then 
+		LogError "Canvas View Is Changed"
+	else
+		LogSuccess "Canvas View is Not Changed"
+	end if 
+end checkChanges
+
+to selectAll
+	//Selects the complete scenario using "Select All" option
+	set the SearchRectangle to "CommonUtilities/Core".ScreenPart("HalfofTopLeftQuadrant")
+	"CommonUtilities/Core".clickEvent "Edit"
+	"CommonUtilities/Core".clickEvent "Select All"
+end selectAll
